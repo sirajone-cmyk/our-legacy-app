@@ -1426,6 +1426,245 @@ body:has(.book-reader-app) {
   background: #f7f4ef;
 }
 
+body:has(.home-page) {
+  background:
+    linear-gradient(120deg, rgba(217, 233, 239, 0.38), transparent 40%),
+    linear-gradient(180deg, #f7f4ef 0%, #efe7d9 100%);
+}
+
+.home-page {
+  min-height: 100vh;
+  padding: clamp(28px, 5vw, 72px) clamp(20px, 5vw, 72px);
+  color: #2d2926;
+}
+
+.home-hero,
+.home-section {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.home-hero {
+  display: grid;
+  min-height: 72vh;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.home-rule {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  margin: 0 auto 42px;
+}
+
+.home-rule::before,
+.home-rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(193, 135, 56, 0.34);
+}
+
+.home-rule span {
+  width: 9px;
+  height: 9px;
+  margin: 0 14px;
+  border: 1px solid rgba(193, 135, 56, 0.62);
+  transform: rotate(45deg);
+}
+
+.home-kicker,
+.home-section-label {
+  margin: 0;
+  color: #bd7f2a;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  margin: 30px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(3.3rem, 9vw, 6.4rem);
+  line-height: 0.95;
+}
+
+.home-subtitle {
+  max-width: 660px;
+  margin: 28px auto 0;
+  color: #665d55;
+  font-family: var(--serif);
+  font-size: clamp(1.28rem, 3vw, 1.9rem);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 44px;
+}
+
+.home-primary-button,
+.home-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid rgba(193, 135, 56, 0.34);
+  border-radius: 999px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home-primary-button {
+  background: #12332f;
+  color: #fff8ea;
+  box-shadow: 0 16px 42px rgba(18, 51, 47, 0.18);
+}
+
+.home-secondary-button {
+  background: rgba(255, 250, 240, 0.56);
+  color: #8f641f;
+}
+
+.home-section {
+  margin-top: 28px;
+  padding: clamp(30px, 5vw, 54px) 0;
+  border-top: 1px solid rgba(193, 135, 56, 0.18);
+}
+
+.home-section h2 {
+  margin: 18px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.home-section p,
+.home-section li,
+.home-section blockquote {
+  color: #4d4740;
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2.4vw, 1.28rem);
+  line-height: 1.8;
+}
+
+.home-current-study p:last-child {
+  margin-top: 14px;
+  color: #766a60;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.98rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-section blockquote {
+  margin: 26px 0;
+  padding: 18px 22px;
+  border-left: 2px solid rgba(193, 135, 56, 0.48);
+  background: rgba(255, 250, 240, 0.46);
+  font-style: italic;
+}
+
+.home-section cite {
+  display: block;
+  margin-top: 10px;
+  color: #8c8075;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.83rem;
+  font-style: normal;
+}
+
+.support-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 22px;
+  margin: 26px 0;
+  padding-left: 22px;
+}
+
+.banking-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.banking-details {
+  padding: 22px;
+  border: 1px solid rgba(193, 135, 56, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.48);
+}
+
+.banking-details h3 {
+  margin: 0 0 18px;
+  color: #2d2926;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+
+.banking-details dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.banking-details div {
+  display: grid;
+  gap: 3px;
+}
+
+.banking-details dt {
+  color: #9a6d24;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.banking-details dd {
+  margin: 0;
+  color: #3f3933;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.home-contact {
+  padding-bottom: 80px;
+}
+
+.home-contact a,
+.home-contact p:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 18px 0 0;
+  color: #4d4740;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
 .ebook-splash {
   position: relative;
   display: grid;
@@ -2135,6 +2374,28 @@ body:has(.book-reader-app) {
 }
 
 @media (max-width: 720px) {
+  .home-page {
+    padding: 28px 20px;
+  }
+
+  .home-hero {
+    min-height: 70vh;
+  }
+
+  .home-actions,
+  .home-primary-button,
+  .home-secondary-button {
+    width: 100%;
+  }
+
+  .support-list {
+    grid-template-columns: 1fr;
+  }
+
+  .banking-details-grid {
+    grid-template-columns: 1fr;
+  }
+
   .book-reading-stage {
     padding: 72px 20px 96px;
   }
@@ -2203,6 +2464,16 @@ body:has(.book-reader-app) {
 }
 
 @media (max-width: 420px) {
+  .home-hero h1 {
+    font-size: 3.15rem;
+  }
+
+  .home-primary-button,
+  .home-secondary-button {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+  }
+
   .ebook-splash-content {
     width: min(90vw, 340px);
   }
@@ -2212,6 +2483,8 @@ body:has(.book-reader-app) {
   }
 
   .ebook-splash-kicker,
+  .home-kicker,
+  .home-section-label,
   .book-kicker,
   .book-segment-label,
   .book-sub-label,

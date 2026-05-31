@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { EbookReader } from "./components/EbookReader";
+import { HomePage } from "./components/HomePage";
 import { getFeaturedReaderLesson, getLessonCover } from "./data/readerContent";
 
 export function App() {
   const lesson = getFeaturedReaderLesson();
   const cover = lesson ? getLessonCover(lesson) : undefined;
   const [showSplash, setShowSplash] = useState(true);
+  const [showReader, setShowReader] = useState(false);
 
   useEffect(() => {
     const timer = window.setTimeout(() => setShowSplash(false), 5000);
@@ -39,6 +41,10 @@ export function App() {
         </section>
       </main>
     );
+  }
+
+  if (!showReader) {
+    return <HomePage onBeginReading={() => setShowReader(true)} />;
   }
 
   return <EbookReader lesson={lesson} />;
