@@ -43,6 +43,7 @@ export function HomePage({ onBeginReading, onSupport }: HomePageProps) {
           </button>
         </div>
         <p className="home-presented-by">Presented by SirajOne</p>
+        <p className="home-rights">© 2026 OUR LEGACY. Presented by SirajOne. All rights reserved.</p>
       </section>
     </main>
   );
@@ -161,6 +162,10 @@ export function SupportPage({ onBeginReading }: Pick<HomePageProps, "onBeginRead
           May Allah accept every contribution, purify our intentions, place barakah in our wealth, make this effort a
           means of guidance, and allow it to become a sadaqah jariyah for all who support it. Amin.
         </p>
+        <p className="content-use-note">
+          Content may be shared for personal and educational benefit. Please do not copy, rebrand, or republish this
+          project without permission.
+        </p>
         <div className="home-actions support-actions">
           <button className="home-primary-button" onClick={onBeginReading} type="button">
             <BookOpen size={19} />
@@ -188,6 +193,7 @@ export function SupportPage({ onBeginReading }: Pick<HomePageProps, "onBeginRead
           <MapPin size={18} />
           Overport, Durban, KwaZulu-Natal, South Africa
         </p>
+        <p className="home-rights">© 2026 OUR LEGACY. Presented by SirajOne. All rights reserved.</p>
       </section>
     </main>
   );

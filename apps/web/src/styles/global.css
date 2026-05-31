@@ -1550,6 +1550,16 @@ body:has(.home-page) {
   text-transform: uppercase;
 }
 
+.home-rights {
+  max-width: 620px;
+  margin: 14px auto 0;
+  color: #8c8075;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .home-section {
   margin-top: 28px;
   padding: clamp(30px, 5vw, 54px) 0;
@@ -1655,6 +1665,13 @@ body:has(.home-page) {
   font-size: 0.98rem;
   line-height: 1.45;
   overflow-wrap: anywhere;
+}
+
+.content-use-note {
+  padding: 16px 18px;
+  border: 1px solid rgba(193, 135, 56, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.44);
 }
 
 .home-contact {
