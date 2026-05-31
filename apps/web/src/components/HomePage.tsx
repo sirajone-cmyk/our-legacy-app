@@ -42,6 +42,7 @@ export function HomePage({ onBeginReading, onSupport }: HomePageProps) {
             Support This Work
           </button>
         </div>
+        <p className="home-presented-by">Presented by SirajOne</p>
       </section>
     </main>
   );

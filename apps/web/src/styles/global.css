@@ -1540,6 +1540,16 @@ body:has(.home-page) {
   color: #8f641f;
 }
 
+.home-presented-by {
+  margin: 34px 0 0;
+  color: #8c8075;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 .home-section {
   margin-top: 28px;
   padding: clamp(30px, 5vw, 54px) 0;
