@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { EbookReader } from "./components/EbookReader";
-import { HomePage } from "./components/HomePage";
+import { HomePage, SupportPage } from "./components/HomePage";
 import { getFeaturedReaderLesson, getLessonCover } from "./data/readerContent";
+
+type AppView = "home" | "reader" | "support";
 
 export function App() {
   const lesson = getFeaturedReaderLesson();
   const cover = lesson ? getLessonCover(lesson) : undefined;
   const [showSplash, setShowSplash] = useState(true);
-  const [showReader, setShowReader] = useState(false);
+  const [view, setView] = useState<AppView>("home");
 
   useEffect(() => {
     const timer = window.setTimeout(() => setShowSplash(false), 5000);
@@ -43,8 +45,12 @@ export function App() {
     );
   }
 
-  if (!showReader) {
-    return <HomePage onBeginReading={() => setShowReader(true)} />;
+  if (view === "home") {
+    return <HomePage onBeginReading={() => setView("reader")} onSupport={() => setView("support")} />;
+  }
+
+  if (view === "support") {
+    return <SupportPage onBeginReading={() => setView("reader")} />;
   }
 
   return <EbookReader lesson={lesson} />;

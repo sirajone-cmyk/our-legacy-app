@@ -2,6 +2,7 @@ import { BookOpen, HeartHandshake, Mail, MapPin, Phone } from "lucide-react";
 
 type HomePageProps = {
   onBeginReading: () => void;
+  onSupport: () => void;
 };
 
 const supportItems = [
@@ -23,7 +24,7 @@ function DecorativeRule() {
   );
 }
 
-export function HomePage({ onBeginReading }: HomePageProps) {
+export function HomePage({ onBeginReading, onSupport }: HomePageProps) {
   return (
     <main className="home-page">
       <section className="home-hero">
@@ -36,20 +37,21 @@ export function HomePage({ onBeginReading }: HomePageProps) {
             <BookOpen size={19} />
             Begin Reading
           </button>
-          <a className="home-secondary-button" href="#support">
+          <button className="home-secondary-button" onClick={onSupport} type="button">
             <HeartHandshake size={19} />
             Support This Work
-          </a>
+          </button>
         </div>
       </section>
+    </main>
+  );
+}
 
-      <section className="home-section home-current-study">
-        <p className="home-section-label">Current Study</p>
-        <h2>Sirah of Rasulullah sallallahu alayhi wa sallam</h2>
-        <p>The Meccan Period · Part 1</p>
-      </section>
-
-      <section className="home-section" id="support">
+export function SupportPage({ onBeginReading }: Pick<HomePageProps, "onBeginReading">) {
+  return (
+    <main className="home-page support-page">
+      <section className="home-section support-section">
+        <DecorativeRule />
         <p className="home-section-label">Support Sadaqah Jariyah</p>
         <h2>Spending for the Pleasure of Allah</h2>
         <p>
@@ -158,6 +160,12 @@ export function HomePage({ onBeginReading }: HomePageProps) {
           May Allah accept every contribution, purify our intentions, place barakah in our wealth, make this effort a
           means of guidance, and allow it to become a sadaqah jariyah for all who support it. Amin.
         </p>
+        <div className="home-actions support-actions">
+          <button className="home-primary-button" onClick={onBeginReading} type="button">
+            <BookOpen size={19} />
+            Begin Reading
+          </button>
+        </div>
       </section>
 
       <section className="home-section home-contact">
