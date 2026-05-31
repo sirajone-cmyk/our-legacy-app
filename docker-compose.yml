@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: our_legacy_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: our_legacy
+      POSTGRES_PASSWORD: our_legacy_dev
+      POSTGRES_DB: our_legacy
+    ports:
+      - "5432:5432"
+    volumes:
+      - our_legacy_pg:/var/lib/postgresql/data
+
+volumes:
+  our_legacy_pg:

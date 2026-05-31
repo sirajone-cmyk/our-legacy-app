@@ -1,0 +1,242 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  STUDENT
+  TEACHER
+  ADMIN
+  PARENT
+  SUPER_ADMIN
+}
+
+enum AccountStatus {
+  ACTIVE
+  INVITED
+  SUSPENDED
+  ARCHIVED
+}
+
+enum LessonStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ContentCategory {
+  AQIDAH
+  ADAB
+  SEERAH
+  QURAN
+  FIQH
+  HISTORY
+}
+
+model Organization {
+  id         String      @id @default(cuid())
+  name       String
+  slug       String      @unique
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  madrasahs  Madrasah[]
+  users      User[]
+  brandColor String      @default("#12332f")
+}
+
+model Madrasah {
+  id             String         @id @default(cuid())
+  organizationId String
+  name           String
+  region         String
+  status         AccountStatus  @default(ACTIVE)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  organization   Organization   @relation(fields: [organizationId], references: [id])
+  classes        ClassGroup[]
+  families       FamilyAccount[]
+  users          User[]
+  lessons        Lesson[]
+
+  @@index([organizationId])
+}
+
+model FamilyAccount {
+  id         String    @id @default(cuid())
+  madrasahId String
+  name       String
+  createdAt  DateTime  @default(now())
+  madrasah   Madrasah  @relation(fields: [madrasahId], references: [id])
+  guardians  User[]    @relation("GuardianFamilies")
+  students   User[]    @relation("StudentFamilies")
+
+  @@index([madrasahId])
+}
+
+model User {
+  id                String          @id @default(cuid())
+  organizationId    String
+  madrasahId        String?
+  email             String          @unique
+  name              String
+  passwordHash      String
+  role              UserRole
+  status            AccountStatus   @default(ACTIVE)
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+  organization      Organization    @relation(fields: [organizationId], references: [id])
+  madrasah          Madrasah?       @relation(fields: [madrasahId], references: [id])
+  guardianFamilies  FamilyAccount[] @relation("GuardianFamilies")
+  studentFamilies   FamilyAccount[] @relation("StudentFamilies")
+  teachingClasses   ClassGroup[]    @relation("TeacherClasses")
+  enrolledClasses   Enrollment[]
+  authoredLessons   Lesson[]        @relation("LessonTeacher")
+  progress          LessonProgress[]
+  quizAttempts      QuizAttempt[]
+
+  @@index([organizationId, role])
+  @@index([madrasahId])
+}
+
+model ClassGroup {
+  id         String       @id @default(cuid())
+  madrasahId String
+  teacherId String
+  name       String
+  level      String
+  year       Int
+  createdAt  DateTime     @default(now())
+  madrasah   Madrasah     @relation(fields: [madrasahId], references: [id])
+  teacher    User         @relation("TeacherClasses", fields: [teacherId], references: [id])
+  learners   Enrollment[]
+
+  @@index([madrasahId])
+  @@index([teacherId])
+}
+
+model Enrollment {
+  id        String     @id @default(cuid())
+  classId   String
+  userId    String
+  joinedAt  DateTime   @default(now())
+  class     ClassGroup @relation(fields: [classId], references: [id])
+  user      User       @relation(fields: [userId], references: [id])
+
+  @@unique([classId, userId])
+}
+
+model Lesson {
+  id              String          @id @default(cuid())
+  madrasahId      String?
+  teacherId       String
+  title           String
+  slug            String          @unique
+  level           String
+  category        ContentCategory
+  summary         String
+  bodyMarkdown    String
+  durationMinutes Int
+  status          LessonStatus    @default(DRAFT)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  publishedAt     DateTime?
+  madrasah        Madrasah?       @relation(fields: [madrasahId], references: [id])
+  teacher         User            @relation("LessonTeacher", fields: [teacherId], references: [id])
+  audioAssets     AudioAsset[]
+  quizzes         Quiz[]
+  progress        LessonProgress[]
+
+  @@index([madrasahId, status])
+  @@index([teacherId])
+}
+
+model AudioAsset {
+  id              String   @id @default(cuid())
+  lessonId        String?
+  title           String
+  storagePath     String
+  durationSeconds Int
+  transcript      String?
+  createdAt       DateTime @default(now())
+  lesson          Lesson?  @relation(fields: [lessonId], references: [id])
+
+  @@index([lessonId])
+}
+
+model DailyTalim {
+  id          String   @id @default(cuid())
+  title       String
+  arabic      String
+  translation String
+  reflection  String
+  action      String
+  publishDate DateTime @unique
+  createdAt   DateTime @default(now())
+}
+
+model Quiz {
+  id        String         @id @default(cuid())
+  lessonId  String
+  title     String
+  lesson    Lesson         @relation(fields: [lessonId], references: [id])
+  questions QuizQuestion[]
+  attempts  QuizAttempt[]
+
+  @@index([lessonId])
+}
+
+model QuizQuestion {
+  id            String   @id @default(cuid())
+  quizId        String
+  prompt        String
+  choices       Json
+  correctChoice String
+  explanation   String?
+  sortOrder     Int      @default(0)
+  quiz          Quiz     @relation(fields: [quizId], references: [id])
+}
+
+model QuizAttempt {
+  id          String   @id @default(cuid())
+  quizId      String
+  userId      String
+  score       Int
+  answers     Json
+  completedAt DateTime @default(now())
+  quiz        Quiz     @relation(fields: [quizId], references: [id])
+  user        User     @relation(fields: [userId], references: [id])
+
+  @@index([quizId])
+  @@index([userId])
+}
+
+model LessonProgress {
+  id          String   @id @default(cuid())
+  lessonId    String
+  userId      String
+  percent     Int      @default(0)
+  completed   Boolean  @default(false)
+  quizScore   Int?
+  lastAudioAt Int      @default(0)
+  updatedAt   DateTime @updatedAt
+  lesson      Lesson   @relation(fields: [lessonId], references: [id])
+  user        User     @relation(fields: [userId], references: [id])
+
+  @@unique([lessonId, userId])
+  @@index([userId])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String
+  metadata  Json?
+  createdAt DateTime @default(now())
+}
