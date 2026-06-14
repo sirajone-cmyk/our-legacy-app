@@ -73,18 +73,19 @@ button:focus-visible {
   animation: horizonRise 6.2s ease forwards;
 }
 
-.splash-stars,
+.splash-lantern-glow,
 .manuscript-texture {
   position: absolute;
   inset: 0;
 }
 
-.splash-stars {
+/* Subtle arabesque mesh — evokes illuminated manuscript grid */
+.splash-lantern-glow {
   background-image:
-    radial-gradient(circle, rgba(255, 250, 240, 0.72) 0 1px, transparent 1px),
-    radial-gradient(circle, rgba(231, 211, 161, 0.45) 0 1px, transparent 1px);
-  background-position: 0 0, 38px 52px;
-  background-size: 120px 120px, 170px 170px;
+    linear-gradient(rgba(231, 211, 161, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(231, 211, 161, 0.18) 1px, transparent 1px),
+    radial-gradient(ellipse at center, rgba(212, 168, 67, 0.12) 0%, transparent 65%);
+  background-size: 60px 60px, 60px 60px, 100% 100%;
   opacity: 0;
   animation: revealSoft 6.2s ease 1.6s forwards;
 }
@@ -1674,6 +1675,101 @@ body:has(.home-page) {
   background: rgba(255, 250, 240, 0.44);
 }
 
+.share-project {
+  margin: 32px 0;
+  padding: 24px;
+  border: 1px solid rgba(193, 135, 56, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.48);
+}
+
+.share-project h3 {
+  margin: 8px 0 10px;
+  color: #2d2926;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.18;
+}
+
+.share-project p {
+  max-width: 720px;
+  margin: 0;
+  color: #6a625b;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.share-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.share-actions a,
+.share-actions button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 16px;
+  border: 1px solid rgba(193, 135, 56, 0.32);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.72);
+  color: #7a5317;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.share-actions button {
+  appearance: none;
+  cursor: pointer;
+}
+
+.share-actions a:hover,
+.share-actions button:hover {
+  border-color: rgba(11, 61, 46, 0.32);
+  background: rgba(255, 255, 250, 0.92);
+  color: #0b3d2e;
+  transform: translateY(-1px);
+}
+
+.methodology-panel {
+  margin: 28px 0;
+  padding: 24px;
+  border: 1px solid rgba(193, 135, 56, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.48);
+}
+
+.methodology-panel h3 {
+  margin: 0 0 16px;
+  color: #2d2926;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  line-height: 1.18;
+}
+
+.methodology-panel p {
+  margin: 0 0 12px;
+}
+
+.methodology-panel p:last-child {
+  margin-bottom: 0;
+}
+
 .home-contact {
   padding-bottom: 80px;
 }
@@ -1838,11 +1934,19 @@ body:has(.home-page) {
 .book-reader-app {
   --book-font-scale: 1;
   position: relative;
-  min-height: 100vh;
+  /* Fixed-height container so only the stage scrolls, not the body/window */
+  height: 100dvh;
+  height: 100vh; /* fallback for browsers without dvh */
   overflow: hidden;
   background: #f7f4ef;
   color: #2f2b27;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body:has(.book-reader-app) {
+  overflow: hidden;
+  height: 100dvh;
+  height: 100vh;
 }
 
 .book-reader-app.night {
@@ -1852,10 +1956,372 @@ body:has(.home-page) {
 
 .book-reading-stage {
   display: grid;
-  min-height: 100vh;
+  /* Fill the whole viewport height so this — not the window — scrolls */
+  height: 100dvh;
+  height: 100vh; /* fallback */
   overflow-y: auto;
+  overflow-x: hidden;
+  /* Allow browser to handle vertical scroll natively — prevents accidental horizontal swipe */
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  /* Stop bounce from propagating to the window on iOS */
+  overscroll-behavior-y: contain;
   padding: clamp(40px, 8vh, 120px) clamp(18px, 6vw, 110px) 92px;
   scrollbar-gutter: stable both-edges;
+}
+
+/* Extra bottom padding for the read aloud bar (always shown) */
+.book-reader-app.has-read-aloud .book-reading-stage {
+  padding-bottom: 148px;
+}
+
+/* Extra bottom padding when BOTH read aloud bar AND audio player are visible */
+.book-reader-app.has-read-aloud.has-audio .book-reading-stage {
+  padding-bottom: 210px;
+}
+
+/* Legacy: audio player only (no read aloud) */
+.book-reader-app.has-audio .book-reading-stage {
+  padding-bottom: 150px;
+}
+
+/* ── Read Aloud bar ──────────────────────────────────────────────────────── */
+.book-read-aloud-bar {
+  position: fixed;
+  right: 0;
+  bottom: 64px;
+  left: 0;
+  z-index: 6;
+  padding: 9px 18px;
+  background: rgba(247, 244, 239, 0.97);
+  border-top: 1px solid rgba(184, 138, 50, 0.16);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* When pre-recorded audio player is also visible, push read aloud bar above it */
+.book-reader-app.has-audio .book-read-aloud-bar {
+  bottom: 124px;
+}
+
+.book-read-aloud-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.book-read-aloud-icon {
+  color: #bd7f2a;
+  flex-shrink: 0;
+}
+
+.book-read-aloud-label {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7a6b5a;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.book-read-aloud-controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.book-read-aloud-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(184, 138, 50, 0.28);
+  background: transparent;
+  color: #5a4a38;
+  font-size: 0.8rem;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  cursor: pointer;
+  transition: background 0.16s, border-color 0.16s;
+  white-space: nowrap;
+}
+
+.book-read-aloud-btn:hover {
+  background: rgba(184, 138, 50, 0.1);
+  border-color: rgba(184, 138, 50, 0.45);
+}
+
+.book-read-aloud-btn.primary {
+  background: #bd7f2a;
+  border-color: #bd7f2a;
+  color: #fff;
+}
+
+.book-read-aloud-btn.primary:hover {
+  background: #a36b22;
+  border-color: #a36b22;
+}
+
+.book-read-aloud-btn.danger {
+  border-color: rgba(160, 80, 60, 0.35);
+  color: #a0503c;
+}
+
+.book-read-aloud-btn.danger:hover {
+  background: rgba(160, 80, 60, 0.08);
+}
+
+.book-read-aloud-speed {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto;
+  padding: 4px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(184, 138, 50, 0.22);
+  background: transparent;
+  color: #7a6b5a;
+  font-size: 0.75rem;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.14s;
+}
+
+.book-read-aloud-speed:hover {
+  background: rgba(184, 138, 50, 0.1);
+}
+
+.book-read-aloud-status {
+  font-size: 0.74rem;
+  color: #bd7f2a;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-style: italic;
+  flex-shrink: 0;
+}
+
+/* Voice selector button */
+.book-read-aloud-voice-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(184, 138, 50, 0.22);
+  background: transparent;
+  color: #7a6b5a;
+  font-size: 0.72rem;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  cursor: pointer;
+  flex-shrink: 0;
+  max-width: 110px;
+  overflow: hidden;
+  transition: background 0.14s, border-color 0.14s;
+}
+
+.book-read-aloud-voice-btn:hover,
+.book-read-aloud-voice-btn.active {
+  background: rgba(184, 138, 50, 0.1);
+  border-color: rgba(184, 138, 50, 0.45);
+}
+
+.book-read-aloud-voice-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
+}
+
+/* Voice picker panel */
+.book-voice-picker {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 96vw);
+  max-height: 320px;
+  background: #faf7f2;
+  border: 1px solid rgba(184, 138, 50, 0.22);
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.book-voice-picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px 10px;
+  border-bottom: 1px solid rgba(184, 138, 50, 0.14);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4a3b2e;
+}
+
+.book-voice-picker-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #a8967e;
+  padding: 2px;
+  display: flex;
+}
+
+.book-voice-list {
+  overflow-y: auto;
+  flex: 1;
+  padding: 6px 8px;
+}
+
+.book-voice-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.14s;
+  gap: 8px;
+}
+
+.book-voice-item:hover {
+  background: rgba(184, 138, 50, 0.08);
+}
+
+.book-voice-item.active {
+  background: rgba(184, 138, 50, 0.14);
+}
+
+.book-voice-item.active .book-voice-item-name {
+  font-weight: 600;
+  color: #7a4f1a;
+}
+
+.book-voice-item-name {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.83rem;
+  color: #3a2e22;
+  flex: 1;
+  text-align: left;
+}
+
+.book-voice-item-meta {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.book-voice-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1px 5px;
+  border-radius: 6px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.book-voice-badge.hd {
+  background: rgba(189, 127, 42, 0.14);
+  color: #7a4f1a;
+}
+
+.book-voice-badge.online {
+  background: rgba(56, 140, 100, 0.12);
+  color: #2a6e4f;
+}
+
+.book-voice-lang {
+  font-size: 0.68rem;
+  color: #a8967e;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.book-voice-empty {
+  padding: 16px;
+  font-size: 0.82rem;
+  color: #a8967e;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  text-align: center;
+}
+
+.book-voice-tip {
+  padding: 10px 14px;
+  font-size: 0.72rem;
+  color: #7a6b5a;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  border-top: 1px solid rgba(184, 138, 50, 0.1);
+  line-height: 1.5;
+  background: rgba(184, 138, 50, 0.04);
+}
+
+/* Night mode */
+.book-read-aloud-bar.night {
+  background: rgba(16, 24, 32, 0.97);
+  border-top-color: rgba(184, 138, 50, 0.2);
+}
+
+.book-read-aloud-bar.night .book-read-aloud-label {
+  color: #a8967e;
+}
+
+.book-read-aloud-bar.night .book-read-aloud-btn {
+  color: #e8d5b8;
+  border-color: rgba(184, 138, 50, 0.25);
+}
+
+.book-read-aloud-bar.night .book-read-aloud-btn:hover {
+  background: rgba(184, 138, 50, 0.12);
+}
+
+.book-read-aloud-bar.night .book-read-aloud-speed {
+  color: #a8967e;
+  border-color: rgba(184, 138, 50, 0.22);
+}
+
+.book-read-aloud-bar.night .book-read-aloud-voice-btn {
+  color: #a8967e;
+  border-color: rgba(184, 138, 50, 0.22);
+}
+
+.book-read-aloud-bar.night .book-voice-picker {
+  background: #151e28;
+  border-color: rgba(184, 138, 50, 0.25);
+}
+
+.book-read-aloud-bar.night .book-voice-picker-header {
+  color: #e8d5b8;
+  border-bottom-color: rgba(184, 138, 50, 0.15);
+}
+
+.book-read-aloud-bar.night .book-voice-item-name {
+  color: #e0cdb0;
+}
+
+.book-read-aloud-bar.night .book-voice-item:hover {
+  background: rgba(184, 138, 50, 0.1);
+}
+
+.book-read-aloud-bar.night .book-voice-item.active {
+  background: rgba(184, 138, 50, 0.16);
+}
+
+.book-read-aloud-bar.night .book-voice-tip {
+  color: #a8967e;
+  border-top-color: rgba(184, 138, 50, 0.12);
 }
 
 .book-page {
@@ -2093,6 +2559,156 @@ body:has(.home-page) {
   color: #dfbd82;
 }
 
+.book-audio-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 28px 0;
+  padding: 18px 20px;
+  background: rgba(184, 138, 50, 0.07);
+  border: 1px solid rgba(184, 138, 50, 0.18);
+  border-radius: 10px;
+}
+
+/* ── Sticky audio player ───────────────────────────────────────────────── */
+.book-audio-player {
+  position: fixed;
+  right: 0;
+  /* Sits directly above the nav bar */
+  bottom: 64px;
+  left: 0;
+  z-index: 6;
+  padding: 10px 18px;
+  background: rgba(247, 244, 239, 0.97);
+  border-top: 1px solid rgba(193, 135, 56, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.book-audio-inner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.book-audio-play-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #bd7f2a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.14s;
+}
+
+.book-audio-play-btn:hover {
+  background: #a36b22;
+  transform: scale(1.06);
+}
+
+.book-audio-play-btn:active {
+  transform: scale(0.96);
+}
+
+.book-audio-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-audio-title {
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4a3b2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.01em;
+}
+
+.book-audio-track {
+  position: relative;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(193, 135, 56, 0.18);
+  cursor: pointer;
+  touch-action: none;
+}
+
+.book-audio-track-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 4px;
+  background: #bd7f2a;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+.book-audio-thumb {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: #bd7f2a;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: left 0.1s linear;
+}
+
+.book-audio-time {
+  flex-shrink: 0;
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+  color: #7a6b5a;
+  white-space: nowrap;
+}
+
+.book-audio-duration {
+  color: #a8967e;
+}
+
+.book-audio-vol-icon {
+  flex-shrink: 0;
+  color: #a8967e;
+}
+
+/* Night mode */
+.book-reader-app.night .book-audio-player {
+  background: rgba(16, 24, 32, 0.97);
+  border-top-color: rgba(184, 138, 50, 0.28);
+}
+
+.book-reader-app.night .book-audio-title {
+  color: #e8d5b8;
+}
+
+.book-reader-app.night .book-audio-track {
+  background: rgba(193, 135, 56, 0.22);
+}
+
+.book-reader-app.night .book-audio-time {
+  color: #a8967e;
+}
+
+.book-reader-app.night .book-audio-vol-icon {
+  color: #7a6b5a;
+}
+
 .book-reflection-prompt {
   margin-top: 34px;
   padding-top: 24px;
@@ -2120,6 +2736,32 @@ body:has(.home-page) {
   background: rgba(255, 251, 244, 0.58);
 }
 
+/* Back-to-library button in reader */
+.book-floating-back {
+  position: fixed;
+  z-index: 7;
+  top: calc(22px + env(safe-area-inset-top, 0px));
+  left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(247, 244, 239, 0.88);
+  color: #6f655d;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(18, 51, 47, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.book-reader-app.night .book-floating-back {
+  background: rgba(16, 24, 32, 0.84);
+  color: rgba(244, 234, 219, 0.72);
+}
+
 .book-floating-menu,
 .book-floating-tools {
   position: fixed;
@@ -2128,7 +2770,7 @@ body:has(.home-page) {
 }
 
 .book-floating-menu {
-  left: 22px;
+  left: 60px;
   display: grid;
   place-items: center;
   width: 46px;
@@ -2423,8 +3065,60 @@ body:has(.home-page) {
     grid-template-columns: 1fr;
   }
 
+  .share-project {
+    padding: 20px;
+  }
+
+  .methodology-panel {
+    padding: 20px;
+  }
+
+  .share-actions {
+    grid-template-columns: 1fr;
+  }
+
   .book-reading-stage {
     padding: 72px 20px 96px;
+  }
+
+  .book-reader-app.has-audio .book-reading-stage {
+    padding-bottom: 160px;
+  }
+
+  .book-reader-app.has-read-aloud .book-reading-stage {
+    padding-bottom: 152px;
+  }
+
+  .book-reader-app.has-read-aloud.has-audio .book-reading-stage {
+    padding-bottom: 220px;
+  }
+
+  .book-audio-player {
+    padding: 10px 14px;
+  }
+
+  .book-audio-title {
+    font-size: 0.78rem;
+  }
+
+  .book-audio-time {
+    font-size: 0.72rem;
+  }
+
+  .book-read-aloud-bar {
+    padding: 8px 14px;
+  }
+
+  .book-read-aloud-label {
+    display: none;
+  }
+
+  .book-read-aloud-btn span {
+    display: none;
+  }
+
+  .book-read-aloud-btn {
+    padding: 6px 10px;
   }
 
   .book-page {
@@ -2509,38 +3203,4 @@ body:has(.home-page) {
     font-size: 3rem;
   }
 
-  .ebook-splash-kicker,
-  .home-kicker,
-  .home-section-label,
-  .book-kicker,
-  .book-segment-label,
-  .book-sub-label,
-  .book-section-label {
-    letter-spacing: 0.24em;
-  }
-
-  .book-floating-menu {
-    left: 14px;
-  }
-
-  .book-floating-tools {
-    right: 14px;
-  }
-
-  .book-reader-nav {
-    justify-content: space-around;
-    gap: 4px;
-    padding: 0 8px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 1ms !important;
-  }
 }
