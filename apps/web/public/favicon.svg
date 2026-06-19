@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="geometricPrecision">
+
+  <!-- Background — OUR LEGACY forest green -->
+  <rect width="32" height="32" rx="6" ry="6" fill="#12332f"/>
+
+  <!-- Thin gold outer border -->
+  <rect x="1.5" y="1.5" width="29" height="29" rx="4.5" ry="4.5"
+        fill="none" stroke="#d4a843" stroke-width="0.6" opacity="0.55"/>
+
+  <!-- ── Open manuscript book ───────────────────────────────────── -->
+
+  <!-- Left page — slight perspective, curls away from spine -->
+  <path d="M15.5,8 Q9,8.5 5.5,10 L5.5,22 Q9,21 15.5,21.5 Z"
+        fill="#d4a843" opacity="0.90"/>
+
+  <!-- Right page -->
+  <path d="M16.5,8 Q23,8.5 26.5,10 L26.5,22 Q23,21 16.5,21.5 Z"
+        fill="#b88232" opacity="0.90"/>
+
+  <!-- Spine shadow between pages -->
+  <rect x="15.2" y="8" width="1.6" height="13.5" fill="#12332f" opacity="0.55"/>
+
+  <!-- Manuscript text lines — left page -->
+  <line x1="7.5"  y1="12"   x2="14"   y2="11.8" stroke="#12332f" stroke-width="0.75" opacity="0.35"/>
+  <line x1="7.5"  y1="14.5" x2="14"   y2="14.3" stroke="#12332f" stroke-width="0.75" opacity="0.35"/>
+  <line x1="7.5"  y1="17"   x2="14"   y2="16.8" stroke="#12332f" stroke-width="0.75" opacity="0.35"/>
+  <line x1="7.5"  y1="19.5" x2="12"   y2="19.3" stroke="#12332f" stroke-width="0.75" opacity="0.25"/>
+
+  <!-- Manuscript text lines — right page -->
+  <line x1="18"   y1="11.8" x2="24.5" y2="12"   stroke="#12332f" stroke-width="0.75" opacity="0.35"/>
+  <line x1="18"   y1="14.3" x2="24.5" y2="14.5" stroke="#12332f" stroke-width="0.75" opacity="0.35"/>
+  <line x1="18"   y1="16.8" x2="24.5" y2="17"   stroke="#12332f" stroke-width="0.75" opacity="0.35"/>
+  <line x1="18"   y1="19.3" x2="22"   y2="19.5" stroke="#12332f" stroke-width="0.75" opacity="0.25"/>
+
+  <!-- Book cover base — bottom of left page -->
+  <path d="M5.5,22 Q9,22.8 15.5,23 L15.5,24.5 Q9,24 5,23 Z"
+        fill="#b88232" opacity="0.75"/>
+
+  <!-- Book cover base — bottom of right page -->
+  <path d="M16.5,23 Q23,22.8 26.5,22 L27,23 Q23,24 16.5,24.5 Z"
+        fill="#9a6e28" opacity="0.75"/>
+
+  <!-- Spine base (binding) -->
+  <rect x="15.2" y="21.5" width="1.6" height="3" fill="#12332f" opacity="0.6"/>
+
+  <!-- Small gold ornament dot at top of spine -->
+  <circle cx="16" cy="7.5" r="1.2" fill="#d4a843" opacity="0.9"/>
+
+</svg>

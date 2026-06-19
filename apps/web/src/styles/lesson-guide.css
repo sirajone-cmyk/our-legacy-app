@@ -1,0 +1,849 @@
+/**
+ * OUR LEGACY — Lesson Companion Styles
+ *
+ * All selectors use the .lg- prefix.
+ * All colours use design token CSS custom properties.
+ * No hardcoded hex values.
+ */
+
+/* ── Screen layout ────────────────────────────────────────────────────────── */
+
+.lg-screen {
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  overscroll-behavior: contain;
+}
+
+.lg-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--paper);
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 20%, transparent);
+  padding: 0.875rem 1.25rem;
+}
+
+.lg-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--forest);
+  padding: 0;
+  letter-spacing: 0.01em;
+  transition: opacity 0.15s;
+}
+
+.lg-back-btn:hover { opacity: 0.7; }
+
+.lg-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Title block ──────────────────────────────────────────────────────────── */
+
+.lg-title-block {
+  padding: 1.25rem 0 1.75rem;
+  border-bottom: 2px solid var(--gold);
+  margin-bottom: 2rem;
+}
+
+.lg-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.4rem;
+}
+
+.lg-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-weight: 600;
+  color: var(--forest);
+  margin: 0 0 0.75rem;
+  line-height: 1.25;
+}
+
+.lg-meta-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.lg-timing {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: var(--font-ui);
+}
+
+.lg-use-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.lg-use-chip {
+  font-size: 0.72rem;
+  font-weight: 500;
+  font-family: var(--font-ui);
+  letter-spacing: 0.02em;
+  color: var(--forest);
+  background: color-mix(in srgb, var(--gold) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--gold) 35%, transparent);
+  border-radius: 100px;
+  padding: 0.25rem 0.65rem;
+}
+
+/* ── Section base ─────────────────────────────────────────────────────────── */
+
+.lg-section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+}
+
+.lg-section:last-of-type {
+  border-bottom: none;
+}
+
+.lg-section-heading {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 1rem;
+}
+
+.lg-prose {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink);
+  margin: 0;
+}
+
+.lg-summary-text {
+  background: var(--vellum);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.125rem;
+}
+
+/* ── Memory Gem ───────────────────────────────────────────────────────────── */
+
+.lg-memory-gem {
+  margin: 0;
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--forest) 6%, transparent),
+    color-mix(in srgb, var(--gold) 6%, transparent)
+  );
+  border: 1.5px solid color-mix(in srgb, var(--gold) 40%, transparent);
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1.25rem 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.lg-gem-mark {
+  font-size: 1.2rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+  line-height: 1.75;
+}
+
+.lg-memory-gem p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--forest);
+  margin: 0;
+}
+
+/* ── Key Facts table ──────────────────────────────────────────────────────── */
+
+.lg-key-facts-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lg-key-fact-row {
+  display: grid;
+  grid-template-columns: minmax(130px, 35%) 1fr;
+  gap: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+}
+
+.lg-key-fact-row:last-child { border-bottom: none; }
+
+.lg-fact-topic {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--forest);
+  background: var(--vellum);
+  padding: 0.75rem 0.875rem;
+  border-right: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+  display: flex;
+  align-items: flex-start;
+}
+
+.lg-fact-info {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink);
+  padding: 0.75rem 0.875rem;
+  margin: 0;
+}
+
+/* ── What We Learn table ──────────────────────────────────────────────────── */
+
+.lg-learn-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lg-learn-row {
+  display: grid;
+  grid-template-columns: minmax(130px, 35%) 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--vellum);
+  border-radius: 6px;
+  border-left: 3px solid var(--leaf);
+}
+
+.lg-learn-event {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--leaf);
+  display: flex;
+  align-items: flex-start;
+}
+
+.lg-learn-lesson {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ── Why Did Allāh Allow This? ────────────────────────────────────────────── */
+
+.lg-section-allah {
+  background: color-mix(in srgb, var(--forest) 3%, transparent);
+  margin: 0 -1.25rem;
+  padding: 1.5rem 1.25rem;
+  border-bottom: none;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+}
+
+.lg-allah-question {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--forest);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.lg-quran-box {
+  margin-top: 1.25rem;
+  background: var(--paper);
+  border: 1.5px solid color-mix(in srgb, var(--gold) 40%, transparent);
+  border-radius: 8px;
+  padding: 1rem 1.125rem;
+  text-align: center;
+}
+
+.lg-quran-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.35rem;
+  line-height: 2;
+  color: var(--forest);
+  margin: 0 0 0.5rem;
+}
+
+.lg-quran-translation {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--ink);
+  margin: 0 0 0.35rem;
+}
+
+.lg-quran-ref {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  margin: 0;
+}
+
+/* ── Family Discussion ────────────────────────────────────────────────────── */
+
+.lg-discussion-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.lg-discussion-card {
+  background: var(--vellum);
+  border-radius: 8px;
+  padding: 1rem 1.125rem;
+  border-left: 3px solid var(--forest);
+}
+
+.lg-discussion-q {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+  font-weight: 500;
+}
+
+.lg-discussion-hint {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
+.lg-hint-label {
+  font-weight: 600;
+  color: var(--forest);
+}
+
+/* ── Family Application ───────────────────────────────────────────────────── */
+
+.lg-application-box {
+  background: color-mix(in srgb, var(--gold) 8%, var(--paper));
+  border: 1.5px solid color-mix(in srgb, var(--gold) 35%, transparent);
+  border-radius: 10px;
+  padding: 1.125rem 1.25rem;
+}
+
+/* ── Quick Review ─────────────────────────────────────────────────────────── */
+
+.lg-review-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.lg-review-card {
+  border: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lg-review-question {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  padding: 0.75rem 1rem;
+  margin: 0;
+  background: var(--vellum);
+}
+
+.lg-review-answer {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--forest);
+  padding: 0.75rem 1rem;
+  margin: 0;
+  background: color-mix(in srgb, var(--leaf) 6%, var(--paper));
+  border-top: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+}
+
+.lg-review-reveal {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: none;
+  border: none;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--forest);
+  text-align: left;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+}
+
+.lg-review-reveal:hover {
+  background: color-mix(in srgb, var(--forest) 5%, transparent);
+}
+
+/* ── Explore Further ──────────────────────────────────────────────────────── */
+
+.lg-explore-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lg-explore-card {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+  background: var(--vellum);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+}
+
+.lg-explore-icon {
+  flex-shrink: 0;
+  color: var(--gold);
+  margin-top: 0.1rem;
+}
+
+.lg-explore-title {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--forest);
+  margin: 0 0 0.15rem;
+}
+
+.lg-explore-author {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+  font-style: italic;
+}
+
+.lg-explore-note {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ── Collapsible sections ─────────────────────────────────────────────────── */
+
+.lg-collapsible-section {
+  border-top: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+  margin-bottom: -1px;
+}
+
+.lg-collapsible-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: left;
+  transition: opacity 0.15s;
+}
+
+.lg-collapsible-trigger:hover { opacity: 0.75; }
+
+.lg-collapsible-body {
+  padding: 0 0 1.25rem;
+}
+
+/* ── Teacher Notes ────────────────────────────────────────────────────────── */
+
+.lg-audience-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.lg-audience-tab {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  border: 1.5px solid color-mix(in srgb, var(--forest) 30%, transparent);
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.lg-audience-tab.active,
+.lg-audience-tab:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: var(--champagne);
+}
+
+.lg-teacher-note-card {
+  background: var(--vellum);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  margin-bottom: 0.625rem;
+}
+
+.lg-teacher-note-heading {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--forest);
+  margin: 0 0 0.4rem;
+}
+
+.lg-teacher-note-body {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ── Reliability summary ──────────────────────────────────────────────────── */
+
+.lg-reliability-box {
+  background: var(--vellum);
+  border-radius: 8px;
+  padding: 1rem 1.125rem;
+}
+
+.lg-reliability-grade {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.lg-reliability-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Grade badges ─────────────────────────────────────────────────────────── */
+
+.lg-grade-badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 100px;
+  border: 1.5px solid transparent;
+}
+
+.lg-grade-established {
+  background: color-mix(in srgb, #2e6f5b 12%, transparent);
+  color: #1a4a3c;
+  border-color: color-mix(in srgb, #2e6f5b 30%, transparent);
+}
+
+.lg-grade-accepted {
+  background: color-mix(in srgb, #b88a32 10%, transparent);
+  color: #7a5a1a;
+  border-color: color-mix(in srgb, #b88a32 30%, transparent);
+}
+
+.lg-grade-discussion {
+  background: color-mix(in srgb, #3b6ea5 10%, transparent);
+  color: #234070;
+  border-color: color-mix(in srgb, #3b6ea5 30%, transparent);
+}
+
+.lg-grade-weak {
+  background: color-mix(in srgb, #999 10%, transparent);
+  color: #555;
+  border-color: color-mix(in srgb, #999 30%, transparent);
+}
+
+.lg-grade-rejected {
+  background: color-mix(in srgb, #c0392b 10%, transparent);
+  color: #7a1e18;
+  border-color: color-mix(in srgb, #c0392b 25%, transparent);
+}
+
+/* ── Authentication Notes ─────────────────────────────────────────────────── */
+
+.lg-auth-intro {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  font-style: italic;
+}
+
+.lg-auth-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lg-auth-note-card {
+  background: var(--vellum);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  border-left: 3px solid color-mix(in srgb, var(--muted) 30%, transparent);
+}
+
+.lg-auth-note-header {
+  margin-bottom: 0.5rem;
+}
+
+.lg-auth-claim {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--forest);
+  margin: 0 0 0.4rem;
+}
+
+.lg-auth-explanation {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.lg-auth-sources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.lg-auth-sources li {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding-left: 0.75rem;
+  position: relative;
+}
+
+.lg-auth-sources li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.65rem;
+  top: 0.1rem;
+}
+
+/* ── Connections ──────────────────────────────────────────────────────────── */
+
+.lg-connections-block {
+  margin-bottom: 1.25rem;
+}
+
+.lg-connections-block:last-child { margin-bottom: 0; }
+
+.lg-connections-sub {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.625rem;
+}
+
+.lg-connection-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.lg-connection-chip {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--forest);
+  background: var(--vellum);
+  border: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+}
+
+.lg-connection-chips--refs .lg-connection-chip {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+/* ── Mini timeline ────────────────────────────────────────────────────────── */
+
+.lg-mini-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 0.25rem;
+}
+
+.lg-mini-timeline-item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 0.625rem;
+  align-items: stretch;
+}
+
+.lg-mini-timeline-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.lg-mini-timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid var(--paper);
+  box-shadow: 0 0 0 1.5px var(--gold);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  z-index: 1;
+}
+
+.lg-mini-timeline-line {
+  flex: 1;
+  width: 2px;
+  background: color-mix(in srgb, var(--gold) 25%, transparent);
+  margin: 3px 0 0;
+}
+
+.lg-mini-timeline-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.875rem;
+  padding-top: 0.05rem;
+}
+
+.lg-mini-timeline-year {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.lg-mini-timeline-label {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-top: 0.15rem;
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────────── */
+
+.lg-footer {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lg-return-btn {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--forest);
+  background: none;
+  border: 1.5px solid color-mix(in srgb, var(--forest) 35%, transparent);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: all 0.15s;
+}
+
+.lg-return-btn:hover {
+  background: var(--forest);
+  color: var(--champagne);
+  border-color: var(--forest);
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  .lg-key-fact-row {
+    grid-template-columns: 1fr;
+  }
+
+  .lg-fact-topic {
+    border-right: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+    background: color-mix(in srgb, var(--gold) 8%, var(--vellum));
+  }
+
+  .lg-learn-row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .lg-learn-event {
+    font-size: 0.78rem;
+  }
+
+  .lg-use-chips {
+    gap: 0.3rem;
+  }
+
+  .lg-use-chip {
+    font-size: 0.68rem;
+  }
+}

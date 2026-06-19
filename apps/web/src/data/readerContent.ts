@@ -5,6 +5,38 @@ export type SacredTextBox = {
   reference?: string;
 };
 
+/**
+ * A translated variant of a section's text.
+ * Only add translations that have been reviewed by a scholar/teacher.
+ */
+export type ReaderSectionTranslation = {
+  heading?: string;
+  text?: string[];
+};
+
+/**
+ * Supported narration/translation language codes.
+ * 'en' is always the default (stored directly on the page).
+ * Other languages are optional and must be reviewed before publishing.
+ */
+export type NarrationLang = "en" | "ar" | "ur" | "zu";
+
+/**
+ * A full translated variant of a segment page.
+ * Arabic/Urdu/Zulu translations must be manually reviewed —
+ * never auto-translated.
+ */
+export type SegmentTranslation = {
+  /** Translated chapter title */
+  chapterTitle?: string;
+  /** Translated explanation paragraphs */
+  explanation?: string[];
+  /** Translated section texts (same order as parent sections array) */
+  sections?: ReaderSectionTranslation[];
+  /** Optional pre-recorded audio narration URL for this language */
+  audioUrl?: string;
+};
+
 export type ReaderSection = {
   heading?: string;
   text?: string[];
@@ -25,12 +57,24 @@ export type SegmentPage = {
   kind: "segment";
   segmentNumber: number;
   minutes: number;
+  /** Main Sīrah topic — shown as the page heading and sidebar title */
+  chapterTitle: string;
+  /** Virtue title shown as a supporting label beneath the chapter heading */
   heading: string;
+  /** Short virtue label shown in sidebar subtitle (e.g. "Virtue of Tawakkul") */
   subLabel: string;
   hadith: SacredTextBox;
   explanation: string[];
   sections: ReaderSection[];
   reflection: string;
+  /** Optional: path/URL to a pre-recorded English audio file for listen-along mode */
+  audioUrl?: string;
+  /**
+   * Optional translations for ar / ur / zu.
+   * Each language must be reviewed before publishing.
+   * English is always the base — stored directly on this page object.
+   */
+  translations?: Partial<Record<Exclude<NarrationLang, "en">, SegmentTranslation>>;
 };
 
 export type ReflectionPage = {
@@ -44,6 +88,8 @@ export type ClosingPage = {
   paragraphs: string[];
   duaArabic: string;
   duaTranslation: string;
+  /** Optional teaser for the next lesson — rendered below the duʿāʾ */
+  nextLessonPreview?: string;
 };
 
 export type PartDividerPage = {
@@ -71,8 +117,8 @@ export const readerLessons: ReaderLesson[] = [
   {
     id: "sirah_journey",
     seriesName: "Sīrah Series",
-    cardTitle: "Introduction to Sīrah",
-    cardSubtitle: "The Life of the Greatest",
+    cardTitle: "The Seal of the Prophets ﷺ",
+    cardSubtitle: "The Greatest Life Ever Lived",
     author: "Ustādh Hāshim",
     durationMinutes: 40,
     pages: [
@@ -80,15 +126,16 @@ export const readerLessons: ReaderLesson[] = [
         kind: "cover",
         series: "Sīrah Series",
         title: "OUR LEGACY",
-        subtitle: "Daily Family Taʿlīm",
-        lessonTitle: "Introduction to Sīrah: The Life of the Greatest",
+        subtitle: "The Greatest Life Ever Lived",
+        lessonTitle: "The Seal of the Prophets ﷺ",
         author: "Ustādh Hāshim",
-        part: "Opening Study"
+        part: "SirajOne"
       },
       {
         kind: "segment",
         segmentNumber: 1,
         minutes: 10,
+        chapterTitle: "What Does the Word Sīrah Mean?",
         heading: "Virtue: Īmān — The Foundation of Belief",
         subLabel: "Virtue of Īmān",
         hadith: {
@@ -130,6 +177,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 2,
         minutes: 10,
+        chapterTitle: "Why Do We Study Sīrah?",
         heading: "Virtue: Sunnah — The Way of Rasulūllāh ﷺ",
         subLabel: "Virtue of Sunnah",
         hadith: {
@@ -182,6 +230,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 3,
         minutes: 10,
+        chapterTitle: "The Love the Ṣaḥābah Had for Rasulūllāh ﷺ",
         heading: "Virtue: ʿIlm and Dhikr — Knowledge and Remembrance",
         subLabel: "Virtue of ʿIlm and Dhikr",
         hadith: {
@@ -239,6 +288,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 4,
         minutes: 10,
+        chapterTitle: "Developing a Muslim Identity",
         heading: "Virtue: Ikrām al-Muslim — Honouring Our Fellow Muslims",
         subLabel: "Virtue of Ikrām al-Muslim",
         hadith: {
@@ -295,7 +345,8 @@ export const readerLessons: ReaderLesson[] = [
           "May Allāh ﷻ forgive our shortcomings, accept our efforts, and gather us — and our families — in Jannatul Firdaws."
         ],
         duaArabic: "وَصَلَّى اللهُ عَلَى نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ",
-        duaTranslation: "Āmīn."
+        duaTranslation: "Āmīn.",
+        nextLessonPreview: "The story of Rasūlullāh  ﷺ did not begin with his birth. It began thousands of years earlier — with a father and his infant son left alone in a barren valley, with a mother running between two hills in desperate search of water, and with a spring that Allāh  ﷻ caused to burst from dry earth. In our next lesson, we travel back to the very beginning: to Ibrāhīm ʿalayhi us-salām, to Hājar, and to the sacred valley that would one day be called Makkah."
       },
       {
         kind: "part-divider",
@@ -310,6 +361,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 1,
         minutes: 10,
+        chapterTitle: "Ibrāhīm Leaves His Family in the Valley",
         heading: "Virtue: Tawakkul — Complete Trust in Allāh",
         subLabel: "Virtue of Tawakkul",
         hadith: {
@@ -381,6 +433,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 2,
         minutes: 10,
+        chapterTitle: "The Miracle of Zamzam",
         heading: "Virtue: Ṣabr — Patient Perseverance",
         subLabel: "Virtue of Ṣabr",
         hadith: {
@@ -439,6 +492,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 3,
         minutes: 10,
+        chapterTitle: "The Tribe of Jurhum and the Building of Makkah",
         heading: "Virtue: Ikhlāṣ and Niyyah — Sincerity and Intention",
         subLabel: "Virtue of Ikhlāṣ",
         hadith: {
@@ -500,6 +554,7 @@ export const readerLessons: ReaderLesson[] = [
         kind: "segment",
         segmentNumber: 4,
         minutes: 10,
+        chapterTitle: "Hāshim — The Great-Grandfather of Rasulūllāh ﷺ",
         heading: "Virtue: Ḥajj and ʿUmrah — The Pilgrimage",
         subLabel: "Virtue of Ḥajj",
         hadith: {
@@ -617,8 +672,784 @@ export const readerLessons: ReaderLesson[] = [
           "May Allāh ﷻ make us people of tawakkul, ṣabr, ikhlāṣ, service, gratitude, and love for Rasulūllāh ﷺ. May He allow us to understand the Sīrah deeply and pass this legacy to those who come after us."
         ],
         duaArabic: "وَصَلَّى اللهُ عَلَى نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ",
-        duaTranslation: "Āmīn."
+        duaTranslation: "Āmīn.",
+        nextLessonPreview: "The lineage was set. ʿAbdullāh and Āminah were married, and the world was being prepared. Allāh  ﷻ was about to give a sign — not through the sky, not through the earth, but through birds. Small birds with small stones, sent against an army of war elephants that had come to destroy the Kaʿbah. In our next lesson, we stand in Makkah in the Year of the Elephant and witness the miracle that announced to all of Arabia that something extraordinary was about to happen."
       }
+,
+      {
+        kind: "part-divider",
+        title: "The Year of the Elephant",
+        subtitle: "Part 3",
+        description: [
+          "The year the world was made ready.",
+          "The miracle that announced the coming of the final Messenger ﷺ."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "The Man Who Wanted to Destroy the Kaʿbah",
+        heading: "Virtue: Tawakkul — Trusting Allāh When You Cannot Fight",
+        subLabel: "When Human Power Meets Divine Protection",
+        hadith: {
+          type: "ayah",
+          arabic: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
+          translation: "Have you not seen what your Lord did to the People of the Elephant?",
+          reference: "Qurʾān 105:1"
+        },
+        explanation: [
+          "Before the greatest birth in human history, Allāh ﷻ arranged a sign. A sign so dramatic that the Arabs named an entire year after it. They called it ʿĀm al-Fīl — the Year of the Elephant. It was in that very year that Rasūlullāh ﷺ was born."
+        ],
+        sections: [
+          {
+            heading: "The World That Was Waiting",
+            text: [
+              "By the time ʿAbdullāh and Āminah were married, Makkah was already one of the most important cities in Arabia. Its importance did not come from its size or wealth alone — it came from something far older. At the centre of Makkah stood the Kaʿbah — the House of Allāh — the structure that Ibrāhīm ʿalayhi us-salām had built by divine command, in the same valley where Zamzam had gushed from the earth.",
+              "The Arabs came to Makkah from every corner of the peninsula. Whatever their beliefs — and many had drifted far from the pure faith of Ibrāhīm — they still held the Kaʿbah with a respect that went beyond ordinary things. It was as though something in the human soul recognised the sanctity of the place, even when the mind had forgotten why.",
+              "Quraysh — the tribe of ʿAbdullāh and Āminah — were the custodians of this House. This was their honour, their responsibility, and their identity. And this is the setting into which Rasūlullāh ﷺ was about to be born. But first, someone tried to destroy it all."
+            ]
+          },
+          {
+            heading: "The Man Who Came From the South",
+            text: [
+              "Far to the south, across the sea, the land of Yemen was under the rule of a powerful governor named Abraha. He was a man of great ambition and enormous military strength. He had built, in the city of Sanʿāʾ, a magnificent church — a structure of breathtaking beauty, decorated with gold and precious materials, designed to be the most impressive religious building the world had ever seen.",
+              "His purpose was clear: he wanted the Arabs to stop travelling north to Makkah and to come south to his church instead. He wanted to redirect the flow of pilgrims — and with them, the flow of prestige and wealth — away from the Kaʿbah and toward his own monument.",
+              "It did not work. The Arabs were not interested.",
+              "When a man from one of the Arab tribes desecrated Abraha's church in protest, his frustration turned to fury. He made a decision he believed would solve the problem permanently: he would march to Makkah and destroy the Kaʿbah itself. He assembled a vast army. At the front of his forces, he placed war elephants — great, towering creatures that no ordinary army could stand against. His lead elephant was called Maḥmūd. The army moved north toward Makkah, and no one could stop them."
+            ]
+          }
+        ],
+        reflection: "Abraha came with overwhelming power — and was stopped by birds. The greatest threat does not always require the greatest army. Sometimes Allāh  ﷻ answers with what we would never have imagined."
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "The House Has a Lord Who Will Protect It",
+        heading: "Virtue: Yaqīn — Certainty in Allāh Without Seeing the Answer",
+        subLabel: "ʿAbd al-Muṭṭalib Before Abraha",
+        hadith: {
+          type: "ayah",
+          arabic: "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+          translation: "And whoever places his trust in Allāh — He is sufficient for him.",
+          reference: "Sūrah al-Ṭalāq, 65:3"
+        },
+        explanation: [
+          "ʿAbd al-Muṭṭalib did not argue for the Kaʿbah. He did not plead. He simply stated a fact: the House belongs to Allāh  ﷻ, and Allāh  ﷻ will defend it. This is what yaqīn — certainty — looks like in practice. Not the absence of fear, but the presence of complete reliance on the One who holds all things."
+        ],
+        sections: [
+          {
+            heading: "The Meeting",
+            text: [
+              "ʿAbd al-Muṭṭalib — the grandfather of the Prophet ﷺ, the most respected man in Makkah — was the one who went out to meet Abraha.",
+              "Before the army arrived, Abraha's troops had swept through the surrounding area and taken camels. Among those taken were two hundred that belonged to ʿAbd al-Muṭṭalib himself. Word came: Abraha would see him.",
+              "When ʿAbd al-Muṭṭalib was brought before the commander, Abraha looked at him with a mixture of respect and surprise. ʿAbd al-Muṭṭalib was a man of remarkable dignity — tall, eloquent, deeply composed. Abraha had him seated beside him as an equal.",
+              "Abraha expected him to plead for the Kaʿbah. He had prepared his response for that conversation.",
+              "ʿAbd al-Muṭṭalib said nothing of the sort. He spoke only about his camels. He asked Abraha to return the two hundred camels that his soldiers had taken."
+            ]
+          },
+          {
+            heading: "The Answer That Changed Everything",
+            text: [
+              "Abraha was stunned. He said: “I looked at you and I respected you. But now you have spoken, and I think less of you. You come to speak to me about camels, while I have come to destroy the house that is the religion of your fathers?”",
+              "ʿAbd al-Muṭṭalib replied with words that have echoed through history: “I am the lord of the camels. The House has a Lord who will protect it.”",
+              "That was the entire argument. He would not plead for the Kaʿbah. It was not his place. The House belonged to Allāh ﷻ. Let Allāh ﷻ defend His own House. ʿAbd al-Muṭṭalib's job was to ask for what was his.",
+              "Abraha returned the camels."
+            ]
+          },
+          {
+            heading: "The Evacuation",
+            text: [
+              "ʿAbd al-Muṭṭalib returned to Makkah. He went to the Kaʿbah, took hold of the ring of its door, and called upon Allāh ﷻ to protect His House. Then he gave the order: the people of Makkah were to leave. They would go to the mountains surrounding the city and watch from there. No one was to stay and fight. This was not a battle that human hands could win.",
+              "Makkah was emptied. The people waited in the hills. Abraha's army began its final advance toward the city."
+            ]
+          }
+        ],
+        reflection: "ʿAbd al-Muṭṭalib did not stay to fight what he could not fight. He evacuated, he made duʿāʾ, and he left the outcome to Allāh ﷻ. Sometimes the most powerful thing we can do is step back and trust."
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Morning of the Birds",
+        heading: "The Miracle of Sūrah al-Fīl",
+        subLabel: "When Allāh Defends His Own House",
+        hadith: {
+          type: "ayah",
+          arabic: "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ",
+          translation: "And He made them like eaten straw.",
+          reference: "Qurʾān 105:5"
+        },
+        explanation: [
+          "The elephant stopped. The birds came. And the greatest army Arabia had ever seen was left in ruin — not by soldiers, not by weapons, but by the smallest creatures Allāh chose to send. This is what it looks like when Allāh defends what He has chosen."
+        ],
+        sections: [
+          {
+            heading: "The Elephant That Would Not Move",
+            text: [
+              "The lead elephant, Maḥmūd, walked to the edge of Makkah. And then it stopped.",
+              "The handlers beat it, prodded it, tried to force it forward. Maḥmūd would not move. He would sit, sinking his weight down, refusing to advance. When they turned him to face south, north, east — he would walk. When they turned him to face the Kaʿbah, he sat down and would not move."
+            ]
+          },
+          {
+            heading: "The Birds",
+            text: [
+              "Then something appeared on the horizon.",
+              "The sky filled with birds — flocks of them, coming in waves from the direction of the sea. Each bird carried three stones: one in its beak and one in each talon. The stones were small — hardened clay pellets, no bigger than a chickpea.",
+              "The birds flew over the army of Abraha and released the stones. Where the stones fell, the men they struck were destroyed. The army that had marched from Yemen — the most powerful military force the Arabian peninsula had seen — was left in ruin. Abraha himself was struck and retreated, dying before he could return home."
+            ]
+          },
+          {
+            sacredText: {
+              type: "ayah",
+              arabic: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ ﴿١﴾ أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ ﴿٢﴾ وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ ﴿٣﴾ تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ ﴿٤﴾ فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ ﴿٥﴾",
+              translation: "Have you not seen what your Lord did to the People of the Elephant? Did He not bring their plan to ruin? And He sent against them birds in flocks, striking them with stones of baked clay, and He made them like eaten straw.",
+              reference: "Qurʾān 105:1–5"
+            }
+          },
+          {
+            heading: "Why Allāh Chose This Moment",
+            text: [
+              "Here is something to sit with. The destruction of Abraha's army and the birth of Rasūlullāh ﷺ happened in the same year. Not in the same century. Not in the same decade. In the same year.",
+              "The Kaʿbah was the house that Ibrāhīm ʿalayhi us-salām had built by divine command — the house that would become, once more, the focal point of the world's faith when the final Messenger came to restore it. Allāh ﷻ did not allow that House to be destroyed in the year His final Messenger came into the world. He protected it visibly, miraculously, unmistakably — so that the year would be marked and remembered.",
+              "The birth of Rasūlullāh ﷺ arrived wrapped in a year that no one would ever forget."
+            ]
+          }
+        ],
+        reflection: "Allāh  ﷻ did not need a great army to defeat a great army. He needed birds and stones. This is the lesson the Year of the Elephant teaches us: the outcome belongs to Allāh  ﷻ alone."
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "The Birth of Rasūlullāh ﷺ",
+        heading: "A Mercy to All the Worlds — Arrives",
+        subLabel: "Monday, Rabīʿ al-Awwal, Year of the Elephant",
+        hadith: {
+          type: "ayah",
+          arabic: "وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ",
+          translation: "And We have not sent you except as a mercy to all the worlds.",
+          reference: "Sūrah al-Anbiyāʾ, 21:107"
+        },
+        explanation: [
+          "Before a single word of revelation, before anyone knew his name beyond the walls of Makkah, Allāh  ﷻ had already made His decision. Muḥammad  ﷺ would not come as a mercy to one tribe or one people. He would come as a mercy to all the worlds. A child born without a father, to a grieving mother, in a city of idols — was the mercy Allāh  ﷻ had been preparing the earth to receive."
+        ],
+        sections: [
+          {
+            heading: "The Loss That Came Before",
+            text: [
+              "Before we reach the birth, there is a grief to acknowledge.",
+              "ʿAbdullāh — the young father, the son of ʿAbd al-Muṭṭalib — did not live to see his child. He had gone on a journey to Shām, travelling for trade as the men of Quraysh did. On his return, he fell ill in the city of Yathrib — the city that would one day be called Madīnah. He stayed there, in the home of his maternal relatives, hoping to recover.",
+              "He did not recover.",
+              "ʿAbdullāh ibn ʿAbd al-Muṭṭalib died in Yathrib. He was a young man. He left behind a wife who was pregnant, a father who was grieving, and a legacy he could not have imagined.",
+              "When word reached Makkah, the family mourned. And Āminah was left to carry the remainder of her pregnancy without her husband. She was alone. She was grieving. And within her, she was carrying the greatest trust Allāh ﷻ had ever placed in a human womb."
+            ]
+          },
+          {
+            heading: "The Birth",
+            text: [
+              "In the month of Rabīʿ al-Awwal, in the Year of the Elephant, in the city of Makkah — a child was born.",
+              "The day was a Monday. This is something Rasūlullāh ﷺ confirmed himself, when he was asked about the significance of fasting on Mondays. He said that Monday was the day he was born — and also the day revelation first came to him. Monday held a meaning for him that went beyond ordinary time.",
+              "The child was born to Āminah bint Wahb. His grandfather ʿAbd al-Muṭṭalib was sent for — the old man who had stood before Abraha, who had held the ring of the Kaʿbah door and called upon Allāh to protect His House — he now held in his arms the child who would one day call all of humanity back to Allāh."
+            ]
+          },
+          {
+            heading: "The Name",
+            text: [
+              "ʿAbd al-Muṭṭalib carried the infant to the Kaʿbah. He stood in the House and gave thanks. He made duʿāʾ. And then he gave the child a name that no Arab child had been given before.",
+              "He named him Muḥammad.",
+              "When people asked why he had chosen a name not common among them, he said that he wanted this child to be praised — by the people of the earth and by Allāh in the heavens. The name Muḥammad means the one who is praised, the one who is repeatedly praised. ʿAbd al-Muṭṭalib did not know, in the full sense, what he was naming. But Allāh ﷻ guided that name.",
+              "The child who arrived without a father, to a grieving mother, in a city that had just witnessed a miracle — would grow up to become the human being about whom Allāh ﷻ said: And We have sent you only as a mercy to all the worlds.",
+              "That is who was born on that Monday in Makkah. That is Muḥammad ﷺ."
+            ]
+          }
+        ],
+        reflection: "He arrived without a father, to a grieving mother, in a year marked by an extraordinary miracle. Allāh  ﷻ orchestrated every detail. Nothing about this arrival was ordinary."
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "ʿAbd al-Muṭṭalib told Abraha: “The House has a Lord who will protect it.” What does this tell us about where he placed his trust — and what can we learn from that for our own lives?",
+          "Allāh chose the Year of the Elephant — a year of crisis and miraculous deliverance — as the year to send His final Prophet. What might that timing be telling us?",
+          "Āminah was pregnant, alone, and grieving — and yet she was carrying the greatest blessing in human history. How does this change the way we think about difficult times in our own lives?",
+          "The Prophet ﷺ told us he was born on a Monday. He also received the first revelation on a Monday. What does it mean to mark moments with significance — and how do we create that in our families?"
+        ],
+        actionPoint:
+          "Read Sūrah al-Fīl together as a family — all five verses. Read the meaning in your language. Then ask one person to answer: what did Allāh want us to remember from this? Make it a habit: every time a child memorises a new sūrah, read the meaning together. The Qurʾān was not only meant to be recited — it was meant to be understood."
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "We began today where we left off — with ʿAbdullāh and Āminah, the parents of Rasūlullāh ﷺ.",
+          "Before the birth, Allāh ﷻ showed the world what kind of year this was. An army that no human force could stop was destroyed by birds. The most powerful military commander in the region was turned away from the Kaʿbah by an elephant that refused to move. The House of Allāh stood.",
+          "Then, in the quiet aftermath of that miracle, Āminah gave birth on a Monday. A grandfather walked his newborn grandson to the Kaʿbah and named him Muḥammad — the praised one.",
+          "The world did not fully understand what had just happened. But Allāh ﷻ had sent into the world the one He would later describe as a mercy to all the worlds.",
+          "May Allāh ﷻ increase our love for Rasūlullāh ﷺ, deepen our understanding of his life, and make us worthy of his intercession on the Day we need it most."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
+        nextLessonPreview: "The child had entered the world — but the city of Makkah would not hold him for long. An old Arabian tradition called upon families of standing to send their newborns into the open desert, into clean air and simpler lives. A woman named Ḥalīmah set out from her tribe with barely any hope of finding a child to nurse. She would return with far more than she had come for. In our next lesson, we follow the infant Muḥammad  ﷺ into the desert — and discover the quiet, extraordinary blessings that surrounded him from the very first days of his life."
+      },
+      {
+        kind: "part-divider",
+        title: "The Desert Years",
+        subtitle: "Part 4",
+        description: [
+          "Ḥalīmah al-Saʿdiyyah and the tribe of Banū Saʿd.",
+          "The nursing years, the blessings of barakah, and the arrival of a mercy to all the worlds."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "A Custom That Carried Wisdom",
+        heading: "Virtue: Ḥikmah — The Wisdom in What Allāh Arranges",
+        subLabel: "Why the Desert Before the Mission",
+        hadith: {
+          type: "ayah",
+          arabic: "عَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ",
+          translation: "Perhaps you dislike something while it is good for you.",
+          reference: "Sūrah al-Baqarah, 2:216"
+        },
+        explanation: [
+          "Allāh ﷻ does not prepare His Prophets by accident. Every arrangement in the early life of Rasūlullāh ﷺ — including the years he would spend in the desert — was part of a preparation that the world would only understand much later. What looked like a simple social custom was, in truth, a divine arrangement for the greatest mission in human history."
+        ],
+        sections: [
+          {
+            heading: "A Custom That Carried Wisdom",
+            text: [
+              "To understand what comes next, we need to understand a practice that was common among the noble families of Makkah.",
+              "The city was a trading hub — busy, noisy, and crowded. The air of the cities was considered heavy, the dialects mixed, and the environment of urban life was seen as weakening for young children. The great families of Arabia had a long-standing tradition: when a child was born, they would arrange for him or her to be sent to live with a Bedouin family in the open desert for the first few years of life.",
+              "This was not abandonment. It was care — deeply considered care.",
+              "The desert offered things the city could not. Clean air and open land. Physical strength, built through a harder life. And above all, the Arabic language in its purest form. The Bedouin tribes spoke an Arabic untouched by the mixing of traders from Persia, Yemen, and Shām. A child raised among them would grow up speaking with clarity, precision, and beauty. For a family that valued eloquence — and Quraysh prized eloquence above almost everything — this was a priceless gift.",
+              "Every year, women from the surrounding desert tribes would make the journey to Makkah. They came as wet-nurses, offering to take infants back to their tribes in exchange for payment from the families. It was an arrangement that worked on both sides: the families got what they wanted for their children, and the women earned an income in difficult years."
+            ]
+          },
+          {
+            heading: "Why Did Allāh Choose Banū Saʿd?",
+            text: [
+              "The sending of Rasūlullāh ﷺ to the tribe of Banū Saʿd was not simply a social custom. Looking back, we can see at least five reasons why this was part of a divine arrangement.",
+              "Pure Arabic at its source. The dialect of Banū Saʿd was considered among the clearest and most eloquent in all of Arabia. A child raised among them would grow up speaking with precision and beauty — a gift that would serve Rasūlullāh ﷺ when he one day stood before all of humanity as its final Messenger.",
+              "Physical strength through a harder life. The desert built resilience. Rasūlullāh ﷺ would face decades of difficulty ahead — persecution, migration, battles, and grief. The desert years built the body and the character that would carry that weight.",
+              "Distance from the distractions of the city. Makkah was full of idols, noise, and the moral confusion of a busy trading city. The desert offered simplicity, space, and an upbringing free from those influences.",
+              "Clean air and open land. Away from the crowding and the diseases of city life, the child grew healthy and strong.",
+              "Divine preparation. Allāh ﷻ does not send His Prophets unprepared. Every arrangement in the early life of Rasūlullāh ﷺ — including the desert years — was part of a preparation we are only now able to look back and understand."
+            ]
+          }
+        ],
+        reflection: "Allāh ﷻ placed Rasūlullāh ﷺ in the desert before placing him before all of humanity. Think about what Allāh ﷻ may be preparing you for through the difficulties and simplicities of your own life right now."
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "The Women of Banū Saʿd Arrive in Makkah",
+        heading: "Virtue: Shukr — Gratitude for What We Cannot Yet See",
+        subLabel: "An Orphan Child and an Unlikely Choice",
+        hadith: {
+          type: "ayah",
+          arabic: "وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ",
+          translation: "And whoever fears Allāh — He will make a way out for him, and will provide for him from where he did not expect.",
+          reference: "Sūrah al-Ṭalāq, 65:2–3"
+        },
+        explanation: [
+          "The women of Banū Saʿd arrived in Makkah expecting to find children from well-to-do families with fathers who would pay them well. What none of them knew — what none of them could have imagined — was that the one child no one wanted would turn out to be the source of the greatest barakah any of them would ever see."
+        ],
+        sections: [
+          {
+            heading: "A Difficult Year",
+            text: [
+              "Among the tribes that made this annual journey was the tribe of Banū Saʿd ibn Bakr.",
+              "That year, a group of women from Banū Saʿd set out for Makkah. The journey itself told the story of the drought that had settled over the desert. One of those women, Ḥalīmah bint Abī Dhuʾayb, rode an old she-donkey — slow, tired, barely able to keep pace. Her own infant son cried through the nights of the journey because she herself had little milk to give him. Her husband, al-Ḥārith, accompanied her. They arrived in Makkah thin, weary, and hoping.",
+              "The women of Banū Saʿd went from household to household. Makkah's families came out to meet them. Arrangements were made. One by one, the women of Banū Saʿd each found a child to take."
+            ]
+          },
+          {
+            heading: "The Child No One Wanted",
+            text: [
+              "But there was one infant that no one seemed to want.",
+              "His father had passed away before he was born. This child had no living father. And this was a problem, because the custom was clear: the father paid the wet-nurse. No father meant no clear income. The other families had living fathers, living incomes, living futures. This infant had only his mother, his grandfather, and the care of Allāh ﷻ.",
+              "One by one, the women looked at this child and moved on.",
+              "Ḥalīmah had also passed him over — at first."
+            ]
+          }
+        ],
+        reflection: "Every woman of Banū Saʿd chose what seemed like the sensible option. The one who chose the orphan received what none of the others did. What does this tell us about where Allāh ﷻ places His barakah?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Woman Who Turned Back",
+        heading: "Virtue: Tawakkul — Trusting Allāh When You Cannot See the Answer",
+        subLabel: "The Decision That Changed a Household",
+        hadith: {
+          type: "ayah",
+          arabic: "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+          translation: "And whoever places his trust in Allāh — He is sufficient for him.",
+          reference: "Sūrah al-Ṭalāq, 65:3"
+        },
+        explanation: [
+          "When every other woman had found an infant and Ḥalīmah alone had nothing to show for the journey, she faced a choice: return to Banū Saʿd empty-handed, or try once more. Her husband said: go back — perhaps Allāh will bless us through him. That word ‘perhaps’ is the word of a person who does not claim certainty about Allāh’s gifts. He hoped. He trusted. And the hope was answered."
+        ],
+        sections: [
+          {
+            heading: "The Decision",
+            text: [
+              "When every other woman of Banū Saʿd had found a child and Ḥalīmah alone had nothing to show for the journey, she turned to her husband. She could not bear the thought of returning as the only woman in the group without a child to nurse. Her husband said to her: go back. Take the orphan. Perhaps Allāh will bless us through him.",
+              "And so Ḥalīmah turned back.",
+              "She went to the household of Āminah. She picked up the infant. And in that moment, before she had even carried him out of the house, something changed."
+            ]
+          },
+          {
+            heading: "The Blessings Began Immediately",
+            text: [
+              "When Ḥalīmah sat down to nurse him, she found that her breasts were suddenly full — full in a way they had not been throughout the entire difficult journey. She nursed the infant Muḥammad ﷺ until he was satisfied. She then turned to nurse her own son — and he too was satisfied. Both children slept.",
+              "Her husband went to their she-camel to milk her. He found the udders full, where they had been dry for months. They drank until they were full that night — something they had not done in a long time.",
+              "Her husband looked at her and said: “Ḥalīmah, do you realise that you have taken a blessed child?”",
+              "The blessings were becoming impossible to ignore."
+            ]
+          }
+        ],
+        reflection: "Ḥalīmah did not go back out of certainty. She went back out of desperation. Yet Allāh ﷻ honoured that choice. When you have done your best and still feel empty-handed, sometimes the answer is to try once more — and leave the outcome to Allāh ﷻ."
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "The Blessed Return",
+        heading: "Virtue: Barakah — Divine Increase in What Allāh Wills",
+        subLabel: "Two Years That Changed the Tribe of Banū Saʿd",
+        hadith: {
+          type: "hadith",
+          arabic: "اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا",
+          translation: "O Allāh, bless for us what You have provided for us.",
+          reference: "Sunan Abī Dāwūd, Hadīth 3730"
+        },
+        explanation: [
+          "Barakah is one of those Arabic words that no translation can fully capture. It means divine increase — a growth in good that comes not from the quantity of what you have, but from Allāh ﷻ placing His blessing inside it. A small amount with barakah feeds many. A little time with barakah produces much. Ḥalīmah experienced this in the most direct and undeniable way — and so did everyone around her."
+        ],
+        sections: [
+          {
+            heading: "The Journey Home",
+            text: [
+              "The morning came, and the group of women from Banū Saʿd prepared to leave Makkah.",
+              "Ḥalīmah’s old she-donkey — the one that had lagged behind the entire journey to Makkah, that had exhausted and frustrated the group with its slow, stumbling pace — now walked with such swiftness that the other women could no longer keep up. They called out to Ḥalīmah: “Is that the same donkey you came with?” She said: “Yes, by Allāh — it is the same donkey.”",
+              "Nothing had changed about the animal. Everything had changed about what she was carrying."
+            ]
+          },
+          {
+            heading: "Two Years of Barakah",
+            text: [
+              "The barakah did not stop at the journey. It settled into Ḥalīmah’s home like a permanent guest. Her sheep went out to graze each day and returned full of milk — while the sheep of her neighbours in Banū Saʿd came back dry. The other members of the tribe began to notice. They started sending their shepherds to graze wherever the shepherds of Ḥalīmah’s family went. If her flock grazed on a piece of land, that land gave them something. If her family’s animals ate from a pasture, the pasture was generous.",
+              "The people of Banū Saʿd witnessed this throughout the nursing years.",
+              "And through those years, the child grew. Ḥalīmah noticed that he grew well, remained healthy, and displayed qualities that often amazed those around him. She watched him with a mixture of love and wonder she could not fully put into words.",
+              "When the nursing period came to an end, Ḥalīmah returned to Makkah to bring him back to his mother Āminah. But she did not want to go. She asked — with sincerity, and with a mother’s reluctance — if she could keep the child a little longer. She spoke of the goodness he had brought into her home. Āminah agreed. Rasūlullāh ﷺ returned to Banū Saʿd for a further period.",
+              "The blessings continued."
+            ]
+          }
+        ],
+        reflection: "The neighbours of Ḥalīmah started sending their flocks to where hers grazed, trying to share in the barakah without knowing where it came from. Are there people or things in your life through which Allāh ﷻ has placed barakah — and are you conscious of it?"
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "Ḥalīmah almost left Makkah without him — but turned back because she did not want to go home empty-handed. Allāh ﷻ turned that simple, ordinary decision into one of the most blessed moments in the life of Banū Saʿd. Have you ever made a decision for a small reason and later realised that Allāh ﷻ had placed barakah inside that choice?",
+          "Every woman of Banū Saʿd chose the child with a living father — the ‘sensible’ choice. Ḥalīmah, almost by accident, chose differently. What does this teach us about the difference between what looks promising and what Allāh ﷻ has actually placed blessing inside?",
+          "The sheep of Ḥalīmah’s neighbours came home dry while hers came home full. The neighbours started sending their flocks to graze where hers grazed. They were trying to borrow the barakah without knowing where it came from. What does this tell us about the invisible effects a blessed person has on the people around them?",
+          "Ḥalīmah loved this child so much that when the two years ended and the time came to return him to his mother, she asked to keep him longer. What kind of woman must she have been? And what responsibility do we carry when Allāh ﷻ places a trust in our hands?"
+        ],
+        actionPoint: "This week, practise one thing the desert years gave to Rasūlullāh ﷺ: speak clearly and with care. At family taʿlīm tonight, each person says one thing they are grateful to Allāh ﷻ for — in one clear, complete sentence. No rushing. Speak as if the words matter, because they do. Then ask your children: who was Ḥalīmah? Let them explain it back in their own words."
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "We began today where the previous lesson ended — with a child who had just arrived into a world that did not yet fully know what it had received.",
+          "We followed the women of Banū Saʿd as they made their journey to Makkah in a difficult year. We watched as one by one they found their children — and as one infant was passed over by all of them, because he had no father to pay the nurse.",
+          "We watched as Ḥalīmah turned back — not out of great faith, but out of a simple unwillingness to go home empty-handed. And we saw what Allāh ﷻ placed inside that ordinary decision: a she-donkey that suddenly walked swiftly, a she-camel that gave milk after months of dryness, a household whose sheep returned full while the neighbours’ returned dry.",
+          "The people of Banū Saʿd witnessed years of barakah. They sent their flocks where her flock grazed. They could see the blessing, even if they could not name its source.",
+          "May Allāh ﷻ make us people who recognise barakah when He places it near us — and who treat the trusts He gives us with the love and care they deserve."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
+        nextLessonPreview: "The years with Ḥalīmah were years of blessing. But they were also years of preparation — and the next event in the life of Rasūlullāh ﷺ would show that the preparation was more extraordinary than anyone in Banū Saʿd had imagined. One afternoon, while the young Muḥammad ﷺ was playing near the tents with his foster-brother, two men appeared, dressed in white. In our next lesson, we explore one of the most astonishing events in the early life of Rasūlullāh ﷺ: The Opening of the Chest."
+      },
+      {
+        kind: "part-divider",
+        title: "The Opening of the Chest",
+        subtitle: "Part 5",
+        description: [
+          "Shaqq al-Ṣadr — the divine preparation of the heart of Rasūlullāh ﷺ.",
+          "The extraordinary afternoon in Banū Saʿd, and what it tells us about how Allāh ﷻ prepares those He loves."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "An Ordinary Afternoon",
+        heading: "Virtue: Tawakkul — Trusting the Plan You Cannot Yet See",
+        subLabel: "What Happened in Banū Saʿd",
+        hadith: {
+          type: "ayah",
+          arabic: "إِنَّ اللَّهَ بَالِغُ أَمْرِهِ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا",
+          translation: "Indeed, Allāh accomplishes His purpose. He has already set for everything a decreed extent.",
+          reference: "Sūrah al-Ṭalāq, 65:3"
+        },
+        explanation: [
+          "Allāh ﷻ does not give great responsibilities to unprepared people. He prepares the people He plans to entrust. Every detail of the early life of Rasūlullāh ﷺ — the desert years, the pure language, the simplicity of Bedouin life — was part of a divine arrangement whose full purpose none of those living through it could yet see."
+        ],
+        sections: [
+          {
+            heading: "An Ordinary Afternoon",
+            text: [
+              "There are days in history that begin like every other day — children playing in the open ground, animals moving in the distance, the unhurried life of the Bedouin stretching forward in every direction — and end unlike anything that has ever come before.",
+              "That afternoon in Banū Saʿd was one of those days.",
+              "The young Muḥammad ﷺ had gone out to play near the tents with his foster-brother, ʿAbdullāh ibn al-Ḥārith — the son of Ḥalīmah and her husband. The two boys had grown up side by side. It was the kind of ordinary afternoon neither of them would ever forget.",
+              "Nothing announced what was about to happen.",
+              "Two men appeared. They were dressed in white. They came with a calm and deliberate purpose, and they approached the young Muḥammad ﷺ.",
+              "The foster-brother watched what happened next — and then he ran.",
+              "He ran back to the camp the way a frightened child runs: straight to his mother, without looking behind him, his voice broken and urgent. He told her what he had seen. Two men had taken his brother. Something was happening.",
+              "Ḥalīmah did not wait to hear the rest. She and her husband al-Ḥārith ran toward where the boys had been playing."
+            ]
+          },
+          {
+            heading: "Found Standing",
+            text: [
+              "When they reached him, the young Muḥammad ﷺ was standing.",
+              "He was not on the ground. He was not injured. He was upright and clear-eyed — though his face was pale. He looked at Ḥalīmah with the steadiness of a child who has witnessed something beyond ordinary experience and is ready, quietly, to be asked about it.",
+              "She asked. He told her.",
+              "Two men had come to him. They had laid him on his back. They had opened his chest. They had taken out his heart and washed it carefully — in a vessel of water, cleaning it until it was completely pure. His heart was then returned to its place. The chest was closed. And the two men left.",
+              "His chest bore no wound. His body was unharmed.",
+              "The child who stood before Ḥalīmah was unharmed, calm, and protected by Allāh. Yet those who loved him sensed that something extraordinary had taken place."
+            ]
+          }
+        ],
+        reflection: "The morning had been ordinary. The afternoon was beyond words. Allāh ﷻ does not announce His arrangements in advance — He simply accomplishes them. How do we prepare ourselves to recognise what Allāh is doing when the extraordinary arrives?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "What Was Done — and What It Means",
+        heading: "Virtue: Ṣalāḥ al-Qalb — The Soundness of the Heart",
+        subLabel: "Divine Preparation Before a Great Mission",
+        hadith: {
+          type: "hadith",
+          arabic: "أَلَا وَإِنَّ فِي الْجَسَدِ مُضْغَةً إِذَا صَلَحَتْ صَلَحَ الْجَسَدُ كُلُّهُ وَإِذَا فَسَدَتْ فَسَدَ الْجَسَدُ كُلُّهُ أَلَا وَهِيَ الْقَلْبُ",
+          translation: "Indeed, in the body there is a piece of flesh — if it is sound, the whole body is sound; and if it is corrupt, the whole body is corrupt. Indeed, it is the heart.",
+          reference: "Ṣaḥīḥ al-Bukhārī, 52; Ṣaḥīḥ Muslim, 1599 (narrated by al-Nuʿmān ibn Bashīr)"
+        },
+        explanation: [
+          "This ḥadīth was spoken by Rasūlullāh ﷺ himself — the same Prophet whose heart was divinely prepared before the greatest mission in history was placed upon it. The event in Banū Saʿd was not simply extraordinary. It was an illustration, in the most direct way possible, of the very principle he would one day teach all of humanity: everything flows from the heart."
+        ],
+        sections: [
+          {
+            heading: "What Was Removed — and Why",
+            text: [
+              "The scholars of the Sīrah tradition describe what was removed from the heart of the young Muḥammad ﷺ as that which would otherwise have made it susceptible to the pull of this world — whatever might have weighed it down and made it vulnerable.",
+              "It is important to understand this clearly.",
+              "This was not done because there was something wrong with the Prophet ﷺ. He was, even as a child, a person of remarkable character and qualities. What was removed was not a sin, not a fault, not something he had chosen or done. It was a preparation — the way a vessel is washed before something precious is placed inside it. Not because the vessel was dirty. Because what was coming deserved a heart prepared to carry it.",
+              "The scholars explain that this event was part of Allāh's preparation of His Prophet ﷺ for the great mission that lay ahead. The heart had to be ready."
+            ]
+          },
+          {
+            heading: "The Lesson for All of Us",
+            text: [
+              "Rasūlullāh ﷺ himself taught us that the heart is the most important organ we carry — not for its biology, but for its spiritual condition. When it is sound, everything we do is sound: our words, our choices, our relationships, our worship. When it is corrupt, everything flows from that corruption.",
+              "We cannot have our hearts opened by angels. But we are not without tools. The Prophet ﷺ taught us that the heart can be polished: through dhikr, through Qurʾān, through seeking forgiveness, through sitting with people of goodness, through removing what hardens it.",
+              "The event in Banū Saʿd shows us the divine version of heart preparation. Our daily worship is our human version of the same act — making ourselves ready for whatever Allāh ﷻ has planned for us."
+            ]
+          }
+        ],
+        reflection: "The Prophet ﷺ told us that everything flows from the heart. Allāh ﷻ demonstrated that truth, literally, in his own life. What is one honest thing you can do this week for the health of your heart?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Fear of Those Who Loved Him",
+        heading: "Virtue: Amānah — Returning the Trust with Care",
+        subLabel: "Ḥalīmah and al-Ḥārith Respond",
+        hadith: {
+          type: "ayah",
+          arabic: "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا",
+          translation: "Indeed, Allāh commands you to return trusts to their rightful owners.",
+          reference: "Sūrah al-Nisāʾ, 4:58"
+        },
+        explanation: [
+          "Ḥalīmah and al-Ḥārith were not scholars. They were a Bedouin family who had been entrusted with a child they loved deeply. When something happened that they could not explain and could not protect against, they did the right thing: they brought the trust back to those it belonged to — with complete honesty, hiding nothing. That is amānah."
+        ],
+        sections: [
+          {
+            heading: "The Fear of Those Who Loved Him",
+            text: [
+              "Ḥalīmah and her husband were not frightened because the child had been harmed. He had not been harmed — they could see that clearly. They could see it in the stillness of his breathing, in the steadiness of his eyes, in the complete absence of fear in his expression.",
+              "They were frightened because they loved him. And when you love someone, the things you cannot explain frighten you more than the things that hurt.",
+              "They were a Bedouin family, far from scholars and far from scripture. They had witnessed extraordinary things in connection with this child before — the animals, the land, the unexpected abundance — but those had been blessings they could understand. This was something entirely different. This was direct, visible, and without explanation.",
+              "Al-Ḥārith turned to Ḥalīmah and said what a man says when he loves a child and knows that what is happening is beyond his reach: I fear that something has been destined for this child. Let us return him to his family before anything else occurs that we cannot account for.",
+              "He said it not with coldness. Not with rejection. He said it as a man who was responsible for a trust and knew, in that moment, that the trust was too great for him to carry alone."
+            ]
+          },
+          {
+            heading: "The Decision",
+            text: [
+              "They made the decision: they would return Muḥammad ﷺ to his mother Āminah in Makkah.",
+              "This was not a failure. This was love in action. Ḥalīmah had cared for this child for years. She had nursed him, protected him, loved him with the love of a mother. And now, when she encountered something beyond her understanding, she brought him safely home — to the person who had entrusted him to her in the first place.",
+              "That is what a person of amānah does. They hold the trust with care. And when they can no longer hold it, they return it — honestly, completely, and with nothing hidden."
+            ]
+          }
+        ],
+        reflection: "Ḥalīmah returned the trust with complete honesty — she hid nothing from Āminah. Think about the trusts you are currently holding. Are you caring for them the way Allāh ﷻ would want? And if something is beyond you, are you honest enough to say so?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "The Return to Āminah",
+        heading: "Virtue: Yaqīn — Certainty in What Allāh Has Arranged",
+        subLabel: "A Mother Who Already Knew",
+        hadith: {
+          type: "ayah",
+          arabic: "وَاللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ",
+          translation: "And Allāh knows, and you do not know.",
+          reference: "Sūrah al-Baqarah, 2:232"
+        },
+        explanation: [
+          "Āminah had carried this child and had been given, in her own way, a form of prior knowledge. When Ḥalīmah arrived with the news of what had happened, Āminah was not afraid. She had been prepared, by Allāh ﷻ, for exactly this conversation. Her certainty was not ignorance — it was the certainty that Allāh ﷻ was at work."
+        ],
+        sections: [
+          {
+            heading: "The Arrival in Makkah",
+            text: [
+              "Ḥalīmah journeyed to Makkah and brought the young Muḥammad ﷺ to his mother.",
+              "When Āminah saw them arrive — earlier than expected, the foster-mother with the child — she knew immediately that something had happened. She asked.",
+              "Ḥalīmah told her everything. The afternoon. The two men. What the foster-brother had seen. What the young Muḥammad ﷺ had said when they found him standing. She withheld nothing."
+            ]
+          },
+          {
+            heading: "A Mother Who Already Knew",
+            text: [
+              "Āminah listened to all of it. And she was not afraid.",
+              "There was no alarm in her face. No panic. No attempt to dismiss what she was being told. She heard it with the stillness of a woman who had been carrying her own knowledge for years — knowledge that had come to her long before this child arrived in the world.",
+              "The books of Sīrah mention that Āminah had witnessed signs before the birth of her son, including reports of a light that she saw — signs that had reached, she was told, across to distant lands in the north. She had sensed, in a way she could not fully explain, that the child she was carrying was not like other children. She had been prepared in her own way, by Allāh ﷻ, for exactly this conversation.",
+              "She told Ḥalīmah: do not fear for him. He is protected.",
+              "Ḥalīmah placed the child back with his mother. Āminah held her son — the son she had placed in Ḥalīmah's care years before, and who had now returned to her, watched over by the One who had arranged every detail of his life since before he was born.",
+              "The reunion was quiet. But it was complete."
+            ]
+          }
+        ],
+        reflection: "Āminah was calm not because she did not understand what had happened, but because she had already been given, in her own way, the knowledge to receive it. Allāh ﷻ prepares not only those He sends — but those who receive them. Is there a difficulty in your life right now for which Allāh ﷻ may already have been quietly preparing you?"
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "Allāh ﷻ prepared the heart of Rasūlullāh ﷺ before giving him the greatest responsibility in human history. What does this tell us about when Allāh ﷻ begins preparing those He loves — and what might He be preparing you for right now, through circumstances you do not yet fully understand?",
+          "Ḥalīmah was frightened by something that was, in truth, a mercy — even though she could not see it that way at the time. Have you ever been afraid of something that later revealed itself to be Allāh ﷻ at work in your life?",
+          "Rasūlullāh ﷺ was found standing, calm, and able to describe everything clearly. While those around him were afraid, he was at peace. What does it take to reach that level of trust in Allāh ﷻ — and what is one step you can take toward it?",
+          "Āminah was not alarmed. She had been given her own form of prior preparation. What does this tell us about how Allāh ﷻ prepares not only the Prophet ﷺ himself, but the people around him — the mothers, the caregivers, the witnesses?"
+        ],
+        actionPoint: "This week, choose one deliberate act for the health of your heart. The Prophet ﷺ told us that the heart is the most important thing we carry. Step away from one thing that hardens the heart — or add one thing that softens it: ten minutes of Qurʾān, a moment of sincere tawbah, or a word of reconciliation with someone you have wronged. Tell one person in your family what you chose. Making it known makes it real. At family taʿlīm tonight, ask each person: what is Shaqq al-Ṣadr? What does it mean? Let the children explain it back in their own words."
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "We began today where the previous lesson ended — with Rasūlullāh ﷺ still in the land of Banū Saʿd, living the quiet, blessed life of the desert. Years of barakah. Years of preparation.",
+          "One afternoon, in the open ground near the tents, two men appeared and did something that no one present could fully explain. They opened the chest of the young Muḥammad ﷺ, washed his heart, and returned it — leaving him standing, calm, and unharmed.",
+          "His foster-brother ran in terror. Ḥalīmah and her husband found the child standing and heard everything he described. Out of love, out of care, and out of the honest acknowledgement that this was beyond them — they brought him back to his mother.",
+          "Āminah heard everything. And she was not afraid. She had already been prepared, in her own way, for exactly this news.",
+          "The scholars explain that this event was part of Allāh's preparation of His Prophet ﷺ for the great mission that lay ahead. Allāh ﷻ does not give great responsibilities to unprepared people. He prepares the people He plans to entrust — before the mission arrives, before the title is given, before anyone else can see what is coming.",
+          "May Allāh ﷻ purify our hearts, prepare us for the responsibilities He has decreed for us, and make us people who return every trust we carry with the care and honesty it deserves."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
+        nextLessonPreview: "The desert years were over. Rasūlullāh ﷺ had returned to Makkah, to his mother Āminah — and for the first time since his infancy, there was something like ordinary life. But Āminah had something she had wanted to do for years. To the north of Makkah lay Yathrib — the city where her husband ʿAbdullāh had died before his son was born. She had never visited his grave. She had never taken the young Muḥammad ﷺ to meet the family of his father who still lived there. The time had come for that journey. In our next lesson, we travel north with Āminah and her son."
+      },
+
+      // ── Lesson 6 — The Death of Āminah ──────────────────────────────────────
+
+      {
+        kind: "part-divider",
+        title: "The Death of Āminah",
+        subtitle: "Part 6",
+        description: [
+          "The journey to Yathrib, the death of Āminah bint Wahb at Al-Abwāʾ, and the return of a full orphan to the care of his grandfather.",
+          "Allāh shelters those He has chosen — even through loss."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "Who Was Āminah?",
+        heading: "Virtue: Ṣabr — Patience That Carries a Generation",
+        subLabel: "The Noble Mother of the Final Prophet ﷺ",
+        hadith: {
+          type: "ayah",
+          arabic: "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ",
+          translation: "Did He not find you an orphan and give you shelter?",
+          reference: "Sūrah al-Ḍuḥā, 93:6"
+        },
+        explanation: [
+          "This verse was revealed after prophethood — Allāh ﷻ looking back at the life of His Prophet ﷺ and naming what He had done for him at every stage. Before we reach the death of Āminah, we must know the life of Āminah. She carried, raised, and loved the greatest human being who would ever walk the earth — alone, widowed, with patience and dignity — and she did it without knowing what her son would become."
+        ],
+        sections: [
+          {
+            heading: "A Noble Woman of Makkah",
+            text: [
+              "Āminah bint Wahb came from one of the most respected families in Makkah. Her father, Wahb ibn ʿAbd Manāf ibn Zuhra, was a chief of his clan — the tribe of Zuhra. Her family was known for nobility, honour, and good character. When she married ʿAbdullāh ibn ʿAbd al-Muṭṭalib — the most beloved son of the great chieftain of Makkah — it was considered one of the finest marriages of that generation.",
+              "But her joy was to be short-lived. ʿAbdullāh set out on a trading journey to Shām. On the return, he fell ill in Yathrib — the city that would one day be called Madīnah — where his maternal relatives lived. There, far from his family, far from the wife who was carrying his child — ʿAbdullāh ibn ʿAbd al-Muṭṭalib passed away.",
+              "Āminah received the news while still pregnant. She gave birth alone, widowed, grieving — and yet she carried herself with dignity and patience. She named her son Muḥammad."
+            ]
+          },
+          {
+            heading: "A Mother's Love",
+            text: [
+              "She raised him. She loved him. She told him about his father. When the time came for him to spend his early years with the wet-nurse Ḥalīmah al-Saʿdiyyah among the tribe of Banū Saʿd — the noble custom of the Arabs of Makkah — she agreed, though it meant separation. When he returned, she held him close.",
+              "She was a widow, a single mother in a society where such things were not easy, and yet she was described in the books of Sīrah as a woman of nobility, dignity, and deep affection for her son.",
+              "Now she wanted to do something she had carried in her heart for years. To take her son to Yathrib — to the city where his father was buried, to the relatives who still lived there, to give the young Muḥammad ﷺ a connection to the father he had never met."
+            ]
+          }
+        ],
+        reflection: "Āminah raised the Prophet ﷺ alone — widowed, grieving, in a society that offered no easy path for a woman in her position. Yet she is remembered with honour in every account of the Sīrah. What does patience in loss look like when no one around you understands its depth? And what does her story teach us about the mothers in our own families and communities who carry what others cannot see?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "The Journey to Yathrib",
+        heading: "Virtue: Ṣilat al-Arḥām — Honouring the Ties That Allāh Has Joined",
+        subLabel: "Five Hundred Kilometres Through the Desert",
+        hadith: {
+          type: "hadith",
+          arabic: "مَنْ أَحَبَّ أَنْ يُبْسَطَ لَهُ فِي رِزْقِهِ وَيُنْسَأَ لَهُ فِي أَثَرِهِ فَلْيَصِلْ رَحِمَهُ",
+          translation: "Whoever wishes to have his provision expanded and his lifespan extended, let him maintain his family ties.",
+          reference: "Ṣaḥīḥ al-Bukhārī, 5985; Ṣaḥīḥ Muslim, 2557 (narrated by Anas ibn Mālik)"
+        },
+        explanation: [
+          "The journey Āminah made — five hundred kilometres through the desert with a six-year-old child — was not a casual trip. It was an act of love and an act of ṣilat al-arḥām: connecting her son to his roots, to his father's grave, to the family that remained in Yathrib. The Prophet ﷺ himself later taught that maintaining family ties brings barakah in provision and in life. His own earliest journey beyond Makkah was made in service of that very principle."
+        ],
+        sections: [
+          {
+            heading: "Preparing for the Road",
+            text: [
+              "Some time after the young Muḥammad ﷺ had returned from Banū Saʿd — the books of Sīrah tell us he was approximately six years old — his mother Āminah made a decision. She would travel to Yathrib.",
+              "There were two reasons: to visit the grave of ʿAbdullāh, so that her son could know where his father was buried. And to visit her maternal relatives — some reports mention the clan of Banū ʿAdī ibn al-Najjār — who lived in that city.",
+              "It was a long journey. From Makkah to Yathrib is approximately five hundred kilometres through the Ḥijāz desert. But Āminah was determined. Accompanying her were her young son Muḥammad ﷺ; and Umm Ayman — also known as Barakah al-Ḥabashiyyah — the devoted Ethiopian servant who had cared for the household since the time of ʿAbdullāh. The Prophet ﷺ would later call her: my mother after my mother."
+            ]
+          },
+          {
+            heading: "A Month in Yathrib",
+            text: [
+              "When they arrived in Yathrib, they were welcomed. The young Muḥammad ﷺ — for the first time in his life — visited the city that Allāh would one day make the greatest city on earth. He played with the children of Banū Najjār. He walked the streets. He breathed air that would one day be the air of the City of the Prophet ﷺ.",
+              "The books of Sīrah mention that he learnt to swim in a pool belonging to the clan of Banū Najjār during this visit. He spent time with his maternal relatives and, perhaps most importantly, he stood at the grave of his father — the grave of ʿAbdullāh ibn ʿAbd al-Muṭṭalib.",
+              "What did the young child feel as he stood at that grave? We are not told. But Allāh knows. They remained in Yathrib for approximately one month. Then Āminah prepared for the return journey home to Makkah."
+            ]
+          }
+        ],
+        reflection: "Āminah made a five-hundred-kilometre journey through the desert so that her six-year-old son could stand at his father's grave and meet the family he had never known. She understood that roots matter — that a child needs to know where they come from. Is there a connection in your family — a relative, a history, a story — that your children do not yet know? What would it mean to give it to them?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "Al-Abwāʾ — The Death of Āminah",
+        heading: "Virtue: Sabr al-Musībah — Patience at the Moment of Calamity",
+        subLabel: "She Could Travel No Further",
+        hadith: {
+          type: "ayah",
+          arabic: "الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+          translation: "Those who, when disaster strikes them, say: Indeed we belong to Allāh, and indeed to Him we will return.",
+          reference: "Sūrah al-Baqarah, 2:156"
+        },
+        explanation: [
+          "Allāh ﷻ does not promise His servants a life without calamity. He promises, to those who receive calamity with patience and with the return of their hearts to Him, something greater: His own closeness, His mercy, and His guidance. What happened at Al-Abwāʾ was not a mistake. It was a decree. And the young Muḥammad ﷺ — six years old — stood in the middle of it."
+        ],
+        sections: [
+          {
+            heading: "Illness on the Road",
+            text: [
+              "The return journey began. They left Yathrib heading south — back through the desert, back toward Makkah, back toward home.",
+              "But somewhere on the road, Āminah bint Wahb fell ill. The desert heat, the long journey, the years of grief she had carried since ʿAbdullāh's death — whatever Allāh had decreed, her body began to weaken.",
+              "They reached a place called Al-Abwāʾ — a village lying between Makkah and Madīnah, closer to the Madīnah side, on the ancient Ḥijāz road that connected the two cities. It was here that the caravan stopped. It was here that Āminah could travel no further."
+            ]
+          },
+          {
+            heading: "She Left This World",
+            text: [
+              "At Al-Abwāʾ, Āminah bint Wahb passed from this world. The books of Sīrah record that she died during this return journey. She was young — scholars estimate she was in her mid-to-late twenties. Her son was six years old.",
+              "Muḥammad ﷺ was present. He was there when she died. He was six years old, in the middle of the desert, far from home, and he watched his mother leave this world.",
+              "She was buried there, at Al-Abwāʾ, in the earth of the Ḥijāz — far from Makkah, far from the grave of her husband — in a place that would become known to all of history because of the love her son ﷺ carried for her for the rest of his life.",
+              "Umm Ayman, with her own eyes weeping, took the young orphan's hand."
+            ]
+          }
+        ],
+        reflection: "The Prophet ﷺ was six years old when he lost his mother. He had already lost his father before he was born. He had been separated from his foster-mother. He had experienced the Shaqq al-Ṣadr. Now this. Allāh ﷻ did not protect His Prophet from grief — He strengthened him through it. What does this tell us about our own trials? And how does it change the way we see the orphans and the bereaved in our own communities?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "He Wept at Her Grave",
+        heading: "Virtue: Raḥmah — The Mercy That Makes Us Human",
+        subLabel: "Love That Does Not End with Death",
+        hadith: {
+          type: "hadith",
+          arabic: "اسْتَأْذَنْتُ رَبِّي أَنْ أَسْتَغْفِرَ لَهَا فَلَمْ يُؤْذَنْ لِي وَاسْتَأْذَنْتُ أَنْ أَزُورَ قَبْرَهَا فَأُذِنَ لِي فَزُورُوا الْقُبُورَ فَإِنَّهَا تُذَكِّرُكُمُ الْمَوْتَ",
+          translation: "I asked my Lord's permission to seek forgiveness for her, but I was not given permission. And I asked His permission to visit her grave, and I was given permission. So visit graves, for they remind you of death.",
+          reference: "Ṣaḥīḥ Muslim, Kitāb al-Janāʾiz, Ḥadīth 976"
+        },
+        explanation: [
+          "This ḥadīth is one of the most moving in the entire Sīrah. The man who bore the message of the entire universe — who spoke to kings, who led armies, who received revelation from Allāh — stood at a grave in the desert and wept for his mother. He was not ashamed of his tears. He was not told that weeping is weakness. His tears were love. His tears were mercy. His tears were the mark of a heart that remembered."
+        ],
+        sections: [
+          {
+            heading: "The Return to Makkah",
+            text: [
+              "Umm Ayman brought the young Muḥammad ﷺ back to Makkah. She walked that road with a grieving six-year-old orphan and delivered him to his grandfather, ʿAbd al-Muṭṭalib — the great chieftain of Quraysh, the old man who had wept with joy at his birth, who had named him Muḥammad, who had watched over him since his father's death.",
+              "Now his mother was gone too.",
+              "The books of Sīrah tell us that ʿAbd al-Muṭṭalib received his grandson with sorrow and love, and took him under his full care and protection. The young Muḥammad ﷺ — six years old, an orphan without father or mother — entered the house of his grandfather. And Allāh ﷻ was watching over him."
+            ]
+          },
+          {
+            heading: "Decades Later — He Stood at Her Grave",
+            text: [
+              "Decades later, after prophethood had come and the message of Islām was spreading across Arabia — the Prophet ﷺ passed by Al-Abwāʾ during one of the expeditions of Islām. He stopped. He visited his mother's grave. And he wept.",
+              "Those around him wept too — not knowing at first exactly why, only knowing that the Prophet ﷺ was weeping, and that when the Prophet ﷺ wept, something real was happening.",
+              "Then he spoke the words recorded in Ṣaḥīḥ Muslim: that he had asked permission to seek forgiveness for her, and was not granted it. That he had asked permission to visit her grave, and was granted that. And that the companions should visit graves — because visiting graves reminds us of death.",
+              "He did not hide his grief. He did not apologise for his tears. He stood at the grave of his mother and loved her openly, without shame, in front of his companions — and then he turned that love into a lesson that has reached every Muslim who has ever lived."
+            ]
+          }
+        ],
+        reflection: "The Prophet ﷺ wept at his mother's grave decades after her death. He never forgot her. He was not too grand, too busy, too important to stand at a grave and be a son who missed his mother. When is the last time you made duʿāʾ for your parents — living or departed? What would it mean to take one moment, right now, to remember them before Allāh?"
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "Āminah was a young widow who raised the Prophet ﷺ alone and then passed away on a journey. What does her life teach us about patience, sacrifice, and the quiet heroism of mothers who carry what others cannot see?",
+          "The Prophet ﷺ was present when his mother died — at six years old, in the desert, far from home. Allāh did not protect him from this grief. He strengthened him through it. What does this tell us about the relationship between hardship and preparation?",
+          "Umm Ayman walked the young orphan back to Makkah. She was a servant. She had no obligation beyond what she chose to give. Yet she gave everything — and the Prophet ﷺ honoured her for life, calling her 'my mother after my mother.' What does this teach us about how Allāh places people in our lives at the right time?",
+          "The Prophet ﷺ wept at his mother's grave after prophethood — openly, without shame. What does this tell us about how Islām views grief, emotion, and the love between a child and a parent?"
+        ],
+        actionPoint: "Within the next 24 hours: call or visit a parent, grandparent, or elder in your family. Tell them you love them. Make duʿāʾ for them by name. If they have already passed, sit quietly and recite Sūrah al-Fātiḥah for their soul. The Prophet ﷺ never forgot his mother. Neither should we forget ours. At family taʿlīm tonight, ask each person: where did Āminah die? Who brought the Prophet ﷺ back to Makkah? And what did the Prophet ﷺ say when he visited her grave?"
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "We began today before the journey — with a mother who had carried loss since before her son was born. Widowed before her child arrived in the world, Āminah bint Wahb raised the Prophet ﷺ alone, with dignity and love, as a woman of Makkah who understood patience long before she was tested by it.",
+          "She made the long journey to Yathrib — five hundred kilometres through the desert — so that her six-year-old son could stand at the grave of his father and know where he came from. For a month, the young Muḥammad ﷺ walked the streets of the city that would one day be his home, played with its children, and breathed its air.",
+          "On the return journey, Āminah fell ill at a place called Al-Abwāʾ. She could travel no further. She died there. She was buried there. And Umm Ayman — the devoted Barakah al-Ḥabashiyyah, who had served the household since ʿAbdullāh's time — took the young orphan's hand and walked him back to Makkah.",
+          "ʿAbd al-Muṭṭalib received him. The young Muḥammad ﷺ — six years old, without father or mother — entered the house of his grandfather. And Allāh ﷻ, who had arranged every detail of this child's life before he was born, was watching over every step.",
+          "Decades later, the Prophet ﷺ stood at his mother's grave and wept. He asked permission to seek forgiveness for her. It was not given. He asked permission to visit her grave. It was. He taught us that visiting graves reminds us of death — and he taught it standing beside the grave of the woman who had loved him first.",
+          "May Allāh ﷻ have mercy on Āminah bint Wahb. May He have mercy on every mother who has carried grief alone. May He shelter every orphan the way He sheltered His Prophet. And may He make us people who remember — the way the Prophet ﷺ remembered his mother, with love that does not end."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
+        nextLessonPreview: "After the death of Āminah, the young Muḥammad ﷺ entered the home and care of his grandfather, ʿAbd al-Muṭṭalib — the great chieftain of Quraysh, the old man who had wept with joy when his grandson was first named. For two years, the old man honoured his grandson above all others — giving him a place beside him that he gave to no one else. But ʿAbd al-Muṭṭalib was already old. In our next lesson, we follow the young Prophet ﷺ through his final loss of early childhood — and meet the uncle who would shelter him through the most difficult years of his life."
+      }
+
     ]
   }
 ];

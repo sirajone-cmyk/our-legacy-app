@@ -1,8 +1,12 @@
-import { BookOpen, HeartHandshake, Mail, MapPin, Phone } from "lucide-react";
+import { BookOpen, Clipboard, HeartHandshake, Library, Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 
 type HomePageProps = {
   onBeginReading: () => void;
   onSupport: () => void;
+};
+
+type SupportPageProps = Pick<HomePageProps, "onBeginReading"> & {
+  onSources: () => void;
 };
 
 const supportItems = [
@@ -15,6 +19,10 @@ const supportItems = [
   "Zakaat, where eligible and correctly allocated",
   "Lillah contributions for Islamic education and community work"
 ];
+
+const appUrl = "https://sirajone-786.web.app/";
+const shareText =
+  "OUR LEGACY by SirajOne is a Sadaqah Jariyah Sirah reader preserving beneficial Islamic knowledge for families, students, and communities.";
 
 function DecorativeRule() {
   return (
@@ -49,7 +57,11 @@ export function HomePage({ onBeginReading, onSupport }: HomePageProps) {
   );
 }
 
-export function SupportPage({ onBeginReading }: Pick<HomePageProps, "onBeginReading">) {
+export function SupportPage({ onBeginReading, onSources }: SupportPageProps) {
+  const copyProjectLink = async () => {
+    await navigator.clipboard.writeText(appUrl);
+  };
+
   return (
     <main className="home-page support-page">
       <section className="home-section support-section">
@@ -166,10 +178,48 @@ export function SupportPage({ onBeginReading }: Pick<HomePageProps, "onBeginRead
           Content may be shared for personal and educational benefit. Please do not copy, rebrand, or republish this
           project without permission.
         </p>
+        <section className="share-project" aria-label="Share this project">
+          <p className="home-section-label">Share This Project</p>
+          <h3>If this reader benefited you, share it with others.</h3>
+          <p>
+            Share OUR LEGACY with family, friends, students, or your community so more people can benefit from the
+            Sirah and Islamic learning content.
+          </p>
+          <div className="share-actions">
+            <a
+              href={`https://wa.me/?text=${encodeURIComponent(`${shareText} ${appUrl}`)}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <MessageCircle size={18} />
+              Share on WhatsApp
+            </a>
+            <button onClick={copyProjectLink} type="button">
+              <Clipboard size={18} />
+              Copy Link
+            </button>
+            <a href={`mailto:?subject=${encodeURIComponent("OUR LEGACY | SirajOne")}&body=${encodeURIComponent(`${shareText}\n\n${appUrl}`)}`}>
+              <Mail size={18} />
+              Email This Project
+            </a>
+            <a
+              href={`https://wa.me/27676340225?text=${encodeURIComponent("Assalamu alaykum. I would like to give feedback about the OUR LEGACY app.")}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Send size={18} />
+              Send Feedback
+            </a>
+          </div>
+        </section>
         <div className="home-actions support-actions">
           <button className="home-primary-button" onClick={onBeginReading} type="button">
             <BookOpen size={19} />
             Begin Reading
+          </button>
+          <button className="home-secondary-button" onClick={onSources} type="button">
+            <Library size={19} />
+            Sources & Methodology
           </button>
         </div>
       </section>
@@ -194,6 +244,60 @@ export function SupportPage({ onBeginReading }: Pick<HomePageProps, "onBeginRead
           Overport, Durban, KwaZulu-Natal, South Africa
         </p>
         <p className="home-rights">© 2026 OUR LEGACY. Presented by SirajOne. All rights reserved.</p>
+      </section>
+    </main>
+  );
+}
+
+export function SourcesPage({ onBeginReading, onSupport }: HomePageProps) {
+  return (
+    <main className="home-page support-page">
+      <section className="home-section support-section sources-section">
+        <DecorativeRule />
+        <p className="home-section-label">Sources & Methodology</p>
+        <h2>Sources & Methodology</h2>
+        <p>
+          The content in Our Legacy is compiled from the Noble Qur'an, authentic Ahadith, and reliable classical works
+          of Sirah, Islamic history, biography, and scholarship.
+        </p>
+        <p>
+          Our aim is to preserve beneficial Islamic knowledge in a clear, family-friendly, and practical format while
+          remaining faithful to authentic sources.
+        </p>
+
+        <section className="methodology-panel" aria-label="Major references">
+          <h3>Major references include:</h3>
+          <ul className="support-list">
+            <li>The Noble Qur'an</li>
+            <li>Sahih al-Bukhari</li>
+            <li>Sahih Muslim</li>
+            <li>As-Sirah an-Nabawiyyah of Ibn Hisham</li>
+            <li>Al-Bidayah wa an-Nihayah by Ibn Kathir</li>
+            <li>Siyar A'lam an-Nubala by Imam adh-Dhahabi</li>
+            <li>Other reliable classical works of Sirah, Tarikh, Tabaqat, and Islamic scholarship</li>
+          </ul>
+        </section>
+
+        <section className="methodology-panel" aria-label="Methodology note">
+          <h3>Important methodology note:</h3>
+          <p>Qur'anic verses and authentic Ahadith are given priority.</p>
+          <p>Historical reports are presented as Sirah and history material.</p>
+          <p>
+            Where exact authentication is required, Qur'an and authentic Hadith are preferred over weaker historical
+            reports.
+          </p>
+        </section>
+
+        <div className="home-actions support-actions">
+          <button className="home-primary-button" onClick={onBeginReading} type="button">
+            <BookOpen size={19} />
+            Begin Reading
+          </button>
+          <button className="home-secondary-button" onClick={onSupport} type="button">
+            <HeartHandshake size={19} />
+            Support This Work
+          </button>
+        </div>
       </section>
     </main>
   );

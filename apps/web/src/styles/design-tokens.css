@@ -1,0 +1,220 @@
+/**
+ * OUR LEGACY — Design Token System
+ * Canonical source of all design decisions.
+ * Import this FIRST in main.tsx before global.css.
+ *
+ * Philosophy: timeless, elegant, Islamic, readable.
+ * Base: 4px unit · 1.25 modular type scale · EB Garamond + Inter
+ */
+
+/* ── Google Fonts ───────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+/* ── Root Tokens (Light Mode) ───────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+
+  /* ── Fonts ─────────────────────────────────────────────────────────── */
+  --font-serif:   "EB Garamond", "Lora", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-ui:      Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-arabic:  "Noto Naskh Arabic", "Amiri", "Scheherazade New", Georgia, serif;
+  --font-urdu:    "Noto Nastaliq Urdu", "Mehr Nastaliq", serif;
+
+  /* ── Type Scale (1.25 modular) ─────────────────────────────────────── */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-md:   1.125rem;   /* 18px */
+  --text-lg:   1.25rem;    /* 20px */
+  --text-xl:   1.5rem;     /* 24px */
+  --text-2xl:  1.875rem;   /* 30px */
+  --text-3xl:  2.25rem;    /* 36px */
+  --text-4xl:  2.75rem;    /* 44px */
+  --text-5xl:  3.5rem;     /* 56px */
+
+  /* ── Line Heights ───────────────────────────────────────────────────── */
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.75;
+  --leading-loose:   1.9;   /* family mode */
+
+  /* ── Measure (line length) ──────────────────────────────────────────── */
+  --measure-sm:  52ch;
+  --measure:     65ch;
+  --measure-lg:  80ch;
+
+  /* ── Spacing (4px base) ─────────────────────────────────────────────── */
+  --sp-1:   0.25rem;   /* 4px */
+  --sp-2:   0.5rem;    /* 8px */
+  --sp-3:   0.75rem;   /* 12px */
+  --sp-4:   1rem;      /* 16px */
+  --sp-5:   1.25rem;   /* 20px */
+  --sp-6:   1.5rem;    /* 24px */
+  --sp-8:   2rem;      /* 32px */
+  --sp-10:  2.5rem;    /* 40px */
+  --sp-12:  3rem;      /* 48px */
+  --sp-16:  4rem;      /* 64px */
+  --sp-20:  5rem;      /* 80px */
+  --sp-24:  6rem;      /* 96px */
+  --sp-32:  8rem;      /* 128px */
+
+  /* ── Colour Palette ─────────────────────────────────────────────────── */
+  /* Primary surface */
+  --paper:      #f7f3ec;   /* warm cream — page & app background */
+  --vellum:     #f0e9d6;   /* slightly darker parchment — nested panels */
+  --panel:      #ffffff;   /* raised card surface */
+
+  /* Text */
+  --ink:        #18211f;   /* deep near-black — primary text */
+  --muted:      #68726e;   /* secondary text, captions, meta */
+  --dust:       #c9bba5;   /* disabled, placeholder */
+
+  /* Brand greens */
+  --forest:     #12332f;   /* deep Islamic green — primary brand */
+  --leaf:       #2e6f5b;   /* mid green — active states, progress */
+  --olive:      #4a5c35;   /* olive — alternate category accent */
+
+  /* Golds */
+  --gold:       #b88a32;   /* Islamic gold — primary accent */
+  --amber:      #c4830a;   /* stronger gold — links, highlights */
+  --champagne:  #e7d3a1;   /* light gold — borders, dividers */
+
+  /* Accents */
+  --plum:       #55334f;   /* deep plum — alternate category */
+  --crimson:    #7a1f2e;   /* deep crimson — battle markers */
+  --azure:      #1a3d5c;   /* deep blue — water, night accents */
+  --sky:        #d9e9ef;   /* pale blue-grey — subtle tints */
+
+  /* Night (used in .night class) */
+  --night:      #071820;
+
+  /* ── Semantic Colour Aliases ────────────────────────────────────────── */
+  --color-primary:       var(--forest);
+  --color-accent:        var(--gold);
+  --color-accent-strong: var(--amber);
+  --color-surface:       var(--paper);
+  --color-surface-alt:   var(--vellum);
+  --color-surface-raised:var(--panel);
+  --color-text:          var(--ink);
+  --color-text-muted:    var(--muted);
+  --color-text-disabled: var(--dust);
+  --color-border:        rgba(24, 33, 31, 0.11);
+  --color-border-strong: var(--champagne);
+  --color-progress:      var(--leaf);
+  --color-link:          var(--amber);
+
+  /* ── Borders & Radius ───────────────────────────────────────────────── */
+  --line:           rgba(24, 33, 31, 0.11);
+  --radius-sm:      6px;
+  --radius:         10px;
+  --radius-lg:      16px;
+  --radius-xl:      24px;
+  --radius-pill:    999px;
+
+  /* ── Shadows ────────────────────────────────────────────────────────── */
+  --shadow-xs:  0 1px 3px rgba(18, 51, 47, 0.08);
+  --shadow-sm:  0 4px 12px rgba(18, 51, 47, 0.10);
+  --shadow:     0 8px 24px rgba(18, 51, 47, 0.12);
+  --shadow-lg:  0 20px 60px rgba(18, 51, 47, 0.14);
+  --shadow-xl:  0 32px 80px rgba(18, 51, 47, 0.18);
+
+  /* ── Transitions ────────────────────────────────────────────────────── */
+  --ease-out:      cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:       cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration:      250ms;
+  --duration-slow: 400ms;
+
+  /* ── Layout ─────────────────────────────────────────────────────────── */
+  --nav-height:      64px;    /* bottom nav */
+  --header-height:   56px;    /* top bar in reader */
+  --sidebar-width:   240px;   /* desktop left sidebar */
+  --toc-width:       320px;   /* TOC panel */
+  --reader-max-w:    680px;   /* max reading width */
+  --card-min-w:      160px;   /* minimum book card width */
+  --z-nav:           50;
+  --z-toc:           60;
+  --z-overlay:       70;
+  --z-modal:         80;
+  --z-toast:         90;
+}
+
+/* ── Night Mode Overrides ───────────────────────────────────────────────── */
+.night, [data-theme="night"] {
+  color-scheme: dark;
+
+  --paper:      #0e1a18;
+  --vellum:     #0a1412;
+  --panel:      #162420;
+
+  --ink:        #e8dfc8;
+  --muted:      #8a9490;
+  --dust:       #4a5a56;
+
+  --forest:     #2e6f5b;
+  --leaf:       #4a9a7a;
+
+  --gold:       #d4a843;
+  --champagne:  #6b5a30;
+  --amber:      #e8b84a;
+
+  --line:       rgba(232, 223, 200, 0.10);
+
+  --color-border:        rgba(232, 223, 200, 0.10);
+  --color-border-strong: #3a4a46;
+
+  --shadow-xs:  0 1px 3px rgba(0, 0, 0, 0.30);
+  --shadow-sm:  0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow:     0 8px 24px rgba(0, 0, 0, 0.40);
+  --shadow-lg:  0 20px 60px rgba(0, 0, 0, 0.50);
+}
+
+/* ── Utility Classes ────────────────────────────────────────────────────── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--sp-4);
+  z-index: var(--z-toast);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--forest);
+  color: var(--champagne);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: top var(--duration-fast);
+}
+.skip-link:focus {
+  top: var(--sp-4);
+}
+
+/* ── Focus Visible (global) ─────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ── Reduced Motion ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

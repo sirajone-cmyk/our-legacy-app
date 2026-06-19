@@ -8,3 +8,21 @@ coverage
 android
 ios
 *.log
+
+# Firebase cache
+.firebase/
+
+# Old zips
+phase2-source.zip
+
+# TS build info
+*.tsbuildinfo
+
+# Firebase cache
+.firebase/
+
+# Old zips
+phase2-source.zip
+
+# TS build info
+*.tsbuildinfo

@@ -1,0 +1,187 @@
+/* ── OUR LEGACY Splash Screen ──────────────────────────────────────────────
+ * Premium animated entry. Forest background, geometric mark assembles,
+ * title fades up, smooth exit to app.
+ * ----------------------------------------------------------------------- */
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #12332f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.splash-screen.splash-exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── Geometric mark ──────────────────────────────────────────────────────── */
+.splash-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.splash-mark {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 0.6rem;
+  opacity: 0;
+  animation: splash-fade-in 200ms ease 100ms forwards;
+}
+
+.splash-mark svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Outer hexagon — draws from 0ms */
+.splash-hex-outer {
+  stroke: #b88a32;
+  stroke-width: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 276;
+  stroke-dashoffset: 276;
+  animation: splash-draw 700ms cubic-bezier(0.4, 0, 0.2, 1) 150ms forwards;
+}
+
+/* Inner hexagon — draws from 200ms */
+.splash-hex-inner {
+  stroke: #b88a32;
+  stroke-width: 0.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.65;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: splash-draw 600ms cubic-bezier(0.4, 0, 0.2, 1) 300ms forwards;
+}
+
+/* Center circle — draws from 500ms */
+.splash-circle {
+  stroke: #b88a32;
+  stroke-width: 1;
+  fill: none;
+  stroke-dasharray: 51;
+  stroke-dashoffset: 51;
+  animation: splash-draw 400ms cubic-bezier(0.4, 0, 0.2, 1) 550ms forwards;
+}
+
+/* Center dot — fades in at 750ms */
+.splash-dot-center {
+  fill: #b88a32;
+  opacity: 0;
+  animation: splash-fade-in 250ms ease 750ms forwards;
+}
+
+/* ── Text block ──────────────────────────────────────────────────────────── */
+.splash-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.splash-title {
+  font-family: "EB Garamond", "Lora", Georgia, serif;
+  font-size: clamp(2.4rem, 8vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #f7f3ec;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: splash-rise 500ms cubic-bezier(0.2, 0, 0, 1) 700ms forwards;
+}
+
+.splash-rule {
+  width: 0;
+  height: 1px;
+  margin: 0.35rem 0 0.5rem;
+  background: #b88a32;
+  opacity: 0.55;
+  animation: splash-widen 350ms ease 950ms forwards;
+}
+
+.splash-subtitle {
+  font-family: "EB Garamond", "Lora", Georgia, serif;
+  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: rgba(247, 243, 236, 0.6);
+  margin: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: splash-rise 450ms cubic-bezier(0.2, 0, 0, 1) 1000ms forwards;
+}
+
+.splash-presenter {
+  font-family: "EB Garamond", "Lora", Georgia, serif;
+  font-size: clamp(0.9rem, 2.8vw, 1.1rem);
+  letter-spacing: 0.08em;
+  color: rgba(247, 243, 236, 0.35);
+  margin: 0.65rem 0 0;
+  opacity: 0;
+  animation: splash-fade-in 400ms ease 1150ms forwards;
+}
+
+/* ── Loader dots ─────────────────────────────────────────────────────────── */
+.splash-loader {
+  display: flex;
+  gap: 6px;
+  margin-top: 2.5rem;
+}
+
+.splash-loader span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #b88a32;
+  opacity: 0;
+  animation: splash-dot-pulse 800ms ease infinite;
+}
+
+.splash-loader span:nth-child(1) { animation-delay: 1200ms; }
+.splash-loader span:nth-child(2) { animation-delay: 1350ms; }
+.splash-loader span:nth-child(3) { animation-delay: 1500ms; }
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
+@keyframes splash-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes splash-fade-in {
+  to { opacity: 1; }
+}
+
+@keyframes splash-rise {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes splash-widen {
+  to { width: 44px; }
+}
+
+@keyframes splash-dot-pulse {
+  0%   { opacity: 0; transform: scale(0.8); }
+  40%  { opacity: 0.9; transform: scale(1); }
+  80%  { opacity: 0.3; transform: scale(0.9); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
+/* ── Body lockout — prevent body gradient from bleeding through ─────────── */
+body:has(.splash-screen:not(.splash-exiting)) {
+  background: #12332f !important;
+}
