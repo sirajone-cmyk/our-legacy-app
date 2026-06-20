@@ -2681,6 +2681,23 @@ body:has(.book-reader-app) {
   opacity: 0.85;
 }
 
+/* ── Discovery Note (closing page) ──────────────────────────────── */
+.closing-discovery-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--gold-light, #c9a84c);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--gold-light, #c9a84c) 8%, transparent);
+  text-align: center;
+}
+
+.closing-discovery-note p {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: var(--muted, #7a5c45);
+  margin: 0;
+}
+
 .book-reflection-list {
   display: grid;
   gap: 18px;

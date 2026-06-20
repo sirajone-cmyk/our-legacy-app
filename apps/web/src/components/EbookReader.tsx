@@ -277,6 +277,11 @@ function ClosingPage({
           <p className="closing-next-text">{page.nextLessonPreview}</p>
         </div>
       )}
+      {page.discoveryNote && (
+        <div className="closing-discovery-note">
+          <p>{page.discoveryNote}</p>
+        </div>
+      )}
     </article>
   );
 }

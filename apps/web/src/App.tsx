@@ -21,6 +21,12 @@ import {
   getReaderLessonById,
 } from "./data/readerContent";
 import { getLessonEnrichment } from "./data/lessonEnrichmentData";
+import { LIBRARY_BOOKS } from "./data/libraryData";
+
+/** Find the BookEntry whose lessonKey matches the reader's lessonId. */
+function getBookByLessonKey(lessonKey: string): BookEntry | undefined {
+  return LIBRARY_BOOKS.find((b) => b.lessonKey === lessonKey);
+}
 
 type AppView =
   | { screen: "splash" }
@@ -197,7 +203,16 @@ export function App() {
     return (
       <EbookReader
         lesson={lesson}
-        onBack={() => { setView({ screen: "library" }); setActiveNav("library"); }}
+        onBack={() => {
+          const book = getBookByLessonKey(view.lessonId);
+          if (book) {
+            setView({ screen: "book-detail", book });
+            setActiveNav("library");
+          } else {
+            setView({ screen: "library" });
+            setActiveNav("library");
+          }
+        }}
         onViewGuide={(partNumber) => {
           setView({ screen: "lesson-guide", lessonId: lesson.id, partNumber });
         }}

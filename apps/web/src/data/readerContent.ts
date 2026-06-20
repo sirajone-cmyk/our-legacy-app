@@ -90,6 +90,8 @@ export type ClosingPage = {
   duaTranslation: string;
   /** Optional teaser for the next lesson — rendered below the duʿāʾ */
   nextLessonPreview?: string;
+  /** Optional pointer to Profiles and Maps in the BookDetail tabs */
+  discoveryNote?: string;
 };
 
 export type PartDividerPage = {
@@ -346,7 +348,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "وَصَلَّى اللهُ عَلَى نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ",
         duaTranslation: "Āmīn.",
-        nextLessonPreview: "The story of Rasūlullāh  ﷺ did not begin with his birth. It began thousands of years earlier — with a father and his infant son left alone in a barren valley, with a mother running between two hills in desperate search of water, and with a spring that Allāh  ﷻ caused to burst from dry earth. In our next lesson, we travel back to the very beginning: to Ibrāhīm ʿalayhi us-salām, to Hājar, and to the sacred valley that would one day be called Makkah."
+        nextLessonPreview: "The story of Rasūlullāh  ﷺ did not begin with his birth. It began thousands of years earlier — with a father and his infant son left alone in a barren valley, with a mother running between two hills in desperate search of water, and with a spring that Allāh  ﷻ caused to burst from dry earth. In our next lesson, we travel back to the very beginning: to Ibrāhīm ʿalayhi us-salām, to Hājar, and to the sacred valley that would one day be called Makkah.",
+        discoveryNote: "✦ Go Deeper — Tap the back arrow, then open the Maps tab to explore Makkah al-Mukarramah, the city at the centre of this entire story.",
       },
       {
         kind: "part-divider",
@@ -673,7 +676,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "وَصَلَّى اللهُ عَلَى نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ",
         duaTranslation: "Āmīn.",
-        nextLessonPreview: "The lineage was set. ʿAbdullāh and Āminah were married, and the world was being prepared. Allāh  ﷻ was about to give a sign — not through the sky, not through the earth, but through birds. Small birds with small stones, sent against an army of war elephants that had come to destroy the Kaʿbah. In our next lesson, we stand in Makkah in the Year of the Elephant and witness the miracle that announced to all of Arabia that something extraordinary was about to happen."
+        nextLessonPreview: "The lineage was set. ʿAbdullāh and Āminah were married, and the world was being prepared. Allāh  ﷻ was about to give a sign — not through the sky, not through the earth, but through birds. Small birds with small stones, sent against an army of war elephants that had come to destroy the Kaʿbah. In our next lesson, we stand in Makkah in the Year of the Elephant and witness the miracle that announced to all of Arabia that something extraordinary was about to happen.",
+        discoveryNote: "✦ Go Deeper — Tap the back arrow, then open the Maps tab to explore Makkah al-Mukarramah, the sacred city of the Quraysh and the Kaʿbah.",
       }
 ,
       {
@@ -889,7 +893,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
-        nextLessonPreview: "The child had entered the world — but the city of Makkah would not hold him for long. An old Arabian tradition called upon families of standing to send their newborns into the open desert, into clean air and simpler lives. A woman named Ḥalīmah set out from her tribe with barely any hope of finding a child to nurse. She would return with far more than she had come for. In our next lesson, we follow the infant Muḥammad  ﷺ into the desert — and discover the quiet, extraordinary blessings that surrounded him from the very first days of his life."
+        nextLessonPreview: "The child had entered the world — but the city of Makkah would not hold him for long. An old Arabian tradition called upon families of standing to send their newborns into the open desert, into clean air and simpler lives. A woman named Ḥalīmah set out from her tribe with barely any hope of finding a child to nurse. She would return with far more than she had come for. In our next lesson, we follow the infant Muḥammad  ﷺ into the desert — and discover the quiet, extraordinary blessings that surrounded him from the very first days of his life.",
+        discoveryNote: "✦ Go Deeper — Three Profiles from this lesson are in the Profiles tab: Āminah bint Wahb, ʿAbdullāh ibn ʿAbd al-Muṭṭalib, and ʿAbd al-Muṭṭalib ibn Hāshim. The Maps tab shows Makkah al-Mukarramah, where every event in this lesson took place. Tap the back arrow to explore both tabs.",
       },
       {
         kind: "part-divider",
@@ -1074,7 +1079,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
-        nextLessonPreview: "The years with Ḥalīmah were years of blessing. But they were also years of preparation — and the next event in the life of Rasūlullāh ﷺ would show that the preparation was more extraordinary than anyone in Banū Saʿd had imagined. One afternoon, while the young Muḥammad ﷺ was playing near the tents with his foster-brother, two men appeared, dressed in white. In our next lesson, we explore one of the most astonishing events in the early life of Rasūlullāh ﷺ: The Opening of the Chest."
+        nextLessonPreview: "The years with Ḥalīmah were years of blessing. But they were also years of preparation — and the next event in the life of Rasūlullāh ﷺ would show that the preparation was more extraordinary than anyone in Banū Saʿd had imagined. One afternoon, while the young Muḥammad ﷺ was playing near the tents with his foster-brother, two men appeared, dressed in white. In our next lesson, we explore one of the most astonishing events in the early life of Rasūlullāh ﷺ: The Opening of the Chest.",
+        discoveryNote: "✦ Go Deeper — The Profiles tab has a full profile of Ḥalīmah al-Saʿdiyyah, the foster-mother of Rasūlullāh ﷺ. The Maps tab shows Makkah al-Mukarramah, where the infant was born before his journey into the desert. Tap the back arrow to explore both tabs.",
       },
       {
         kind: "part-divider",
@@ -1265,7 +1271,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
-        nextLessonPreview: "The desert years were over. Rasūlullāh ﷺ had returned to Makkah, to his mother Āminah — and for the first time since his infancy, there was something like ordinary life. But Āminah had something she had wanted to do for years. To the north of Makkah lay Yathrib — the city where her husband ʿAbdullāh had died before his son was born. She had never visited his grave. She had never taken the young Muḥammad ﷺ to meet the family of his father who still lived there. The time had come for that journey. In our next lesson, we travel north with Āminah and her son."
+        nextLessonPreview: "The desert years were over. Rasūlullāh ﷺ had returned to Makkah, to his mother Āminah — and for the first time since his infancy, there was something like ordinary life. But Āminah had something she had wanted to do for years. To the north of Makkah lay Yathrib — the city where her husband ʿAbdullāh had died before his son was born. She had never visited his grave. She had never taken the young Muḥammad ﷺ to meet the family of his father who still lived there. The time had come for that journey. In our next lesson, we travel north with Āminah and her son.",
+        discoveryNote: "✦ Go Deeper — The Profiles tab has a full profile of Ḥalīmah al-Saʿdiyyah, who brought Rasūlullāh ﷺ back to his mother after this event. The Maps tab shows Makkah al-Mukarramah. Tap the back arrow to explore both tabs.",
       },
 
       // ── Lesson 6 — The Death of Āminah ──────────────────────────────────────
@@ -1447,7 +1454,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
-        nextLessonPreview: "After the death of Āminah, the young Muḥammad ﷺ entered the home and care of his grandfather, ʿAbd al-Muṭṭalib — the great chieftain of Quraysh, the old man who had wept with joy when his grandson was first named. For two years, the old man honoured his grandson above all others — giving him a place beside him that he gave to no one else. But ʿAbd al-Muṭṭalib was already old. In our next lesson, we follow the young Prophet ﷺ through his final loss of early childhood — and meet the uncle who would shelter him through the most difficult years of his life."
+        nextLessonPreview: "After the death of Āminah, the young Muḥammad ﷺ entered the home and care of his grandfather, ʿAbd al-Muṭṭalib — the great chieftain of Quraysh, the old man who had wept with joy when his grandson was first named. For two years, the old man honoured his grandson above all others — giving him a place beside him that he gave to no one else. But ʿAbd al-Muṭṭalib was already old. In our next lesson, we follow the young Prophet ﷺ through his final loss of early childhood — and meet the uncle who would shelter him through the most difficult years of his life.",
+        discoveryNote: "✦ Go Deeper — Four Profiles from this lesson are in the Profiles tab: Āminah bint Wahb, ʿAbd al-Muṭṭalib ibn Hāshim, Abū Ṭālib, and Umm Ayman. The Maps tab shows Makkah al-Mukarramah and Al-Abwāʾ — the place where Āminah passed away. Tap the back arrow to explore both tabs.",
       },
 
       // ── Lesson 7 — The Death of ʿAbd al-Muṭṭalib ──────────────────────────────
@@ -1664,7 +1672,8 @@ export const readerLessons: ReaderLesson[] = [
         ],
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
-        nextLessonPreview: "Abū Ṭālib took his nephew into his care — and soon, he would take him on the road. At around the age of twelve, the young Muḥammad ﷺ would travel with his uncle on a trading caravan to Shām. On that journey, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson."
+        nextLessonPreview: "Abū Ṭālib took his nephew into his care — and soon, he would take him on the road. At around the age of twelve, the young Muḥammad ﷺ would travel with his uncle on a trading caravan to Shām. On that journey, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson.",
+        discoveryNote: "✦ Go Deeper — Two Profiles from this lesson are in the Profiles tab: ʿAbd al-Muṭṭalib ibn Hāshim and Abū Ṭālib. The Maps tab shows Makkah al-Mukarramah, where these events took place. Tap the back arrow to explore both tabs.",
       }
 
     ]
