@@ -102,6 +102,7 @@ export const SIRAH_CHAPTERS: ChapterEntry[] = [
     title: "Under the Wing of ʿAbd al-Muṭṭalib — and His Death",
     description: "Two years of deep love under his grandfather's care. Then a third loss — and the young Prophet ﷺ enters the home of his uncle Abū Ṭālib.",
     minutes: 10,
+    pageIndex: 42,
   },
   {
     number: 8,
