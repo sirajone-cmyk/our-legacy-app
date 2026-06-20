@@ -514,6 +514,16 @@
   font-family: var(--font-serif);
   font-size: var(--text-lg);
   color: var(--ink);
+  margin: 0 0 var(--sp-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library-continue-lesson {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--forest);
   margin: 0 0 var(--sp-2);
   white-space: nowrap;
   overflow: hidden;

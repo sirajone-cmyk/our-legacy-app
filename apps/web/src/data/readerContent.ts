@@ -1448,6 +1448,223 @@ export const readerLessons: ReaderLesson[] = [
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
         nextLessonPreview: "After the death of Āminah, the young Muḥammad ﷺ entered the home and care of his grandfather, ʿAbd al-Muṭṭalib — the great chieftain of Quraysh, the old man who had wept with joy when his grandson was first named. For two years, the old man honoured his grandson above all others — giving him a place beside him that he gave to no one else. But ʿAbd al-Muṭṭalib was already old. In our next lesson, we follow the young Prophet ﷺ through his final loss of early childhood — and meet the uncle who would shelter him through the most difficult years of his life."
+      },
+
+      // ── Lesson 7 — The Death of ʿAbd al-Muṭṭalib ──────────────────────────────
+
+      {
+        kind: "part-divider",
+        title: "The Death of ʿAbd al-Muṭṭalib",
+        subtitle: "Part 7",
+        description: [
+          "After the death of his mother Āminah, the young Muḥammad ﷺ was received into the home of his grandfather — the great chieftain of Quraysh, ʿAbd al-Muṭṭalib ibn Hāshim. For two years, the old man loved him with a tenderness that went beyond ordinary family care. He seated the young Prophet ﷺ beside himself at the Kaʿbah — a place he shared with no one else, not even his own sons.",
+          "But the Prophet ﷺ had already lost his father before birth, and his mother at six. The time had come for his third loss. In this lesson, we walk with the eight-year-old Muḥammad ﷺ through the final months of his grandfather's life — and meet the uncle who stepped forward to shelter him when the old man could stand no more."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "Who Was ʿAbd al-Muṭṭalib?",
+        heading: "Virtue: Raḥmah — A Mercy That Makes No Distinctions",
+        subLabel: "The Chieftain Who Honoured an Orphan Above His Own Sons",
+        hadith: {
+          type: "ayah",
+          arabic: "وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ",
+          translation: "We have not sent you except as a mercy for all the worlds.",
+          reference: "Sūrah al-Anbiyāʾ — 21:107",
+        },
+        explanation: [
+          "After his mother Āminah was buried at Al-Abwāʾ and Umm Ayman had walked him back across the desert, the young Muḥammad ﷺ arrived at the home of his grandfather — six years old, without a father, without a mother, carrying a grief that had no words.",
+          "What he received from ʿAbd al-Muṭṭalib ibn Hāshim was not just shelter. The Sīrah records something more specific: he was honoured. Publicly. Deliberately. In a way that left an impression on everyone who witnessed it. The virtue that frames this lesson is Raḥmah — mercy — and it begins here, in the actions of an old chieftain toward a child the world had not yet recognised.",
+        ],
+        sections: [
+          {
+            heading: "The Man at the Head of Quraysh",
+            text: [
+              "ʿAbd al-Muṭṭalib ibn Hāshim was no ordinary grandfather. He was the sayyid — the chieftain — of Quraysh, the most powerful and respected clan in Arabia. It was he who had stood at the Kaʿbah and prayed to Allāh when Abraha's army of elephants marched from Yemen. It was he who had rediscovered and re-dug the sacred well of zamzam, which had been lost to the desert for generations.",
+              "He had outlived several of his own children. He was aged, authoritative, and deeply revered. When he received the orphaned six-year-old Muḥammad ﷺ into his home, the whole of Makkah was watching.",
+            ],
+          },
+          {
+            heading: "A Seat That No One Else Received",
+            text: [
+              "Ibn Isḥāq records in the Sīrah that ʿAbd al-Muṭṭalib had a special mat laid for him in the shade of the Kaʿbah. His sons stood respectfully around it — no one would sit beside the old man on that mat. This was a mark of his status and their deference.",
+              "But when the young Muḥammad ﷺ approached, he would walk directly to that mat and sit beside his grandfather. And the old man did not stop him. When his sons moved to hold the child back out of respect for the elder's space, ʿAbd al-Muṭṭalib would wave them away and say: 'Leave my son alone. By Allāh, this child will be of great importance.'",
+              "He was given a place beside the most respected man in Makkah — a seat that the old man's own sons could not occupy. This was not accident. It was a deliberate, public act of honour toward an orphan.",
+            ],
+          },
+          {
+            heading: "Why Raḥmah Looks Like Honour",
+            text: [
+              "We often think of mercy as something quiet — a gentle word, a patient response. But mercy at its deepest is sometimes an act of giving someone back their dignity in front of others. ʿAbd al-Muṭṭalib did not simply feed and clothe his grandson. He seated him at the centre of public life and said: this child belongs here.",
+              "The Qurʾān tells us that the Prophet ﷺ himself was sent as mercy for all the worlds (21:107). That mercy was not learned in a vacuum. It was first shown to him — by an old man who made room for a small child at the greatest house on earth.",
+            ],
+          },
+        ],
+        reflection: "ʿAbd al-Muṭṭalib gave his orphaned grandson a public seat of honour — not hidden care, but visible dignity. Think of one person in your life who has experienced loss or hardship. What would it mean to give them a seat of honour — to name them, include them, place them beside you in front of others?",
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "Two Years Under His Grandfather's Care",
+        heading: "Virtue: Birr — The Goodness That Costs Something",
+        subLabel: "When the Guardian of an Orphan Earns the Companionship of the Prophet ﷺ",
+        hadith: {
+          type: "hadith",
+          arabic: "أَنَا وَكَافِلُ الْيَتِيمِ فِي الْجَنَّةِ هَكَذَا",
+          translation: "I and the guardian of an orphan will be together in Paradise like this — and he gestured with his index and middle fingers, holding them side by side.",
+          reference: "Ṣaḥīḥ al-Bukhārī — Ḥadīth 5304",
+        },
+        explanation: [
+          "For approximately two years — from the age of six to eight — the young Muḥammad ﷺ lived under the direct care of ʿAbd al-Muṭṭalib. The Sīrah sources do not give us a day-by-day account of these years, but they do give us a consistent picture: an old man who made his grandson the centre of his attention and affection, in a way that witnesses remembered long afterward.",
+          "The virtue for this lesson is Birr — a word that carries the sense of sustained, sacrificial goodness toward those who depend on us. And the ḥadīth above gives us the Prophet's ﷺ own promise to those who live that virtue toward orphans.",
+        ],
+        sections: [
+          {
+            heading: "What the Sīrah Records",
+            text: [
+              "The primary accounts of this period come from Ibn Isḥāq as preserved by Ibn Hishām, and from Ibn Kathīr in Al-Bidāyah wa al-Nihāyah. All of them preserve the same picture: ʿAbd al-Muṭṭalib did not treat the Prophet ﷺ as one child among many grandchildren. He treated him differently from the first day.",
+              "He ate with him. He included him in his council sessions. He was physically affectionate with him in a way that witnesses noted and recorded. The Sīrah mentions that on journeys, he would place the Prophet ﷺ on his own riding animal — a mark of honour he did not extend to others. The old man's love for this child was visible, consistent, and unreserved.",
+            ],
+          },
+          {
+            sacredText: {
+              type: "hadith",
+              arabic: "كَافِلُ الْيَتِيمِ لَهُ أَوْ لِغَيْرِهِ أَنَا وَهُوَ كَهَاتَيْنِ فِي الْجَنَّةِ",
+              translation: "The guardian of an orphan — whether his own relative or a stranger — and I will be together in Paradise like these two.",
+              reference: "Ṣaḥīḥ Muslim — Ḥadīth 2983",
+            },
+          },
+          {
+            heading: "Why Allāh Arranged This",
+            text: [
+              "Scholars of Sīrah have noted the unmistakeable pattern of the Prophet's ﷺ early life: every loss was answered with a care-giver placed precisely for the purpose. ʿAbdullāh died — Āminah was there. Āminah died — ʿAbd al-Muṭṭalib was there. ʿAbd al-Muṭṭalib would die — and Abū Ṭālib would be there.",
+              "Allāh did not leave His Prophet ﷺ without shelter for a single moment of his childhood. Each guardian was chosen and timed. This was not coincidence — it was a divine curriculum. The man who would one day be sent as a mercy to all worlds was first shown mercy by everyone Allāh placed near him.",
+              "The ḥadīth above carries a weight that is personal to the Prophet ﷺ. When he said that he and the guardian of an orphan would be like two fingers together in Paradise — he knew, from his own experience, exactly what such a guardian means to a child.",
+            ],
+          },
+        ],
+        reflection: "The Prophet ﷺ promised Paradise beside himself to the guardian of an orphan. This is one of the most direct ḥadīth-promises in the Sunnah. If you have not yet taken a step toward this promise — through financial support, direct care, time, or presence with a child in need — what is one concrete step you could take this week?",
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Third Loss",
+        heading: "Virtue: Ṣabr — A Patience That Allāh Himself Testifies To",
+        subLabel: "The Eight-Year-Old Who Had Already Lost the World",
+        hadith: {
+          type: "ayah",
+          arabic: "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ",
+          translation: "Did He not find you an orphan and give you refuge?",
+          reference: "Sūrah al-Ḍuḥā — 93:6",
+        },
+        explanation: [
+          "When ʿAbd al-Muṭṭalib fell ill, those around him knew he was dying. He had lived a long life — the Sīrah sources estimate approximately eighty years, though they differ in detail. He had done much in that time. But what moved him most as he lay ill was not his own journey ahead. It was the child he would leave behind.",
+          "The Sīrah accounts of ʿAbd al-Muṭṭalib's final days are sober and consistent. He gathered his sons. He wept. And he gave instructions about the child.",
+        ],
+        sections: [
+          {
+            heading: "A Deathbed Concern",
+            text: [
+              "Ibn Isḥāq and Ibn Kathīr both preserve the account of ʿAbd al-Muṭṭalib's final days. As his health declined, he called his sons together and spoke about Muḥammad ﷺ. He expressed a specific wish: that the child be taken into the guardianship of Abū Ṭālib.",
+              "Why Abū Ṭālib? Because Abū Ṭālib was the full brother of ʿAbdullāh — the Prophet's ﷺ father. Of all the sons of ʿAbd al-Muṭṭalib, Abū Ṭālib shared a mother with ʿAbdullāh, making him the closest connection in lineage to the child's own father.",
+              "The Sīrah also records that the young Muḥammad ﷺ was present at his grandfather's bedside in those final days. He was approximately eight years old.",
+            ],
+          },
+          {
+            heading: "The Weight of Three Losses",
+            text: [
+              "By the time ʿAbd al-Muṭṭalib passed away, the young Prophet ﷺ had lost more in eight years than most adults lose in a lifetime. His father had died before he was born. His mother had died when he was six, in a desert village far from home. His grandfather — who had been his protection, his honour, and his daily companion — was gone now too.",
+              "No primary source gives us the exact words or reactions of the child in those moments. What all accounts agree on is that he continued. He was received into another household and he moved forward.",
+              "This is ṣabr — not the absence of grief, but the decision to continue through it. And decades later, when Allāh spoke directly to the Prophet ﷺ in Sūrah al-Ḍuḥā, He named what He had done for him as a child. He had found him an orphan. And He had given him refuge.",
+            ],
+          },
+          {
+            sacredText: {
+              type: "ayah",
+              arabic: "وَوَجَدَكَ ضَالًّا فَهَدَىٰ ۝ وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ",
+              translation: "And He found you astray and guided you. And He found you in need and made you self-sufficient.",
+              reference: "Sūrah al-Ḍuḥā — 93:7–8",
+            },
+          },
+          {
+            text: [
+              "Every loss in the Prophet's ﷺ childhood was met with a divine response. The Qurʾān does not deny the hardship — it names it. But then it names what Allāh did about it. He found him. He sheltered him. He guided him. He provided for him.",
+              "For the eight-year-old at his grandfather's graveside, none of this arc was visible yet. The reassurance of Sūrah al-Ḍuḥā would not come for another thirty-two years. He could only take the next step. And he did.",
+            ],
+          },
+        ],
+        reflection: "Allāh said to His Prophet ﷺ — decades after the losses of childhood — 'Did He not find you an orphan and give you refuge?' This āyah was a reminder given from outside of time. When you or your family are in the middle of a loss with no visible resolution, how does it change your experience to know that Allāh is already writing the sentence that begins: 'Did He not find you...'?",
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "Abū Ṭālib Takes His Nephew",
+        heading: "Virtue: Wafāʾ — A Loyalty That Does Not Break",
+        subLabel: "The Promise Kept Through Forty Years of Tests",
+        hadith: {
+          type: "ayah",
+          arabic: "وَأَوْفُوا بِالْعَهْدِ ۖ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا",
+          translation: "And fulfil every promise — for every promise will be questioned.",
+          reference: "Sūrah al-Isrāʾ — 17:34",
+        },
+        explanation: [
+          "When ʿAbd al-Muṭṭalib died, his son Abū Ṭālib received the eight-year-old Muḥammad ﷺ into his home. This is established across all the primary Sīrah sources without dispute. What is equally established — though the full story unfolds over the next forty years — is that Abū Ṭālib kept this commitment absolutely.",
+          "This lesson ends here: at the threshold of Abū Ṭālib's home, as the child crosses it. But before we close, it is worth pausing to understand the man who opened that door — and the scale of what he was taking on, though neither he nor the child yet knew it.",
+        ],
+        sections: [
+          {
+            heading: "Who Was Abū Ṭālib?",
+            text: [
+              "Abū Ṭālib ibn ʿAbd al-Muṭṭalib was the full brother of ʿAbdullāh — the Prophet's ﷺ father. This made him the uncle whose lineage was closest to the Prophet's ﷺ own. He was not a wealthy man — the Sīrah records that he had many children of his own and limited resources — but he took his orphaned nephew without hesitation.",
+              "Al-Bidāyah wa al-Nihāyah records that Abū Ṭālib treated the Prophet ﷺ with a warmth and preference that his own children noticed. He would insist the child sleep near him. He would take him on journeys. He would, over time, arrange everything around his nephew.",
+            ],
+          },
+          {
+            heading: "A Protection That Would Last Forty Years",
+            text: [
+              "What the eight-year-old did not know as he entered Abū Ṭālib's home was that this arrangement would not end until Abū Ṭālib died — forty years later, in 619 CE, the same year as Khadījah رضي الله عنها. That year would be called the Year of Grief for a reason.",
+              "During those forty years, Abū Ṭālib would stand between his nephew and the most powerful men in Arabia. When the Prophet ﷺ declared prophethood, Abū Ṭālib refused to hand him over. When the Quraysh boycotted the Hāshimī clan and blockaded them in a mountain valley for three years without food or trade, Abū Ṭālib endured it at his nephew's side. He was asked, repeatedly and forcefully, to silence his nephew or withdraw his protection. Every time, he refused.",
+            ],
+          },
+          {
+            heading: "A Complexity We Must Acknowledge",
+            text: [
+              "The Qurʾān and authenticated ḥadīth are clear: Abū Ṭālib did not die as a Muslim. The Prophet ﷺ was not permitted to seek forgiveness for him after his death (Sūrah al-Tawbah — 9:113). This is an established and non-negotiable point in Islamic theology.",
+              "And yet the Prophet ﷺ is reported in Ṣaḥīḥ Muslim to have said that perhaps his intercession would bring Abū Ṭālib to the shallowest place in the Fire — with embers only at his ankles. He described this as a mercy extended to his uncle on account of his protection.",
+              "We hold both realities without contradiction. Abū Ṭālib's loyalty was genuine and his protection was divinely arranged. His failure to accept Islām is also a fact we do not diminish. We do not judge him and we do not seek forgiveness for him. We simply note that Allāh, in His wisdom, used a man exactly as he was — with his fierce, tribal, unconditional loyalty — to preserve His Prophet ﷺ through the most dangerous years of the prophetic mission.",
+            ],
+          },
+        ],
+        reflection: "Abū Ṭālib made a promise — to care for his nephew — and kept it for forty years through poverty, siege, social pressure, and old age. Think of a commitment you have made to a family member or someone who depends on you. What does wafāʾ — true, sustained loyalty — look like for you this week?",
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "ʿAbd al-Muṭṭalib gave his orphaned grandson a public seat of honour — beside him at the Kaʿbah, a seat his own sons could not occupy. Why do you think Allāh arranged for the Prophet ﷺ to receive this kind of visible dignity during his childhood? What does it tell us about what children who have experienced loss actually need — beyond food and shelter?",
+          "The Prophet ﷺ lost his father before birth, his mother at six, and his grandfather at eight. Each loss was met by Allāh with a new guardian — placed precisely, at the right moment. What pattern do you see in how Allāh cares for those He is testing? How does recognising this pattern change the way you face difficult periods in your own life?",
+          "Abū Ṭālib was not a Muslim. Yet his protection of the Prophet ﷺ was part of Allāh's plan for the delivery of the message of Islām to the world. What does this teach us about how Allāh works through people of different beliefs to fulfil His purposes? And how should this shape our understanding of non-Muslims who act with loyalty, justice, and care?",
+          "If the Prophet ﷺ — the most beloved of Allāh, the best of all creation — was raised as an orphan who lost his father, his mother, and his grandfather before the age of nine, what does this say about the relationship between loss and the formation of a person's character and reliance upon Allāh alone?"
+        ],
+        actionPoint: "This week: do something concrete for an orphan or a child who is growing up without one or both parents. It does not need to be large. A phone call to a widow's child. A gift sent to a foster family. A duʿāʾ made by name at Fajr for a specific child you know who is standing alone. The Prophet ﷺ told us that the guardian of an orphan walks beside him in Paradise. Choose, this week, to stand beside a child who is standing alone."
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "We began today with an old man — a chieftain of Quraysh who had survived the Year of the Elephant, who had re-dug the zamzam well from beneath centuries of desert, who had stood at the door of the Kaʿbah and prayed to Allāh when an army with elephants was marching toward His house. At the end of his long life, he held a small boy's hand and gave him the one thing no wealth or power can manufacture: the feeling of being deeply loved, and publicly honoured.",
+          "The young Muḥammad ﷺ was six years old when he arrived at his grandfather's door. He was eight years old when he left it — not because he chose to go, but because death came for the old man too. Father before birth. Mother at six. Grandfather at eight. Three losses before childhood was finished.",
+          "But Allāh does not abandon those He loves — He transfers them. From Āminah to ʿAbd al-Muṭṭalib. From ʿAbd al-Muṭṭalib to Abū Ṭālib. Each guardian was a mercy wearing a different name. Each handover was a proof that no child held in Allāh's plan is ever, for a single moment, truly alone.",
+          "Abū Ṭālib took his nephew's hand and brought him into his home. He did not know what he was taking on. He did not know that he would one day stand in the face of the entire leadership of Quraysh and refuse to surrender this child. He did not know that he would endure a three-year siege in a mountain valley, half-starved and aged, rather than break the promise he was making now.",
+          "He only knew that his father had asked him to care for the boy. And that was enough.",
+          "May Allāh ﷻ have mercy on ʿAbd al-Muṭṭalib, who loved his grandson before the world knew who he was. May He honour every elder who extends dignity and love to a child who has no one. May He make our homes the kind of homes where the vulnerable are given a place of honour — not hidden away in pity, but seated beside us. And may He make us people of wafāʾ — who keep our promises as Abū Ṭālib kept his, for forty years, without breaking."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
+        nextLessonPreview: "Abū Ṭālib took his nephew into his care — and soon, he would take him on the road. At around the age of twelve, the young Muḥammad ﷺ would travel with his uncle on a trading caravan to Shām. On that journey, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson."
       }
 
     ]

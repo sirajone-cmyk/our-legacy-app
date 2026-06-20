@@ -349,11 +349,29 @@ function getChaptersForBook(bookId: string): ChapterEntry[] {
   return BOOK_CHAPTERS[bookId] ?? [];
 }
 
-function getChapterProgress(bookId: string, chapterNum: number): "done" | "current" | "unread" {
-  const currentPage = Number(localStorage.getItem(`our_legacy_book_${bookId}_page`) ?? "-1");
+function getChapterProgress(
+  bookId: string,
+  chapter: ChapterEntry,
+  lessonKey?: string
+): "done" | "current" | "unread" {
+  if (lessonKey && chapter.pageIndex !== undefined) {
+    // Use the reader's localStorage key — saves page INDEX (0-based)
+    const savedPage = Number(
+      localStorage.getItem(`our_legacy_reader_page:${lessonKey}`) ?? "-1"
+    );
+    if (savedPage < 0) return "unread";
+    const chapterEnd = chapter.pageIndex + 7; // 7 pages per lesson
+    if (savedPage >= chapterEnd) return "done";
+    if (savedPage >= chapter.pageIndex) return "current";
+    return "unread";
+  }
+  // Legacy fallback for books without reader content
+  const currentPage = Number(
+    localStorage.getItem(`our_legacy_book_${bookId}_page`) ?? "-1"
+  );
   if (currentPage < 0) return "unread";
-  if (currentPage > chapterNum - 1) return "done";
-  if (currentPage === chapterNum - 1) return "current";
+  if (currentPage > chapter.number - 1) return "done";
+  if (currentPage === chapter.number - 1) return "current";
   return "unread";
 }
 
@@ -479,13 +497,15 @@ function TabBar({
 function ChapterCard({
   chapter,
   bookId,
+  lessonKey,
   onClick,
 }: {
   chapter: ChapterEntry;
   bookId: string;
+  lessonKey?: string;
   onClick: () => void;
 }) {
-  const status = getChapterProgress(bookId, chapter.number);
+  const status = getChapterProgress(bookId, chapter, lessonKey);
   const isLocked = chapter.pageIndex === undefined;
 
   return (
@@ -1484,6 +1504,7 @@ export function BookDetail({ book, onBack, onOpenChapter, onOpenMap: _onOpenMap 
                             <ChapterCard
                               chapter={ch}
                               bookId={book.id}
+                              lessonKey={book.lessonKey}
                               onClick={() => onOpenChapter(ch)}
                             />
                           </li>
@@ -1500,6 +1521,7 @@ export function BookDetail({ book, onBack, onOpenChapter, onOpenMap: _onOpenMap 
                     <ChapterCard
                       chapter={ch}
                       bookId={book.id}
+                      lessonKey={book.lessonKey}
                       onClick={() => onOpenChapter(ch)}
                     />
                   </li>

@@ -505,10 +505,445 @@ const lesson6: LessonEnrichment = {
   },
 };
 
+// ── Lesson 7 — The Death of ʿAbd al-Muṭṭalib ──────────────────────────────────
+
+const lesson7: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 7,
+  lessonTitle: "The Death of ʿAbd al-Muṭṭalib",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 50,
+    studyMinutes: 30,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Why This Matters Today ─────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "The Prophet ﷺ lost his grandfather at eight years old — his third loss before " +
+    "childhood was finished. Yet Allāh arranged a new guardian every time. In an age " +
+    "when many children grow up in incomplete families, this lesson speaks directly to " +
+    "every parent, grandparent, uncle, and aunt: the way an elder shows up for a child " +
+    "in their care — with honour, loyalty, and sustained presence — is not just good " +
+    "character. It is the shape of divine mercy wearing a human face.",
+
+  // ── Memory Gem ─────────────────────────────────────────────────────────────
+
+  memoryGem:
+    "Allāh does not abandon those He loves — He transfers them. " +
+    "Every guardian is a mercy wearing a different name.",
+
+  // ── One Minute Summary ─────────────────────────────────────────────────────
+
+  oneMinuteSummary:
+    "After the death of Āminah at Al-Abwāʾ, the six-year-old Prophet ﷺ was received " +
+    "into the home of his grandfather ʿAbd al-Muṭṭalib — the chieftain of Quraysh. " +
+    "The Sīrah sources (Ibn Isḥāq via Ibn Hishām, Ibn Kathīr) record that ʿAbd " +
+    "al-Muṭṭalib showed the child extraordinary and public affection: he seated him " +
+    "beside himself on a mat at the Kaʿbah that no one else was permitted to share, " +
+    "and said of him: 'This child will be of great importance.' For approximately two " +
+    "years, the young Prophet ﷺ was under his direct care. When ʿAbd al-Muṭṭalib's " +
+    "health declined — he is estimated to have died at approximately eighty years of " +
+    "age, when the Prophet ﷺ was eight — he gathered his sons and entrusted the child " +
+    "specifically to Abū Ṭālib: the full brother of ʿAbdullāh, and therefore the uncle " +
+    "who shared the closest lineage with the Prophet ﷺ. Abū Ṭālib took his nephew " +
+    "into his home and remained his guardian and protector for the next forty years — " +
+    "until his own death in 619 CE.",
+
+  // ── Key Facts ─────────────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "Age at grandfather's death",
+      information:
+        "The Prophet ﷺ was approximately eight years old when ʿAbd al-Muṭṭalib died. " +
+        "This is the broadly accepted figure based on Sīrah chronology, though some " +
+        "sources give seven or nine.",
+    },
+    {
+      topic: "ʿAbd al-Muṭṭalib's age at death",
+      information:
+        "Sīrah sources estimate he died at approximately seventy to eighty years old. " +
+        "The exact figure is discussed among scholars; eighty is the most commonly cited.",
+    },
+    {
+      topic: "The seat at the Kaʿbah",
+      information:
+        "Ibn Isḥāq records that ʿAbd al-Muṭṭalib had a mat in the shade of the Kaʿbah " +
+        "that no one — not even his sons — would sit on. He allowed the young Prophet ﷺ " +
+        "to sit beside him and said: 'Leave my son alone. This child will be of great " +
+        "importance.'",
+    },
+    {
+      topic: "Why Abū Ṭālib was chosen",
+      information:
+        "Abū Ṭālib was the full brother of ʿAbdullāh — the Prophet's ﷺ father. This " +
+        "made him the uncle who shared the Prophet's ﷺ paternal lineage most closely, " +
+        "and the natural choice for guardianship.",
+    },
+    {
+      topic: "Abū Ṭālib's faith",
+      information:
+        "Abū Ṭālib never accepted Islām — established in the Qurʾān and ḥadīth. Yet " +
+        "his protection of the Prophet ﷺ lasted forty years. The Prophet ﷺ said his " +
+        "intercession may place Abū Ṭālib in the shallowest position of the Fire " +
+        "(Ṣaḥīḥ Muslim — Ḥadīth 209).",
+    },
+    {
+      topic: "The guardian-of-orphan ḥadīth",
+      information:
+        "The Prophet ﷺ said: 'I and the guardian of an orphan will be together in " +
+        "Paradise like this' — gesturing with his index and middle fingers side by side. " +
+        "(Ṣaḥīḥ al-Bukhārī — Ḥadīth 5304 · Ṣaḥīḥ Muslim — Ḥadīth 2983)",
+    },
+  ],
+
+  // ── What We Learn ─────────────────────────────────────────────────────────
+
+  whatWeLearn: [
+    {
+      event: "ʿAbd al-Muṭṭalib seats the Prophet ﷺ beside him at the Kaʿbah",
+      lesson:
+        "Mercy toward the vulnerable is not just private care — it is a public act of " +
+        "restoring dignity. Giving a child who has been diminished by loss a visible seat " +
+        "of honour beside you says: this person belongs here.",
+    },
+    {
+      event: "Allāh places a new guardian after every loss",
+      lesson:
+        "Allāh does not remove difficulty by preventing loss. He responds to loss with " +
+        "provision. The pattern of the Prophet's ﷺ childhood teaches us to look for " +
+        "Allāh's response rather than to be overwhelmed by the loss.",
+    },
+    {
+      event: "ʿAbd al-Muṭṭalib entrusts his grandson to Abū Ṭālib on his deathbed",
+      lesson:
+        "The responsibility for an orphan is a trust (amānah) that must be deliberately " +
+        "passed on — not abandoned. Care for the vulnerable is handed over explicitly, " +
+        "with intention, to someone who will honour it.",
+    },
+    {
+      event: "Abū Ṭālib protects the Prophet ﷺ for forty years without accepting Islām",
+      lesson:
+        "Allāh uses every type of person in His plan. Loyalty and protection can come " +
+        "from unexpected places. We acknowledge the good done by non-Muslims who acted " +
+        "justly without confusing their actions with their eternal standing.",
+    },
+    {
+      event: "The Prophet ﷺ promises Paradise alongside himself for guardians of orphans",
+      lesson:
+        "The Prophet ﷺ elevated the status of caring for orphans to the highest personal " +
+        "promise he ever made. He made it because he understood, from his own childhood, " +
+        "precisely what a guardian means to a child who has lost everything.",
+    },
+  ],
+
+  // ── Why Did Allāh Allow This? ──────────────────────────────────────────────
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allāh allow the Prophet ﷺ to lose a third family member before he was even nine years old?",
+    reflection:
+      "Every scholar who has reflected on the Prophet's ﷺ early life arrives at the same " +
+      "observation: the cumulative losses of his childhood were not punishments — they were " +
+      "preparation. Each loss deepened his reliance on Allāh alone, removed any suggestion " +
+      "that his mission was a family dynasty, and gave him a personal knowledge of grief " +
+      "that would make him the most compassionate comforter of those who suffered. The " +
+      "Prophet ﷺ who would later sit with the grieving, weep openly at death, and declare " +
+      "the guardian of orphans his companion in Paradise — was the same person who had " +
+      "stood at three graves before he was nine years old. His compassion was not " +
+      "theoretical. It was earned, lived, and carried.",
+    quranicConnection: {
+      arabic: "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ",
+      translation: "Did He not find you an orphan and give you refuge?",
+      reference: "Sūrah al-Ḍuḥā — 93:6",
+    },
+  },
+
+  // ── Family Discussion ──────────────────────────────────────────────────────
+
+  familyDiscussion: [
+    {
+      question:
+        "ʿAbd al-Muṭṭalib gave his orphaned grandson a seat of honour that no one else " +
+        "received — not even his own sons. Why do you think public honour matters so much " +
+        "to a child who has experienced loss? Can you think of someone in your community who " +
+        "might need to be 'seated beside' someone in that kind of visible, dignified way?",
+      hint:
+        "Help the family move beyond 'private care' to think about public dignity: being " +
+        "named, included, placed visibly in the community alongside someone respected.",
+    },
+    {
+      question:
+        "Every time the Prophet ﷺ lost a caregiver, Allāh placed another one. Has there " +
+        "been a loss in your family's story that was answered — eventually — with a " +
+        "provision you did not expect? What does that pattern look like in your own life?",
+      hint:
+        "This works well when family members share a personal story. Create space for " +
+        "quiet reflection — it may take time.",
+    },
+    {
+      question:
+        "The Prophet ﷺ promised Paradise beside himself to the guardian of an orphan. " +
+        "Why do you think Allāh gives such a specific and elevated reward for this act? " +
+        "What does it tell us about how Allāh views the situation of orphans?",
+      hint:
+        "Lead toward the idea that Allāh notices vulnerability with special care — and " +
+        "rewards those who respond to it with special proximity.",
+    },
+    {
+      question:
+        "Abū Ṭālib never became a Muslim. Yet he protected the Prophet ﷺ for forty years. " +
+        "How do we speak about him — with honesty and with respect — without either making " +
+        "him a hero of Islām or dismissing what he did?",
+      hint:
+        "For older children and adults: introduce the concept of holding two realities at " +
+        "once — acknowledging good actions without making claims about eternal status.",
+    },
+  ],
+
+  // ── Family Application ─────────────────────────────────────────────────────
+
+  familyApplication:
+    "Before this week ends: identify one orphan, one child growing up without a parent, " +
+    "or one family that has recently lost their father or mother. Do one thing for them. " +
+    "It does not need to be large — a meal, a gift, a visit, a phone call, a duʿāʾ made " +
+    "by name at Fajr. Then come back next week and share what you did at your family " +
+    "taʿlīm session. The Prophet ﷺ promised his own companionship in Paradise for this. " +
+    "Start small. Start now.",
+
+  // ── Quick Review ───────────────────────────────────────────────────────────
+
+  quickReview: [
+    {
+      question: "How old was the Prophet ﷺ when ʿAbd al-Muṭṭalib died?",
+      answer: "Approximately eight years old.",
+    },
+    {
+      question: "What was special about the seat ʿAbd al-Muṭṭalib kept at the Kaʿbah?",
+      answer:
+        "It was a mat that no one — not even his sons — was permitted to sit on. He allowed " +
+        "the young Prophet ﷺ to sit beside him on it, and called him 'my son.'",
+    },
+    {
+      question: "Why did ʿAbd al-Muṭṭalib choose Abū Ṭālib as the Prophet's ﷺ next guardian?",
+      answer:
+        "Because Abū Ṭālib was the full brother of ʿAbdullāh — the Prophet's ﷺ father — " +
+        "making him the closest relative in lineage to the child.",
+    },
+    {
+      question: "What did the Prophet ﷺ promise to the guardian of an orphan?",
+      answer:
+        "That he and the guardian of an orphan would be together in Paradise — and he " +
+        "gestured with his index and middle fingers held side by side. (Bukhārī 5304)",
+    },
+    {
+      question: "Did Abū Ṭālib accept Islām?",
+      answer:
+        "No. Abū Ṭālib died without accepting Islām — established in the Qurʾān and ḥadīth. " +
+        "Yet he protected the Prophet ﷺ for forty years, and the Prophet ﷺ expressed hope " +
+        "that his intercession would benefit him.",
+    },
+  ],
+
+  // ── Explore Further ────────────────────────────────────────────────────────
+
+  exploreFurther: [
+    {
+      title: "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      author: "Ṣafī al-Raḥmān al-Mubārakfūrī",
+      type: "book",
+      note:
+        "The prize-winning biography covers the early childhood period in readable detail, " +
+        "including the guardianship of ʿAbd al-Muṭṭalib and the transition to Abū Ṭālib. " +
+        "An excellent starting point for family reading.",
+    },
+    {
+      title: "Al-Bidāyah wa al-Nihāyah",
+      author: "Ibn Kathīr al-Dimashqī",
+      type: "book",
+      note:
+        "The primary classical source for the events of this lesson. The chapter on the " +
+        "Prophet's ﷺ early life covers ʿAbd al-Muṭṭalib's guardianship and death in full " +
+        "detail with chain analysis. For those with access to a scholarly translation.",
+    },
+    {
+      title: "Sīrat Ibn Hishām",
+      author: "Ibn Hishām (preserving Ibn Isḥāq's original)",
+      type: "book",
+      note:
+        "The earliest and most authoritative classical Sīrah. The sections on the early " +
+        "childhood of the Prophet ﷺ include the accounts of ʿAbd al-Muṭṭalib's care and " +
+        "Abū Ṭālib's guardianship in their original form.",
+    },
+  ],
+
+  // ── Teacher Notes ──────────────────────────────────────────────────────────
+
+  teacherNotes: [
+    {
+      audience: "family",
+      heading: "Discussing Abū Ṭālib with Children",
+      body:
+        "This lesson introduces a complex figure: Abū Ṭālib protected the Prophet ﷺ " +
+        "absolutely for forty years but did not accept Islām. With younger children, keep " +
+        "the focus on his loyalty and care without exploring the theological dimension. " +
+        "For older children (12+), this is an excellent opportunity to introduce nuance: " +
+        "we can acknowledge the good someone did without making claims about their eternal " +
+        "status. Avoid either glorifying Abū Ṭālib as a Muslim hero or dismissing him.",
+    },
+    {
+      audience: "classroom",
+      heading: "The Grief Curriculum",
+      body:
+        "This lesson, combined with Lesson 6 (Death of Āminah), forms a natural unit on " +
+        "how Islām frames grief and loss. Consider pairing them in a two-session block. " +
+        "Opening question: 'The Prophet ﷺ lost three family members before he was nine. " +
+        "How did each loss change what Allāh provided for him next?' This pattern — loss " +
+        "followed by provision — is central to the Sīrah's message for young learners.",
+    },
+    {
+      audience: "madrasa",
+      heading: "The Guardian of Orphans Ḥadīth",
+      body:
+        "Ṣaḥīḥ al-Bukhārī 5304 and Ṣaḥīḥ Muslim 2983 both record the guardian-of-orphan " +
+        "ḥadīth. Students should memorise at least the short form from Bukhārī: " +
+        "'أَنَا وَكَافِلُ الْيَتِيمِ فِي الْجَنَّةِ هَكَذَا'. Discuss the Arabic: " +
+        "kāfil (one who bears responsibility for), yatīm (orphan — literally: alone). " +
+        "The gesture of two fingers together is an image of closeness and equality.",
+    },
+    {
+      audience: "all",
+      heading: "Sensitivity to Children Who Have Lost Parents",
+      body:
+        "This lesson and Lesson 6 both deal directly with the death of parents. If there " +
+        "are children in your group who have lost a parent, handle the material with " +
+        "particular care. Emphasise Allāh's provision and the honour He gives to those " +
+        "who care for such children — do not dwell on loneliness without also offering " +
+        "the comfort of the Qurʾān's direct response to that grief.",
+    },
+  ],
+
+  // ── Lesson Reliability Summary ─────────────────────────────────────────────
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The core events of this lesson — ʿAbd al-Muṭṭalib's guardianship of the Prophet ﷺ, " +
+      "his death when the Prophet ﷺ was approximately eight years old, and Abū Ṭālib's " +
+      "subsequent guardianship — are reported across all primary Sīrah sources with wide " +
+      "scholarly acceptance. The narration of the seat at the Kaʿbah is preserved in Ibn " +
+      "Isḥāq with broad acceptance. The two ḥadīth on the guardian of orphans (Bukhārī " +
+      "5304 and Muslim 2983) are fully authenticated. The discussion of Abū Ṭālib's " +
+      "faith and the Prophet's ﷺ intercession is drawn from Ṣaḥīḥ Muslim and is " +
+      "established. No significant disputed or weak material is used in the lesson content.",
+  },
+
+  // ── Authentication Notes ───────────────────────────────────────────────────
+
+  authenticationNotes: [
+    {
+      claim: "ʿAbd al-Muṭṭalib took guardianship of the Prophet ﷺ after Āminah's death",
+      grade: "Widely Accepted",
+      sources: ["Sīrat Ibn Hishām", "Al-Bidāyah wa al-Nihāyah", "Al-Raḥīq al-Makhtūm (The Sealed Nectar)"],
+      explanation:
+        "Reported consistently across all major classical Sīrah sources without dispute. " +
+        "Widely accepted by scholars across all schools.",
+    },
+    {
+      claim:
+        "ʿAbd al-Muṭṭalib seated the Prophet ﷺ beside him on his mat at the Kaʿbah, " +
+        "saying 'Leave my son alone — this child will be of great importance'",
+      grade: "Widely Accepted",
+      sources: ["Sīrat Ibn Hishām"],
+      explanation:
+        "Narrated by Ibn Isḥāq and preserved by Ibn Hishām. Accepted across classical " +
+        "scholarship as a reliable Sīrah narration. Not in the Ṣaḥīḥ collections but " +
+        "consistent with all other accounts of ʿAbd al-Muṭṭalib's treatment of the Prophet ﷺ.",
+    },
+    {
+      claim: "ʿAbd al-Muṭṭalib died when the Prophet ﷺ was approximately eight years old",
+      grade: "Widely Accepted",
+      sources: ["Sīrat Ibn Hishām", "Al-Bidāyah wa al-Nihāyah"],
+      explanation:
+        "The age of eight is the most widely cited figure across Sīrah sources. Some accounts " +
+        "give seven or nine. The variation reflects the difficulty in establishing precise dates " +
+        "for the pre-prophetic period.",
+    },
+    {
+      claim:
+        "The guardian of an orphan will be beside the Prophet ﷺ in Paradise (Bukhārī 5304 / Muslim 2983)",
+      grade: "Established",
+      sources: ["Ṣaḥīḥ al-Bukhārī — Ḥadīth 5304", "Ṣaḥīḥ Muslim — Ḥadīth 2983"],
+      explanation:
+        "Narrated in both Ṣaḥīḥ al-Bukhārī and Ṣaḥīḥ Muslim with authenticated chains. " +
+        "One of the most reliably established ḥadīth on the virtue of caring for orphans.",
+    },
+    {
+      claim: "Abū Ṭālib did not die as a Muslim",
+      grade: "Established",
+      sources: ["Ṣaḥīḥ al-Bukhārī — Ḥadīth 1360", "Ṣaḥīḥ Muslim — Ḥadīth 24"],
+      explanation:
+        "Established in both Ṣaḥīḥ collections. The Prophet ﷺ was informed at the moment " +
+        "of Abū Ṭālib's death that he had not said the shahādah. Sūrah al-Tawbah 9:113 " +
+        "was revealed in this context according to tafsīr scholars.",
+    },
+    {
+      claim:
+        "The Prophet ﷺ expressed hope that his intercession would bring Abū Ṭālib to the lightest punishment",
+      grade: "Established",
+      sources: ["Ṣaḥīḥ Muslim — Ḥadīth 209"],
+      explanation:
+        "Authenticated in Ṣaḥīḥ Muslim. The Prophet ﷺ said Abū Ṭālib would be in the " +
+        "shallowest part of the Fire with embers at his ankles — described as the lightest " +
+        "punishment, granted through the Prophet's ﷺ intercession.",
+    },
+  ],
+
+  // ── Lesson Timeline ────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "~576 CE",
+      label: "Prophet ﷺ (age 6) enters ʿAbd al-Muṭṭalib's care after Āminah's death at Al-Abwāʾ",
+    },
+    {
+      year: "~576–578 CE",
+      label: "Two years of guardianship — honoured beside his grandfather at the Kaʿbah",
+    },
+    {
+      year: "~578 CE",
+      label: "ʿAbd al-Muṭṭalib dies — Prophet ﷺ (age ~8) passes into Abū Ṭālib's care",
+    },
+  ],
+
+  // ── Connections ────────────────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["~578 CE"],
+    maps: ["kaabah"],
+    characters: [
+      "ʿAbd al-Muṭṭalib ibn Hāshim",
+      "Abū Ṭālib ibn ʿAbd al-Muṭṭalib",
+    ],
+    references: [
+      "Sūrah al-Ḍuḥā — 93:6",
+      "Ṣaḥīḥ al-Bukhārī — Ḥadīth 5304",
+      "Sīrat Ibn Hishām",
+      "Al-Bidāyah wa al-Nihāyah",
+    ],
+  },
+};
+
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
   "sirah_journey:6": lesson6,
+  "sirah_journey:7": lesson7,
 };
 
 // ── Accessor ───────────────────────────────────────────────────────────────────

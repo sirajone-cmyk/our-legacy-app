@@ -198,7 +198,15 @@ function SegmentPage({ page }: { page: Extract<ReaderPage, { kind: "segment" }> 
   );
 }
 
-function ReflectionPage({ page }: { page: Extract<ReaderPage, { kind: "reflection" }> }) {
+function ReflectionPage({
+  page,
+  hasGuide,
+  onViewGuide,
+}: {
+  page: Extract<ReaderPage, { kind: "reflection" }>;
+  hasGuide: boolean;
+  onViewGuide?: () => void;
+}) {
   return (
     <article className="book-page book-reflection-page">
       <DecorativeRule />
@@ -213,6 +221,18 @@ function ReflectionPage({ page }: { page: Extract<ReaderPage, { kind: "reflectio
         <p className="book-section-label">Action Point</p>
         <p>{page.actionPoint}</p>
       </section>
+      {hasGuide && onViewGuide && (
+        <div className="closing-guide-cta closing-guide-cta--secondary">
+          <div className="closing-guide-cta-rule" aria-hidden="true" />
+          <button
+            className="closing-guide-cta-btn closing-guide-cta-btn--secondary"
+            onClick={onViewGuide}
+            type="button"
+          >
+            Open Lesson Companion →
+          </button>
+        </div>
+      )}
     </article>
   );
 }
@@ -291,7 +311,7 @@ function ReaderPageView({
   if (page.kind === "cover") return <CoverPage page={page} onBegin={onBegin} />;
   if (page.kind === "part-divider") return <PartDividerPage page={page} onBegin={onBegin} />;
   if (page.kind === "segment") return <SegmentPage page={page} />;
-  if (page.kind === "reflection") return <ReflectionPage page={page} />;
+  if (page.kind === "reflection") return <ReflectionPage page={page} hasGuide={hasGuide} onViewGuide={onViewGuide} />;
   return <ClosingPage page={page} hasGuide={hasGuide} onViewGuide={onViewGuide} />;
 }
 

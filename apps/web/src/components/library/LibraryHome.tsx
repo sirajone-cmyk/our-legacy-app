@@ -30,6 +30,7 @@ import {
   SECTION_CATEGORIES,
   getBooksByCategory,
   getBookProgress,
+  getSavedReaderPage,
   hasBookProgress,
   type BookEntry,
   type CategoryId,
@@ -199,12 +200,36 @@ function FeaturedHero({ onOpen }: { onOpen: () => void }) {
   );
 }
 
-function ContinueReadingCard({ book, onOpen }: { book: BookEntry; onOpen: () => void }) {
+/** Maps saved reader page index to lesson label for the Sirah series */
+function getSirahLessonLabel(pageIndex: number): string {
+  const lessonNum = Math.floor(pageIndex / 7) + 1;
+  const lessonTitles: Record<number, string> = {
+    1: "Lesson 1 — Introduction to Sirah",
+    2: "Lesson 2 — The Meccan Period",
+    3: "Lesson 3 — The Year of the Elephant",
+    4: "Lesson 4 — Halimah al-Sa\'diyyah",
+    5: "Lesson 5 — The Opening of the Chest",
+    6: "Lesson 6 — The Death of Aminah",
+    7: "Lesson 7 — The Death of Abd al-Muttalib",
+  };
+  return lessonTitles[lessonNum] ?? `Lesson ${lessonNum}`;
+}
+
+function ContinueReadingCard({
+  book,
+  onContinue,
+}: {
+  book: BookEntry;
+  onContinue: () => void;
+}) {
   const progress = getBookProgress(book.id);
+  const savedPage = book.lessonKey ? getSavedReaderPage(book.lessonKey) : null;
+  const lessonLabel = savedPage !== null ? getSirahLessonLabel(savedPage) : null;
+
   return (
     <section className="library-continue" aria-label="Continue Reading">
       <p className="library-section-label">Continue Reading</p>
-      <button className="library-continue-card" onClick={onOpen} type="button">
+      <button className="library-continue-card" onClick={onContinue} type="button">
         <div
           className="library-continue-cover"
           style={{ background: book.coverColor }}
@@ -217,6 +242,9 @@ function ContinueReadingCard({ book, onOpen }: { book: BookEntry; onOpen: () => 
             <p className="library-continue-series">{book.seriesName}</p>
           )}
           <p className="library-continue-title">{book.title}</p>
+          {lessonLabel && (
+            <p className="library-continue-lesson">{lessonLabel}</p>
+          )}
           <div className="library-continue-progress-track" aria-hidden="true">
             <div
               className="library-continue-progress-fill"
@@ -327,9 +355,11 @@ type LibraryHomeProps = {
   onBookOpen: (book: BookEntry) => void;
   onSearch: () => void;
   onSupport: () => void;
+  /** Jump directly to reader at saved position (Continue Reading card) */
+  onContinueReading: (book: BookEntry) => void;
 };
 
-export function LibraryHome({ onBookOpen, onSearch, onSupport }: LibraryHomeProps) {
+export function LibraryHome({ onBookOpen, onSearch, onSupport, onContinueReading }: LibraryHomeProps) {
   const [activeCategory, setActiveCategory] = useState<CategoryId | "all">("all");
 
   // Sirah book for featured hero
@@ -393,7 +423,7 @@ export function LibraryHome({ onBookOpen, onSearch, onSupport }: LibraryHomeProp
       {continueBook && (
         <ContinueReadingCard
           book={continueBook}
-          onOpen={() => onBookOpen(continueBook)}
+          onContinue={() => onContinueReading(continueBook)}
         />
       )}
 

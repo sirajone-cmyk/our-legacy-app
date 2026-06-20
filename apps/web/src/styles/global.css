@@ -3236,3 +3236,24 @@ body:has(.book-reader-app) {
 .closing-guide-cta-btn:active {
   transform: scale(0.98);
 }
+
+/* Secondary CTA on Closing page — minimal link style */
+.closing-guide-cta--secondary {
+  text-align: center;
+  padding-bottom: var(--sp-4);
+}
+
+.closing-guide-cta-btn--secondary {
+  background: transparent;
+  color: var(--forest);
+  border: 1px solid var(--forest);
+  font-size: var(--text-sm);
+  padding: var(--sp-2) var(--sp-5);
+  box-shadow: none;
+}
+
+.closing-guide-cta-btn--secondary:hover {
+  background: var(--forest);
+  color: var(--parchment);
+  opacity: 1;
+}

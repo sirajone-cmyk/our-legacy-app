@@ -146,6 +146,22 @@ export function App() {
     // This prevents accidentally showing another book's reader content
   }, []);
 
+  const handleContinueReading = useCallback((book: BookEntry) => {
+    // Navigate directly to reader — EbookReader reads saved page from localStorage on init
+    if (book.lessonKey) {
+      const lesson = getReaderLessonById(book.lessonKey);
+      if (lesson) {
+        setView({ screen: "reader", lessonId: book.lessonKey });
+        setActiveNav("reader");
+        return;
+      }
+    }
+    // Fallback: open book detail
+    setView({ screen: "book-detail", book });
+    setActiveNav("library");
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSearchBookOpen = useCallback((book: BookEntry) => {
     setSearchOpen(false);
     setView({ screen: "book-detail", book });
@@ -266,7 +282,7 @@ export function App() {
 
   return (
     <AppShell currentRoute={activeNav} onNavigate={handleNavSelect}>
-      <LibraryHome onBookOpen={handleBookOpen} onSearch={() => setSearchOpen(true)} onSupport={() => setView({ screen: "support" })} />
+      <LibraryHome onBookOpen={handleBookOpen} onSearch={() => setSearchOpen(true)} onSupport={() => setView({ screen: "support" })} onContinueReading={handleContinueReading} />
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} onBookOpen={handleSearchBookOpen} onCategorySelect={handleCategorySelect} />
       <MoreMenu isOpen={moreOpen} onClose={() => setMoreOpen(false)} onNavigate={handleMoreNav} />
     </AppShell>

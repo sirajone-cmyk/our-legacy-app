@@ -288,7 +288,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "عَبْد الْمُطَّلِب بْن هَاشِم",
         relationship: "Grandfather of the Prophet ﷺ",
         knownFor: "The chieftain of Quraysh and the Hāshimī clan who witnessed the Year of the Elephant and stood at the Kaʿbah, praying to Allāh for its protection. He named his grandson Muḥammad — a name uncommon among the Arabs — saying: 'I want him to be praised by Allāh in heaven and by men on earth.' He raised the young Prophet ﷺ with profound love and honour after the death of Āminah, seating him at his side at the Kaʿbah and treating him with a distinction he showed no other child. He passed away when the Prophet ﷺ was approximately eight years old.",
-        appearsIn: "Lesson 3 — Year of the Elephant · Lesson 6 — The Death of Āminah",
+        appearsIn: "Lesson 3 — Year of the Elephant · Lesson 6 — The Death of Āminah · Lesson 7 — The Death of ʿAbd al-Muṭṭalib",
         status: "Grandfather — passed away before prophethood",
       },
       {
@@ -296,7 +296,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "أَبُو طَالِب بْن عَبْد الْمُطَّلِب",
         relationship: "Uncle of the Prophet ﷺ",
         knownFor: "The elder uncle of the Prophet ﷺ who took guardianship of the young child at age eight following the death of ʿAbd al-Muṭṭalib. He protected the Prophet ﷺ throughout the entire Makkan period with fierce tribal loyalty, standing against the entire Quraysh on his behalf. Despite never accepting Islām, his protection was a divine arrangement that allowed the message to be delivered for thirteen years without the Prophet ﷺ being harmed. He died in 619 CE — the Year of Grief — and the Prophet ﷺ mourned him deeply.",
-        appearsIn: "Lesson 6 — The Death of Āminah · Lesson 7 — Under the Wing of ʿAbd al-Muṭṭalib",
+        appearsIn: "Lesson 6 — The Death of Āminah · Lesson 7 — The Death of ʿAbd al-Muṭṭalib",
         status: "Uncle — passed away before Hijrah",
       },
       {
@@ -445,6 +445,34 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
       },
       {
         category: "hadith",
+        title: "Ṣaḥīḥ al-Bukhārī — Ḥadīth 5304",
+        detail: "Imām Muḥammad ibn Ismāʿīl al-Bukhārī (d. 256 AH)",
+        reliabilityTier: "established",
+        usedFor: "The guardian-of-orphan ḥadīth: 'I and the guardian of an orphan will be together in Paradise like this' — core evidence for Lesson 7.",
+      },
+      {
+        category: "hadith",
+        title: "Ṣaḥīḥ Muslim — Ḥadīth 2983",
+        detail: "Imām Muslim ibn al-Ḥajjāj al-Nīsābūrī (d. 261 AH)",
+        reliabilityTier: "established",
+        usedFor: "Extended form of the guardian-of-orphan ḥadīth — used in Lesson 7 to frame the virtue of caring for the vulnerable.",
+      },
+      {
+        category: "quran",
+        title: "Sūrah al-Anbiyāʾ — 21:107",
+        detail: "The Noble Qurʾān",
+        reliabilityTier: "established",
+        usedFor: "'We have not sent you except as a mercy for all the worlds' — virtue opener for Lesson 7, establishing the Prophet ﷺ as the embodiment of Raḥmah.",
+      },
+      {
+        category: "quran",
+        title: "Sūrah al-Isrāʾ — 17:34",
+        detail: "The Noble Qurʾān",
+        reliabilityTier: "established",
+        usedFor: "'And fulfil every promise — for every promise will be questioned' — virtue of Wafāʾ in Lesson 7, framing Abū Ṭālib's forty-year commitment.",
+      },
+      {
+        category: "hadith",
         title: "Ṣaḥīḥ al-Bukhārī — Ḥadīth 5985",
         detail: "Imām Muḥammad ibn Ismāʿīl al-Bukhārī (d. 256 AH)",
         reliabilityTier: "established",
@@ -578,6 +606,31 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
       {
         tier: "discussed",
         text: "The circumstances and exact words spoken to ʿAbd al-Muṭṭalib regarding the Prophet ﷺ at birth — some details appear in later Sīrah compilations without fully authenticated chains.",
+      },
+      // ── Lesson 7 — The Death of ʿAbd al-Muṭṭalib ──────────────────────────
+      {
+        tier: "established",
+        text: "The guardian of an orphan will be beside the Prophet ﷺ in Paradise — Ṣaḥīḥ al-Bukhārī (Ḥadīth 5304) and Ṣaḥīḥ Muslim (Ḥadīth 2983), both with authenticated chains.",
+      },
+      {
+        tier: "established",
+        text: "Abū Ṭālib took guardianship of the Prophet ﷺ after ʿAbd al-Muṭṭalib's death — unanimous across all primary Sīrah sources without dispute.",
+      },
+      {
+        tier: "established",
+        text: "Abū Ṭālib did not die as a Muslim — established in Ṣaḥīḥ al-Bukhārī (Ḥadīth 1360) and Ṣaḥīḥ Muslim (Ḥadīth 24).",
+      },
+      {
+        tier: "accepted",
+        text: "ʿAbd al-Muṭṭalib seated the young Prophet ﷺ beside him on his mat at the Kaʿbah and said: 'This child will be of great importance' — reported in Sīrat Ibn Hishām with broad scholarly acceptance.",
+      },
+      {
+        tier: "accepted",
+        text: "ʿAbd al-Muṭṭalib died when the Prophet ﷺ was approximately eight years old — the most widely cited figure in Sīrah chronology, though some accounts give seven or nine.",
+      },
+      {
+        tier: "discussed",
+        text: "The exact words of ʿAbd al-Muṭṭalib on his deathbed regarding guardianship — narrated in classical Sīrah sources but without fully authenticated chains back to witnesses.",
       },
       // ── Madīnah Period ───────────────────────────────────────────────────
       {

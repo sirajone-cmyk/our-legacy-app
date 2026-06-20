@@ -1097,14 +1097,34 @@ export function getBookById(id: string): BookEntry | undefined {
   return LIBRARY_BOOKS.find((b) => b.id === id);
 }
 
+/**
+ * Returns the saved reader page index for a lessonKey, or null if never opened.
+ * Reader stores position at `our_legacy_reader_page:${lessonKey}`.
+ */
+export function getSavedReaderPage(lessonKey: string): number | null {
+  const val = localStorage.getItem(`our_legacy_reader_page:${lessonKey}`);
+  return val !== null ? Number(val) : null;
+}
+
 export function getBookProgress(bookId: string): number {
-  const currentPage = Number(localStorage.getItem(`our_legacy_book_${bookId}_page`) ?? "0");
   const book = getBookById(bookId);
+  if (book?.lessonKey) {
+    const saved = getSavedReaderPage(book.lessonKey);
+    if (saved === null) return 0;
+    // sirah_journey: 49 pages total (indices 0-48)
+    return Math.min(100, Math.round((saved / 48) * 100));
+  }
+  // Legacy fallback for books without reader content
+  const currentPage = Number(localStorage.getItem(`our_legacy_book_${bookId}_page`) ?? "0");
   if (!book || book.totalPages === 0) return 0;
   return Math.round((currentPage / book.totalPages) * 100);
 }
 
 export function hasBookProgress(bookId: string): boolean {
+  const book = getBookById(bookId);
+  if (book?.lessonKey) {
+    return getSavedReaderPage(book.lessonKey) !== null;
+  }
   return localStorage.getItem(`our_legacy_book_${bookId}_page`) !== null;
 }
 
