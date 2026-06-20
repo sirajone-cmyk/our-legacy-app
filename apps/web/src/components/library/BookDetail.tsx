@@ -893,7 +893,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "Birthplace of the Prophet ﷺ",
       country: "Saudi Arabia",
       importance: "The sacred city where the Prophet ﷺ was born, received the first revelation, and completed his Farewell Pilgrimage. The most honoured city on earth.",
-      lesson: "Appears in: Lessons 1–5",
+      lesson: "Key location in the early Sīrah",
       svgType: "kaabah",
       exploreFurther: [
         "The Kaʿbah was built by Ibrāhīm ﷺ and his son Ismāʿīl ﷺ",
@@ -923,7 +923,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "Where Āminah bint Wahb is buried",
       country: "Saudi Arabia",
       importance: "The town between Makkah and Madīnah where the Prophet's ﷺ beloved mother passed away. He was approximately six years old. Years later, he ﷺ visited her grave and wept.",
-      lesson: "Covered in: Lesson 6",
+      lesson: "Where the Prophet's ﷺ mother is buried",
       svgType: "abwaa",
       exploreFurther: [
         "Al-Abwāʾ lies roughly halfway between Makkah and Madīnah",

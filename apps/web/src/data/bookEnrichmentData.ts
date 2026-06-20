@@ -272,7 +272,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "آمِنَة بِنْت وَهْب",
         relationship: "Mother of the Prophet ﷺ",
         knownFor: "The noble and pure mother of Rasūlullāh ﷺ, from the tribe of Banū Zuhrah — one of the most honoured lineages of Quraysh. She raised the Prophet ﷺ alone after the death of ʿAbdullāh, and made the long journey to Yathrib to visit her husband's grave, taking her young son with her. She died at Al-Abwāʾ on the return journey when the Prophet ﷺ was approximately six years old. Years later, the Prophet ﷺ visited her grave, wept, and said: 'I sought permission from my Lord to seek forgiveness for her, but it was not granted. I sought permission to visit her grave, and it was granted — so visit graves, for they remind you of death.'",
-        appearsIn: "Lesson 3 — Year of the Elephant · Lesson 6 — The Death of Āminah",
+        appearsIn: "Year of the Elephant · The Death of Āminah",
         status: "Mother — passed away before prophethood",
       },
       {
@@ -280,7 +280,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "عَبْدُ اللَّه بْن عَبْد الْمُطَّلِب",
         relationship: "Father of the Prophet ﷺ",
         knownFor: "The beloved father of Rasūlullāh ﷺ and the most precious son of ʿAbd al-Muṭṭalib. His father had once made a vow to sacrifice his son, but was redeemed with one hundred camels. Known for his exceptional beauty and character, he married Āminah bint Wahb and passed away on a trading journey to Yathrib before the Prophet ﷺ was born, leaving him an orphan from birth. He is buried in Madīnah.",
-        appearsIn: "Lesson 3 — Year of the Elephant",
+        appearsIn: "Year of the Elephant",
         status: "Father — passed away before the Prophet's birth",
       },
       {
@@ -288,7 +288,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "عَبْد الْمُطَّلِب بْن هَاشِم",
         relationship: "Grandfather of the Prophet ﷺ",
         knownFor: "The chieftain of Quraysh and the Hāshimī clan who witnessed the Year of the Elephant and stood at the Kaʿbah, praying to Allāh for its protection. He named his grandson Muḥammad — a name uncommon among the Arabs — saying: 'I want him to be praised by Allāh in heaven and by men on earth.' He raised the young Prophet ﷺ with profound love and honour after the death of Āminah, seating him at his side at the Kaʿbah and treating him with a distinction he showed no other child. He passed away when the Prophet ﷺ was approximately eight years old.",
-        appearsIn: "Lesson 3 — Year of the Elephant · Lesson 6 — The Death of Āminah · Lesson 7 — The Death of ʿAbd al-Muṭṭalib",
+        appearsIn: "Year of the Elephant · The Death of Āminah · The Death of ʿAbd al-Muṭṭalib",
         status: "Grandfather — passed away before prophethood",
       },
       {
@@ -296,7 +296,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "أَبُو طَالِب بْن عَبْد الْمُطَّلِب",
         relationship: "Uncle of the Prophet ﷺ",
         knownFor: "The elder uncle of the Prophet ﷺ who took guardianship of the young child at age eight following the death of ʿAbd al-Muṭṭalib. He protected the Prophet ﷺ throughout the entire Makkan period with fierce tribal loyalty, standing against the entire Quraysh on his behalf. Despite never accepting Islām, his protection was a divine arrangement that allowed the message to be delivered for thirteen years without the Prophet ﷺ being harmed. He died in 619 CE — the Year of Grief — and the Prophet ﷺ mourned him deeply.",
-        appearsIn: "Lesson 6 — The Death of Āminah · Lesson 7 — The Death of ʿAbd al-Muṭṭalib",
+        appearsIn: "The Death of Āminah · The Death of ʿAbd al-Muṭṭalib",
         status: "Uncle — passed away before Hijrah",
       },
       {
@@ -304,7 +304,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "خَدِيجَة بِنْت خُوَيْلِد",
         relationship: "First wife of the Prophet ﷺ",
         knownFor: "The first person to accept Islām — before any man or woman — and the most beloved of the Prophet's ﷺ wives during her lifetime. A noble and wealthy businesswoman of Quraysh, she observed the Prophet's ﷺ honesty and trustworthiness on a trading journey to Shām and proposed the marriage herself. At the terrifying moment of the first revelation, she was his rock: 'Allāh will never disgrace you — you maintain family ties, support the weak, serve your guests, and help those afflicted by calamity.' She bore him six children, stood by him for twenty-five years, and her death in 619 CE shook him so deeply that Allāh sent comfort through the Night Journey.",
-        appearsIn: "Lesson 8 — The Makkī Years",
+        appearsIn: "The Makkī Years",
         status: "Ṣaḥābiyyah — Mother of the Believers",
       },
       {
@@ -312,7 +312,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "أُمّ أَيْمَن (بَرَكَة الحَبَشِيَّة)",
         relationship: "Caretaker of the Prophet's ﷺ household",
         knownFor: "The devoted Ethiopian servant who was present in the Prophet's ﷺ household from the day he was born and outlived him by several months. After Āminah's death at Al-Abwāʾ, it was Umm Ayman who carried the young Prophet ﷺ back to Makkah on foot across the desert — alone and grieving, yet steadfast. The Prophet ﷺ honoured her throughout his life, called her 'My mother after my mother,' and said of her after accepting Islām: 'Whoever wishes to marry a woman from the people of Paradise, let him marry Umm Ayman.'",
-        appearsIn: "Lesson 6 — The Death of Āminah",
+        appearsIn: "The Death of Āminah",
         status: "Ṣaḥābiyyah — one of the earliest believers",
       },
       {
@@ -320,7 +320,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "حَلِيمَة السَّعْدِيَّة",
         relationship: "Wet-nurse of the Prophet ﷺ",
         knownFor: "A woman from the tribe of Banū Saʿd ibn Bakr who became the foster-mother of the infant Prophet ﷺ. She had initially hesitated to take him because he was an orphan with no father to pay — all the other women of Banū Saʿd had found children with living fathers. But she found no other child available and accepted him, and from that moment divine blessings poured into her household: her animals gave milk abundantly, her crops flourished, and all who knew her remarked on the change. She cared for the Prophet ﷺ for approximately four to five years and later visited him in Makkah after he had received prophethood.",
-        appearsIn: "Lesson 4 — Ḥalīmah al-Saʿdiyyah · Lesson 5 — The Opening of the Chest",
+        appearsIn: "The Desert Years with Ḥalīmah · The Opening of the Chest",
         status: "Ṣaḥābiyyah — accepted Islām",
       },
       {
@@ -328,7 +328,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "أَبُو بَكْر الصِّدِّيق",
         relationship: "Closest companion and first Caliph",
         knownFor: "The closest companion of the Prophet ﷺ and the first adult free man to accept Islām without a single moment of hesitation or doubt. His friendship with the Prophet ﷺ predated Islām — and when the message was brought to him, he said simply: 'I testify to this.' He spent his entire wealth of forty thousand dirhams freeing enslaved believers from torture. He accompanied the Prophet ﷺ in the Cave of Thawr during the Hijrah — the two of them alone, with Allāh as their third. After the Prophet's ﷺ death, he was unanimously chosen as the first Caliph and held the ummah together through its most dangerous days.",
-        appearsIn: "Lesson 9 — The Madanī Years",
+        appearsIn: "The Madanī Years",
         status: "Ṣaḥābī — one of the Asharah Mubashsharah",
       },
       {
@@ -336,7 +336,7 @@ export const BOOK_ENRICHMENT: Record<string, BookEnrichment> = {
         arabicName: "عَائِشَة بِنْت أَبِي بَكْر",
         relationship: "Wife of the Prophet ﷺ",
         knownFor: "The beloved wife of the Prophet ﷺ in whose room he breathed his last, and one of the greatest scholars in the history of Islām. She was the daughter of Abū Bakr al-Ṣiddīq, and the Prophet ﷺ loved her with a depth he expressed openly: 'Love of ʿĀʾishah has been placed in my heart.' She transmitted over 2,210 Ḥadīth — more than any woman in history — and was a leading authority on fiqh, Qurʾānic commentary, Arabic poetry, and medicine. The great Companion Abū Mūsā al-Ashʿarī said: 'Whenever we Companions were confused about a matter, we went to ʿĀʾishah and always found knowledge with her.'",
-        appearsIn: "Lesson 9 — The Madanī Years · Lesson 10 — The Final Days",
+        appearsIn: "The Madanī Years · The Final Days",
         status: "Ṣaḥābiyyah — Mother of the Believers",
       },
     ],
