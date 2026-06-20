@@ -893,7 +893,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "Birthplace of the Prophet ﷺ",
       country: "Saudi Arabia",
       importance: "The sacred city where the Prophet ﷺ was born, received the first revelation, and completed his Farewell Pilgrimage. The most honoured city on earth.",
-      lesson: "Lessons 1–5",
+      lesson: "Appears in: Lessons 1–5",
       svgType: "kaabah",
       exploreFurther: [
         "The Kaʿbah was built by Ibrāhīm ﷺ and his son Ismāʿīl ﷺ",
@@ -908,7 +908,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "Where the first revelation descended",
       country: "Saudi Arabia",
       importance: "On Jabal al-Nūr, this mountain cave is where Jibrīl ʿalayhi us-salām first appeared and brought the words of the Qurʾān to the Prophet ﷺ.",
-      lesson: "Lesson 8",
+      lesson: "First Revelation — Coming Soon",
       svgType: "hira",
       exploreFurther: [
         "Jabal al-Nūr (Mountain of Light) stands ~640 m above Makkah",
@@ -923,7 +923,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "Where Āminah bint Wahb is buried",
       country: "Saudi Arabia",
       importance: "The town between Makkah and Madīnah where the Prophet's ﷺ beloved mother passed away. He was approximately six years old. Years later, he ﷺ visited her grave and wept.",
-      lesson: "Lesson 6",
+      lesson: "Covered in: Lesson 6",
       svgType: "abwaa",
       exploreFurther: [
         "Al-Abwāʾ lies roughly halfway between Makkah and Madīnah",
@@ -938,7 +938,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "City of the rejection — and the unshaken Prophet ﷺ",
       country: "Saudi Arabia",
       importance: "The mountain city the Prophet ﷺ visited after the Year of Sorrow seeking support. He was driven out with stones — yet he ﷺ refused Jibrīl's offer to destroy them.",
-      lesson: "Lessons 7–8",
+      lesson: "Year of Sorrow — Coming Soon",
       svgType: "taif",
       exploreFurther: [
         "Ṭāʾif is a highland city ~80 km from Makkah, known for its cool climate and vineyards",
@@ -953,7 +953,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "The first Hijrah — refuge under al-Najāshī",
       country: "Ethiopia",
       importance: "The Christian king al-Najāshī granted sanctuary to the early Muslims, refusing to hand them back to the Quraysh despite political pressure. He later accepted Islām.",
-      lesson: "Lesson 7",
+      lesson: "First Hijrah — Coming Soon",
       svgType: "abyssinia",
       exploreFurther: [
         "Modern-day Ethiopia and Eritrea correspond to the ancient Kingdom of Aksum",
@@ -968,7 +968,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "Makkah → Cave of Thawr → Madīnah",
       country: "Saudi Arabia",
       importance: "The historic migration route taken by the Prophet ﷺ and Abū Bakr رضي الله عنه — a journey of faith that marks Year 1 of the Islamic calendar.",
-      lesson: "Lesson 9",
+      lesson: "The Hijrah — Coming Soon",
       svgType: "hijrah",
       exploreFurther: [
         "The Hijrah took place in 622 CE — Year 1 AH of the Islamic calendar",
@@ -983,7 +983,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "City of the Hijrah — the seat of the Islamic state",
       country: "Saudi Arabia",
       importance: "The radiant city that welcomed the Prophet ﷺ and became the seat of the first Islamic state. The Prophet ﷺ is buried here in the most honoured grave on earth.",
-      lesson: "Lessons 9–30",
+      lesson: "Madīnah Period — Coming Soon",
       svgType: "madinah",
       exploreFurther: [
         "Previously known as Yathrib — the Prophet ﷺ renamed it al-Madīnah al-Munawwarah",
@@ -998,7 +998,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "17 Ramaḍān, 2 AH — Furqān: The Decisive Day",
       country: "Saudi Arabia",
       importance: "The first major battle of Islām — 313 believers against 1,000. Allāh sent angels to assist. A decisive divine victory that Allāh called 'Yawm al-Furqān'.",
-      lesson: "Lessons 11–12",
+      lesson: "Battle of Badr — Coming Soon",
       svgType: "badr",
       exploreFurther: [
         "The wells of Badr are ~150 km southwest of Madīnah near the Red Sea trade route",
@@ -1013,7 +1013,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "3 AH — The Trial of the Archers",
       country: "Saudi Arabia",
       importance: "The second major battle — the archers abandoned their post and the tide turned. Seventy Companions were martyred. A profound lesson in obedience and trust in Allāh.",
-      lesson: "Lessons 13–14",
+      lesson: "Battle of Uḥud — Coming Soon",
       svgType: "uhud",
       exploreFurther: [
         "Jabal Uḥud is a mountain ~5 km north of the Prophet's Mosque in Madīnah",
@@ -1028,7 +1028,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "5 AH — Coalition of 10,000 repelled",
       country: "Saudi Arabia",
       importance: "A coalition of 10,000 besieged Madīnah. On Salmān al-Fārisī's advice, the Prophet ﷺ ordered a trench dug — and Allāh sent a storm that scattered the enemy.",
-      lesson: "Lessons 15–16",
+      lesson: "The Trench — Coming Soon",
       svgType: "khandaq",
       exploreFurther: [
         "Salmān al-Fārisī رضي الله عنه — the Persian Companion — suggested the trench strategy, inspired by Persian military tactics",
@@ -1043,7 +1043,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "6 AH — The Treaty that was a manifest victory",
       country: "Saudi Arabia",
       importance: "The Prophet ﷺ led 1,400 Companions for ʿUmrah but the Quraysh blocked the way. A treaty was signed — seemingly unfavourable — yet Allāh called it 'a manifest victory'.",
-      lesson: "Lessons 17–18",
+      lesson: "Treaty of Ḥudaybiyyah — Coming Soon",
       svgType: "hudaybiyyah",
       exploreFurther: [
         "Al-Ḥudaybiyyah is a village ~20 km from Makkah on the road from Madīnah",
@@ -1058,7 +1058,7 @@ const BOOK_MAPS: Record<string, MapEntry[]> = {
       subtitle: "20 Ramaḍān, 8 AH — The Great Victory",
       country: "Saudi Arabia",
       importance: "The Prophet ﷺ entered Makkah with 10,000 Companions. He ﷺ declared a general amnesty, destroyed the idols, and purified the Kaʿbah. The prophecy was fulfilled.",
-      lesson: "Lessons 23–24",
+      lesson: "The Conquest — Coming Soon",
       svgType: "conquest",
       exploreFurther: [
         "The conquest was largely bloodless — the Prophet ﷺ granted general amnesty (ʿafwun ʿāmm)",
@@ -1229,19 +1229,22 @@ function ProfilesTab({ profiles }: { profiles: CharacterProfile[] }) {
       <div className="bd-profiles-grid">
         {profiles.map((p, i) => (
           <div key={i} className="bd-profile-card">
-            {/* Arabic name band — the visual focus */}
+            {/* Arabic name band — hero header */}
             <div className="bd-profile-arabic-band">
               {p.arabicName
                 ? <p className="bd-profile-arabic-name" dir="rtl" lang="ar">{p.arabicName}</p>
                 : <p className="bd-profile-arabic-name bd-profile-arabic-name--fallback">{p.name}</p>}
-              {p.status && <span className="bd-profile-status">{p.status}</span>}
+              <p className="bd-profile-band-relation">{p.relationship}</p>
             </div>
             {/* Body */}
             <div className="bd-profile-body">
-              <div className="bd-profile-name-row">
-                <h4 className="bd-profile-name">{p.name}</h4>
-                <span className="bd-profile-role">{p.relationship}</span>
-              </div>
+              <h4 className="bd-profile-name">{p.name}</h4>
+              {p.status && (
+                <p className="bd-profile-status-line">
+                  <span className="bd-profile-appears-label">Status</span>
+                  {p.status}
+                </p>
+              )}
               <div className="bd-manuscript-divider bd-manuscript-divider--sm" aria-hidden="true">◆</div>
               <p className="bd-profile-known">{p.knownFor}</p>
               {p.appearsIn && (
@@ -1552,6 +1555,7 @@ export function BookDetail({ book, onBack, onOpenChapter, onOpenMap: _onOpenMap 
         <ProfilesTab profiles={enrichment.characterProfiles} />
       )}
 
+ 
       {activeTab === "references" && (
         <ReferencesTab
           book={book}

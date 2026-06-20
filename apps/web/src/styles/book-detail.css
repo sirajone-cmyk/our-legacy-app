@@ -996,10 +996,11 @@
 .bd-profile-arabic-band {
   background: #12332f;          /* --forest */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: var(--sp-3) var(--sp-4);
-  gap: var(--sp-3);
+  justify-content: center;
+  padding: var(--sp-4) var(--sp-4) var(--sp-3);
+  gap: var(--sp-1);
 }
 
 .bd-profile-arabic-name {
@@ -1008,9 +1009,8 @@
   color: #e7d3a1;               /* --champagne */
   margin: 0;
   line-height: 1.6;
-  text-align: right;
+  text-align: center;
   direction: rtl;
-  flex: 1;
 }
 
 .bd-profile-arabic-name--fallback {
@@ -1018,20 +1018,30 @@
   font-size: 1.05rem;
   font-style: italic;
   letter-spacing: 0.01em;
+  text-align: center;
+  direction: ltr;
 }
 
-.bd-profile-status {
+.bd-profile-band-relation {
   font-family: var(--font-ui);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #12332f;               /* --forest */
-  background: rgba(231, 211, 161, 0.85); /* champagne translucent */
-  padding: 3px 8px;
-  border-radius: 999px;
-  white-space: nowrap;
-  flex-shrink: 0;
+  color: rgba(231, 211, 161, 0.65); /* champagne muted */
+  margin: 0;
+  text-align: center;
+}
+
+.bd-profile-status-line {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: #4a6461;
+  margin: var(--sp-1) 0 var(--sp-3);
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
 }
 
 /* ── Card body ──────────────────────────────────────────────────────────── */
@@ -1644,7 +1654,7 @@
   .bd-milestone--highlight .bd-milestone-title { font-size: var(--text-md); }
 
   /* Profiles */
-  .bd-profile-arabic-band { padding: var(--sp-2) var(--sp-3); }
+  .bd-profile-arabic-band { padding: var(--sp-3) var(--sp-3) var(--sp-2); }
   .bd-profile-arabic-name { font-size: 1.15rem; }
   .bd-profile-body { padding: var(--sp-3) var(--sp-3) var(--sp-4); }
   .bd-profile-name { font-size: var(--text-base); }

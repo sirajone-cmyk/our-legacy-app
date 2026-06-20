@@ -222,53 +222,6 @@ function ReflectionPage({
         <p>{page.actionPoint}</p>
       </section>
       {hasGuide && onViewGuide && (
-        <div className="closing-guide-cta closing-guide-cta--secondary">
-          <div className="closing-guide-cta-rule" aria-hidden="true" />
-          <button
-            className="closing-guide-cta-btn closing-guide-cta-btn--secondary"
-            onClick={onViewGuide}
-            type="button"
-          >
-            Open Lesson Companion →
-          </button>
-        </div>
-      )}
-    </article>
-  );
-}
-
-function ClosingPage({
-  page,
-  hasGuide,
-  onViewGuide,
-}: {
-  page: Extract<ReaderPage, { kind: "closing" }>;
-  hasGuide: boolean;
-  onViewGuide?: () => void;
-}) {
-  return (
-    <article className="book-page book-closing-page">
-      <DecorativeRule />
-      <p className="book-kicker">Closing Page</p>
-      <h1>Duʿāʾ & Conclusion</h1>
-      {page.paragraphs.map((paragraph) => (
-        <p key={paragraph.slice(0, 90)}>{paragraph}</p>
-      ))}
-      <SacredBox
-        box={{
-          type: "dua",
-          arabic: page.duaArabic,
-          translation: page.duaTranslation
-        }}
-      />
-      {page.nextLessonPreview && (
-        <div className="closing-next-preview">
-          <div className="closing-next-rule" />
-          <p className="closing-next-label">Coming Next</p>
-          <p className="closing-next-text">{page.nextLessonPreview}</p>
-        </div>
-      )}
-      {hasGuide && onViewGuide && (
         <div className="closing-guide-cta">
           <div className="closing-guide-cta-rule" aria-hidden="true" />
           <div className="closing-guide-cta-card">
@@ -297,6 +250,37 @@ function ClosingPage({
   );
 }
 
+function ClosingPage({
+  page,
+}: {
+  page: Extract<ReaderPage, { kind: "closing" }>;
+}) {
+  return (
+    <article className="book-page book-closing-page">
+      <DecorativeRule />
+      <p className="book-kicker">Closing Page</p>
+      <h1>Duʿāʾ & Conclusion</h1>
+      {page.paragraphs.map((paragraph) => (
+        <p key={paragraph.slice(0, 90)}>{paragraph}</p>
+      ))}
+      <SacredBox
+        box={{
+          type: "dua",
+          arabic: page.duaArabic,
+          translation: page.duaTranslation
+        }}
+      />
+      {page.nextLessonPreview && (
+        <div className="closing-next-preview">
+          <div className="closing-next-rule" />
+          <p className="closing-next-label">Coming Next</p>
+          <p className="closing-next-text">{page.nextLessonPreview}</p>
+        </div>
+      )}
+    </article>
+  );
+}
+
 function ReaderPageView({
   page,
   onBegin,
@@ -312,7 +296,7 @@ function ReaderPageView({
   if (page.kind === "part-divider") return <PartDividerPage page={page} onBegin={onBegin} />;
   if (page.kind === "segment") return <SegmentPage page={page} />;
   if (page.kind === "reflection") return <ReflectionPage page={page} hasGuide={hasGuide} onViewGuide={onViewGuide} />;
-  return <ClosingPage page={page} hasGuide={hasGuide} onViewGuide={onViewGuide} />;
+  return <ClosingPage page={page} />;
 }
 
 // ── Read-aloud helpers ─────────────────────────────────────────────────────────
