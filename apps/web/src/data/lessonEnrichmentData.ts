@@ -13,6 +13,500 @@
 
 import type { LessonEnrichment, LessonEnrichmentMap } from "./lessonEnrichmentTypes";
 
+// ── Lesson 3 — The Year of the Elephant and the Birth of Rasūlullāh ﷺ ────────
+
+const lesson3: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 3,
+  lessonTitle: "The Year of the Elephant and the Birth of Rasūlullāh ﷺ",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 25,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Why This Matters Today ─────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "The birth of Rasūlullāh ﷺ is the most important birth in human history. " +
+    "Yet in most Muslim homes, it passes as a date on a calendar rather than a " +
+    "moment to understand and celebrate with depth. This lesson answers why the " +
+    "Year of the Elephant mattered, what Allāh ﷻ was announcing to the world, " +
+    "and what the name Muḥammad means — and why ʿAbd al-Muṭṭalib chose it. " +
+    "For families raising children in a world that sometimes seems indifferent " +
+    "or hostile to Islām, this lesson carries a profound message: when Allāh ﷻ " +
+    "has chosen something to protect, no force in the world can destroy it. " +
+    "The Kaʿbah stood. And in that same year, the mercy to all the worlds was born.",
+
+  // ── Memory Gem ─────────────────────────────────────────────────────────────
+
+  memoryGem:
+    "'I am the lord of the camels. The House has a Lord who will protect it.' " +
+    "— ʿAbd al-Muṭṭalib to Abraha.",
+
+  // ── One Minute Summary ─────────────────────────────────────────────────────
+
+  oneMinuteSummary:
+    "In approximately 570 CE, Abraha — the Yemeni governor and military commander " +
+    "— marched an army of war elephants northward to destroy the Kaʿbah. He wanted " +
+    "to redirect the pilgrimage trade from Makkah to his own church in Ṣanʿāʾ. " +
+    "When he reached the outskirts of Makkah, his lead elephant Maḥmūd refused to " +
+    "advance. Then birds appeared from the horizon — flocks carrying small stones " +
+    "of baked clay — and destroyed the army. The Kaʿbah stood. In that same year, " +
+    "on a Monday in Rabīʿ al-Awwal, Muḥammad ﷺ was born to Āminah bint Wahb in " +
+    "Makkah. His grandfather ʿAbd al-Muṭṭalib carried the infant to the Kaʿbah, " +
+    "made duʿāʾ, and named him Muḥammad — the praised one. He arrived fatherless, " +
+    "to a grieving mother, in a year marked by the most dramatic miracle Arabia had " +
+    "ever seen. Allāh ﷻ had sent into the world the one He would later call a mercy " +
+    "to all the worlds.",
+
+  // ── Key Facts (max 6) ──────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "Who was Abraha?",
+      information:
+        "Abraha al-Ashram was the Yemeni governor ruling on behalf of the Negus of " +
+        "Abyssinia. He built a magnificent church in Ṣanʿāʾ and sought to redirect " +
+        "the Arab pilgrimage away from the Kaʿbah. When a man from one of the Arab " +
+        "tribes desecrated his church, Abraha resolved to march north and destroy " +
+        "the Kaʿbah entirely.",
+    },
+    {
+      topic: "The Year of the Elephant",
+      information:
+        "The Arabs called it ʿĀm al-Fīl — the Year of the Elephant (~570 CE). The " +
+        "name stuck so firmly that the Arabs used it as a calendar reference for " +
+        "decades afterward. The Prophet ﷺ himself was born in this year, and the " +
+        "miracle of the birds became permanently associated with it in Arab memory.",
+    },
+    {
+      topic: "ʿAbd al-Muṭṭalib's response",
+      information:
+        "He did not plead for the Kaʿbah. He stood before Abraha, asked for his " +
+        "two hundred camels to be returned, and said: 'I am the lord of the camels. " +
+        "The House has a Lord who will protect it.' He then led the Makkans to the " +
+        "surrounding mountains to watch — no human army could win this battle.",
+    },
+    {
+      topic: "The Birds of Abābīl",
+      information:
+        "Allāh ﷻ sent flights of birds carrying three stones each — one in the beak " +
+        "and one in each talon — small pellets of hardened clay. Where the stones " +
+        "fell, the soldiers they struck were destroyed. The most powerful army Arabia " +
+        "had seen was left in ruin. Recorded in Sūrah al-Fīl (Qurʾān 105:1–5).",
+    },
+    {
+      topic: "The birth",
+      information:
+        "On a Monday in Rabīʿ al-Awwal, in the Year of the Elephant, Muḥammad ﷺ " +
+        "was born to Āminah bint Wahb. His father ʿAbdullāh had died in Yathrib " +
+        "before the birth, leaving Āminah widowed and grieving. The Prophet ﷺ later " +
+        "confirmed that Monday was significant — it was the day he was born and the " +
+        "day the first revelation came to him (Ṣaḥīḥ Muslim 2983).",
+    },
+    {
+      topic: "The name Muḥammad",
+      information:
+        "ʿAbd al-Muṭṭalib carried the infant to the Kaʿbah and gave him a name " +
+        "uncommon among the Arabs: Muḥammad — meaning 'the one who is repeatedly " +
+        "praised.' He said he wanted this child to be praised by Allāh in the " +
+        "heavens and by people on earth. A name guided by Allāh, for a child " +
+        "Allāh had already chosen.",
+    },
+  ],
+
+  // ── What We Learn ─────────────────────────────────────────────────────────
+
+  whatWeLearn: [
+    {
+      event: "Abraha tried to destroy the Kaʿbah",
+      lesson:
+        "When Allāh ﷻ has chosen something to protect, no earthly power can overcome " +
+        "His decree. Tawakkul is not optimism — it is certainty grounded in knowing " +
+        "who holds the outcome.",
+    },
+    {
+      event: "ʿAbd al-Muṭṭalib spoke about his camels, not the Kaʿbah",
+      lesson:
+        "There are moments where the most effective action is to leave the outcome " +
+        "to Allāh ﷻ. He did not plead or argue. He stated what was true and stepped " +
+        "aside. Sometimes stepping back is the most powerful thing we can do.",
+    },
+    {
+      event: "The elephant refused to move toward the Kaʿbah",
+      lesson:
+        "Creation recognises its Lord in ways that human beings sometimes forget. " +
+        "The elephant, the birds, the stones — all instruments in the hand of " +
+        "Allāh ﷻ — acted in obedience while an army of men acted in defiance.",
+    },
+    {
+      event: "The Prophet ﷺ was born in the same year as the miracle",
+      lesson:
+        "Allāh ﷻ does not announce great events by accident. He marked the year " +
+        "of the greatest birth in history with a sign so dramatic that the Arabs " +
+        "named an entire year after it. Nothing in Allāh's timing is coincidence.",
+    },
+    {
+      event: "ʿAbdullāh died before the birth",
+      lesson:
+        "The Prophet ﷺ entered the world already without a father — already dependent " +
+        "on Allāh alone. From the first moment, Allāh was teaching him and teaching " +
+        "us that reliance on Allāh is not a fallback position. It is the only position.",
+    },
+    {
+      event: "The name Muḥammad was chosen",
+      lesson:
+        "A name is a duʿāʾ for a child. ʿAbd al-Muṭṭalib made a duʿāʾ for his " +
+        "grandson before the child could speak — asking Allāh to make him praised " +
+        "in both worlds. The words we place over our children carry weight we " +
+        "may not fully see.",
+    },
+  ],
+
+  // ── Why Did Allāh Allow This? ──────────────────────────────────────────────
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allāh allow Abraha's army to march unopposed until the very " +
+      "outskirts of Makkah, rather than stopping it earlier?",
+    reflection:
+      "Allāh could have stopped Abraha before he left Yemen, or before he " +
+      "reached the Ḥijāz. He allowed the army to advance until the situation " +
+      "was completely beyond human rescue — and only then acted. Scholars have " +
+      "reflected that Allāh ﷻ wanted the miracle to be unmistakable. Not a near " +
+      "miss that could be attributed to strategy or weather. A complete and total " +
+      "defeat, remembered and named by an entire civilisation. He wanted the world " +
+      "to know — in the year His final Messenger was being born — that the House " +
+      "of Ibrāhīm was not abandoned. And He wanted every child who would later " +
+      "hear this story to learn: when you have done everything you can and the " +
+      "outcome still seems impossible, that is exactly when Allāh ﷻ steps in — " +
+      "visibly, unmistakably, and on His own timeline.",
+    quranicConnection: {
+      arabic: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
+      translation:
+        "Have you not seen what your Lord did to the People of the Elephant?",
+      reference: "Sūrah al-Fīl — 105:1",
+    },
+  },
+
+  // ── Family Discussion ──────────────────────────────────────────────────────
+
+  familyDiscussion: [
+    {
+      question:
+        "ʿAbd al-Muṭṭalib stood before the most powerful army in Arabia and did " +
+        "not argue for the Kaʿbah — he simply said 'The House has a Lord who will " +
+        "protect it.' What does tawakkul look like when you are genuinely afraid? " +
+        "How would you explain it to a child who is worried about something?",
+      hint:
+        "Tawakkul is not pretending we are not afraid. ʿAbd al-Muṭṭalib was " +
+        "standing in front of an army of elephants. He did what was his to do — " +
+        "asked for his camels, led the people to safety — and then left the rest " +
+        "to Allāh. Think of a situation in your family where tawakkul was needed. " +
+        "What did doing what was yours look like?",
+    },
+    {
+      question:
+        "Allāh sent small birds with small stones against the greatest army Arabia " +
+        "had ever seen. He chose the weakest-seeming instruments to defeat the " +
+        "strongest force. Where else — in the Sīrah or in your own life — have you " +
+        "seen Allāh act through something small or unexpected?",
+      hint:
+        "This is one of the recurring patterns of Allāh's design: Zamzam from " +
+        "beneath the feet of an infant. A handful of companions against Quraysh. " +
+        "What makes this pattern trustworthy enough to build your life around?",
+    },
+    {
+      question:
+        "Āminah was widowed, grieving, and alone — and yet she was carrying the " +
+        "greatest trust Allāh has ever placed in a human womb. What does this say " +
+        "about how Allāh prepares people for great responsibility — sometimes through " +
+        "difficulty, not despite it?",
+      hint:
+        "Many of the greatest servants of Allāh ﷻ passed through profound loss " +
+        "before their mission: Ibrāhīm, Mūsā, Āminah, and then the Prophet ﷺ " +
+        "himself. Is there something a member of your family is going through right " +
+        "now that might be part of a preparation you cannot yet see?",
+    },
+    {
+      question:
+        "ʿAbd al-Muṭṭalib named his grandson Muḥammad before the child had said " +
+        "a word — because he wanted him to be praised in both worlds. What duʿāʾ " +
+        "have you made for the children in your family? What words, names, or " +
+        "intentions have you placed over them?",
+      hint:
+        "A name is a prayer. A blessing spoken over a child carries weight even " +
+        "when we do not fully understand why. Is there a blessing you have never " +
+        "formally said — but want to say — over someone in your family?",
+    },
+  ],
+
+  // ── Family Application ─────────────────────────────────────────────────────
+
+  familyApplication:
+    "Read Sūrah al-Fīl together as a family — all five verses, in Arabic and in " +
+    "your language. Assign one verse per family member if possible, and let each " +
+    "person try to explain their verse in their own words. Then ask this question " +
+    "around the table: 'If Allāh sent birds against an army of elephants, what do " +
+    "you think He is capable of doing for our family right now?' End the session " +
+    "with a collective ṣalawāt upon the Prophet ﷺ — the one whose birth year " +
+    "Allāh protected with this miracle.",
+
+  // ── Quick Review ──────────────────────────────────────────────────────────
+
+  quickReview: [
+    {
+      question: "What did Abraha want to do, and why?",
+      answer:
+        "He wanted to destroy the Kaʿbah in Makkah to redirect the Arab pilgrimage " +
+        "to his own church in Ṣanʿāʾ in Yemen.",
+    },
+    {
+      question: "What did ʿAbd al-Muṭṭalib say to Abraha?",
+      answer:
+        "'I am the lord of the camels. The House has a Lord who will protect it.'",
+    },
+    {
+      question: "How did Allāh ﷻ destroy Abraha's army?",
+      answer:
+        "He sent flights of birds (abābīl) carrying three stones each — pellets of " +
+        "hardened clay (sijjīl) — which destroyed the soldiers. The lead elephant " +
+        "Maḥmūd refused to advance toward the Kaʿbah.",
+    },
+    {
+      question: "What is ʿĀm al-Fīl, and why did the Arabs name the year after it?",
+      answer:
+        "ʿĀm al-Fīl means the Year of the Elephant. The Arabs named it after " +
+        "Abraha's army of elephants and the miracle that destroyed them — an event " +
+        "so dramatic it became the most remembered moment of that generation.",
+    },
+    {
+      question: "When was the Prophet ﷺ born, and what was significant about the day?",
+      answer:
+        "On a Monday in Rabīʿ al-Awwal, in the Year of the Elephant (~570 CE). " +
+        "The Prophet ﷺ himself confirmed that Monday was significant — it was the " +
+        "day he was born and the day the first revelation came to him.",
+    },
+    {
+      question: "What does the name Muḥammad mean, and who chose it?",
+      answer:
+        "Muḥammad means 'the one who is repeatedly praised.' It was chosen by his " +
+        "grandfather ʿAbd al-Muṭṭalib, who said he wanted the child to be praised " +
+        "by Allāh in the heavens and by people on earth.",
+    },
+  ],
+
+  // ── Explore Further ───────────────────────────────────────────────────────
+
+  exploreFurther: [
+    {
+      title: "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      author: "Ṣafī al-Raḥmān al-Mubārakfūrī",
+      type: "book",
+      note:
+        "The most accessible modern Sīrah for families. The chapters on the Year " +
+        "of the Elephant and the birth are well-sourced and clearly written. Winner " +
+        "of the First International Sīrah Conference award (1979).",
+    },
+    {
+      title: "Sūrah al-Fīl — Qurʾān 105",
+      type: "article",
+      note:
+        "Read all five verses slowly, in Arabic and in your language. This is the " +
+        "only sūrah dedicated entirely to the miracle of the Year of the Elephant. " +
+        "Commit it to memory — it is one of the shortest sūrahs and one of the most " +
+        "powerful in its imagery.",
+    },
+    {
+      title: "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+      author: "Ibn Hishām",
+      type: "book",
+      note:
+        "The foundational classical Sīrah. The account of ʿAbd al-Muṭṭalib meeting " +
+        "Abraha is one of the most vivid passages in early Islamic historical writing.",
+    },
+    {
+      title: "Tafsīr Ibn Kathīr — Sūrah al-Fīl",
+      author: "Ibn Kathīr",
+      type: "article",
+      note:
+        "Gathers the classical accounts of Abraha's campaign and the miracle of the " +
+        "birds. Essential for older students and teachers wanting the full scholarly context.",
+    },
+  ],
+
+  // ── Teacher Notes ─────────────────────────────────────────────────────────
+
+  teacherNotes: [
+    {
+      audience: "all",
+      heading: "Pause on the name",
+      body:
+        "When explaining the name Muḥammad, pause and let it land. This is often " +
+        "the first time younger students have heard why the Prophet ﷺ has the name " +
+        "he has. Ask: 'Has anyone ever told you what your name means?' Then explain: " +
+        "ʿAbd al-Muṭṭalib was making a duʿāʾ when he named his grandson. Ask " +
+        "families to find out what each family member's name means before next session.",
+    },
+    {
+      audience: "family",
+      heading: "Pacing across two sessions",
+      body:
+        "This lesson has four segments plus reflection and closing. For a 30–40 " +
+        "minute family taʿlīm session, consider two sessions: Session 1 covers the " +
+        "Abraha story (segments 1–3); Session 2 covers the birth (segment 4) and " +
+        "the reflection. Do not rush the final segment. The last paragraph — 'That " +
+        "is Muḥammad ﷺ' — deserves to be read slowly, with silence before discussion.",
+    },
+    {
+      audience: "classroom",
+      heading: "Age differentiation",
+      body:
+        "Ages 7–10: focus on the elephant and the birds. Ask them to draw the scene " +
+        "from Sūrah al-Fīl. Ages 11+: introduce ʿAbd al-Muṭṭalib's statement to " +
+        "Abraha as a lesson in tawakkul. Secondary level: examine the theological " +
+        "significance of the timing — why was this miracle in the exact same year as " +
+        "the birth?",
+    },
+    {
+      audience: "madrasa",
+      heading: "Core text to memorise",
+      body:
+        "Students should memorise Sūrah al-Fīl in full (five verses) and translate " +
+        "each verse accurately. Key vocabulary: abābīl (flocks of birds), sijjīl " +
+        "(baked clay), ʿaṣf maʾkūl (eaten straw). They should state: who Abraha was, " +
+        "what he intended, what destroyed his army, in which year the Prophet ﷺ was " +
+        "born, and who gave him his name and what it means.",
+    },
+  ],
+
+  // ── Lesson Reliability Summary ────────────────────────────────────────────
+
+  lessonReliabilitySummary: {
+    overallGrade: "Established",
+    summary:
+      "The core events of this lesson — Abraha's campaign, the elephant's refusal " +
+      "to advance, the birds of Abābīl, and the birth of Rasūlullāh ﷺ on a Monday " +
+      "in Rabīʿ al-Awwal of the Year of the Elephant — are among the most firmly " +
+      "established facts of early Islamic history. The miracle of the birds is " +
+      "recorded directly in the Qurʾān (Sūrah al-Fīl 105:1–5) — the highest " +
+      "possible level of authentication. The Prophet's ﷺ birth on a Monday is " +
+      "confirmed by his own statement in Ṣaḥīḥ Muslim (Ḥadīth 2983). Some finer " +
+      "details — exact wording of dialogue, precise date within Rabīʿ al-Awwal — " +
+      "carry minor variation across sources but do not affect the core narrative.",
+  },
+
+  // ── Authentication Notes (collapsed by default in UI) ─────────────────────
+
+  authenticationNotes: [
+    {
+      claim: "The miracle of the Year of the Elephant — birds destroying Abraha's army",
+      grade: "Established",
+      sources: [
+        "Qurʾān — Sūrah al-Fīl 105:1–5",
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Bidāyah wa al-Nihāyah — Ibn Kathīr",
+        "Al-Raḥīq al-Makhtūm",
+      ],
+      explanation:
+        "The Qurʾānic account is the primary and definitive source. All major " +
+        "classical Sīrah sources confirm the narrative with no credible dispute. " +
+        "The event is among the most firmly attested facts in pre-Islamic Arab history.",
+    },
+    {
+      claim:
+        "ʿAbd al-Muṭṭalib's meeting with Abraha and his famous statement about the camels",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Bidāyah wa al-Nihāyah — Ibn Kathīr",
+        "Al-Raḥīq al-Makhtūm",
+      ],
+      explanation:
+        "The encounter is recorded across the major classical Sīrah sources. The " +
+        "exact wording varies slightly between sources but all convey the same " +
+        "meaning. No formal isnād chain with ḥadīth-science grading, but it is " +
+        "the unanimous narrative in Sīrah scholarship.",
+    },
+    {
+      claim:
+        "The Prophet ﷺ was born on a Monday in Rabīʿ al-Awwal in the Year of the Elephant",
+      grade: "Established",
+      sources: [
+        "Ṣaḥīḥ Muslim — Ḥadīth 2983",
+        "Sīrat Ibn Hishām",
+        "Al-Raḥīq al-Makhtūm",
+      ],
+      explanation:
+        "The Prophet's ﷺ own statement in Ṣaḥīḥ Muslim confirms Monday as his " +
+        "birth day. Month (Rabīʿ al-Awwal) and year (Year of the Elephant, ~570 " +
+        "CE) are scholarly consensus. The precise date within the month has been " +
+        "discussed; 'Monday in Rabīʿ al-Awwal' is the established core.",
+    },
+    {
+      claim: "ʿAbdullāh died before (or shortly after) the birth of the Prophet ﷺ",
+      grade: "Established",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Bidāyah wa al-Nihāyah — Ibn Kathīr",
+        "Al-Raḥīq al-Makhtūm",
+      ],
+      explanation:
+        "All major Sīrah sources confirm that ʿAbdullāh died during a journey " +
+        "to or from Shām, in Yathrib. The precise timing (before vs shortly after " +
+        "birth) has minor variation, but the fact of his death and the Prophet's " +
+        "ﷺ orphanhood is universally established.",
+    },
+    {
+      claim:
+        "ʿAbd al-Muṭṭalib gave the infant the name Muḥammad at the Kaʿbah with a stated intention",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Raḥīq al-Makhtūm",
+      ],
+      explanation:
+        "Preserved in the major Sīrah sources. His stated intention varies slightly " +
+        "in exact wording between classical accounts, though all convey the same " +
+        "meaning. No formal ḥadīth isnād, but unanimous in Sīrah scholarship.",
+    },
+  ],
+
+  // ── Mini Timeline ─────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    { year: "~570 CE", label: "Abraha marches his elephant army north from Ṣanʿāʾ toward Makkah" },
+    { year: "~570 CE", label: "ʿAbd al-Muṭṭalib meets Abraha — 'The House has a Lord who will protect it'" },
+    { year: "~570 CE", label: "The elephant Maḥmūd refuses to advance toward the Kaʿbah" },
+    { year: "~570 CE", label: "Birds of Abābīl destroy Abraha's army with stones of hardened clay" },
+    { year: "~570 CE (Rabīʿ al-Awwal)", label: "Muḥammad ﷺ is born on a Monday to Āminah bint Wahb" },
+    { year: "~570 CE", label: "ʿAbd al-Muṭṭalib carries the infant to the Kaʿbah — names him Muḥammad" },
+  ],
+
+  // ── Cross-Tab Connections ─────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["~570 CE"],
+    maps: ["kaabah"],
+    characters: [
+      "Āminah bint Wahb",
+      "ʿAbdullāh ibn ʿAbd al-Muṭṭalib",
+      "ʿAbd al-Muṭṭalib ibn Hāshim",
+    ],
+    references: [
+      "Sūrah al-Fīl — 105",
+      "Ṣaḥīḥ Muslim — Ḥadīth 2983",
+      "Sīrat Ibn Hishām",
+      "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+    ],
+  },
+};
+
 // ── Lesson 6 — The Death of Āminah ────────────────────────────────────────────
 
 const lesson6: LessonEnrichment = {
@@ -942,6 +1436,7 @@ const lesson7: LessonEnrichment = {
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
+  "sirah_journey:3": lesson3,
   "sirah_journey:6": lesson6,
   "sirah_journey:7": lesson7,
 };
