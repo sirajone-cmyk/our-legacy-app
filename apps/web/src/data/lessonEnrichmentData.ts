@@ -13,6 +13,471 @@
 
 import type { LessonEnrichment, LessonEnrichmentMap } from "./lessonEnrichmentTypes";
 
+// ── Lesson 1 — The Meccan Period ──────────────────────────────────────────────
+
+const lesson1: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 1,
+  lessonTitle: "The Meccan Period",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 25,
+  },
+
+  recommendedUse: ["family", "classroom", "madrasa"],
+
+  // ── Why This Matters Today ─────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "Every Muslim who performs Ḥajj walks between Ṣafā and Marwah because Hājar " +
+    "ran there first. Every Muslim who drinks Zamzam drinks from a well opened by " +
+    "divine intervention for a mother and her dying infant. This lesson gives " +
+    "families the origin story behind the rituals they know — and a framework for " +
+    "trusting Allāh through trials before the answer comes. The ancestry of " +
+    "Rasūlullāh ﷺ was not an accident of history. It was chosen, prepared, and " +
+    "preserved through obedience, migration, sacrifice, and divine protection — " +
+    "centuries before his birth.",
+
+  // ── Memory Gem ────────────────────────────────────────────────────────────
+
+  memoryGem:
+    "\"Our Lord, I have settled some of my descendants in a valley with no " +
+    "cultivation, near Your sacred House — so that they may establish prayer. " +
+    "So make hearts among the people incline towards them, and provide them " +
+    "with fruits, that they may be grateful.\" — Qurʾān 14:37",
+
+  // ── One-Minute Summary ────────────────────────────────────────────────────
+
+  oneMinuteSummary:
+    "Thousands of years before his birth, Allāh began preparing the world for " +
+    "Rasūlullāh ﷺ. Ibrāhīm ʿalayhis salām, by divine command, left his wife Hājar " +
+    "and infant Ismāʿīl in a barren valley in Ḥijāz. Hājar's seven runs between " +
+    "Ṣafā and Marwah — and the miracle of Zamzam — established the sacred geography " +
+    "of Ḥajj. The tribe of Jurhum settled the valley; Ismāʿīl married among them and " +
+    "established the Arabic lineage. Makkah grew over centuries. Quṣayy ibn Kilāb, a " +
+    "descendant of Ismāʿīl, unified Quraysh and reclaimed leadership of the city. " +
+    "Hāshim — great-grandfather of Rasūlullāh ﷺ — gave the clan its name by crushing " +
+    "bread to feed pilgrims. His grandson ʿAbd al-Muṭṭalib rediscovered Zamzam through " +
+    "a divine dream. ʿAbd al-Muṭṭalib later made a pledge, and his son ʿAbdullāh was " +
+    "ransomed with one hundred camels — becoming the father of Rasūlullāh ﷺ.",
+
+  // ── Key Facts ─────────────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "Why did Ibrāhīm ʿalayhis salām leave Hājar and Ismāʿīl in an empty valley?",
+      information:
+        "By direct command of Allāh ﷻ. When Hājar asked whether Allāh had " +
+        "commanded this, Ibrāhīm confirmed: yes. Her response was immediate: " +
+        "'Then Allāh will not abandon us.' Allāh was establishing the sacred " +
+        "geography of Ḥajj and the Arabic lineage through which Rasūlullāh ﷺ " +
+        "would come. The suffering of Hājar was purposeful — Allāh does not " +
+        "waste the trials of those who trust in Him.",
+    },
+    {
+      topic: "The saʿy between Ṣafā and Marwah",
+      information:
+        "The saʿy is the rite of walking between the hills of Ṣafā and Marwah " +
+        "seven times during Ḥajj and ʿUmrah. Hājar ran between these hills seven " +
+        "times searching for water while Ismāʿīl was dying of thirst. When Zamzam " +
+        "appeared, Allāh preserved her action as a permanent rite of worship for " +
+        "every Muslim until the Day of Judgement. The Prophet ﷺ explicitly said: " +
+        "'That is why we go between Ṣafā and Marwah.' (Ṣaḥīḥ al-Bukhārī)",
+    },
+    {
+      topic: "How Makkah came to be inhabited after Zamzam appeared",
+      information:
+        "Birds began circling above the valley — a sign of water in the desert. " +
+        "The tribe of Jurhum, travelling through Ḥijāz, sent scouts and found " +
+        "water. They requested permission from Hājar to settle. She agreed on " +
+        "the condition that water rights remained hers. Ismāʿīl grew up among " +
+        "Jurhum, learned Arabic, and married a woman from the tribe — establishing " +
+        "the Arabic lineage of Rasūlullāh ﷺ in Makkah.",
+    },
+    {
+      topic: "Who was Hāshim and how did he earn that name?",
+      information:
+        "Hāshim was the great-grandfather of Rasūlullāh ﷺ. His real name was ʿAmr. " +
+        "He held the honour of providing food to pilgrims during Ḥajj. He introduced " +
+        "the practice of crushing bread (hashm) into broth to give pilgrims a fuller " +
+        "meal. The people nicknamed him Hāshim — and it is this name that history and " +
+        "the entire clan of Banū Hāshim would carry forever.",
+    },
+  ],
+
+  // ── What We Learn ─────────────────────────────────────────────────────────
+
+  whatWeLearn: [
+    {
+      event: "Hājar's trust before Zamzam appeared",
+      lesson:
+        "Hājar said 'Allāh will not abandon us' in the middle of the trial — " +
+        "before any sign of relief had come. Tawakkul is not a feeling that " +
+        "arrives after the difficulty passes. It is a conviction expressed in " +
+        "the darkest moment. Allāh does not waste the ṣabr of those who trust " +
+        "in Him. Her sa'y became a pillar of Ḥajj; Zamzam still flows today.",
+    },
+    {
+      event: "Ibrāhīm's duʿāʾ — Qurʾān 14:37",
+      lesson:
+        "Ibrāhīm asked for ṣalāh before food, before community, before comfort. " +
+        "That is the correct hierarchy — and it is the opposite of what the world " +
+        "tells us to prioritise. This duʿāʾ teaches families that spiritual " +
+        "purpose must be placed first, and Allāh will provide what follows from it.",
+    },
+    {
+      event: "Hāshim was named for crushing bread to feed pilgrims",
+      lesson:
+        "A small act of service, done with sincerity, became part of the lineage " +
+        "of the Prophet of Allāh ﷺ — preserved forever in the name Banū Hāshim. " +
+        "Do not underestimate sincere service. Allāh sees it, preserves it, and " +
+        "builds upon it in ways the servant cannot imagine.",
+    },
+  ],
+
+  // ── Why Did Allāh Allow This ──────────────────────────────────────────────
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allāh command Ibrāhīm ʿalayhis salām to leave his wife and infant " +
+      "in a barren, lifeless valley — with no water, no food, and no people?",
+    reflection:
+      "Allāh was establishing two things simultaneously: the sacred land of Ḥajj " +
+      "and the Arabic lineage of Rasūlullāh ﷺ. The suffering of Hājar was not " +
+      "neglect — it was preparation. Her sa'y became a permanent act of worship; " +
+      "Zamzam became a miracle that still flows more than three thousand years " +
+      "later. The scholars note that when Allāh is building something eternal, " +
+      "the trials that precede it are always proportional to the gift that follows. " +
+      "Ibrāhīm did not know all of this when he walked away. He knew only that " +
+      "Allāh had commanded him — and that was enough. Hājar did not know any of " +
+      "this when she ran between the hills. She knew only that Allāh would not " +
+      "abandon them — and that was enough. This is the lesson Allāh placed at " +
+      "the very beginning of the story of Rasūlullāh ﷺ.",
+    quranicConnection: {
+      arabic:
+        "رَبَّنَا إِنِّي أَسْكَنتُ مِن ذُرِّيَّتِي بِوَادٍ غَيْرِ ذِي زَرْعٍ عِندَ بَيْتِكَ الْمُحَرَّمِ",
+      translation:
+        "Our Lord, I have settled some of my descendants in a valley with no " +
+        "cultivation, near Your sacred House.",
+      reference: "Qurʾān 14:37",
+    },
+  },
+
+  // ── Family Discussion ─────────────────────────────────────────────────────
+
+  familyDiscussion: [
+    {
+      question:
+        "Hājar said 'Allāh will not abandon us' before the miracle appeared — " +
+        "not after. She said it in the middle of the trial. What does this tell " +
+        "us about when tawakkul needs to be expressed?",
+      hint:
+        "Ask: Can we say the same in our own difficulties, before the answer comes? " +
+        "What would it take for us to say it with the same certainty Hājar had?",
+    },
+    {
+      question:
+        "In Qurʾān 14:37, Ibrāhīm asked for ṣalāh before food. What do we " +
+        "normally ask for first in our duʿāʾ — and what does our order of " +
+        "priorities tell us?",
+      hint:
+        "This is not a critique — it is an invitation. Ask the family to think " +
+        "honestly about the hierarchy in their own duʿāʾ and how they might " +
+        "bring it closer to Ibrāhīm's.",
+    },
+    {
+      question:
+        "The name Hāshim was given for crushing bread to feed pilgrims — a " +
+        "small act of service that became part of the lineage of Rasūlullāh ﷺ. " +
+        "What small, sincere act is your family doing that Allāh might preserve " +
+        "far beyond your lifetime?",
+    },
+  ],
+
+  // ── Family Application ────────────────────────────────────────────────────
+
+  familyApplication:
+    "This week, when your family drinks water or performs wuḍūʾ, pause. Mention " +
+    "Zamzam. Say: 'This water comes from a well that Allāh caused to flow for a " +
+    "mother and her dying infant, thousands of years ago. It still flows. Allāh " +
+    "does not forget.' Then share one thing from today's lesson with someone who " +
+    "was not present.",
+
+  // ── Quick Review ──────────────────────────────────────────────────────────
+
+  quickReview: [
+    {
+      question:
+        "What did Hājar say when Ibrāhīm confirmed that Allāh commanded him to leave them?",
+      answer:
+        "'Then Allāh will not abandon us.' She expressed tawakkul immediately — " +
+        "before any sign of relief had appeared.",
+    },
+    {
+      question: "Why do Muslims walk between Ṣafā and Marwah during Ḥajj?",
+      answer:
+        "In honour of Hājar, who ran between these hills seven times searching " +
+        "for water for Ismāʿīl. Allāh preserved this as a permanent rite of " +
+        "Ḥajj and ʿUmrah for every Muslim until the Day of Judgement.",
+    },
+    {
+      question: "How was Zamzam rediscovered after being buried for over 300 years?",
+      answer:
+        "ʿAbd al-Muṭṭalib — the grandfather of Rasūlullāh ﷺ — received a divine " +
+        "dream over several nights that gave him signs of the exact location. He dug " +
+        "and uncovered the well beside the Kaʿbah.",
+    },
+    {
+      question: "What does the name 'Hāshim' mean and who was he?",
+      answer:
+        "Hāshim means one who crushes bread. His real name was ʿAmr. He was the " +
+        "great-grandfather of Rasūlullāh ﷺ, given the nickname for crushing bread " +
+        "into broth to feed pilgrims during Ḥajj.",
+    },
+  ],
+
+  // ── Explore Further ───────────────────────────────────────────────────────
+
+  exploreFurther: [
+    {
+      title: "Ṣaḥīḥ al-Bukhārī — Kitāb al-Anbiyāʾ",
+      type: "book",
+      note:
+        "The full authenticated narration of Ibrāhīm, Hājar, Zamzam, and the saʿy " +
+        "— narrated by Ibn ʿAbbās raḍiyāllāhu ʿanhumā. The strongest primary source " +
+        "for the foundational events of this lesson.",
+    },
+    {
+      title: "Qurʾān, Sūrah Ibrāhīm (14:35–41)",
+      type: "article",
+      note:
+        "Ibrāhīm ʿalayhis salām's duʿāʾ for Makkah and its people — including the " +
+        "Memory Gem for this lesson (14:37). Read in Arabic and translation as a " +
+        "family and reflect on the order in which Ibrāhīm made his requests.",
+    },
+    {
+      title: "Qurʾān, Sūrah al-Baqarah (2:125–129)",
+      type: "article",
+      note:
+        "The divine command to Ibrāhīm and Ismāʿīl to purify the House of Allāh — " +
+        "Qurʾānic confirmation of the building of the Kaʿbah and the establishment " +
+        "of ḥajj.",
+    },
+    {
+      title: "Sīrat Ibn Hishām",
+      author: "Ibn Hishām (from Ibn Isḥāq)",
+      type: "book",
+      note:
+        "The ancestral chain of Rasūlullāh ﷺ from Ibrāhīm through Quṣayy, Hāshim, " +
+        "ʿAbd al-Muṭṭalib, and ʿAbdullāh. The foundational classical Sīrah source " +
+        "for the pre-Islamic genealogy covered in this lesson.",
+    },
+    {
+      title: "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      author: "Ṣafī al-Raḥmān al-Mubārakfūrī",
+      type: "book",
+      note:
+        "The prize-winning modern Sīrah biography opens with Pre-Islamic Arabia " +
+        "and the lineage of Rasūlullāh ﷺ. Accessible for older students and adults " +
+        "who want to study this period in depth.",
+    },
+    {
+      title: "The title 'son of the two sacrificed ones' — for deeper study",
+      type: "article",
+      note:
+        "This title — referring to Ismāʿīl ʿalayhis salām and ʿAbdullāh — is widely " +
+        "quoted in Sīrah literature but scholars have discussed its chain of " +
+        "transmission. For deeper study, see Al-Bidāyah wa-al-Nihāyah (Ibn Kathīr) " +
+        "and the relevant chapters of Sīrat Ibn Hishām. Do not cite it at the level " +
+        "of Qurʾān or Ṣaḥīḥ ḥadīth.",
+    },
+  ],
+
+  // ── For Teachers and Parents ──────────────────────────────────────────────
+
+  teacherNotes: [
+    {
+      audience: "all",
+      heading: "Connect the saʿy to Ḥajj",
+      body:
+        "When studying Hājar's seven runs between Ṣafā and Marwah, connect it " +
+        "explicitly to the rite of saʿy in Ḥajj and ʿUmrah. If possible, show " +
+        "a video of pilgrims performing the saʿy. Ask: 'Millions of people are " +
+        "doing exactly what Hājar did — in the same place. How does knowing her " +
+        "story change what that ritual means?' This connection transforms ritual " +
+        "from habit into remembrance.",
+    },
+    {
+      audience: "madrasa",
+      heading: "ʿAbd al-Muṭṭalib's vow — pre-Islamic context, not Islamic model",
+      body:
+        "ʿAbd al-Muṭṭalib made a vow to sacrifice one of his sons as a practice " +
+        "rooted in pre-Islamic Arabian custom. This is absolutely not an Islamic " +
+        "model and must be stated clearly with older students. Islam prohibits " +
+        "human sacrifice. The story is taught as historical narrative showing the " +
+        "nobility of character in the family of Rasūlullāh ﷺ before Islam — " +
+        "not as a religious practice to follow or admire in form.",
+    },
+    {
+      audience: "family",
+      heading: "The wise woman and pre-Islamic practices",
+      body:
+        "The story includes a woman 'who claimed to speak with spirits' — consulted " +
+        "by Quraysh during a dispute. This reflects the pre-Islamic environment into " +
+        "which Rasūlullāh ﷺ was born. Teach it as context: this is what Allāh " +
+        "was sending His Prophet to transform. Do not present it as endorsement " +
+        "of fortune-telling, divination, or consulting unseen spirits — all of " +
+        "which are clearly prohibited in Islam.",
+    },
+  ],
+
+  // ── Authentication Notes ──────────────────────────────────────────────────
+
+  authenticationNotes: [
+    {
+      claim: "The story of Ibrāhīm, Hājar, Ismāʿīl, and the founding of Zamzam",
+      grade: "Established",
+      sources: [
+        "Ṣaḥīḥ al-Bukhārī — Kitāb al-Anbiyāʾ, narrated by Ibn ʿAbbās raḍiyāllāhu ʿanhumā",
+        "Qurʾān 14:37 — Ibrāhīm's duʿāʾ confirming he settled his family near the sacred House",
+        "Qurʾān 2:125–127 — command to Ibrāhīm and Ismāʿīl to purify the House",
+      ],
+      explanation:
+        "The foundational events of this lesson — Ibrāhīm's command from Allāh, " +
+        "Hājar's trust, the saʿy, and the appearance of Zamzam — are among the " +
+        "best-authenticated stories in all of Sīrah literature. They appear in " +
+        "Ṣaḥīḥ al-Bukhārī with a sound chain through Ibn ʿAbbās raḍiyāllāhu " +
+        "ʿanhumā, and are confirmed by multiple verses of the Qurʾān. " +
+        "Source classification: Qurʾān + Ṣaḥīḥ Ḥadīth.",
+    },
+    {
+      claim: "The saʿy between Ṣafā and Marwah was established because of Hājar's action",
+      grade: "Established",
+      sources: [
+        "Ṣaḥīḥ al-Bukhārī — the Prophet ﷺ explicitly stated that the saʿy was established because of Hājar",
+      ],
+      explanation:
+        "The Prophet ﷺ himself narrated and explained the story of Hājar's saʿy " +
+        "and said explicitly: 'That is why we go between Ṣafā and Marwah.' " +
+        "This connection between Hājar's action and the Ḥajj rite is not " +
+        "scholarly inference — it is a direct statement from Rasūlullāh ﷺ " +
+        "recorded in the most authoritative ḥadīth collection. " +
+        "Source classification: Ṣaḥīḥ Ḥadīth.",
+    },
+    {
+      claim:
+        "The genealogical history of Quraysh — Quṣayy ibn Kilāb, Hāshim, ʿAbd al-Muṭṭalib",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Raḥīq al-Makhtūm (The Sealed Nectar) — Ṣafī al-Raḥmān al-Mubārakfūrī",
+      ],
+      explanation:
+        "The pre-Islamic ancestry of Rasūlullāh ﷺ — from Ismāʿīl through " +
+        "Quṣayy, Hāshim, ʿAbd al-Muṭṭalib, and ʿAbdullāh — is recorded in " +
+        "the classical Sīrah works with broad scholarly consensus. These " +
+        "genealogical accounts come through Sīrah narrative chains rather than " +
+        "Ṣaḥīḥ ḥadīth, but they are accepted by the overwhelming majority of " +
+        "scholars and form part of the established pre-Islamic history of Islam. " +
+        "Source classification: Sīrah Narrative.",
+    },
+    {
+      claim:
+        "The pledge of ʿAbd al-Muṭṭalib and the ransom of ʿAbdullāh with one hundred camels",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (narrated via Ibn Isḥāq)",
+      ],
+      explanation:
+        "The core events — the vow, the casting of lots, and the ransom — are " +
+        "reported in classical Sīrah literature and widely accepted among scholars. " +
+        "Some peripheral details (the wise woman, the exact method of casting lots) " +
+        "reflect pre-Islamic practices described in Sīrah narrative. " +
+        "Source classification: Sīrah Narrative / Scholarly Discussion for details.",
+    },
+    {
+      claim:
+        "'Son of the two sacrificed ones' — the title applied to Rasūlullāh ﷺ referring to Ismāʿīl and ʿAbdullāh",
+      grade: "Scholarly Discussion",
+      sources: [
+        "Reported in Sīrah literature — chain and exact wording have been discussed by scholars of ḥadīth",
+      ],
+      explanation:
+        "This title is widely quoted in Sīrah books and is part of the well-known " +
+        "narrative tradition. However, scholars of ḥadīth have noted that the chain " +
+        "of transmission for this specific statement requires careful examination. " +
+        "It should not be cited at the same level as Qurʾānic verse or Ṣaḥīḥ ḥadīth. " +
+        "The story of the ransom itself (from which this title derives) is widely " +
+        "accepted; the title as a direct quotation from the Prophet ﷺ is where " +
+        "the scholarly discussion lies. " +
+        "Source classification: Scholarly Discussion.",
+    },
+  ],
+
+  // ── Lesson Reliability Summary ────────────────────────────────────────────
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The strongest parts of this lesson — Ibrāhīm, Hājar, Zamzam, and the saʿy " +
+      "— are established through authentic sources: the Qurʾān and Ṣaḥīḥ al-Bukhārī. " +
+      "The later genealogical and pre-Islamic historical details come through classical " +
+      "Sīrah works, accepted by scholars but at a different grade of authentication. " +
+      "Peripheral details of the ransom story fall under Scholarly Discussion.",
+  },
+
+  // ── Mini Timeline ─────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "~2000 BCE (approx.)",
+      label: "Ibrāhīm ʿalayhis salām leaves Hājar and Ismāʿīl in the valley that would become Makkah",
+    },
+    {
+      year: "~2000 BCE (approx.)",
+      label: "Zamzam appears — the tribe of Jurhum settles; Ismāʿīl grows up and marries among them",
+    },
+    {
+      year: "~2nd–1st century BCE (approx.)",
+      label: "Quṣayy ibn Kilāb unifies Quraysh and reclaims leadership of Makkah",
+    },
+    {
+      year: "~5th century CE (approx.)",
+      label: "Hāshim — great-grandfather of Rasūlullāh ﷺ — feeds the pilgrims and earns his name",
+    },
+    {
+      year: "~569 CE",
+      label: "ʿAbdullāh ibn ʿAbd al-Muṭṭalib marries Āminah bint Wahb",
+    },
+  ],
+
+  // ── Connections ───────────────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["~2000 BCE (Ibrāhīm and Hājar in the valley — approx.)", "~100 BCE (Quṣayy, Hāshim — approx.)", "~569 CE (ʿAbdullāh marries Āminah)"],
+    maps: ["makkah", "madinah", "hijaz"],
+    characters: [
+      "Ibrāhīm ʿalayhis salām",
+      "Hājar ʿalayhas salām",
+      "Ismāʿīl ʿalayhis salām",
+      "Hāshim ibn ʿAbd Manāf",
+      "ʿAbd al-Muṭṭalib",
+      "ʿAbdullāh ibn ʿAbd al-Muṭṭalib",
+      "Āminah bint Wahb",
+    ],
+    references: [
+      "Ṣaḥīḥ al-Bukhārī — Kitāb al-Anbiyāʾ (Story of Ibrāhīm and Hājar)",
+      "Qurʾān 14:37 — Ibrāhīm's duʿāʾ for Makkah",
+      "Qurʾān 2:125–127 — Building of the Kaʿbah",
+      "Sīrat Ibn Hishām",
+      "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+    ],
+  },
+};
+
 // ── Lesson 3 — The Year of the Elephant and the Birth of Rasūlullāh ﷺ ────────
 
 const lesson3: LessonEnrichment = {
@@ -2543,6 +3008,7 @@ const lesson7: LessonEnrichment = {
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
+  "sirah_journey:1": lesson1,
   "sirah_journey:3": lesson3,
   "sirah_journey:4": lesson4,
   "sirah_journey:5": lesson5,
