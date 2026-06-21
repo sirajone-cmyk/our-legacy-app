@@ -1054,6 +1054,566 @@ const lesson4: LessonEnrichment = {
   },
 };
 
+// ── Lesson 5 — The Opening of the Chest ───────────────────────────────────────
+
+const lesson5: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 5,
+  lessonTitle: "The Opening of the Chest",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 25,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Why This Matters Today ─────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "Most families have heard the words 'Shaqq al-Ṣadr' — the opening of the chest " +
+    "— but few can explain what actually happened, why it happened, or what its " +
+    "significance is for us today. Many people also confuse the Banū Saʿd incident " +
+    "with the opening of the chest reported before the Mi'rāj — a different event " +
+    "with a different chain. This lesson takes both events seriously and teaches " +
+    "them with the clarity they deserve. " +
+    "The deeper message is one every family needs: Allāh ﻻ prepares those He loves " +
+    "before the mission arrives — not after it is announced, not when the world is " +
+    "watching, but quietly, in an ordinary place, years in advance. Whatever " +
+    "difficulty a family is living through right now may not be a setback. " +
+    "It may be preparation.",
+
+  // ── Memory Gem ─────────────────────────────────────────────────────────────
+
+  memoryGem:
+    "\"Indeed, in the body there is a piece of flesh — if it is sound, the whole " +
+    "body is sound; and if it is corrupt, the whole body is corrupt. Indeed, it " +
+    "is the heart.\" — Ṣaḥīḥ al-Bukhārī 52; Ṣaḥīḥ Muslim 1599",
+
+  // ── One Minute Summary ─────────────────────────────────────────────────────
+
+  oneMinuteSummary:
+    "While Rasūlullāh ﷺ was living with Ḥalīmah in the land of Banū Saʿd, " +
+    "approximately four years old, he went out to play one afternoon with his " +
+    "foster-brother ʿAbdullāh ibn al-Ḥārith. Two men appeared dressed in white. " +
+    "They laid him on his back, opened his chest, removed his heart, washed it " +
+    "in a vessel of water until it was completely pure, and returned it. His " +
+    "foster-brother witnessed what happened and ran back to the camp in terror. " +
+    "Ḥalīmah and her husband al-Ḥārith found the child standing — calm, clear-eyed, " +
+    "and unharmed. He described exactly what had happened. Out of love, and out " +
+    "of honest acknowledgement that this was beyond them, Ḥalīmah and al-Ḥārith " +
+    "brought him back to his mother Āminah in Makkah. Āminah heard everything — " +
+    "and was not afraid. She said: 'Do not fear for him. He is protected.' She " +
+    "had been given, in her own way, prior knowledge. Allāh ﻻ was preparing His " +
+    "Prophet ﷺ — before the world could see it — for the greatest mission in history.",
+
+  // ── Key Facts (max 6) ──────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "What is Shaqq al-Ṣadr?",
+      information:
+        "Literally: 'the opening of the chest.' An event in which Allāh ﷻ sent " +
+        "two angels who opened the chest of the Prophet ﷺ, removed his heart, " +
+        "washed it in a vessel of water until it was completely pure, and returned " +
+        "it. The Prophet ﷺ was found standing, calm, and physically unharmed. " +
+        "This is the event in Banū Saʿd — when he was approximately four years old.",
+    },
+    {
+      topic: "What was purified — and why?",
+      information:
+        "The scholars of Sīrah and tafsīr discussed at length the wisdom behind " +
+        "this purification. Various explanations are found in the books of Sīrah " +
+        "and commentary. What is consistently stated across all classical sources " +
+        "is that this was an act of divine preparation — not a correction of any " +
+        "sin or moral failing. The Prophet ﷺ was sinless (maʿṣūm). The " +
+        "purification was preparation: making the vessel fully ready before " +
+        "the greatest mission in history was placed upon it.",
+    },
+    {
+      topic: "The ḥadīth of the heart",
+      information:
+        "Rasūlullāh ﷺ himself later taught: 'In the body there is a piece of " +
+        "flesh — if it is sound, the whole body is sound; and if it is corrupt, " +
+        "the whole body is corrupt. Indeed, it is the heart.' (Ṣaḥīḥ al-Bukhārī " +
+        "52; Ṣaḥīḥ Muslim 1599, narrated by al-Nuʿmān ibn Bashīr). The Prophet " +
+        "ﷺ whose heart was divinely prepared before the greatest mission in " +
+        "history later taught all of humanity this same principle.",
+    },
+    {
+      topic: "Who was present?",
+      information:
+        "The foster-brother ʿAbdullāh ibn al-Ḥārith witnessed the event and " +
+        "ran back to the camp in terror. Ḥalīmah al-Saʿdiyyah and her husband " +
+        "al-Ḥārith ibn ʿAbd al-ʿUzzā found the child standing. The narrative " +
+        "comes directly from Ḥalīmah's own account, as preserved in the Sīrah " +
+        "literature of Ibn Isḥāq and Ibn Hishām.",
+    },
+    {
+      topic: "This was not the only occurrence",
+      information:
+        "Scholars note that the opening of the chest occurred on more than one " +
+        "occasion in the life of the Prophet ﷺ. A well-known account narrated " +
+        "by Anas ibn Mālik in Ṣaḥīḥ Muslim (no. 162) describes a separate " +
+        "opening before the Mi'rāj. These are distinct events — different " +
+        "circumstances, different chains, different narrators. This lesson " +
+        "covers the Banū Saʿd incident only.",
+    },
+    {
+      topic: "Āminah's response",
+      information:
+        "When Ḥalīmah brought the Prophet ﷺ back to Makkah and told Āminah " +
+        "everything, Āminah heard it without alarm. The books of Sīrah record " +
+        "that she said: 'Do not fear for him. He is protected.' She had " +
+        "received signs before and at the birth of her son that had prepared " +
+        "her, in her own way, for exactly this conversation.",
+    },
+  ],
+
+  // ── What We Learn ─────────────────────────────────────────────────────────
+
+  whatWeLearn: [
+    {
+      event: "The foster-brother ran in terror",
+      lesson:
+        "Fear is not a failure. Running to someone trustworthy when something " +
+        "is beyond you is wisdom, not weakness. The foster-brother did exactly " +
+        "what a frightened child should do: he went straight to the person " +
+        "responsible. That is a lesson in itself.",
+    },
+    {
+      event: "The Prophet ﷺ was found standing, calm and clear-eyed",
+      lesson:
+        "Allāh ﷻ protects those He has chosen. The Prophet ﷺ was not " +
+        "disturbed, not injured, not in shock — he was at peace. Peace in the " +
+        "heart after something extraordinary is possible when Allāh is the " +
+        "source of your protection.",
+    },
+    {
+      event: "Ḥalīmah and al-Ḥārith returned the Prophet ﷺ with complete honesty",
+      lesson:
+        "Amānah means holding a trust with care — and when you can no longer " +
+        "hold it, returning it honestly with nothing hidden. Ḥalīmah told " +
+        "Āminah everything. No omissions. No protection of herself. That is " +
+        "what a person of integrity does.",
+    },
+    {
+      event: "Āminah heard everything and was not afraid",
+      lesson:
+        "Yaqīn — certainty in Allāh's arrangement — is not the same as " +
+        "ignorance. Āminah had been given her own form of prior knowledge. Her " +
+        "calm came not from understanding everything, but from knowing who " +
+        "was ultimately in control.",
+    },
+    {
+      event: "The event happened in Banū Saʿd — quietly, years before the mission",
+      lesson:
+        "Allāh ﷻ prepares His servants in quiet places, far from the world's " +
+        "gaze, long before the mission is announced. What feels like an " +
+        "ordinary season in your life may already be a preparation you cannot " +
+        "yet see.",
+    },
+  ],
+
+  // ── Why Did Allāh Allow This? ──────────────────────────────────────────────
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allāh allow the foster-brother to be frightened, Ḥalīmah to be " +
+      "overwhelmed, and the Prophet ﷺ to be returned to Makkah — rather than " +
+      "allowing the whole event to pass quietly without disruption?",
+    reflection:
+      "Every element of this story — including the fear, the running, the " +
+      "decision to return him — was part of the arrangement. The foster-brother's " +
+      "terror brought Ḥalīmah running. Ḥalīmah's love and honesty brought the " +
+      "Prophet ﷺ back to Makkah at exactly the right time — to be with his mother " +
+      "before the next great loss would come. Āminah's prior preparation meant she " +
+      "could receive him without alarm. Allāh ﷻ used the natural responses of " +
+      "people who loved well to accomplish His plan precisely and on time. There " +
+      "is a lesson here for every family: the responses of those around us — " +
+      "even their fear, even their limitations — can be instruments in Allāh's " +
+      "hand when He has decided something is going to happen.",
+    quranicConnection: {
+      arabic:
+        "إِنَّ اللَّهَ بَالِغُ أَمْرِهِ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا",
+      translation:
+        "Indeed, Allāh accomplishes His purpose. He has already set for " +
+        "everything a decreed extent.",
+      reference: "Sūrah al-Ṭalāq — 65:3",
+    },
+  },
+
+  // ── Family Discussion ──────────────────────────────────────────────────────
+
+  familyDiscussion: [
+    {
+      question:
+        "The Prophet ﷺ described what happened to Ḥalīmah calmly and clearly — " +
+        "while everyone around him was frightened. What does it tell us about the " +
+        "heart that has been prepared by Allāh ﷻ? How would you explain to a " +
+        "young child that calmness in difficulty comes from inside, not outside?",
+      hint:
+        "The Prophet ﷺ was approximately four years old. Yet he was calm when " +
+        "those around him were afraid. This was not bravado — it was a peace that " +
+        "came from Allāh's protection. Ask your family: what is the difference " +
+        "between someone who is calm because they don't understand the danger, " +
+        "and someone who is calm because they trust who is in control?",
+    },
+    {
+      question:
+        "Ḥalīmah had experienced years of barakah because of this child. She " +
+        "knew, in her heart, that something was different about him. And yet when " +
+        "something happened that she could not explain, she brought him home. " +
+        "What does this tell us about the limits of our understanding — even of " +
+        "things we know are from Allāh?",
+      hint:
+        "Ḥalīmah is not presented here as someone who doubted. She acted out " +
+        "of love and amānah. Knowing something is from Allāh does not always " +
+        "mean we know how to respond to it. Sometimes the right response is: " +
+        "'This is beyond me — I need to return it to those who can carry it.'",
+    },
+    {
+      question:
+        "Āminah said: 'Do not fear for him. He is protected.' She hadn't seen " +
+        "what happened. She wasn't there. Her certainty came from something given " +
+        "to her before the birth of her son. Has there ever been a moment in your " +
+        "family where you had a form of certainty about something before it could " +
+        "be fully explained?",
+      hint:
+        "Āminah's response is one of the most powerful moments in the early " +
+        "Sīrah. A mother receives the most alarming news about her child and " +
+        "responds with peace. Scholars reflect that this certainty was itself " +
+        "a gift from Allāh ﷻ — preparation for the preparation. Is there a " +
+        "difficult situation in your family right now where you need that kind " +
+        "of certainty — and where could it come from?",
+    },
+    {
+      question:
+        "Allāh prepared the Prophet ﷺ in Banū Saʿd — far from Makkah, years " +
+        "before the revelation came. What preparation might Allāh already have " +
+        "begun in your own life — through a difficulty, a disruption, or a " +
+        "loss — that you did not recognise at the time as preparation?",
+      hint:
+        "This is a question worth sitting with. Many of the greatest servants " +
+        "of Allāh ﷻ passed through seasons that looked like setbacks but were " +
+        "in fact preparations: Ibrāhīm in the fire, Mūsā in Madyan, the Prophet " +
+        "ﷺ in Banū Saʿd. If Allāh's timeline is always right, and if He " +
+        "prepares before He assigns — what might He be preparing someone in " +
+        "your family for right now?",
+    },
+  ],
+
+  // ── Family Application ─────────────────────────────────────────────────────
+
+  familyApplication:
+    "Rasūlullāh ﷺ told us that the heart is the most important thing we carry — " +
+    "not for its biology, but for its spiritual condition. This week, each family " +
+    "member chooses one deliberate act for the health of the heart: ten minutes " +
+    "of Qurʾān, a sincere tawbah for something unresolved, removing one thing " +
+    "that hardens the heart, or reconciling with someone wronged. Write it down. " +
+    "Commit to it for seven days. At family taʿlīm tonight, let each person " +
+    "answer this question: what is Shaqq al-Ṣadr? Let the children explain it " +
+    "back in their own words, in their own way. Hearing it explained simply is " +
+    "sometimes the clearest sign of whether it was truly understood.",
+
+  // ── Quick Review ──────────────────────────────────────────────────────────
+
+  quickReview: [
+    {
+      question: "What is Shaqq al-Ṣadr, and when did it happen in Banū Saʿd?",
+      answer:
+        "Shaqq al-Ṣadr is the opening of the chest of the Prophet ﷺ. In Banū " +
+        "Saʿd, when the Prophet ﷺ was approximately four years old, two men in " +
+        "white appeared, opened his chest, washed his heart in a vessel of water " +
+        "until it was completely pure, and returned it. His chest bore no wound " +
+        "and he was found standing, calm, and unharmed.",
+    },
+    {
+      question: "Who witnessed the event and what did they do?",
+      answer:
+        "His foster-brother ʿAbdullāh ibn al-Ḥārith witnessed what happened and " +
+        "ran back to the camp in terror. Ḥalīmah and her husband al-Ḥārith ran " +
+        "to find the Prophet ﷺ standing calmly. He described everything to them.",
+    },
+    {
+      question: "Why did Ḥalīmah return the Prophet ﷺ to Āminah?",
+      answer:
+        "Out of love and out of amānah. She had been entrusted with a child she " +
+        "could no longer fully protect or explain. She returned him to his mother " +
+        "honestly, hiding nothing — telling Āminah everything that had happened.",
+    },
+    {
+      question: "How did Āminah respond when she heard what happened?",
+      answer:
+        "She was not afraid. She said: 'Do not fear for him. He is protected.' " +
+        "She had been given signs before the birth of her son that prepared her " +
+        "for exactly this conversation. Her certainty was yaqīn — trust in what " +
+        "Allāh had arranged.",
+    },
+    {
+      question:
+        "Is the Banū Saʿd event the same as the opening of the chest before " +
+        "the Mi'rāj?",
+      answer:
+        "No. These are two distinct events. The Banū Saʿd incident is narrated " +
+        "by Ḥalīmah herself through Sīrah literature. The opening before the " +
+        "Mi'rāj is narrated by Anas ibn Mālik in Ṣaḥīḥ Muslim (no. 162). " +
+        "Different circumstances, different chains, different narrators.",
+    },
+    {
+      question:
+        "What ḥadīth does this lesson connect to, and what does it teach?",
+      answer:
+        "'In the body there is a piece of flesh — if it is sound, the whole " +
+        "body is sound; and if it is corrupt, the whole body is corrupt. Indeed, " +
+        "it is the heart.' (Bukhārī 52, Muslim 1599). The Prophet ﷺ whose heart " +
+        "was divinely prepared later taught all of humanity to care for theirs.",
+    },
+  ],
+
+  // ── Explore Further ───────────────────────────────────────────────────────
+
+  exploreFurther: [
+    {
+      title: "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      author: "Ṣafī al-Raḥmān al-Mubārakfūrī",
+      type: "book",
+      note:
+        "The most accessible modern Sīrah for families. The account of the " +
+        "Shaqq al-Ṣadr in Banū Saʿd is clearly covered with its sources noted. " +
+        "Winner of the First International Sīrah Conference award (1979).",
+    },
+    {
+      title: "Sūrah al-Sharḥ — Qurʾān 94",
+      type: "article",
+      note:
+        "Read all eight verses slowly, in Arabic and in your language. The " +
+        "opening verse — 'Have We not expanded your chest?' — is directly " +
+        "connected to the theme of this lesson. Memorise the sūrah together " +
+        "as a family. It is one of the shortest and most powerful in the Qurʾān.",
+    },
+    {
+      title: "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+      author: "Ibn Hishām",
+      type: "book",
+      note:
+        "The foundational classical Sīrah. The Banū Saʿd account of the " +
+        "Shaqq al-Ṣadr is drawn from Ḥalīmah's own narration as transmitted " +
+        "by Ibn Isḥāq. Essential for understanding the primary source behind " +
+        "this lesson.",
+    },
+  ],
+
+  // ── For Teachers and Parents ──────────────────────────────────────────────
+
+  teacherNotes: [
+    {
+      audience: "all",
+      heading: "IMPORTANT — Two different events: do not conflate them",
+      body:
+        "The Shaqq al-Ṣadr occurred on more than one occasion in the life of " +
+        "the Prophet ﷺ. The account in Ṣaḥīḥ Muslim (no. 162, narrated by " +
+        "Anas ibn Mālik) describes the opening of the chest before the Mi'rāj " +
+        "— a separate event with its own chain of narration. The Banū Saʿd " +
+        "incident covered in this lesson is transmitted through Sīrah " +
+        "literature, narrated by Ḥalīmah herself via Ibn Isḥāq. Do not cite " +
+        "Muslim 162 as evidence for the Banū Saʿd event. They are distinct. " +
+        "Both are accepted in the tradition. Teach each with the clarity it deserves.",
+    },
+    {
+      audience: "family",
+      heading: "The emotional centre of this lesson",
+      body:
+        "The two most powerful moments for family taʿlīm are: the image of the " +
+        "Prophet ﷺ found standing, calm and unharmed — and Āminah's words: " +
+        "'Do not fear for him. He is protected.' Read both slowly. Pause after " +
+        "each. For young children, the standing image is the anchor — a child " +
+        "who was completely safe because Allāh was watching over him. For older " +
+        "family members, Āminah's certainty is the deeper lesson: what does it " +
+        "mean to be unafraid when you cannot explain everything?",
+    },
+    {
+      audience: "classroom",
+      heading: "Age differentiation",
+      body:
+        "Ages 7–10: focus on the story itself — the two men, the foster-brother " +
+        "running, the Prophet ﷺ standing calm. Ask them to describe what they " +
+        "imagine Ḥalīmah saw when she arrived. Ages 11+: introduce the " +
+        "distinction between the Banū Saʿd event and the Mi'rāj event. Ask " +
+        "students: if two events are both accepted in the tradition but come " +
+        "from different chains, how do we think about both? Secondary: explore " +
+        "what scholars said about divine preparation — why does Allāh prepare " +
+        "before He assigns?",
+    },
+    {
+      audience: "madrasa",
+      heading: "Core knowledge to assess",
+      body:
+        "Students should know: what Shaqq al-Ṣadr means; when the Banū Saʿd " +
+        "event occurred; who was present and what each person did; that this " +
+        "was divine preparation, not a removal of sin (the Prophet ﷺ was " +
+        "maʿṣūm); that the Banū Saʿd event and the Mi'rāj event are distinct " +
+        "incidents with different chains; the ḥadīth of the heart (Bukhārī 52, " +
+        "Muslim 1599) with its narrator; and the connection to Sūrah al-Sharḥ " +
+        "94:1. They should also explain Āminah's response and what yaqīn means.",
+    },
+  ],
+
+  // ── Lesson Reliability Summary ────────────────────────────────────────────
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The core event of Shaqq al-Ṣadr in Banū Saʿd is transmitted through " +
+      "Sīrah literature — narrated by Ḥalīmah herself and preserved by Ibn " +
+      "Isḥāq via Ibn Hishām. This is Sīrah-level transmission, not a formally " +
+      "graded ḥadīth chain, but it is unanimous across all major classical " +
+      "Sīrah works with no credible contradicting account. The ḥadīth of the " +
+      "heart (Bukhārī 52, Muslim 1599) is independently established ṣaḥīḥ " +
+      "ḥadīth. Sūrah al-Sharḥ (94:1) is established Qurʾān. Note: the Ṣaḥīḥ " +
+      "Muslim account of the opening of the chest (Muslim 162, narrated by " +
+      "Anas ibn Mālik) refers to the Mi'rāj incident, not the Banū Saʿd " +
+      "incident — these are distinct events and should not be conflated.",
+  },
+
+  // ── Authentication Notes ──────────────────────────────────────────────────
+
+  authenticationNotes: [
+    {
+      claim:
+        "Sūrah al-Sharḥ 94:1 — 'Have We not expanded your chest for you?'",
+      grade: "Established",
+      sources: ["Qurʾān — Sūrah al-Sharḥ, 94:1"],
+      explanation:
+        "Divine revelation. Established as Qurʾān by ijmāʿ (consensus). " +
+        "Scholars connect this āyah to the theme of the opening of the chest — " +
+        "including the Banū Saʿd incident and the broader spiritual preparation " +
+        "of the Prophet ﷺ for prophethood. No dispute.",
+    },
+    {
+      claim:
+        "The ḥadīth of the heart: 'In the body there is a piece of flesh...'",
+      grade: "Established",
+      sources: [
+        "Ṣaḥīḥ al-Bukhārī — Ḥadīth 52 (narrated by al-Nuʿmān ibn Bashīr)",
+        "Ṣaḥīḥ Muslim — Ḥadīth 1599 (narrated by al-Nuʿmān ibn Bashīr)",
+      ],
+      explanation:
+        "A firmly established ṣaḥīḥ ḥadīth with multiple chains in both of " +
+        "the Ṣaḥīḥayn. This ḥadīth stands independently of the Shaqq al-Ṣadr " +
+        "narrative — it is a prophetic teaching, not part of the Sīrah account. " +
+        "Suitable for memorisation and direct practice.",
+    },
+    {
+      claim:
+        "IMPORTANT — The Banū Saʿd opening and the opening before the Mi'rāj " +
+        "are two distinct events, not one",
+      grade: "Established",
+      sources: [
+        "Ṣaḥīḥ Muslim — Ḥadīth 162 (narrated by Anas ibn Mālik) — Mi'rāj account",
+        "Sīrat Ibn Hishām (from Ibn Isḥāq — narrated from Ḥalīmah) — Banū Saʿd account",
+      ],
+      explanation:
+        "IMPORTANT: The opening of the chest in Ṣaḥīḥ Muslim 162 (narrated " +
+        "by Anas ibn Mālik) describes the event before the Mi'rāj — not the " +
+        "incident in Banū Saʿd. These are two distinct events with different " +
+        "narrators, different circumstances, and different chains of transmission. " +
+        "Do not cite Muslim 162 as evidence for the Banū Saʿd event. Both " +
+        "events are accepted in the tradition. Both deserve to be taught " +
+        "accurately and separately.",
+    },
+    {
+      claim:
+        "The Banū Saʿd incident: two men in white, the opening of the chest, " +
+        "the washing of the heart, the foster-brother as witness",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq — narrated from Ḥalīmah al-Saʿdiyyah)",
+        "Al-Raḥīq al-Makhtūm — Ṣafī al-Raḥmān al-Mubārakfūrī",
+        "Al-Bidāyah wa al-Nihāyah — Ibn Kathīr",
+      ],
+      explanation:
+        "This narrative is Sīrah transmission — not a ḥadīth in Ṣaḥīḥ " +
+        "al-Bukhārī or Ṣaḥīḥ Muslim. The source is Ḥalīmah's own account " +
+        "as preserved by Ibn Isḥāq, transmitted through the Sīrah tradition. " +
+        "It is unanimous across all major classical Sīrah works with no " +
+        "contradicting account. Widely accepted — but its classification as " +
+        "Sīrah narrative (not graded prophetic ḥadīth) should be clearly " +
+        "communicated to students and families.",
+    },
+    {
+      claim:
+        "Āminah's response — 'Do not fear for him. He is protected' — and her " +
+        "prior preparation through signs before the birth",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Raḥīq al-Makhtūm",
+      ],
+      explanation:
+        "Āminah's words and the signs she received before the birth of the " +
+        "Prophet ﷺ are transmitted through Sīrah literature. These are " +
+        "widely accepted in the tradition but do not carry a formal ṣaḥīḥ " +
+        "isnād. They should be taught as received Sīrah narrative — not as " +
+        "a graded prophetic ḥadīth.",
+    },
+  ],
+
+  // ── Mini Timeline ─────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "~570 CE",
+      label:
+        "Rasūlullāh ﷺ placed in the care of Ḥalīmah al-Saʿdiyyah in Banū Saʿd",
+    },
+    {
+      year: "~574 CE",
+      label:
+        "Two men in white open the chest of the Prophet ﷺ in Banū Saʿd — approximately age four",
+    },
+    {
+      year: "~574 CE",
+      label:
+        "Foster-brother ʿAbdullāh ibn al-Ḥārith witnesses the event and runs to Ḥalīmah",
+    },
+    {
+      year: "~574 CE",
+      label:
+        "Prophet ﷺ found standing, calm and unharmed — describes exactly what happened",
+    },
+    {
+      year: "~574 CE",
+      label:
+        "Ḥalīmah and al-Ḥārith decide to return the Prophet ﷺ to Āminah in Makkah",
+    },
+    {
+      year: "~574 CE",
+      label:
+        "Āminah hears everything and responds without fear: 'Do not fear for him. He is protected.'",
+    },
+  ],
+
+  // ── Cross-Tab Connections ─────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["~574 CE"],
+    maps: ["makkah"],
+    characters: [
+      "Ḥalīmah al-Saʿdiyyah",
+      "Āminah bint Wahb",
+    ],
+    references: [
+      "Sīrat Ibn Hishām",
+      "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      "Ṣaḥīḥ al-Bukhārī — Ḥadīth 52",
+      "Ṣaḥīḥ Muslim — Ḥadīth 1599",
+    ],
+  },
+};
+
 // ── Lesson 6 — The Death of Āminah ────────────────────────────────────────────
 
 const lesson6: LessonEnrichment = {
@@ -1985,6 +2545,7 @@ const lesson7: LessonEnrichment = {
 export const lessonEnrichmentData: LessonEnrichmentMap = {
   "sirah_journey:3": lesson3,
   "sirah_journey:4": lesson4,
+  "sirah_journey:5": lesson5,
   "sirah_journey:6": lesson6,
   "sirah_journey:7": lesson7,
 };
