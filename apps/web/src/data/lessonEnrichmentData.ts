@@ -13,6 +13,325 @@
 
 import type { LessonEnrichment, LessonEnrichmentMap } from "./lessonEnrichmentTypes";
 
+// ── Lesson 0 — Introduction to Sīrah ─────────────────────────────────────────
+
+const lesson0: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 0,
+  lessonTitle: "Introduction to Sīrah",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 25,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Opening ───────────────────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "We live in a time when young Muslims who pray five times a day can name every player in a football squad but cannot name ten Companions of Rasulūllāh ﷺ. This is not their failure — it is ours. The Sīrah is the cure. Every time a family opens this book together, they are reclaiming their inheritance and building a Muslim identity that no outside culture can uproot.",
+
+  memoryGem:
+    "\"Say: If you truly love Allāh, then follow me — Allāh will love you and forgive your sins.\" — Qurʾān 3:31",
+
+  oneMinuteSummary:
+    "This opening lesson asks a question every Muslim should be able to answer: what is Sīrah, and why does it matter? Sīrah means the path a person travels through their lifetime — and when Muslims say the word, we mean only one person: Muḥammad ﷺ, the greatest of all creation. The early Companions taught Sīrah with the same reverence as the Qurʾān itself. Seven profound reasons are explored: Sīrah is the history of Islam, the path to deep love for Rasulūllāh ﷺ, the foundation for following the Sunnah, the key to understanding the Qurʾān, the methodology of the Islamic movement, an act of ʿibādah, and the cure for the Muslim identity crisis threatening our children today.",
+
+  // ── Key Facts ─────────────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "What does the word Sīrah mean?",
+      information:
+        "Sīrah comes from an Arabic root meaning path — the path a person travels through their lifetime. A comprehensive Arabic dictionary lists its meanings as: conduct, comportment, demeanour, behaviour, way of life, attitude, biography. While any person can have a Sīrah, Muslims have used the word so exclusively for the Prophet ﷺ that today it means only one person: Muḥammad ﷺ.",
+    },
+    {
+      topic: "How did the early Muslims regard the Sīrah?",
+      information:
+        "ʿAlī ibn al-Ḥusayn ibn ʿAlī ibn Abī Ṭālib — grandson of ʿAlī raḍiyāllāhu ʿanh — said: 'We were taught the Sīrah of Rasulūllāh ﷺ just as we were taught the Qurʾān.' Muḥammad ibn Saʿd ibn Abī Waqqāṣ narrated that his father taught the Sīrah and battles to his children, saying: 'These are the traditions of your fathers — learn them, study them, and hold them close.'",
+    },
+    {
+      topic: "The name Muḥammad and the adhān",
+      information:
+        "Muḥammad — meaning 'the praised one' — is the most common name in all of human history. At every moment, somewhere on earth, a minaret is calling the adhān and pronouncing: Ashhadu anna Muḥammadan rasūlullāh. Around the clock, without interruption, in every time zone, his name rings out. No name has ever more perfectly fulfilled its own meaning.",
+    },
+    {
+      topic: "The Seven Reasons for Studying Sīrah",
+      information:
+        "(1) Sīrah is the history of Islam. (2) It develops true love for Rasulūllāh ﷺ. (3) It teaches us how to follow his way (Sunnah). (4) It unlocks the meaning of the Qurʾān. (5) It reveals the methodology of the Islamic movement. (6) Studying Sīrah is itself ʿibādah — worship. (7) It builds and protects Muslim identity in a world trying to sever our roots.",
+    },
+  ],
+
+  // ── What We Learn ─────────────────────────────────────────────────────────
+
+  whatWeLearn: [
+    {
+      event: "ʿUmar's conversation about loving the Prophet ﷺ more than oneself",
+      lesson:
+        "Love of Rasulūllāh ﷺ is not just a feeling — it is a condition of Īmān. ʿUmar tried to say he loved him more than everything except himself. The Prophet ﷺ said: not until you love me more than your own self. ʿUmar reflected and returned, and the Prophet ﷺ said: 'Now, O ʿUmar, your Īmān is complete.' True love requires knowledge — the more you know him ﷺ, the deeper your love becomes.",
+    },
+    {
+      event: "ʿAmr ibn al-ʿĀṣ — from enemy who wanted to kill the Prophet ﷺ to man who could not look at his face",
+      lesson:
+        "ʿAmr ibn al-ʿĀṣ was once driven by a burning desire to destroy Rasulūllāh ﷺ. After accepting Islam, his love became so overwhelming that he could not look at the Prophet's full face directly — not to avoid him, but because his reverence and love were so great. On his deathbed he said: 'If you asked me to describe him I could not — I never allowed myself to stare.' This is what the Sīrah does to a person.",
+    },
+    {
+      event: "Suhayl ibn ʿAmr's testimony after Ḥudaybiyyah",
+      lesson:
+        "A seasoned diplomat who had visited the Persian Emperor, the Roman Emperor, and the Najāshī returned to Makkah and told Quraysh: 'I have never in my life seen a leader so loved, so deeply revered, by his followers as Muḥammad ﷺ is loved by his Companions.' He described them competing to catch the drops of wuḍūʾ water as they fell from his blessed body. He warned: 'These are not people you can negotiate away from their leader.'",
+    },
+    {
+      event: "The Muslim identity crisis — Solzhenitsyn on severing roots",
+      lesson:
+        "Alexander Solzhenitsyn said: 'To destroy a people, you must first sever their roots.' The Sīrah series is our answer to that crisis. Every time we sit together and study the life of Rasulūllāh ﷺ, we are telling our children: you come from something great. You belong to someone extraordinary. You have a legacy — and it is your responsibility to know it, honour it, and pass it on.",
+    },
+  ],
+
+  // ── Why Did Allāh Allow This ──────────────────────────────────────────────
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allāh make love of the Prophet ﷺ a condition of Īmān — not merely a virtue or a recommendation?",
+    reflection:
+      "Because Allāh sent Rasulūllāh ﷺ not just to deliver a message but to be the message made living. The Qurʾān is the word of Allāh. The Prophet ﷺ is the walk of Allāh's word. You cannot separate loving from following — Allāh made them the same thing in one āyah: 'If you love Allāh, follow me — and Allāh will love you.' The formula works in both directions: love leads to following, and following deepens love. Allāh knew that an ummah that truly knows Rasulūllāh ﷺ will never abandon his way. The condition of love is therefore a mercy — it is the engine that keeps us on the straight path.",
+    quranicConnection: {
+      arabic:
+        "قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَاللَّهُ غَفُورٌ رَّحِيمٌ",
+      translation:
+        "Say: If you truly love Allāh, then follow me — Allāh will love you and forgive your sins. And Allāh is Oft-Forgiving, Most Merciful.",
+      reference: "Qurʾān 3:31",
+    },
+  },
+
+  // ── Family Discussion ─────────────────────────────────────────────────────
+
+  familyDiscussion: [
+    {
+      question:
+        "ʿUmar said he loved Rasulūllāh ﷺ more than everything — except himself. The Prophet ﷺ said: 'Not until you love me more than your own self.' ʿUmar reflected, then returned. Has there ever been a moment in your life when your love for something grew deeper after you truly came to understand it?",
+      hint:
+        "Explore: what would it take to love Rasulūllāh ﷺ the way the Ṣaḥābah loved him? What is the connection between knowledge and love?",
+    },
+    {
+      question:
+        "ʿAmr ibn al-ʿĀṣ went from wanting to kill the Prophet ﷺ to being unable to look at his face from the intensity of his love. What caused such a complete transformation?",
+      hint:
+        "Ask: can a person sincerely love someone they do not know? What is the difference between the love we claim and the love the Ṣaḥābah lived?",
+    },
+    {
+      question:
+        "The lesson describes a Muslim identity crisis: our young people know more about pop stars than about the Ṣaḥābah. What small, practical steps can your family take this week to begin changing that?",
+      hint:
+        "Be practical: which Companion can each family member commit to learning about before the next session?",
+    },
+    {
+      question:
+        "ʿAlī ibn al-Ḥusayn said the Sīrah was taught with the same seriousness as the Qurʾān. How seriously does your family currently treat the Sīrah — and what would 'taking it seriously' actually look like in your home?",
+    },
+  ],
+
+  // ── Family Application ────────────────────────────────────────────────────
+
+  familyApplication:
+    "This week: when the adhān is called for any ṣalāh, pause. Listen carefully to the words Ashhadu anna Muḥammadan rasūlullāh. Remind your family that at this very moment, in every time zone on earth, his name is being called out — the most common name in all of human history. Then ask: how well do we truly know the man whose name is on our lips five times every day?",
+
+  // ── Quick Review ──────────────────────────────────────────────────────────
+
+  quickReview: [
+    {
+      question: "What does the word Sīrah mean?",
+      answer:
+        "Linguistically, it means a path — the path a person travels through their lifetime. For Muslims, it specifically means the biography of Rasulūllāh ﷺ: his conduct, behaviour, way of life, and the complete record of how he lived.",
+    },
+    {
+      question: "What did ʿAlī ibn al-Ḥusayn say about how the early Muslims treated the Sīrah?",
+      answer:
+        "'We were taught the Sīrah of Rasulūllāh ﷺ just as we were taught the Qurʾān.' — with the same seriousness, dedication, and reverence as the Book of Allāh ﷻ.",
+    },
+    {
+      question: "Name any four of the seven reasons for studying Sīrah.",
+      answer:
+        "Any four from: (1) History of Islam. (2) Developing true love for Rasulūllāh ﷺ. (3) Following his Sunnah. (4) Understanding the Qurʾān. (5) The methodology of the Islamic movement. (6) ʿIbādah — worship. (7) Building Muslim identity.",
+    },
+    {
+      question: "What did the transformation of ʿAmr ibn al-ʿĀṣ demonstrate about the Sīrah?",
+      answer:
+        "ʿAmr went from an enemy who wanted to kill Rasulūllāh ﷺ to a man whose love for him was so intense he could not look at his face directly. It shows that truly knowing Rasulūllāh ﷺ produces deep, overwhelming love — and that knowledge is the path to that love.",
+    },
+  ],
+
+  // ── Explore Further ───────────────────────────────────────────────────────
+
+  exploreFurther: [
+    {
+      title: "Ṣaḥīḥ al-Bukhārī — Kitāb al-Īmān (Book of Faith)",
+      type: "book",
+      note:
+        "Contains the foundational hadīth of this lesson: 'None of you truly believes until I am more beloved to him than his parents, his children, and all of mankind.' (Hadīth 15). Also contains the ʿUmar conversation (Hadīth 6632).",
+    },
+    {
+      title: "Qurʾān, Sūrah Āl ʿImrān (3:31)",
+      type: "article",
+      note:
+        "The defining āyah of this lesson — the formula connecting love of Allāh to following Rasulūllāh ﷺ. Read it in its fuller context (3:28–35) to understand the situation in which it was revealed.",
+    },
+    {
+      title: "Qurʾān, Sūrah al-Tawbah (9:24)",
+      type: "article",
+      note:
+        "The āyah that lists everything we might love more than Allāh and His Messenger — and warns of the consequence. A powerful companion verse to Āl ʿImrān 3:31.",
+    },
+    {
+      title: "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      author: "Ṣafī al-Raḥmān al-Mubārakfūrī",
+      type: "book",
+      note:
+        "The most widely read modern Sīrah in English — winner of the World Muslim League prize. An excellent starting point for families who want to go deeper than the sessions.",
+    },
+    {
+      title: "Sīrat Ibn Hishām",
+      author: "Ibn Hishām (from Ibn Isḥāq)",
+      type: "book",
+      note:
+        "The earliest comprehensive Sīrah text, compiled ~150 AH by Ibn Isḥāq and refined ~218 AH by Ibn Hishām. The foundation on which all later Sīrah scholarship was built.",
+    },
+  ],
+
+  // ── Teacher Notes ─────────────────────────────────────────────────────────
+
+  teacherNotes: [
+    {
+      audience: "all",
+      heading: "This lesson sets the tone for the entire series",
+      body:
+        "The seven reasons are not just an introduction — they are the answer to every student who ever asks 'why does this matter?' Keep returning to them throughout the series. By the end of the full Sīrah journey, students should be able to recall all seven from memory without prompting.",
+    },
+    {
+      audience: "family",
+      heading: "The identity crisis conversation — make it aspirational",
+      body:
+        "Reason Seven can be a sensitive discussion. Frame it without blame. The goal is not to make children feel guilty for enjoying popular culture, but to help the family see that their Islamic identity is worth knowing, celebrating, and passing on. Ask: what would our home look like if we were as passionate about the Ṣaḥābah as we are about our favourite teams?",
+    },
+    {
+      audience: "madrasa",
+      heading: "Use the ʿAmr ibn al-ʿĀṣ story for distant students",
+      body:
+        "When students seem emotionally disconnected from Rasulūllāh ﷺ, use this story. The message is deliberately extreme: even the greatest enemy became the greatest lover once he truly came to know him. Knowledge is the path — and that is exactly why they are in this class.",
+    },
+    {
+      audience: "classroom",
+      heading: "Suhayl's testimony — the power of external witness",
+      body:
+        "Suhayl ibn ʿAmr was not a Muslim when he reported on Companion love. An experienced diplomat who had visited empires observed the Companions and declared he had never seen anything like it. Use this when students challenge whether the Companions' love was real or culturally exaggerated. An outsider with no reason to flatter confirmed it.",
+    },
+  ],
+
+  // ── Authentication Notes ──────────────────────────────────────────────────
+
+  authenticationNotes: [
+    {
+      claim: "The hadīth of love — 'None of you truly believes until I am more beloved...'",
+      grade: "Established",
+      sources: ["Ṣaḥīḥ al-Bukhārī, Hadīth 15", "Ṣaḥīḥ Muslim, Hadīth 44"],
+      explanation:
+        "Source classification: Ṣaḥīḥ Ḥadīth. Mutafaq ʿalayh — agreed upon by both Bukhārī and Muslim. The highest grade of hadīth authentication.",
+    },
+    {
+      claim: "ʿUmar's conversation with the Prophet ﷺ about loving him more than oneself",
+      grade: "Established",
+      sources: ["Ṣaḥīḥ al-Bukhārī, Hadīth 6632"],
+      explanation:
+        "Source classification: Ṣaḥīḥ Ḥadīth. Narrated in Ṣaḥīḥ al-Bukhārī with a sound chain.",
+    },
+    {
+      claim: "The story of ʿAmr ibn al-ʿĀṣ — his deathbed description of his love for the Prophet ﷺ",
+      grade: "Established",
+      sources: ["Ṣaḥīḥ Muslim, Hadīth 121"],
+      explanation:
+        "Source classification: Ṣaḥīḥ Ḥadīth. Narrated in Ṣaḥīḥ Muslim. The specific detail about his inability to look at the Prophet ﷺ's face out of love is preserved in this authenticated narration.",
+    },
+    {
+      claim: "Suhayl ibn ʿAmr's testimony about Companion love at the Treaty of Ḥudaybiyyah",
+      grade: "Widely Accepted",
+      sources: ["Ṣaḥīḥ al-Bukhārī — Kitāb al-Shurūṭ", "Sīrat Ibn Hishām"],
+      explanation:
+        "Source classification: Ṣaḥīḥ Ḥadīth / Sīrah Narrative. The Ḥudaybiyyah account is in Bukhārī. Suhayl's exact words vary across narrations but the substance of his testimony is well established in Sīrah literature.",
+    },
+    {
+      claim: "Ibn Ḥazm's statement about following Muḥammad ﷺ being the path to preeminence",
+      grade: "Scholarly Discussion",
+      sources: ["Al-Muḥallā — Ibn Ḥazm al-Andalusī"],
+      explanation:
+        "Source classification: Scholarly citation. Ibn Ḥazm (384–456 AH / 994–1064 CE) was a major Andalusian scholar. His works are well preserved and the statement is authentically attributed to him, though it is scholarly opinion rather than Qurʾān or hadīth.",
+    },
+  ],
+
+  // ── Reliability Summary ───────────────────────────────────────────────────
+
+  lessonReliabilitySummary: {
+    overallGrade: "Established",
+    summary:
+      "The core of this lesson — the hadīths on love of the Prophet ﷺ, ʿUmar's conversation, ʿAmr ibn al-ʿĀṣ's transformation, and the Qurʾānic verses — comes from Ṣaḥīḥ al-Bukhārī, Ṣaḥīḥ Muslim, and the Qurʾān itself. The Suhayl testimony at Ḥudaybiyyah is grounded in Bukhārī's account of the treaty. Scholarly statements such as Ibn Ḥazm's quotation are well-sourced classical scholarship. This introductory lesson rests on the most reliable foundations in the Islamic knowledge tradition.",
+  },
+
+  // ── Lesson Timeline ───────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "~7th century CE (1st century AH)",
+      label:
+        "The Companions begin transmitting the Sīrah orally, treating it with the same care as the Qurʾān — Muḥammad ibn Saʿd ibn Abī Waqqāṣ and ʿAlī ibn al-Ḥusayn are among the early transmitters",
+    },
+    {
+      year: "~750 CE (~132 AH)",
+      label:
+        "Muḥammad ibn Isḥāq compiles the first comprehensive Sīrah — Sīrat Rasūl Allāh — gathering oral traditions into a single narrative",
+    },
+    {
+      year: "~833 CE (~218 AH)",
+      label:
+        "Ibn Hishām edits and refines Ibn Isḥāq's Sīrah into the form most Muslims study today — Sīrat Ibn Hishām",
+    },
+    {
+      year: "1976 CE",
+      label:
+        "Ṣafī al-Raḥmān al-Mubārakfūrī writes Al-Raḥīq al-Makhtūm (The Sealed Nectar) — the most widely read modern Sīrah, winner of the World Muslim League prize",
+    },
+  ],
+
+  // ── Connections ───────────────────────────────────────────────────────────
+
+  connections: {
+    timeline: [
+      "~1st century AH — Companions transmit the Sīrah",
+      "~150 AH — Ibn Isḥāq compiles the first Sīrah",
+      "~218 AH — Ibn Hishām refines the text",
+      "1976 CE — Al-Raḥīq al-Makhtūm",
+    ],
+    maps: ["makkah", "madinah", "hijaz"],
+    characters: [
+      "Muḥammad ibn ʿAbdullāh ﷺ",
+      "ʿUmar ibn al-Khaṭṭāb raḍiyāllāhu ʿanh",
+      "ʿAmr ibn al-ʿĀṣ raḍiyāllāhu ʿanh",
+      "Suhayl ibn ʿAmr",
+      "ʿAlī ibn al-Ḥusayn ibn ʿAlī ibn Abī Ṭālib",
+      "Muḥammad ibn Saʿd ibn Abī Waqqāṣ",
+    ],
+    references: [
+      "Ṣaḥīḥ al-Bukhārī — Kitāb al-Īmān (Hadīth 15)",
+      "Ṣaḥīḥ Muslim — Hadīth 44",
+      "Ṣaḥīḥ Muslim — Hadīth 121 (ʿAmr ibn al-ʿĀṣ)",
+      "Qurʾān 3:31",
+      "Qurʾān 9:24",
+      "Sīrat Ibn Hishām",
+      "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+    ],
+  },
+};
+
 // ── Lesson 1 — The Meccan Period ──────────────────────────────────────────────
 
 const lesson1: LessonEnrichment = {
@@ -3008,6 +3327,7 @@ const lesson7: LessonEnrichment = {
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
+  "sirah_journey:0": lesson0,
   "sirah_journey:1": lesson1,
   "sirah_journey:3": lesson3,
   "sirah_journey:4": lesson4,
