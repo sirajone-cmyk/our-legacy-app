@@ -507,6 +507,553 @@ const lesson3: LessonEnrichment = {
   },
 };
 
+// ── Lesson 4 — Ḥalīmah al-Saʿdiyyah and the Desert Years ────────────────────
+
+const lesson4: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 4,
+  lessonTitle: "Ḥalīmah al-Saʿdiyyah and the Desert Years",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 25,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Why This Matters Today ─────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "Most families have heard the word barakah used casually. This lesson shows it " +
+    "concretely — in a donkey that suddenly walked swiftly, a she-camel that gave " +
+    "milk after months of dryness, sheep that came home full while the neighbours' " +
+    "came home dry. Barakah is not an abstract quality. It is Allāh ﷻ placing His " +
+    "blessing inside something — and this lesson teaches families exactly what that " +
+    "looks like. For a generation that equates blessing with wealth and visible " +
+    "success, Lesson 4 is a correction: Allāh placed the greatest barakah in " +
+    "history inside an orphan child that no one wanted, taken reluctantly by a " +
+    "struggling woman for the most ordinary of reasons. The central question for " +
+    "families today is this: where are we passing over something or someone " +
+    "because they do not look like the obvious choice?",
+
+  // ── Memory Gem ─────────────────────────────────────────────────────────────
+
+  memoryGem:
+    '"Ḥalīmah, do you realise that you have taken a blessed child?" ' +
+    "— al-Ḥārith ibn ʿAbd al-ʿUzzā to his wife, on the first night.",
+
+  // ── One Minute Summary ─────────────────────────────────────────────────────
+
+  oneMinuteSummary:
+    "Among the noble families of Makkah, it was the custom to send newborn children " +
+    "to live with Bedouin tribes in the desert — for clean air, physical strength, " +
+    "and the purest Arabic. Each year, women from the surrounding tribes would " +
+    "journey to Makkah to take infants back to nurse. In one difficult year, a " +
+    "woman named Ḥalīmah al-Saʿdiyyah arrived from the tribe of Banū Saʿd — " +
+    "riding an exhausted donkey, with almost no milk of her own. She passed over " +
+    "the infant Muḥammad ﷺ at first, as every other woman had: he was an orphan " +
+    "with no father to pay the nurse. But when every other woman had found a child " +
+    "and Ḥalīmah alone had nothing, she turned back. Her husband said: perhaps " +
+    "Allāh will bless us through him. That word 'perhaps' changed everything. " +
+    "The moment she nursed him, her milk came in full. The she-camel gave milk " +
+    "that night after months of dryness. On the journey home, her old donkey " +
+    "walked so swiftly the other women could no longer keep up. Back in Banū " +
+    "Saʿd, her sheep returned full while the neighbours' returned dry. For four " +
+    "to five years, barakah settled into her household like a permanent guest. " +
+    "Allāh had placed the greatest blessing in history inside the child no one " +
+    "had wanted to take.",
+
+  // ── Key Facts (max 6) ──────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "Who was Ḥalīmah al-Saʿdiyyah?",
+      information:
+        "A woman from the tribe of Banū Saʿd ibn Bakr — a Bedouin tribe " +
+        "renowned for speaking the clearest and most eloquent Arabic dialect in " +
+        "Arabia. She arrived in Makkah during a drought year, exhausted, with " +
+        "little milk of her own and an old donkey that struggled to keep pace. " +
+        "She became the foster-mother of Rasūlullāh ﷺ and, years later, accepted " +
+        "Islām — making her a Ṣaḥābiyyah.",
+    },
+    {
+      topic: "Why did Makkī families send children to the desert?",
+      information:
+        "The great families of Arabia considered urban life weakening for young " +
+        "children. The desert offered clean air, physical resilience through a " +
+        "harder life, and above all the Bedouin Arabic — the most eloquent dialect, " +
+        "untouched by the mixing of traders from Persia, Yemen, and Shām. For " +
+        "Quraysh, who prized eloquence above almost everything, raising a child " +
+        "among the Bedouin was an act of deliberate care.",
+    },
+    {
+      topic: "Why did no one want the infant Muḥammad ﷺ?",
+      information:
+        "His father ʿAbdullāh had died before his birth. The custom required the " +
+        "father to pay the wet-nurse. An orphan with no living father meant no " +
+        "guaranteed income. One by one, every woman of Banū Saʿd looked at this " +
+        "child and moved on — choosing infants with living fathers and certain pay.",
+    },
+    {
+      topic: "What were the first signs of barakah?",
+      information:
+        "The moment Ḥalīmah sat to nurse the infant, her milk came in fully — " +
+        "where it had been nearly absent throughout the entire difficult journey. " +
+        "She nursed Muḥammad ﷺ until he was satisfied, then nursed her own son — " +
+        "he too was satisfied. Both children slept. Her husband went to their " +
+        "she-camel and found the udders full, where they had been dry for months. " +
+        "He said to her: 'Ḥalīmah, do you realise you have taken a blessed child?'",
+    },
+    {
+      topic: "What happened in the tribe of Banū Saʿd?",
+      information:
+        "The barakah continued throughout the nursing years. Ḥalīmah's sheep " +
+        "returned from grazing full of milk while the neighbours' returned dry. " +
+        "The neighbours began sending their own flocks to graze wherever " +
+        "Ḥalīmah's flock grazed — following the blessing without fully " +
+        "understanding its source. Her land gave where others' land did not.",
+    },
+    {
+      topic: "What does barakah mean?",
+      information:
+        "Barakah is divine increase — Allāh ﷻ placing His blessing inside " +
+        "something so that it gives more than its apparent quantity would suggest. " +
+        "A small amount of food with barakah feeds many. A little time with " +
+        "barakah produces much. Ḥalīmah experienced this in the most direct and " +
+        "undeniable way possible: through animals, land, milk, and a journey — " +
+        "the most ordinary elements of Bedouin life, all transformed.",
+    },
+  ],
+
+  // ── What We Learn ─────────────────────────────────────────────────────────
+
+  whatWeLearn: [
+    {
+      event: "The desert custom was arranged for the Prophet ﷺ",
+      lesson:
+        "Allāh's preparation does not announce itself. Five divine reasons were " +
+        "placed inside a social custom — pure language, physical strength, distance " +
+        "from corruption, clean air, and divine arrangement. What appears to be a " +
+        "routine practice can carry a decree.",
+    },
+    {
+      event: "Every woman passed over the orphan child",
+      lesson:
+        "Allāh places His barakah where people do not think to look. The " +
+        "sensible choice and the blessed choice are not always the same thing. " +
+        "Every woman made the logical decision. Only one received what none " +
+        "of the others did.",
+    },
+    {
+      event: "Ḥalīmah turned back not out of faith but out of desperation",
+      lesson:
+        "Allāh honours the sincere attempt — even when it begins in hesitation. " +
+        "She did not return with certainty. She returned with tawakkul she did not " +
+        "yet know she had. Her husband said 'perhaps' — not 'certainly.' That is " +
+        "the honest language of a person who trusts Allāh without claiming to " +
+        "know His plan.",
+    },
+    {
+      event: "The blessings began before she left the house",
+      lesson:
+        "Barakah is not delayed until it is deserved. The moment she picked him " +
+        "up, something changed. Allāh's gifts arrive when He wills — not as a " +
+        "reward earned, but as a mercy given.",
+    },
+    {
+      event: "The neighbours followed the flock without knowing why",
+      lesson:
+        "A blessed person affects those around them even when those around them " +
+        "cannot name the source. The Prophet ﷺ was already a mercy to those near " +
+        "him before the world knew who he was. This is what it means to carry " +
+        "barakah: others feel it before you can explain it.",
+    },
+  ],
+
+  // ── Why Did Allāh Allow This? ──────────────────────────────────────────────
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allāh allow every woman of Banū Saʿd to pass over the infant " +
+      "Muḥammad ﷺ — when He could have made any one of them take him willingly?",
+    reflection:
+      "Allāh could have made the first woman reach for him eagerly. He did not. " +
+      "He allowed the rejection — one woman after another — until only one was " +
+      "left, and she took him reluctantly, out of desperation rather than desire. " +
+      "This was not cruelty. It was precision. The scholars reflect that Allāh " +
+      "wanted the choice to belong to the one He had already chosen for this " +
+      "honour — and He wanted her to turn back by her own will, so the blessing " +
+      "would arrive through her own decision, however small. Allāh does not " +
+      "impose His gifts. He arranges the conditions so that His servant walks " +
+      "toward them. When you find yourself in a situation where every door seems " +
+      "closed and you try one more time out of nothing but desperation — that " +
+      "moment may be exactly the one Allāh arranged.",
+    quranicConnection: {
+      arabic:
+        "عَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ",
+      translation:
+        "Perhaps you dislike something while it is good for you.",
+      reference: "Sūrah al-Baqarah, 2:216",
+    },
+  },
+
+  // ── Family Discussion ──────────────────────────────────────────────────────
+
+  familyDiscussion: [
+    {
+      question:
+        "Ḥalīmah chose the orphan child for the most reluctant reason — she had " +
+        "no other option. Every woman who chose the sensible child got an ordinary " +
+        "outcome. Have you ever made a choice for a small or reluctant reason and " +
+        "later seen Allāh's blessing in it?",
+      hint:
+        "This is about recognising barakah in hindsight. Ask each family member " +
+        "to share a time when something they didn't choose freely — or only " +
+        "accepted out of necessity — turned out to carry unexpected good. Then " +
+        "ask: is there something in your life right now that you are passing over " +
+        "because it does not look promising?",
+    },
+    {
+      question:
+        "The neighbours of Ḥalīmah could see the blessing but could not name its " +
+        "source. They followed her flock hoping to share in what they could not " +
+        "explain. What is the difference between benefiting from barakah without " +
+        "knowing it, and being consciously grateful for what Allāh has placed near you?",
+      hint:
+        "Barakah in food is a Sunnah theme — we say bismillāh, we eat together, " +
+        "we make duʿāʾ. Ask your family: what do we actually do at home to " +
+        "invite barakah? What habits have we dropped that used to bring it?",
+    },
+    {
+      question:
+        "Al-Ḥārith said to his wife: 'Perhaps Allāh will bless us through him.' " +
+        "He did not say certainly. He said perhaps. That is the honest language " +
+        "of a person who hopes without claiming to know the outcome. What does " +
+        "tawakkul that speaks in 'perhaps' look like in your family?",
+      hint:
+        "We often think of tawakkul as a feeling of certainty. But al-Ḥārith's " +
+        "words were the opposite — uncertain about the result, but willing to " +
+        "act. Ask: when was the last time someone in your family made a decision " +
+        "with that kind of humble hope?",
+    },
+    {
+      question:
+        "The Prophet ﷺ grew up in the desert — learning the purest Arabic, " +
+        "building physical strength, growing far from the idols and noise of " +
+        "Makkah — before being sent to speak to all of humanity. Allāh prepared " +
+        "him in simplicity before giving him the greatest mission. What " +
+        "preparation might Allāh be giving your family right now — through " +
+        "difficulty, simplicity, or circumstances that feel limiting?",
+      hint:
+        "This is the hardest question for families. It asks them to look at their " +
+        "current difficulties as possible preparation rather than punishment. " +
+        "Do not rush this one. Give people time to think before answering.",
+    },
+  ],
+
+  // ── Family Application ─────────────────────────────────────────────────────
+
+  familyApplication:
+    "At family taʿlīm this week, each person names one thing in their life that " +
+    "they disliked or resented at the time — and that later turned out to carry " +
+    "good they did not expect. A school, a difficulty, a change, a loss. After " +
+    "sharing, read Sūrah al-Baqarah 2:216 together: 'Perhaps you dislike " +
+    "something while it is good for you.' Then make this duʿāʾ as a family: " +
+    "'O Allāh, bless for us what You have provided for us.' (Sunan Abī Dāwūd, " +
+    "3730.) End by asking the children: who was Ḥalīmah? What did she do? " +
+    "What did Allāh give her? Let them explain it back in their own words. " +
+    "The goal is simple: every person leaves knowing what barakah means — " +
+    "not as a word, but as a story.",
+
+  // ── Quick Review ──────────────────────────────────────────────────────────
+
+  quickReview: [
+    {
+      question: "Why did the noble families of Makkah send their children to the desert?",
+      answer:
+        "For clean air, physical strength, and the purest Arabic — the Bedouin " +
+        "dialect of tribes like Banū Saʿd was considered the most eloquent in " +
+        "all of Arabia.",
+    },
+    {
+      question: "Why did no one want to take the infant Muḥammad ﷺ?",
+      answer:
+        "His father ʿAbdullāh had died before his birth. The custom required the " +
+        "father to pay the wet-nurse, and an orphan meant no guaranteed income.",
+    },
+    {
+      question: "What made Ḥalīmah turn back and take him?",
+      answer:
+        "Every other woman had found a child and she alone had nothing. She " +
+        "could not bear going home empty-handed. Her husband said: 'Go back — " +
+        "perhaps Allāh will bless us through him.'",
+    },
+    {
+      question: "What were the first three signs of barakah that night?",
+      answer:
+        "Ḥalīmah's milk came in fully the moment she nursed him. Her own son " +
+        "was also satisfied. The she-camel gave milk after months of dryness.",
+    },
+    {
+      question: "What happened to the sheep of Banū Saʿd?",
+      answer:
+        "Ḥalīmah's sheep returned from grazing full of milk while the " +
+        "neighbours' returned dry. The tribe began sending their flocks to " +
+        "graze wherever her flock grazed.",
+    },
+    {
+      question: "What does the word barakah mean?",
+      answer:
+        "Divine increase — Allāh ﷻ placing His blessing inside something so " +
+        "that it gives more than its apparent quantity would suggest.",
+    },
+  ],
+
+  // ── Explore Further ───────────────────────────────────────────────────────
+
+  exploreFurther: [
+    {
+      title: "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      author: "Ṣafī al-Raḥmān al-Mubārakfūrī",
+      type: "book",
+      note:
+        "The chapter on the desert years gives the most complete modern account " +
+        "of Ḥalīmah's narrative, drawn directly from Ibn Isḥāq. Winner of the " +
+        "First International Sīrah Conference award (1979) and the most " +
+        "accessible modern Sīrah for families.",
+    },
+    {
+      title: "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+      author: "Ibn Hishām",
+      type: "book",
+      note:
+        "The foundational classical source for Ḥalīmah's narrative. Her " +
+        "account is preserved here in her own words as reported through Ibn " +
+        "Isḥāq — the earliest and most detailed record of the desert years. " +
+        "For older students and teachers wanting the primary transmission.",
+    },
+    {
+      title: "Sūrah al-Baqarah — 2:216",
+      type: "article",
+      note:
+        "The single āyah that carries the entire theological lesson of this " +
+        "part of the Sīrah: 'Perhaps you dislike something while it is good " +
+        "for you.' Read it slowly with your family. Ask: can you name one " +
+        "thing in your life right now where this āyah applies?",
+    },
+    {
+      title: "Duʿāʾ of Barakah — Sunan Abī Dāwūd, Ḥadīth 3730",
+      type: "article",
+      note:
+        "'O Allāh, bless for us what You have provided for us.' Begin saying " +
+        "this before meals this week as a family. It is short, it is " +
+        "authenticated, and it connects directly to the lesson's central theme.",
+    },
+  ],
+
+  // ── Teacher Notes ─────────────────────────────────────────────────────────
+
+  teacherNotes: [
+    {
+      audience: "all",
+      heading: "This is the barakah lesson — let it feel that way",
+      body:
+        "Lesson 4 is the only lesson in the early Sīrah arc with no death, no " +
+        "fear, and no loss. It is full of blessing. The tone of this session " +
+        "can be lighter, warmer, and more joyful than the lessons on either " +
+        "side. Do not make it heavy. Barakah descended on a struggling household " +
+        "through one reluctant, ordinary decision. That is cause for wonder — " +
+        "and for gratitude.",
+    },
+    {
+      audience: "family",
+      heading: "The emotional peak — do not rush it",
+      body:
+        "The turning point is Segment 3: Ḥalīmah going back, picking up the " +
+        "child, and finding her milk full before she even leaves the house. " +
+        "Read that section slowly. Pause after: 'Her husband said to her: go " +
+        "back. Take the orphan. Perhaps Allāh will bless us through him.' " +
+        "Let it sit. Ask your family: what do you think Ḥalīmah was feeling " +
+        "in that moment? Get answers before reading what happened next.",
+    },
+    {
+      audience: "classroom",
+      heading: "Age differentiation",
+      body:
+        "Ages 7–10: focus on the story of the donkey, the sheep, and the milk. " +
+        "Ask them to draw the scene of the journey home — the donkey walking " +
+        "so swiftly the other women could not keep up. Ages 11+: introduce the " +
+        "five reasons why Allāh chose Banū Saʿd. Ask students to rank the five " +
+        "from most to least important and defend their ranking. Secondary: " +
+        "explore what barakah means theologically — divine increase vs. human " +
+        "effort vs. Allāh's will.",
+    },
+    {
+      audience: "madrasa",
+      heading: "Core knowledge to assess",
+      body:
+        "Students should know: who Ḥalīmah was and which tribe she belonged to; " +
+        "why the infant was initially refused; what made her turn back; what " +
+        "three things changed that first night; what happened to the sheep of " +
+        "Banū Saʿd; and what the word barakah means. They should be able to " +
+        "recite Sūrah al-Baqarah 2:216 in Arabic with correct pronunciation " +
+        "and give its meaning. They should also know the barakah duʿāʾ from " +
+        "Sunan Abī Dāwūd with its reference.",
+    },
+  ],
+
+  // ── Lesson Reliability Summary ────────────────────────────────────────────
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The core custom of sending Makkan children to Bedouin tribes is " +
+      "established historical practice confirmed across all Sīrah sources. " +
+      "The narrative of Ḥalīmah — her journey, her reluctant choice, and the " +
+      "blessings that followed — is transmitted through Sīrah literature " +
+      "(primarily Ibn Isḥāq via Ibn Hishām) with Ḥalīmah herself as the " +
+      "original narrator. This is Sīrah-level transmission, not ḥadīth with " +
+      "a formal isnād graded by ḥadīth science. The narrative is unanimous " +
+      "across all major classical Sīrah works and carries no credible dispute. " +
+      "The barakah duʿāʾ (Sunan Abī Dāwūd 3730) is independently authenticated. " +
+      "The Qurʾānic āyah (2:216) is established as divine revelation.",
+  },
+
+  // ── Authentication Notes ──────────────────────────────────────────────────
+
+  authenticationNotes: [
+    {
+      claim:
+        "The custom of sending Makkan children to Bedouin tribes for nursing " +
+        "and language acquisition",
+      grade: "Established",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq)",
+        "Al-Raḥīq al-Makhtūm — Ṣafī al-Raḥmān al-Mubārakfūrī",
+        "Al-Bidāyah wa al-Nihāyah — Ibn Kathīr",
+      ],
+      explanation:
+        "This is well-documented historical practice confirmed in all primary " +
+        "Sīrah sources and consistent with what is known of Arabian social " +
+        "customs of the period. There is no credible dispute about the custom itself.",
+    },
+    {
+      claim:
+        "Ḥalīmah's account of the blessings — the milk, the donkey, the " +
+        "she-camel, and the sheep of Banū Saʿd",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām (from Ibn Isḥāq — narrated from Ḥalīmah)",
+        "Al-Raḥīq al-Makhtūm",
+        "Al-Bidāyah wa al-Nihāyah — Ibn Kathīr",
+      ],
+      explanation:
+        "IMPORTANT: This narrative is Sīrah transmission — not a ḥadīth in " +
+        "Ṣaḥīḥ al-Bukhārī or Ṣaḥīḥ Muslim. Many readers assume it is in the " +
+        "Ṣaḥīḥayn because it is so well known. It is not. The source is " +
+        "Ḥalīmah's own account as preserved by Ibn Isḥāq — transmitted through " +
+        "the Sīrah tradition, not through the isnād-based ḥadīth sciences. " +
+        "Sīrah transmission carries high scholarly regard and is the standard " +
+        "for historical events of this period, but it is distinct from a " +
+        "graded prophetic ḥadīth. The narrative is unanimous across all major " +
+        "classical sources with no contradicting account.",
+    },
+    {
+      claim: "Ḥalīmah accepted Islām and is counted among the Ṣaḥābiyyāt",
+      grade: "Widely Accepted",
+      sources: [
+        "Sīrat Ibn Hishām",
+        "Al-Iṣābah fī Tamyīz al-Ṣaḥābah — Ibn Ḥajar al-ʿAsqalānī",
+      ],
+      explanation:
+        "Recorded in Sīrah sources and in the classical works on the Companions. " +
+        "She is listed among the Ṣaḥābiyyāt (female Companions) who visited the " +
+        "Prophet ﷺ in Makkah after prophethood. Her status is widely accepted " +
+        "in Sīrah scholarship.",
+    },
+    {
+      claim:
+        "The duration of the nursing period — approximately four to five years",
+      grade: "Scholarly Discussion",
+      sources: [
+        "Al-Raḥīq al-Makhtūm",
+        "Sīrat Ibn Hishām",
+      ],
+      explanation:
+        "The standard nursing period in the custom was two years. Classical " +
+        "sources indicate Ḥalīmah kept the child longer at Āminah's permission. " +
+        "The exact total duration varies between sources — Al-Raḥīq al-Makhtūm " +
+        "cites four to five years as the commonly cited range. This does not " +
+        "affect the core narrative.",
+    },
+    {
+      claim:
+        "The duʿāʾ: 'O Allāh, bless for us what You have provided for us'",
+      grade: "Established",
+      sources: [
+        "Sunan Abī Dāwūd — Ḥadīth 3730",
+      ],
+      explanation:
+        "Authenticated in Sunan Abī Dāwūd. This is a prophetic ḥadīth with a " +
+        "formal isnād — distinct from the Sīrah narrative above. It is " +
+        "recommended for families to practise after this lesson as a direct " +
+        "Sunnah connection to the theme of barakah.",
+    },
+  ],
+
+  // ── Mini Timeline ─────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "~570 CE",
+      label: "Muḥammad ﷺ born in Makkah — his father ʿAbdullāh had already died",
+    },
+    {
+      year: "~570 CE",
+      label:
+        "Women of Banū Saʿd arrive in Makkah for the annual nursing arrangement",
+    },
+    {
+      year: "~570 CE",
+      label:
+        "Every woman passes over the orphan — Ḥalīmah turns back and takes him",
+    },
+    {
+      year: "~570 CE",
+      label:
+        "First night: milk returns, she-camel gives milk, both children sleep satisfied",
+    },
+    {
+      year: "~570–575 CE",
+      label:
+        "Years of barakah in Banū Saʿd — animals, land, and crops all blessed",
+    },
+    {
+      year: "~574–575 CE",
+      label:
+        "Ḥalīmah returns the child to Āminah in Makkah after the nursing years",
+    },
+  ],
+
+  // ── Cross-Tab Connections ─────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["~570 CE", "~570–575 CE"],
+    maps: ["makkah"],
+    characters: [
+      "Ḥalīmah al-Saʿdiyyah",
+      "Āminah bint Wahb",
+    ],
+    references: [
+      "Sīrat Ibn Hishām",
+      "Al-Raḥīq al-Makhtūm (The Sealed Nectar)",
+      "Sunan Abī Dāwūd — Ḥadīth 3730",
+    ],
+  },
+};
+
 // ── Lesson 6 — The Death of Āminah ────────────────────────────────────────────
 
 const lesson6: LessonEnrichment = {
@@ -1437,6 +1984,7 @@ const lesson7: LessonEnrichment = {
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
   "sirah_journey:3": lesson3,
+  "sirah_journey:4": lesson4,
   "sirah_journey:6": lesson6,
   "sirah_journey:7": lesson7,
 };
