@@ -14,6 +14,7 @@ import {
   Pause,
   Play,
   Square,
+  Star,
   Sun,
   Type,
   Volume2,
@@ -55,6 +56,7 @@ function pageTitle(page: ReaderPage) {
   if (page.kind === "part-divider") return page.title;
   if (page.kind === "segment") return `Segment ${page.segmentNumber}`;
   if (page.kind === "reflection") return "Reflection";
+  if (page.kind === "completion") return "Complete";
   return "Closing";
 }
 
@@ -63,12 +65,14 @@ function pageSubtitle(page: ReaderPage) {
   if (page.kind === "part-divider") return page.subtitle;
   if (page.kind === "segment") return page.chapterTitle;
   if (page.kind === "reflection") return "Discussion Questions & Action Point";
+  if (page.kind === "completion") return "Volume I";
   return "Duʿāʾ & Conclusion";
 }
 
 function pageIcon(page: ReaderPage) {
   if (page.kind === "reflection") return MessageCircle;
   if (page.kind === "closing") return Heart;
+  if (page.kind === "completion") return Star;
   return BookOpen;
 }
 
@@ -77,6 +81,7 @@ function pageIndicator(page: ReaderPage, index: number, total: number) {
   if (page.kind === "part-divider") return `${page.title} · ${index + 1}/${total}`;
   if (page.kind === "segment") return `Part ${page.segmentNumber} · ${index + 1}/${total}`;
   if (page.kind === "reflection") return `Reflection · ${index + 1}/${total}`;
+  if (page.kind === "completion") return `Volume I Complete · ${index + 1}/${total}`;
   return `Closing · ${index + 1}/${total}`;
 }
 
@@ -286,6 +291,55 @@ function ClosingPage({
   );
 }
 
+function CompletionPageView({
+  page,
+  onBack,
+  onReadAgain,
+}: {
+  page: Extract<ReaderPage, { kind: "completion" }>;
+  onBack?: () => void;
+  onReadAgain: () => void;
+}) {
+  return (
+    <article className="book-page book-completion-page">
+      <DecorativeRule />
+      <p className="book-kicker completion-kicker">Volume I</p>
+      <h1 className="completion-title">{page.title}</h1>
+      {page.paragraphs.map((para) => (
+        <p key={para.slice(0, 60)}>{para}</p>
+      ))}
+      <SacredBox
+        box={{
+          type: "dua",
+          arabic: page.duaArabic,
+          translation: page.duaTranslation,
+        }}
+      />
+      <div className="closing-next-preview">
+        <div className="closing-next-rule" />
+        <p className="closing-next-label">Coming Next — Lesson 8</p>
+        <p className="closing-next-text">{page.lessonEightPreview}</p>
+      </div>
+      <div className="completion-actions">
+        <button
+          className="completion-btn-primary"
+          onClick={onBack}
+          type="button"
+        >
+          Back to Library
+        </button>
+        <button
+          className="completion-btn-secondary"
+          onClick={onReadAgain}
+          type="button"
+        >
+          Read Again from the Beginning
+        </button>
+      </div>
+    </article>
+  );
+}
+
 function ReaderPageView({
   page,
   onBegin,
@@ -301,7 +355,8 @@ function ReaderPageView({
   if (page.kind === "part-divider") return <PartDividerPage page={page} onBegin={onBegin} />;
   if (page.kind === "segment") return <SegmentPage page={page} />;
   if (page.kind === "reflection") return <ReflectionPage page={page} hasGuide={hasGuide} onViewGuide={onViewGuide} />;
-  return <ClosingPage page={page} />;
+  if (page.kind === "closing") return <ClosingPage page={page} />;
+  return null; // "completion" is rendered by the stage directly via CompletionPageView
 }
 
 // ── Read-aloud helpers ─────────────────────────────────────────────────────────
@@ -324,6 +379,9 @@ function buildPageText(page: ReaderPage): string {
   if (page.kind === "closing") {
     const preview = page.nextLessonPreview ? ` Coming next. ${page.nextLessonPreview}` : "";
     return `Closing. ${page.paragraphs.join(" ")} Duaa. ${page.duaTranslation}${preview}`;
+  }
+  if (page.kind === "completion") {
+    return `${page.title}. ${page.paragraphs.join(" ")} ${page.duaTranslation} Coming next. ${page.lessonEightPreview}`;
   }
   // segment
   const parts: string[] = [page.chapterTitle, "."];
@@ -935,12 +993,23 @@ export function EbookReader({
         onTouchEnd={handleTouchEnd}
         onClick={distractionFree ? () => setDistractionFree(false) : undefined}
       >
-        <ReaderPageView
-          page={page}
-          onBegin={goForward}
-          hasGuide={hasGuide}
-          onViewGuide={handleViewGuide}
-        />
+        {page.kind === "completion" ? (
+          <CompletionPageView
+            page={page}
+            onBack={onBack}
+            onReadAgain={() => {
+              localStorage.removeItem(`our_legacy_reader_page:${lesson.id}`);
+              goToPage(0);
+            }}
+          />
+        ) : (
+          <ReaderPageView
+            page={page}
+            onBegin={goForward}
+            hasGuide={hasGuide}
+            onViewGuide={handleViewGuide}
+          />
+        )}
       </section>
 
       <ReadAloudBar page={page} nightMode={nightMode} />

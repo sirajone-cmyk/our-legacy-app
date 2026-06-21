@@ -2644,8 +2644,62 @@ body:has(.book-reader-app) {
 }
 
 .book-reflection-page,
-.book-closing-page {
+.book-closing-page,
+.book-completion-page {
   max-width: 820px;
+}
+
+/* ── Completion Page ─────────────────────────────────────────────── */
+.completion-kicker {
+  color: var(--gold, #b8860b);
+  letter-spacing: 0.2em;
+}
+
+.completion-title {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.completion-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+  align-items: center;
+}
+
+.completion-btn-primary {
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--gold, #b8860b);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  min-width: 220px;
+}
+
+.completion-btn-primary:hover {
+  opacity: 0.88;
+}
+
+.completion-btn-secondary {
+  padding: 0.7rem 2rem;
+  border-radius: 6px;
+  border: 1px solid var(--gold-light, #c9a84c);
+  background: transparent;
+  color: var(--muted, #7a5c45);
+  font-size: 0.88rem;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  min-width: 220px;
+}
+
+.completion-btn-secondary:hover {
+  background: color-mix(in srgb, var(--gold-light, #c9a84c) 10%, transparent);
 }
 
 /* ── Next Lesson Preview (closing page) ──────────────────────────── */

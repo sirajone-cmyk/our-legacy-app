@@ -216,6 +216,9 @@ export function App() {
         onViewGuide={(partNumber) => {
           setView({ screen: "lesson-guide", lessonId: lesson.id, partNumber });
         }}
+        onComplete={() => {
+          localStorage.setItem(`our_legacy_completed:${view.lessonId}`, "true");
+        }}
       />
     );
   }

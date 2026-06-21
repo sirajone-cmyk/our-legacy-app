@@ -101,7 +101,16 @@ export type PartDividerPage = {
   description: string[];
 };
 
-export type ReaderPage = CoverPage | SegmentPage | ReflectionPage | ClosingPage | PartDividerPage;
+export type CompletionPage = {
+  kind: "completion";
+  title: string;
+  paragraphs: string[];
+  duaArabic: string;
+  duaTranslation: string;
+  lessonEightPreview: string;
+};
+
+export type ReaderPage = CoverPage | SegmentPage | ReflectionPage | ClosingPage | PartDividerPage | CompletionPage;
 
 export type ReaderLesson = {
   id: string;
@@ -1683,7 +1692,19 @@ export const readerLessons: ReaderLesson[] = [
         duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
         nextLessonPreview: "Abū Ṭālib took his nephew into his care — and soon, he would take him on the road. At around the age of twelve, the young Muḥammad ﷺ would travel with his uncle on a trading caravan to Shām. On that journey, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson.",
         discoveryNote: "✦ Go Deeper — ʿAbd al-Muṭṭalib loved his grandson before the world knew who he was. Abū Ṭālib sheltered him when no one else could. Open the Profiles tab to read about two men whose role in the Sīrah is impossible to overstate.",
-      }
+      },
+      {
+        kind: "completion",
+        title: "Volume I — Complete",
+        paragraphs: [
+          "You have walked with Rasūlullāh ﷺ from before his birth. You began in the time of Ibrāhīm ʿalayhi us-salām and Hājar — in the barren valley that would become Makkah. You witnessed the Year of the Elephant. You followed the young Muḥammad ﷺ through the years of Banū Saʿd, through the opening of the chest, through the grief of losing his mother, and into the hands of ʿAbd al-Muṭṭalib — and then Abū Ṭālib.",
+          "Father before birth. Mother at six. Grandfather at eight. Every loss was arranged by Allāh ﷻ. Every guardian was sent. And through it all, the child chosen to carry the final message to humanity was never, for a single moment, left alone.",
+          "May Allāh ﷻ make this knowledge a light in your home, a legacy for your children, and a means of drawing closer to the Prophet ﷺ we love.",
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
+        lessonEightPreview: "At around twelve years old, the young Muḥammad ﷺ would travel with his uncle Abū Ṭālib on a trading caravan to Shām. On that road, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson.",
+      },
 
     ]
   }

@@ -1,4 +1,4 @@
-const CACHE_NAME = "our-legacy-v8-l1-companion";
+const CACHE_NAME = "our-legacy-v9-completion";
 const APP_SHELL = ["/", "/index.html"];
 
 self.addEventListener("install", (event) => {
