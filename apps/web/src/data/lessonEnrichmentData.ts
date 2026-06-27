@@ -3324,6 +3324,312 @@ const lesson7: LessonEnrichment = {
   },
 };
 
+// ── Lesson 8 — The Journey to Sham ───────────────────────────────────────────
+
+const lesson8: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 8,
+  lessonTitle: "The Journey to Sham",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 35,
+    studyMinutes: 20,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Opening ───────────────────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "In an age of doubt and confusion about the identity of the Prophet, this lesson offers something remarkable: a scholar of another faith recognised the Prophet before prophethood, from descriptions preserved in ancient scriptures. The Bahira encounter is not a side story — it is a witness to the truth, preserved in the Sirah, that the coming of Muhammad was known and described long before he knew his own mission. Studying it today builds conviction, silences doubt, and reminds us that the truth of this Deen is not something invented — it was anticipated.",
+
+  memoryGem:
+    "Guard this child from the people. A great future lies before this nephew of yours. — Bahira the monk, scholar of ancient scripture, speaking to Abu Talib at Busra in Sham",
+
+  oneMinuteSummary:
+    "When the young Muhammad was approximately twelve years old, he travelled with his uncle Abu Talib on a trading caravan to Sham. The journey north took the caravan through the Hijaz and into southern Sham, passing through the trading town of Busra. There, a Christian monk named Bahira — a scholar who had inherited ancient books describing the signs of the final prophet — observed the approaching caravan from his monastery. He noticed a cloud shading one figure in the caravan and a tree bending its branches specifically over that person. He descended from his monastery for the first time, invited the entire caravan to a meal, and carefully examined the young Muhammad, checking the signs against the descriptions in his books. He found the Khatam al-Nubuwwah — the Seal of Prophethood — between his shoulders, confirming every criterion he had studied. He warned Abu Talib to protect the child and to return him to Makkah. Abu Talib listened and sent the boy home. The narration is recorded in Jami al-Tirmidhi (3620) with a grading of hasan sahih, and in the Sirah of Ibn Hisham.",
+
+  // ── Content ───────────────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "Age of the Prophet at the time",
+      information:
+        "The Prophet was approximately 12 years old at the time of the Bahira encounter. Most scholars of Sirah accept this age based on the narrations; a minority suggest 9 years old. The majority view of 12 is the one recorded in Tirmidhi's narration and followed in the classical Sirah books.",
+    },
+    {
+      topic: "Who was Bahira?",
+      information:
+        "Bahira was a Christian monk who lived in a monastery (sawma'ah) at Busra in southern Sham. His name is given in the Sirah as Bahira (or Sergius in some non-Islamic accounts). He was a scholar of ancient scriptures that described the signs of the final prophet. He is not described as a saint or miracle-worker — simply as a learned man who had kept and studied specific knowledge.",
+    },
+    {
+      topic: "The Khatam al-Nubuwwah",
+      information:
+        "The Seal of Prophethood was a physical mark found between the Prophet's shoulders. Multiple Companions reported seeing it. Al-Sa'ib ibn Yazid (Sahih al-Bukhari, 190) described it as like a pigeon's egg. Jabir ibn Samurah described it as like the seal on a letter (Sahih Muslim, 2344). This mark is mentioned in the Sirah as one of the signs Bahira confirmed.",
+    },
+    {
+      topic: "The cloud and the tree",
+      information:
+        "The Tirmidhi narration records that a cloud was shading the Prophet specifically as the caravan moved, and that when the caravan stopped beneath a tree, the branches extended their shade over him. These are the physical signs that caused Bahira to descend from his monastery after years of watching caravans pass without inviting them.",
+    },
+    {
+      topic: "What Bahira told Abu Talib",
+      information:
+        "The narrations record that Bahira warned Abu Talib: 'Return your nephew to his country. Beware of the Jews. By Allah, if they see him and recognise what I recognise, they will harm him. Great things lie ahead for this nephew of yours.' Abu Talib sent the boy back to Makkah with trusted companions, shortening the journey.",
+    },
+    {
+      topic: "The significance for ahl al-kitab recognition",
+      information:
+        "The Quran states: 'Those to whom We gave the Scripture recognise him as they recognise their own sons.' (2:146) The Bahira encounter is one of the earliest historical examples of this recognition. Scholars of Tafsir cite it when explaining this ayah — the descriptions of the final prophet were preserved in the earlier scriptures, and Bahira had kept and studied those descriptions.",
+    },
+  ],
+
+  whatWeLearn: [
+    {
+      event: "Abu Talib taking the young Muhammad on the caravan",
+      lesson:
+        "Love that is genuine does not calculate convenience. Abu Talib had every practical reason to leave his twelve-year-old nephew behind. He could not. The bonds that Allah places between people carry people to the places Allah has arranged for them.",
+    },
+    {
+      event: "Bahira keeping the ancient knowledge alive",
+      lesson:
+        "Knowledge that is studied and kept — even when no one around you sees its relevance — prepares you to recognise the truth when it comes. Bahira's decades of careful scholarship meant he was ready when the moment arrived. He did not let it walk past his door.",
+    },
+    {
+      event: "The cloud and the tree",
+      lesson:
+        "Allah's protection of those He has chosen is real and active, even before they know their own mission. The Prophet was twelve years old and unaware of these signs. Allah was already sheltering him from the world's gaze — letting only those with the right knowledge see.",
+    },
+    {
+      event: "Bahira's method of examination",
+      lesson:
+        "Certainty in Islam is not vague feeling — it is knowledge carefully applied to reality. Bahira examined the criteria, checked them one by one, and arrived at certainty. His certainty produced action. This is the model: study, examine, conclude, act.",
+    },
+    {
+      event: "Abu Talib listening to a Christian monk",
+      lesson:
+        "Wisdom does not have a religion. Abu Talib received sound counsel from an unexpected source and acted on it without ego. The ability to hear truth from wherever it comes — and to act on it immediately — is a mark of genuine wisdom.",
+    },
+  ],
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allah arrange for the Prophet to be recognised by a Christian monk in a foreign land — rather than by the scholars of his own people in Makkah?",
+    reflection:
+      "This encounter was not visible to Makkah. The people of Quraysh, who would later reject the Prophet, did not witness it. But Allah arranged that the truth of the Prophet's identity was confirmed — preserved in the record of the Sirah — by a scholar from another tradition, checking criteria preserved in scriptures older than the Quraysh. This is how Allah establishes witnesses: from unexpected places, through unexpected people, so that no one can say there was no sign. The encounter at Busra is a witness in the Sirah that the Prophet was known before he was revealed.",
+    quranicConnection: {
+      arabic:
+        "الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمْ",
+      translation:
+        "Those to whom We gave the Scripture recognise him as they recognise their own sons.",
+      reference: "Surah al-Baqarah, 2:146",
+    },
+  },
+
+  familyDiscussion: [
+    {
+      question:
+        "Bahira had kept ancient knowledge alive for decades — studying it even when no caravan that passed seemed to need it. Then one day, that knowledge was exactly what he needed. Can you think of something you have learnt about Islam that you did not understand the use of at the time — but later found it exactly where you needed it?",
+      hint:
+        "This question works for both adults and older children. Encourage examples from their own learning — a verse they memorised, a ruling they studied, a story they heard that later gave them clarity or comfort.",
+    },
+    {
+      question:
+        "Abu Talib listened to a Christian monk's warning and acted on it without arguing, without dismissing it, and without needing a second opinion. What made him able to do that? What is the quality in a person that allows them to receive good counsel from unexpected sources?",
+      hint:
+        "The quality is humility combined with love. Abu Talib loved his nephew so much that he was immediately moved when someone warned him. Let the discussion explore how love makes us more alert to protect those we care for.",
+    },
+    {
+      question:
+        "Bahira saw the cloud and the tree bending — signs of Allah's protection that the caravan members themselves did not notice. What does it mean that Allah's protection of the Prophet was visible to a stranger with knowledge, but invisible to those walking beside him? What does this teach us about the difference between having knowledge and simply being present?",
+      hint:
+        "The key insight: presence alone does not grant sight. Bahira was an outsider who had studied — and because of his knowledge, he saw what insiders missed. Knowledge transforms what we are able to notice.",
+    },
+    {
+      question:
+        "The Prophet was twelve years old when Bahira recognised him — and had no knowledge of any of it. He went home to Makkah without knowing about the cloud, the seal, or the monk's warning. Allah's plan for him was already advanced far beyond his own understanding of his situation. Can anyone in the family think of a time when, looking back, you realised Allah had been arranging something for you that you did not see at the time?",
+      hint:
+        "This is a reflective question about qada and qadar. It opens up personal testimony and builds a family culture of noticing Allah's arrangement in life. Younger children can be guided with: 'Has there ever been something that happened that you did not understand, but later you were glad it happened?'",
+    },
+  ],
+
+  familyApplication:
+    "This week, choose one thing you have learnt about Islam — a verse, a hadith, a story from the Sirah — and spend ten minutes going deeper into it than you normally would. Look up its source. Read what the scholars say about it. Then ask: if someone tested me on this right now, what would I be able to say with certainty? Bahira had studied his knowledge so deeply that he could act on it the moment the moment came. Our knowledge of the Deen should be the same — deep enough to act on, not just recall.",
+
+  quickReview: [
+    {
+      question: "How old was the Prophet at the time of the Bahira encounter?",
+      answer:
+        "Approximately 12 years old, according to the majority view in the Sirah and the Tirmidhi narration.",
+    },
+    {
+      question: "Who was Bahira?",
+      answer:
+        "A Christian monk and scholar of scripture who lived at a monastery in Busra, in southern Sham. He had inherited ancient books describing the signs of the final prophet.",
+    },
+    {
+      question: "What were the two visible signs that made Bahira descend from his monastery?",
+      answer:
+        "A cloud that shaded the Prophet specifically as the caravan moved, and a tree whose branches bent to shade him when the caravan stopped to rest.",
+    },
+    {
+      question: "What is the Khatam al-Nubuwwah?",
+      answer:
+        "The Seal of Prophethood — a physical mark found between the Prophet's shoulder blades, described as like a pigeon's egg by Companions who saw it. Bahira confirmed this mark matched the description in his ancient books.",
+    },
+    {
+      question: "What did Bahira tell Abu Talib?",
+      answer:
+        "To take the boy back to Makkah, to guard him from the people, and that a great future lay before his nephew. Abu Talib listened and sent the young Muhammad home with trusted companions.",
+    },
+    {
+      question: "Which Quranic ayah relates directly to the theme of this lesson?",
+      answer:
+        "Surah al-Baqarah 2:146 — 'Those to whom We gave the Scripture recognise him as they recognise their own sons.' Bahira is a historical example of exactly this recognition.",
+    },
+  ],
+
+  exploreFurther: [
+    {
+      title: "Al-Rahiq al-Makhtum (The Sealed Nectar)",
+      author: "Safi al-Rahman al-Mubarakfuri",
+      type: "book",
+      note:
+        "The prize-winning modern Sirah. The Bahira account is covered in the early chapters with clear narrative and source references.",
+    },
+    {
+      title: "Sirat Ibn Hisham",
+      author: "Ibn Hisham (summarising Ibn Ishaq)",
+      type: "book",
+      note:
+        "The classical Sirah source for the Bahira encounter. Read the original account in the section on the Prophet's pre-prophetic youth.",
+    },
+    {
+      title: "Jami al-Tirmidhi, Hadith 3620",
+      author: "Imam al-Tirmidhi",
+      type: "book",
+      note:
+        "The authenticated hadith narration of the Bahira encounter, graded hasan sahih. Essential primary source for this event.",
+    },
+    {
+      title: "The Description of the Prophet in the Bible",
+      type: "article",
+      note:
+        "A research topic: look up what scholars of Tafsir say about Surah al-A'raf 7:157 — 'whom they find written in what they have of the Torah and the Gospel.' Understanding this ayah deepens the Bahira lesson significantly.",
+    },
+  ],
+
+  teacherNotes: [
+    {
+      audience: "family",
+      heading: "Frame it as a witness, not just a story",
+      body:
+        "When reading this with your family, present the Bahira encounter as what it is: a witness in the historical record that the Prophet was described in ancient scriptures before he was revealed. This is not a fairy tale — it is documented in Tirmidhi with an authenticated chain. Framing it this way builds iman and answers the doubting voice that says: 'How do we know the Prophet was truly sent by Allah?'",
+    },
+    {
+      audience: "classroom",
+      heading: "Discuss the preservation of knowledge across traditions",
+      body:
+        "This lesson opens a rich discussion: if the scholars of the People of the Book had preserved descriptions of the Prophet, what does that tell us about the relationship between Islam and earlier revelations? The Quran's position is that Islam did not begin with Muhammad but was the final expression of a message sent through all the prophets. Bahira's knowledge is a trace of that earlier transmission.",
+    },
+    {
+      audience: "madrasa",
+      heading: "Authenticity discussion — address the narration directly",
+      body:
+        "With older students, address the source directly: the Tirmidhi narration (3620) is graded hasan sahih. Ibn Ishaq's account adds details (including names of companions sent with the boy) that have been discussed by hadith scholars. Teach students to distinguish: the core of the event is authenticated; some narrative details are from secondary Sirah accounts. This models the authentic Islamic approach to knowledge — honest engagement with what is established and what is not.",
+    },
+  ],
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The Bahira encounter is recorded in Jami al-Tirmidhi (Hadith 3620) with a grading of hasan sahih, and in the Sirah of Ibn Hisham (drawing on Ibn Ishaq). The core of the event — the caravan journey, the monk's recognition, the warning to Abu Talib, and the return of the young Muhammad to Makkah — is widely accepted across classical scholarship. Some narrative details (such as the specific wording of Bahira's examination and the names of companions sent with the boy) derive from the Sirah tradition and carry the general scholarly acceptance that accompanies Ibn Ishaq's narrations. The Khatam al-Nubuwwah is separately established through multiple authenticated Companion reports in Sahih al-Bukhari and Sahih Muslim.",
+  },
+
+  authenticationNotes: [
+    {
+      claim: "The caravan journey to Sham and the encounter with Bahira",
+      grade: "Widely Accepted",
+      sources: [
+        "Jami al-Tirmidhi, Hadith 3620 (hasan sahih)",
+        "Sirat Ibn Hisham (drawing on Ibn Ishaq)",
+        "Al-Bidayah wa al-Nihayah — Ibn Kathir",
+      ],
+      explanation:
+        "The Tirmidhi narration is the primary hadith source and carries a hasan sahih grading. The Sirah accounts of Ibn Ishaq (via Ibn Hisham) provide the fuller narrative. Both are accepted by the classical scholars as reliable accounts of this event.",
+    },
+    {
+      claim: "The cloud shading the Prophet and the tree bending its branches",
+      grade: "Widely Accepted",
+      sources: [
+        "Jami al-Tirmidhi, Hadith 3620",
+        "Sirat Ibn Hisham",
+      ],
+      explanation:
+        "These signs are part of the Tirmidhi narration and the Sirah tradition. They are accepted as part of the account by classical scholars.",
+    },
+    {
+      claim: "The Khatam al-Nubuwwah — the physical Seal of Prophethood",
+      grade: "Established",
+      sources: [
+        "Sahih al-Bukhari, Hadith 190 (narrated by al-Sa'ib ibn Yazid)",
+        "Sahih Muslim, Hadith 2344 (narrated by Jabir ibn Samurah)",
+      ],
+      explanation:
+        "The existence and appearance of the Seal of Prophethood is separately and firmly established through multiple authenticated narrations in the primary hadith collections. It is not dependent solely on the Bahira account.",
+    },
+    {
+      claim: "The Prophet's age at the time (approximately 12 years old)",
+      grade: "Widely Accepted",
+      sources: [
+        "Jami al-Tirmidhi, Hadith 3620",
+        "Scholarly consensus across classical Sirah works",
+      ],
+      explanation:
+        "The majority of Sirah scholars accept approximately 12 years as the age of the Prophet during this encounter. A minority opinion suggests 9 years. The Tirmidhi narration supports the 12-year reading.",
+    },
+  ],
+
+  // ── Timeline ───────────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "~578 CE",
+      label: "Prophet (age ~8) passes into Abu Talib's care after death of Abd al-Muttalib",
+    },
+    {
+      year: "~582 CE",
+      label: "Prophet (age ~12) travels with Abu Talib on caravan to Sham",
+    },
+    {
+      year: "~582 CE",
+      label: "Caravan reaches Busra — Bahira recognises the Prophet and warns Abu Talib",
+    },
+    {
+      year: "~582 CE",
+      label: "Prophet sent back to Makkah — returns home protected",
+    },
+  ],
+
+  // ── Connections ────────────────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["~582 CE"],
+    maps: ["makkah", "arabia"],
+    characters: [
+      "Abu Talib ibn Abd al-Muttalib",
+    ],
+    references: [
+      "Jami al-Tirmidhi — Hadith 3620",
+      "Sirat Ibn Hisham",
+      "Sahih al-Bukhari — Hadith 190",
+      "Surah al-Baqarah — 2:146",
+    ],
+  },
+};
+
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
@@ -3334,6 +3640,7 @@ export const lessonEnrichmentData: LessonEnrichmentMap = {
   "sirah_journey:5": lesson5,
   "sirah_journey:6": lesson6,
   "sirah_journey:7": lesson7,
+  "sirah_journey:8": lesson8,
 };
 
 // ── Accessor ───────────────────────────────────────────────────────────────────

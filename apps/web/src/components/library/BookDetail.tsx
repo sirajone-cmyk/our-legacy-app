@@ -109,6 +109,7 @@ export const SIRAH_CHAPTERS: ChapterEntry[] = [
     title: "The Journey to Shām with Abū Ṭālib",
     description: "A trading caravan, a twelve-year-old boy, and a monk named Baḥīrā — the first sign that something extraordinary was coming.",
     minutes: 10,
+    pageIndex: 50,
   },
   {
     number: 9,

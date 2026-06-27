@@ -107,7 +107,7 @@ export type CompletionPage = {
   paragraphs: string[];
   duaArabic: string;
   duaTranslation: string;
-  lessonEightPreview: string;
+  nextLessonPreview: string;
 };
 
 export type ReaderPage = CoverPage | SegmentPage | ReflectionPage | ClosingPage | PartDividerPage | CompletionPage;
@@ -1693,17 +1693,190 @@ export const readerLessons: ReaderLesson[] = [
         nextLessonPreview: "Abū Ṭālib took his nephew into his care — and soon, he would take him on the road. At around the age of twelve, the young Muḥammad ﷺ would travel with his uncle on a trading caravan to Shām. On that journey, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson.",
         discoveryNote: "✦ Go Deeper — ʿAbd al-Muṭṭalib loved his grandson before the world knew who he was. Abū Ṭālib sheltered him when no one else could. Open the Profiles tab to read about two men whose role in the Sīrah is impossible to overstate.",
       },
+      // ── Lesson 8 — The Journey to Sham ───────────────────────────────────────
+      {
+        kind: "part-divider",
+        title: "The Journey to Sham",
+        subtitle: "Part 8",
+        description: [
+          "A trading caravan, a twelve-year-old boy, and a monk who had been waiting for a lifetime.",
+          "The first soul outside Arabia to recognise the final Prophet — before a single verse had been revealed."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "A Boy Who Could Not Be Left Behind",
+        heading: "Virtue: Muhabbah — The Love That Cannot Let Go",
+        subLabel: "The Bond Between Nephew and Uncle",
+        hadith: {
+          type: "ayah",
+          arabic: "وَأَلَّفَ بَيْنَ قُلُوبِهِمْ ۚ لَوْ أَنفَقْتَ مَا فِي الْأَرْضِ جَمِيعًا مَّا أَلَّفْتَ بَيْنَ قُلُوبِهِمْ وَلَٰكِنَّ اللَّهَ أَلَّفَ بَيْنَهُمْ",
+          translation: "And He brought together their hearts. Had you spent all that is in the earth, you could not have brought their hearts together; but Allah brought them together.",
+          reference: "Surah al-Anfal, 8:63"
+        },
+        explanation: [
+          "The bond between the young Muhammad and his uncle Abu Talib was not an ordinary bond. It had been forged through loss — through the death of Abd al-Muttalib, through the handover of a grieving child to a new guardian, through years of shared life in the same household. By the time the young Prophet was approaching twelve years old, this bond was the strongest relationship he had in the world. And when Abu Talib began preparing a trading caravan to Sham — a journey of months through the desert — the boy could not bear to be left behind."
+        ],
+        sections: [
+          {
+            heading: "The Caravan Assembles",
+            text: [
+              "Abu Talib was a merchant. The great trade route from Makkah north through the Hijaz and into Sham was the lifeblood of Quraysh commerce, and Abu Talib, like many of the leaders of Makkah, led caravans along it. The journey to Sham was not a short one — it required weeks of preparation, months of travel, and all the logistical complexity of moving merchants, merchandise, and camels through the desert to the markets of southern and central Sham.",
+              "The year was approximately 582 CE. The young Muhammad was around twelve years old. He had lived with Abu Talib for several years — ever since the death of his grandfather Abd al-Muttalib had placed him in his uncle's care. He had grown up in Abu Talib's household, alongside Abu Talib's own children, knowing no other home.",
+              "When the caravan preparations began — the loading of camels, the gathering of goods, the assembling of men — the young Muhammad saw that his uncle was going to leave. And he could not let him."
+            ]
+          },
+          {
+            heading: "He Could Not Be Left Behind",
+            text: [
+              "The books of Sirah record that when Abu Talib prepared to depart, the young Muhammad held onto him — unwilling to be separated. Some accounts describe him clinging to his uncle, unable to let him go. Abu Talib looked at his nephew's face and felt something that no calculation of logistics or practicality could overcome: the certainty that he could not leave this child behind.",
+              "A twelve-year-old on a trade caravan to Sham was not the practical choice. The journey was long and arduous. There were risks on the road — the desert heat, the uncertainty of travel, the physical demands of months away from home. A child was an additional responsibility. By any calculation, the sensible thing was to leave him in Makkah.",
+              "Abu Talib did not leave him in Makkah. He took him. And in that decision — made out of love, made because he could not say no to the eyes of his nephew — Allah's plan moved forward one step."
+            ]
+          }
+        ],
+        reflection: "The bond between the Prophet and Abu Talib was one that Allah had arranged and sustained through years of loss and care. Abu Talib's love for his nephew was so strong that he could not leave for months without him — even when it was impractical, even when it added burden. Is there someone in your life whose love for you has shaped the trajectory of your story — someone whose presence at a critical moment changed what happened next? Have you told them?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "The Road North — Toward Sham",
+        heading: "Virtue: Tafakkur — Seeing the Signs of Allah in the Earth",
+        subLabel: "The Journey That Opened a World",
+        hadith: {
+          type: "ayah",
+          arabic: "قُلْ سِيرُوا فِي الْأَرْضِ فَانظُرُوا كَيْفَ بَدَأَ الْخَلْقَ",
+          translation: "Say: Travel through the earth and observe how Allah began creation.",
+          reference: "Surah al-Ankabut, 29:20"
+        },
+        explanation: [
+          "For a boy who had grown up in Makkah — a city surrounded by mountains, enclosed in a narrow valley, ancient and inward-facing — the road north was a revelation. Allah repeatedly commands the believers to travel through the earth and to observe. The young Muhammad, on his first long journey beyond the mountains of the Hijaz, was living that command before it had been given to him. Every horizon that opened before the caravan was a page in a book that Allah was writing."
+        ],
+        sections: [
+          {
+            heading: "Through the Hijaz",
+            text: [
+              "The caravan set out from Makkah moving north. The route to Sham was one of the great trade arteries of the ancient world — a road that had been travelled for centuries by the merchants of Arabia, and before them by earlier peoples whose ruins lay scattered along the way. The desert opened into different landscapes: red rock formations, dried riverbeds, scrubland and wide plains, then gradually the changed terrain of the north.",
+              "The young Muhammad saw the world beyond Makkah for the first time. He saw the different peoples who gathered at waypoints and wells along the route. He saw the traces of civilisations that had come before — places Allah would later mention in the Quran as reminders to those who travel and look. This first long journey was, in many ways, the young Prophet's first exposure to the breadth of creation — to a world much wider than the valley of Makkah."
+            ]
+          },
+          {
+            heading: "The Land of the Prophets",
+            text: [
+              "Sham — the region encompassing modern-day Syria, Palestine, Jordan, and Lebanon — was not simply a trade destination. It was, in the tradition of the Prophets, a blessed land. Ibrahim alayhi us-salam had migrated to Sham. Lut alayhi us-salam had settled near it. Dawud and Sulayman alayhim us-salam had built their kingdoms within it. The great prophets of Banu Isra'il had walked its soil. The Prophet would later say: 'Allah has blessed what is between al-Arish and the Euphrates, and has especially blessed Sham.' (Ahmad, sahih chain)",
+              "The young Muhammad was being brought, by his uncle's love and Allah's plan, to the land that his predecessors in prophethood had called home. He did not know this yet. He was twelve years old, travelling with a caravan of merchants, watching the desert roll past. But Allah knew. And ahead, on the road that led through southern Sham toward the great markets, lay a monastery — and a monk who had been waiting his whole life for this caravan to come."
+            ]
+          }
+        ],
+        reflection: "The Prophet travelled through the earth and saw what Allah had placed in it — ancient routes, different peoples, the traces of civilisations that had risen and fallen. The Quran later commanded the believers to travel and to observe these same things. What are you passing through in your life right now — a season, a challenge, a new environment — that Allah might be using as a form of learning? Are you observing it, or only enduring it?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Monk at the Monastery",
+        heading: "Virtue: Wilayah — Being Under Allah's Care and Protection",
+        subLabel: "A Cloud That Followed Only One",
+        hadith: {
+          type: "ayah",
+          arabic: "إِنَّ وَلِيِّيَ اللَّهُ الَّذِي نَزَّلَ الْكِتَابَ ۖ وَهُوَ يَتَوَلَّى الصَّالِحِينَ",
+          translation: "Indeed, my Protector is Allah, who has sent down the Book; and He is the Protector of the righteous.",
+          reference: "Surah al-A'raf, 7:196"
+        },
+        explanation: [
+          "What Bahira noticed as the caravan from Makkah approached was not visible to the caravan members themselves. They were merchants, moving with their goods toward the markets of Sham — focused on the practical demands of the road. They did not see what a scholar of scripture, watching from the height of his monastery, saw: that something in this caravan was different. That something in this caravan was being sheltered in a way he had only ever read about."
+        ],
+        sections: [
+          {
+            heading: "Bahira — The Scholar in the Monastery",
+            text: [
+              "At the outskirts of Busra, in the region of southern Sham, stood a monastery — a sawma'ah — where a Christian monk known as Bahira had made his home. Bahira was not an ordinary monk. He was a scholar of scripture — one who had inherited and studied ancient books describing the signs of the final prophet who would come from the Arabs. These descriptions were specific: physical characteristics, behavioural patterns, a mark between his shoulders, the way the creation around him would respond.",
+              "The books of Sirah — and the Tirmidhi narration, graded hasan sahih (Tirmidhi 3620) — record that Bahira had inherited this knowledge from those before him. He had sat with these texts his whole life. He had watched many caravans from Makkah and other parts of Arabia pass by his monastery over the years. He had never once descended to invite them. He was waiting for something specific. And when the caravan from Makkah appeared on the road, he saw, for the first time in his life, what he had been looking for."
+            ]
+          },
+          {
+            heading: "The Cloud and the Tree",
+            text: [
+              "As the caravan approached, Bahira observed something that stopped him: a small cloud was moving over the caravan — but not over the whole caravan. It was shading one person specifically, moving with him as he moved. When the caravan stopped to rest beneath a tree for midday shade, the branches extended their shade specifically over the young Muhammad, while the others sat in the open sun.",
+              "These were the signs Bahira had read about in his ancient books. He descended from his monastery — something he had never done for any caravan before. He prepared a meal. He invited the entire caravan. And when they came, he began to look — carefully, methodically — for the one the signs were pointing to."
+            ]
+          }
+        ],
+        reflection: "The cloud that shaded the Prophet and the tree that bent its branches toward him were signs of Allah's protection — observed by a stranger who had studied the descriptions, while those closest to the Prophet walked past them. How often do we pass through moments of divine care without recognising them for what they are? What would it mean to begin noticing the ways Allah is sheltering you — in circumstances, in people, in outcomes — that you have not yet stopped to name?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "Guard This Child",
+        heading: "Virtue: Basira — The Inner Sight That Sees Through to the Truth",
+        subLabel: "Every Sign Matched",
+        hadith: {
+          type: "ayah",
+          arabic: "الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمْ",
+          translation: "Those to whom We gave the Scripture recognise him as they recognise their own sons.",
+          reference: "Surah al-Baqarah, 2:146"
+        },
+        explanation: [
+          "The Quran would later reveal — and the scholars of Islam have always understood — that the People of the Book who had kept their scriptures faithfully recognised the description of the final Prophet. The ayah does not say they had a vague sense; it says they recognised him as they recognised their own children. The certainty of Bahira, when he stood before the young Muhammad at Busra, was not the excited claim of a charlatan. It was the methodical conclusion of a scholar who had spent his life studying the criteria — and now, for the first time, found a person who met every single one."
+        ],
+        sections: [
+          {
+            heading: "Every Sign Matched",
+            text: [
+              "Bahira had invited the entire caravan, but his attention was focused on one person. He asked careful questions — designed to check the criteria he had spent his life studying. He asked the boy's name. He asked about his father. He asked about his sleep and his habits. He then asked to examine his back. There, between the young Muhammad's shoulders, Bahira found what the ancient texts had described: the Khatam al-Nubuwwah — the Seal of Prophethood.",
+              "This mark was real and visible. The Companions later reported seeing it. Al-Sa'ib ibn Yazid said: 'My maternal aunt took me to the Prophet and said: O Prophet of Allah, my nephew is ill. He touched my head and prayed for barakah for me. He made wudu' and I drank from his water. Then I saw the seal on his back — like a pigeon's egg.' (Sahih al-Bukhari, 190) Bahira saw it, matched it against the description in his books, and had no doubt."
+            ]
+          },
+          {
+            heading: "The Warning and the Return",
+            text: [
+              "Bahira took Abu Talib aside. 'What relation is this boy to you?' he asked. 'He is my son,' said Abu Talib. Bahira looked at him carefully. 'His father cannot be alive,' he said. 'You are right,' Abu Talib replied. 'He is my nephew.' Bahira then spoke with the quiet certainty of a man who had studied and waited and was now certain: 'Take him back. Guard him from the people. By Allah, if they see him and recognise what I recognise, they will do evil to him. A great future lies before this nephew of yours.'",
+              "Abu Talib listened. He did not dismiss Bahira, did not ask for proof, did not weigh the inconvenience of cutting the journey short. He had brought this child because he could not leave without him. Now a scholar of ancient scripture was warning him — with certainty, with the weight of texts studied over a lifetime — that this child needed to be protected. Abul Talib acted. He sent the young Muhammad back to Makkah with trusted companions from the caravan.",
+              "The boy went home. The caravan continued. And in a monastery at Busra, a monk named Bahira sat with the knowledge that what he had spent his life waiting for had just walked past his door — and had gone home, protected, to wait for the day when Allah would give him his mission."
+            ]
+          }
+        ],
+        reflection: "Bahira approached the Prophet not with emotion, but with method: he had criteria from ancient scripture, he checked them one by one, and he arrived at certainty. His certainty then produced action — he warned, and Abu Talib listened and acted. This is the model of basira: not vague spiritual feeling, but knowledge carefully applied to reality, producing the conviction to act. Where in your relationship with your Din are you operating on habit or assumption rather than the kind of careful, evidence-grounded certainty that produces real change?"
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "Bahira had studied ancient scriptures all his life and recognised the Prophet from their descriptions — before a single verse of the Quran had been revealed, and before the Prophet himself knew of his mission. What does this tell us about how Allah preserved the signs of the final prophet across centuries, even in the books of those who had changed much of what was given to them?",
+          "The cloud that shaded the Prophet and the tree that bent its branches toward him were visible signs of divine protection — observed by Bahira but invisible to the caravan members themselves. What does it mean to consider that Allah was visibly protecting the Prophet his entire life, long before the first word of revelation? How does this shape the way you understand Allah's care for those He has chosen?",
+          "Abu Talib was not a Muslim. Yet he listened to a Christian monk's warning and acted on it without ego or dismissal. What does this teach us about wisdom — the willingness to receive counsel from unexpected sources and to act on it when it is sound?",
+          "The Prophet was twelve years old at the time of this encounter. He did not know he was being observed by Bahira. He did not know about the cloud, the tree's shade, or the monk's warning. Allāh's plan for him was already far more advanced than his own understanding of his situation. What does this teach us about qada — that the divine plan is written and being executed long before we know our role in it? How does this change the way you think about what is happening in your own life right now?"
+        ],
+        actionPoint: "This week, read Surah al-A'raf, ayah 157: 'Those who follow the Messenger, the unlettered Prophet, whom they find written in what they have of the Torah and the Gospel.' The Quran itself is a witness that the description of the Prophet was preserved in the earlier scriptures. Look up what the scholars of Tafsir say about this ayah — specifically, how the People of the Book recognised the Prophet from the descriptions their own prophets left behind. Let the certainty of Bahira — a man who kept ancient knowledge alive, and who acted on it the moment it walked past his door — inspire you to carry your own knowledge of the Din with that same conviction."
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "Something happened at Busra that no one in Makkah would ever hear about. A Christian scholar of scripture — a man who had devoted decades to studying the signs of the final prophet — looked at a twelve-year-old boy from Makkah and recognised in him what his own people would not recognise for another three decades. He descended from his monastery for the first time in living memory. He invited a caravan he had no business inviting. And then he said, with the quiet certainty of a man who had studied and waited and watched: guard this child from the people.",
+          "He was right about everything. The boy he was looking at would, at forty years old, receive the first words of revelation in a cave on a mountain above Makkah. The caravan he had invited would be forgotten. The meal he had prepared would be forgotten. But the twelve-year-old who had walked past his door — the one with the cloud above him and the tree bending toward him and the seal between his shoulders — would be remembered until the end of time.",
+          "The Bahira encounter is not a story about a monk. It is a story about Allah's protection of those He has chosen. The cloud did not appear by accident. The tree did not bend by chance. The seal was not a birthmark that happened to match an ancient description. These were signs placed by Allah, described in the books of earlier prophets, preserved across centuries, and waiting to be read by the one person who had kept that knowledge alive. Bahira had kept it. And when the moment came — when the signs walked past his monastery on a road in southern Sham — he was ready.",
+          "The Prophet went home to Makkah. He did not know, on that road, that he had been recognised. He did not know about the cloud or the seal or the monk's warning. He was twelve years old, going home with his uncle's companions, leaving Sham behind. But Allah knew. And Allah was already preparing the world for what was coming next.",
+          "May Allah make us among those who recognise the truth when it stands before us. May He give us the basira of Bahira — who did not let the truth walk past his door without receiving it. May He give us the faithfulness of Abu Talib — who listened when he was warned, and who acted when love demanded it. And may He, through the study of this Sirah, deepen in our hearts the certainty that the one whose signs were written in ancient scriptures, whose protection was visible before a single verse of revelation — that this Prophet was the truth, and that following him is the greatest gift Allah has ever given us."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim. Indeed You are Praiseworthy and Glorious. Amin.",
+        nextLessonPreview: "After the encounter with Bahira, Abu Talib sent his nephew home to Makkah. In the years that followed, the young Muhammad grew into early manhood — and earned, through his honesty and character, a name that all of Makkah would one day call him: al-Amin — the Trustworthy. Before prophethood came, there was one more event the Prophet would later cite as among the most honourable of his life: the Hilf al-Fudayl — the Pact of the Virtuous — a covenant to defend the oppressed that he would say, decades later, he would not exchange for the finest camels in Arabia.",
+        discoveryNote: "✦ Go Deeper — Bahira recognised the Prophet from a description preserved in ancient scriptures. The Maps tab shows the route from Makkah to Busra in Sham. The Profiles tab has more on Abu Talib, whose protection of the Prophet never wavered.",
+      },
       {
         kind: "completion",
         title: "Volume I — Complete",
         paragraphs: [
-          "You have walked with Rasūlullāh ﷺ from before his birth. You began in the time of Ibrāhīm ʿalayhi us-salām and Hājar — in the barren valley that would become Makkah. You witnessed the Year of the Elephant. You followed the young Muḥammad ﷺ through the years of Banū Saʿd, through the opening of the chest, through the grief of losing his mother, and into the hands of ʿAbd al-Muṭṭalib — and then Abū Ṭālib.",
-          "Father before birth. Mother at six. Grandfather at eight. Every loss was arranged by Allāh ﷻ. Every guardian was sent. And through it all, the child chosen to carry the final message to humanity was never, for a single moment, left alone.",
-          "May Allāh ﷻ make this knowledge a light in your home, a legacy for your children, and a means of drawing closer to the Prophet ﷺ we love.",
+          "You have walked with Rasulullah from before his birth. You began in the time of Ibrahim alayhi us-salam and Hajar — in the barren valley that would become Makkah. You witnessed the Year of the Elephant. You followed the young Muhammad through the years of Banu Sa'd, through the opening of the chest, through the grief of losing his mother, into the hands of Abd al-Muttalib — and then Abu Talib — and then north, on the road to Sham, where a monk named Bahira looked at a twelve-year-old boy and recognised what the world would not know for another three decades.",
+          "Father before birth. Mother at six. Grandfather at eight. Every loss was arranged by Allah. Every guardian was sent. And through it all, the child chosen to carry the final message to humanity was never, for a single moment, left alone. Even on the road to Sham, a cloud followed him. Even in a foreign land, a tree bent its shade toward him. Even before he knew his own mission, Allāh's plan for him was already visible to those with eyes to see.",
+          "May Allah make this knowledge a light in your home, a legacy for your children, and a means of drawing closer to the Prophet we love.",
         ],
         duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
-        duaTranslation: "O Allāh, send blessings upon Muḥammad and upon the family of Muḥammad, as You sent blessings upon Ibrāhīm and upon the family of Ibrāhīm. Indeed You are Praiseworthy and Glorious. Āmīn.",
-        lessonEightPreview: "At around twelve years old, the young Muḥammad ﷺ would travel with his uncle Abū Ṭālib on a trading caravan to Shām. On that road, a Christian monk named Baḥīrā would watch the approaching caravan from his monastery, study the young Muḥammad ﷺ with careful eyes, and tell Abū Ṭālib: 'Guard this child from the people.' The encounter that recognised the Prophet ﷺ before prophethood came is the subject of our next lesson.",
+        duaTranslation: "O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim. Indeed You are Praiseworthy and Glorious. Amin.",
+        nextLessonPreview: "The young Muhammad returned to Makkah from Sham and grew into early manhood — known by all as al-Amin, the Trustworthy. Before prophethood, he would participate in one of the noblest events of his pre-prophetic life: the Hilf al-Fudayl, a covenant to defend the oppressed, which he would honour for the rest of his life. That covenant — and the character it reveals — is the subject of our next lesson.",
       },
 
     ]

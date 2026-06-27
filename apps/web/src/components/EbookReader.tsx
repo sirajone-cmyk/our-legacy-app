@@ -317,8 +317,8 @@ function CompletionPageView({
       />
       <div className="closing-next-preview">
         <div className="closing-next-rule" />
-        <p className="closing-next-label">Coming Next — Lesson 8</p>
-        <p className="closing-next-text">{page.lessonEightPreview}</p>
+        <p className="closing-next-label">Coming Next</p>
+        <p className="closing-next-text">{page.nextLessonPreview}</p>
       </div>
       <div className="completion-actions">
         <button
@@ -381,7 +381,7 @@ function buildPageText(page: ReaderPage): string {
     return `Closing. ${page.paragraphs.join(" ")} Duaa. ${page.duaTranslation}${preview}`;
   }
   if (page.kind === "completion") {
-    return `${page.title}. ${page.paragraphs.join(" ")} ${page.duaTranslation} Coming next. ${page.lessonEightPreview}`;
+    return `${page.title}. ${page.paragraphs.join(" ")} ${page.duaTranslation} Coming next. ${page.nextLessonPreview}`;
   }
   // segment
   const parts: string[] = [page.chapterTitle, "."];
