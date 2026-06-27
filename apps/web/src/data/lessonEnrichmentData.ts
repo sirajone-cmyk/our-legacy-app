@@ -3630,6 +3630,309 @@ const lesson8: LessonEnrichment = {
   },
 };
 
+// ── Lesson 9 — Al-Amin: The Trustworthy ──────────────────────────────────────
+
+const lesson9: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 9,
+  lessonTitle: "Al-Amin — The Trustworthy",
+
+  // ── Meta ──────────────────────────────────────────────────────────────────
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 20,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // ── Opening ───────────────────────────────────────────────────────────────
+
+  whyThisMattersToday:
+    "We live in a world where trustworthiness has become the exception rather than the expectation — where leaders are assumed to be dishonest, promises are assumed to be flexible, and amanah is treated as a personality trait rather than a religious obligation. The Prophet earned the title al-Amin not through a single act but through years of consistent daily choices in ordinary circumstances, before anyone was watching him as a prophet. In a time when character is considered subjective and trust is considered naive, the model of al-Amin is a complete counter-curriculum.",
+
+  memoryGem:
+    "I was present in the house of Abdullah ibn Judan when a pact was concluded which I would not exchange for red camels. And if I were called to it in Islam, I would respond. -- The Prophet (referenced in Sirat Ibn Hisham; substance in Bayhaqi, Dala'il al-Nubuwwah)",
+
+  oneMinuteSummary:
+    "After returning from Sham, the young Muhammad grew into early manhood in Makkah under Abu Talib's care. The people of Makkah observed his character across years of trade and daily dealings and gave him a title no one claimed for himself: al-Amin -- the Trustworthy. When he was approximately twenty years old, he participated in founding the Hilf al-Fudayl -- the Pact of the Virtuous -- after a Yemeni merchant was cheated by a Quraysh notable and cried out for help at the Ka'bah. Noble men of Quraysh gathered at the house of Abdullah ibn Judan and covenanted to defend the oppressed regardless of tribe. The Prophet said, after receiving revelation and becoming a prophet of Allah, that he would not exchange his membership in that pact for the finest wealth in Arabia. The Hilf and the title al-Amin together define the moral character that received the first word of the Quran twenty years later.",
+
+  // ── Content ───────────────────────────────────────────────────────────────
+
+  keyFacts: [
+    {
+      topic: "Prophet's approximate age at Hilf al-Fudayl",
+      information: "~20 years old (approximately 590 CE)",
+    },
+    {
+      topic: "Location of the pact",
+      information: "House of Abdullah ibn Judan al-Taymi, Makkah",
+    },
+    {
+      topic: "Clans who participated",
+      information:
+        "Banu Hashim, Banu Muttalib, Banu Asad ibn Abd al-Uzza, Banu Zuhra, Banu Taym ibn Murra",
+    },
+    {
+      topic: "Occasion that sparked the pact",
+      information:
+        "A merchant from Yemen (some accounts say Zabid) was cheated by al-As ibn Wa'il al-Sahmi, who refused to pay for goods he had received",
+    },
+    {
+      topic: "The Prophet's statement about the Hilf",
+      information:
+        "Said after prophethood: I would not exchange it for red camels. If I were called to it in Islam, I would respond. (Sirat Ibn Hisham; substance in Bayhaqi)",
+    },
+    {
+      topic: "The title al-Amin",
+      information:
+        "Given to the Prophet by the Quraysh before prophethood -- meaning the Trustworthy -- based on years of consistent, observed character in trade and daily dealings",
+    },
+  ],
+
+  whatWeLearn: [
+    {
+      event: "The Prophet growing into manhood over decades before prophethood",
+      lesson:
+        "Character is built before it is tested. The moral qualities that carried the Prophet through prophethood were formed across years of ordinary pre-prophetic life. Revelation came to a vessel that had been prepared.",
+    },
+    {
+      event: "The founding of the Hilf al-Fudayl in response to a stranger's cry",
+      lesson:
+        "Justice is a universal obligation. The Hilf demonstrates that the principle of defending the wronged is woven into human conscience. Islam confirmed and completed it; it did not introduce it from nothing.",
+    },
+    {
+      event: "The Quraysh giving the Prophet the title al-Amin",
+      lesson:
+        "Trustworthiness is given, not claimed. Al-Amin was a collective title given by a community -- including people who would later become enemies -- based on observed behaviour across years of consistent choices.",
+    },
+    {
+      event: "The Prophet instructing Ali to return all trusts on the night of hijra",
+      lesson:
+        "Amanah continues even under persecution. After the Quraysh rejected him and persecuted the Muslims, the Prophet still fulfilled every financial and material obligation before leaving Makkah. His duties to those who wronged him did not change.",
+    },
+    {
+      event: "The Prophet saying he would still respond to the Hilf in Islam",
+      lesson:
+        "Good that preceded Islam is honoured by Islam. The Prophet's affirmation shows that Allah does not erase the good done before revelation -- He completes and confirms it.",
+    },
+  ],
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allah allow the Prophet to grow up in the jahiliyyah environment -- including at the edge of the sacrilegious Harb al-Fijar -- before giving him revelation?",
+    reflection:
+      "The Prophet spent forty years in the world before receiving a single word of revelation. He saw injustice at close range -- at the edges of tribal wars fought in sacred months, in a city where power and wealth determined who received justice. When he stood in the house of Ibn Judan and made a pact to defend strangers, he was not theorising about justice. He had seen what its absence looks like. The revelation that would come twenty years later -- Indeed, Allah commands justice and good conduct (16:90) -- landed in the heart of a man who had already paid in experience for his understanding of what those words mean. Allah prepared the one who would carry the Quran by giving him decades of understanding the world the Quran would address.",
+    quranicConnection: {
+      arabic:
+        "إنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى",
+      translation:
+        "Indeed, Allah orders justice and good conduct and giving to relatives.",
+      reference: "Surah al-Nahl, 16:90",
+    },
+  },
+
+  familyDiscussion: [
+    {
+      question:
+        "The Hilf al-Fudayl started because a stranger from Yemen cried for help and nobody came -- until the best men in Makkah were shamed into acting. If you heard about someone being cheated or wronged in your community, what would stop you from doing something? What would it take for you to act?",
+      hint:
+        "Think about: fear of conflict, not knowing the person, feeling it is not your responsibility, not knowing what to do. Which of these apply to you?",
+    },
+    {
+      question:
+        "The Prophet was given the title al-Amin by the people of Makkah -- including people who later became his enemies. They kept trusting him with their valuables even while calling him a liar in terms of his prophecy. What does it say about a person's character if even their opponents cannot find fault with their trustworthiness?",
+      hint:
+        "Can you think of anyone in your life -- a teacher, a family member, a public figure -- whose character is so consistent that even people who disagree with them still respect it?",
+    },
+    {
+      question:
+        "The Prophet said that if he were called to the Hilf al-Fudayl after becoming a Muslim, he would respond. This means the justice the pact stood for was still valid, even with the Quran. Does this surprise you? What does it say about the relationship between natural human conscience and divine law?",
+      hint:
+        "Think about things you knew were wrong before you learned they were haram. Was your conscience already telling you something? Where does that conscience come from?",
+    },
+    {
+      question:
+        "The Prophet's instruction on the night of hijra was to stay in Makkah and return every trust to its owner -- including the trusts of people who had persecuted the Muslims. He left his city with his obligations fulfilled. What does amanah look like when it is most difficult -- when the people you owe something to have wronged you?",
+      hint:
+        "Are there any obligations in your life -- a promise, a duty, a debt -- that you have been delaying because the relationship with the other person has become difficult?",
+    },
+  ],
+
+  familyApplication:
+    "Choose one amanah this week -- one trust or obligation that you carry -- and assess it honestly. It could be a promise you made that you have not fulfilled, a duty at work or school that you have been giving less than full effort, a financial obligation that is outstanding, or something that belongs to someone else that you have not yet returned. Take one concrete step to close that gap this week. Before you go to sleep, ask yourself: if I left tonight -- like the Prophet left for Madinah -- would I leave having returned everything that belongs to others? That question is the measure of al-Amin.",
+
+  quickReview: [
+    {
+      question: "What does the title al-Amin mean, and who gave it to the Prophet?",
+      answer:
+        "Al-Amin means the Trustworthy. It was given to the Prophet by the people of Makkah -- including those who would later become his opponents -- based on years of consistently honest and reliable behaviour.",
+    },
+    {
+      question: "What caused the Hilf al-Fudayl to be formed?",
+      answer:
+        "A merchant from Yemen was cheated by al-As ibn Wa'il, who refused to pay for goods he received. The merchant cried out for help at the Ka'bah, and the noble men of Quraysh gathered at the house of Abdullah ibn Judan to form a pact to defend the wronged.",
+    },
+    {
+      question: "Which clans participated in the Hilf al-Fudayl?",
+      answer:
+        "Banu Hashim, Banu Muttalib, Banu Asad ibn Abd al-Uzza, Banu Zuhra, and Banu Taym ibn Murra.",
+    },
+    {
+      question: "What did the Prophet say about the Hilf al-Fudayl after receiving prophethood?",
+      answer:
+        "He said he would not exchange his membership in the pact for red camels -- the finest wealth of Arabia -- and that if he were called to it in Islam, he would respond.",
+    },
+    {
+      question: "What were the Harb al-Fijar, and what was the Prophet's role?",
+      answer:
+        "The Harb al-Fijar were tribal wars fought during the sacred months, making them sacrilegious. The Prophet was present at the margins -- handing arrows to his uncles -- but did not engage in direct fighting. He later remembered his presence without pride.",
+    },
+    {
+      question: "What did the Prophet instruct Ali to do on the night of the hijra?",
+      answer:
+        "He instructed Ali to stay in Makkah and return all the trusts that people -- including enemies of the Muslims -- had deposited with him. He left the city having fulfilled every obligation of amanah.",
+    },
+  ],
+
+  exploreFurther: [
+    {
+      title: "Sirat Ibn Hisham -- The Life of the Prophet",
+      author: "Ibn Hisham (d. 218 AH), editing the earlier Sirah of Ibn Ishaq",
+      type: "book",
+      note:
+        "The primary classical source for the Hilf al-Fudayl and the al-Amin period. Ibn Hisham's edition of Ibn Ishaq's Sirah preserves the most detailed account of the pact and its context.",
+    },
+    {
+      title: "Al-Rahiq al-Makhtum -- The Sealed Nectar",
+      author: "Safi al-Rahman al-Mubarakpuri",
+      type: "book",
+      note:
+        "The modern scholarly Sirah that won the World Muslim League biography competition. Contains a clear and well-sourced account of the pre-prophetic years including the Hilf al-Fudayl. Highly recommended for family and classroom use.",
+    },
+    {
+      title: "Dala'il al-Nubuwwah",
+      author: "Imam al-Bayhaqi (d. 458 AH)",
+      type: "book",
+      note:
+        "Contains the prophetic statement about the Hilf al-Fudayl: I would not exchange it for red camels, and if called to it in Islam I would respond. One of the key hadith-level references for this event.",
+    },
+    {
+      title: "Justice in Pre-Islamic Arabia and Its Confirmation in Islam",
+      author: "Various classical scholars of Sirah and Fiqh",
+      type: "article",
+      note:
+        "Surah al-Nahl 16:90 is the Quranic confirmation of the principle behind the Hilf al-Fudayl. Reading classical Tafsir on this ayah deepens understanding of why the Prophet affirmed the pact even after prophethood.",
+    },
+  ],
+
+  teacherNotes: [
+    {
+      audience: "family",
+      heading: "Use the Hilf to teach justice as something you do, not just believe in",
+      body:
+        "The Hilf al-Fudayl is one of the most powerful pre-prophetic events for teaching children about justice. Emphasise that the Prophet was twenty years old, not a prophet yet, and he still stood up for a stranger. Ask your children: If someone in your class was being treated unfairly and had no one to defend them, would you be the one to stand up? The family application question on amanah is particularly powerful for older children.",
+    },
+    {
+      audience: "classroom",
+      heading: "Counter the why be honest when dishonesty is rewarded argument",
+      body:
+        "Use the al-Amin lesson to address the question students often face: why should I be honest when dishonesty is rewarded? The Prophet was honest in a city where dishonesty was normal -- and his reputation became his most durable asset. His enemies could not credibly call his character into question even while rejecting his prophethood. Honesty builds a kind of social capital that is impossible to fake.",
+    },
+    {
+      audience: "madrasa",
+      heading: "Address the theological question: can pre-Islamic good have value?",
+      body:
+        "The Prophet's statement that he would still respond to the Hilf al-Fudayl in Islam is a key text for this discussion. The scholars understand this as the Prophet affirming the principle, not the act itself -- Islam confirms and completes the human moral instinct for justice rather than replacing it. Use this to discuss the concept of fitra: the natural human disposition toward what is right, which Islam aligns with and elevates.",
+    },
+  ],
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The major events of this lesson -- the Harb al-Fijar, the Hilf al-Fudayl, and the title al-Amin -- are well-attested in the classical Sirah literature, primarily through Sirat Ibn Hisham. The Prophet's statement about the Hilf is cited in Bayhaqi's Dala'il al-Nubuwwah. The al-Amin title is referenced across multiple Sirah sources and is broadly accepted. The specific details of Harb al-Fijar involve some variation across sources but the core event and the Prophet's marginal role are not disputed.",
+  },
+
+  authenticationNotes: [
+    {
+      claim: "The Harb al-Fijar and the Prophet's presence at the margins",
+      grade: "Widely Accepted",
+      sources: [
+        "Sirat Ibn Hisham (drawing on Ibn Ishaq)",
+        "Al-Rahiq al-Makhtum -- Mubarakpuri",
+      ],
+      explanation:
+        "The Harb al-Fijar is well-documented in classical Sirah sources. The Prophet's presence in a supporting role -- handing arrows to his uncles -- is in Ibn Hisham and not disputed. The exact dating varies (generally placed c. 584-590 CE); four phases are traditionally counted though some sources enumerate differently.",
+    },
+    {
+      claim: "The Hilf al-Fudayl and the Yemeni merchant",
+      grade: "Widely Accepted",
+      sources: [
+        "Sirat Ibn Hisham (drawing on Ibn Ishaq)",
+        "Al-Bidayah wa al-Nihayah -- Ibn Kathir",
+      ],
+      explanation:
+        "The founding of the pact in the house of Abdullah ibn Judan is narrated in Ibn Hisham and accepted across classical Sirah scholarship. The specific identity of the wronged merchant varies slightly in different accounts but the core narrative is consistent.",
+    },
+    {
+      claim: "The Prophet's statement about the Hilf after prophethood",
+      grade: "Widely Accepted",
+      sources: [
+        "Bayhaqi -- Dala'il al-Nubuwwah",
+        "Referenced in Sirat Ibn Hisham",
+      ],
+      explanation:
+        "The Prophet's statement -- that he would not exchange the pact for red camels and would still respond to it in Islam -- is cited in Bayhaqi and alluded to in Ibn Hisham. The substance is broadly accepted by scholars of Sirah, though the exact chain varies across reports.",
+    },
+    {
+      claim: "The title al-Amin and the instruction to Ali on the night of hijra",
+      grade: "Widely Accepted",
+      sources: [
+        "Multiple Sirah sources including Ibn Hisham",
+        "Classical Tafsir literature on Surah al-Nisa' 4:58",
+      ],
+      explanation:
+        "The Prophet's pre-prophetic title al-Amin is referenced across multiple Sirah and hadith sources. The instruction to Ali to return trusts on the night of hijra is mentioned in classical Sirah and Tafsir literature.",
+    },
+  ],
+
+  // ── Timeline ───────────────────────────────────────────────────────────────
+
+  lessonTimeline: [
+    {
+      year: "c. 584-590 CE",
+      label: "Harb al-Fijar -- Prophet (~14-20) present at margins, handing arrows to uncles",
+    },
+    {
+      year: "c. 590 CE",
+      label: "Hilf al-Fudayl -- Pact of the Virtuous founded at the house of Ibn Judan",
+    },
+    {
+      year: "c. 580-610 CE",
+      label: "The years of al-Amin -- Prophet earns the title through consistent daily character",
+    },
+    {
+      year: "622 CE",
+      label: "Night of hijra -- Prophet instructs Ali to return all trusts before leaving Makkah",
+    },
+  ],
+
+  // ── Connections ────────────────────────────────────────────────────────────
+
+  connections: {
+    timeline: ["c. 590 CE", "622 CE"],
+    maps: ["makkah", "arabia"],
+    characters: ["Khadijah bint Khuwaylid"],
+    references: [
+      "Sirat Ibn Hisham",
+      "Al-Rahiq al-Makhtum -- Mubarakpuri",
+      "Bayhaqi -- Dala'il al-Nubuwwah",
+      "Surah al-Nahl -- 16:90",
+      "Surah al-Nisa' -- 4:58",
+    ],
+  },
+};
+
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
@@ -3641,6 +3944,7 @@ export const lessonEnrichmentData: LessonEnrichmentMap = {
   "sirah_journey:6": lesson6,
   "sirah_journey:7": lesson7,
   "sirah_journey:8": lesson8,
+  "sirah_journey:9": lesson9,
 };
 
 // ── Accessor ───────────────────────────────────────────────────────────────────

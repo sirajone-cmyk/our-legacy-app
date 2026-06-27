@@ -1867,16 +1867,186 @@ export const readerLessons: ReaderLesson[] = [
         discoveryNote: "✦ Go Deeper — Bahira recognised the Prophet from a description preserved in ancient scriptures. The Maps tab shows the route from Makkah to Busra in Sham. The Profiles tab has more on Abu Talib, whose protection of the Prophet never wavered.",
       },
       {
-        kind: "completion",
-        title: "Volume I — Complete",
+        kind: "part-divider",
+        title: "Al-Amin — The Trustworthy",
+        subtitle: "Part 9",
+        description: [
+          "He returned from Sham a boy. He grew into a man whose honesty was so absolute that his enemies, while calling him a liar, kept their valuables with him.",
+          "Before prophethood came a mission — and before the mission came a name. Al-Amin. The Trustworthy. Given by a city that would later reject him, but could never stop trusting him."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "The Return and the Years of Formation",
+        heading: "Virtue: Istiqamah — The Straightness That Does Not Waver",
+        subLabel: "From Boy to Young Man",
+        hadith: {
+          type: "ayah",
+          arabic: "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ",
+          translation: "And indeed, you are of a great moral character.",
+          reference: "Surah al-Qalam, 68:4"
+        },
+        explanation: [
+          "Allah Himself testified to the character of His Prophet — and this was not a description of his prophethood. It was a description of who he was. The moral character the Quran praises was formed across decades of consistent choices, daily behaviour, and a life lived with integrity long before the first word of revelation arrived. The years between the Bahira encounter and the beginning of prophethood were not empty years. They were the years in which the man the world would need was being built — one day, one honest transaction, one reliable word at a time."
+        ],
+        sections: [
+          {
+            heading: "Home to Makkah",
+            text: [
+              "In between, there was life. The unremarkable daily life of a young man growing up in a merchant city -- helping with trade, learning the ways of commerce and hospitality, sitting with his uncle's household, watching the world of Quraysh at close range. There were no dramatic events recorded in the years immediately following the Sham journey. There was simply a young man, growing, and behind the ordinary exterior of those growing years, a character taking shape that would one day carry the weight of revelation."
+            ]
+          },
+          {
+            heading: "The Character That Could Not Be Hidden",
+            text: [
+              "People noticed. Not because he declared himself or sought attention -- precisely the opposite. The Muhammad who grew up in Makkah in these years was quiet, observant, and careful with his words. He did not boast. He did not lie. He did not break a promise. He did not take what was not his. These things were not unusual in isolation -- many people are honest most of the time. What was unusual was the consistency. There were no exceptions. There were no moments where the pressure of a transaction or the temptation of a benefit led him to shade the truth.",
+              "The Companions who would later gather around him would describe the pre-prophetic Muhammad with a reverence that is striking: he was already, before revelation, the person they would recognise in the Prophet. The gentleness was there. The care for others was there. The discomfort with injustice -- any injustice, anywhere -- was already woven into how he moved through the world. Character is formed long before it is tested. The character that would carry the final message of Allah to humanity was being formed, quietly and without announcement, in the streets of pre-Islamic Makkah."
+            ]
+          }
+        ],
+        reflection: "The Prophet's character was formed in the ordinary years before prophethood -- through consistent choices made in circumstances where no one was watching and nothing dramatic was at stake. Istiqamah -- the straightness that does not waver -- is built this way: not in moments of crisis but in the accumulation of daily choices. In what areas of your character are you most consistent, regardless of who is watching? In what areas do you behave differently depending on the audience? Honesty about this is the beginning of istiqamah."
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "Harb al-Fijar -- When Arabia Was Unjust",
+        heading: "Virtue: Adl -- Justice as an Obligation, Not an Option",
+        subLabel: "Wars Fought in Sacred Months",
+        hadith: {
+          type: "ayah",
+          arabic: "\u0625\u0650\u0646\u064e\u0651 \u0627\u0644\u0644\u0651\u064e\u0647\u064e \u064a\u064e\u0623\u0652\u0645\u064f\u0631\u064f \u0628\u0650\u0627\u0644\u0652\u0639\u064e\u062f\u0652\u0644\u0650 \u0648\u064e\u0627\u0644\u0652\u0625\u0650\u062d\u0652\u0633\u064e\u0627\u0646\u0650 \u0648\u064e\u0625\u0650\u064a\u062a\u064e\u0627\u0621\u0650 \u0630\u0650\u064a \u0627\u0644\u0652\u0642\u064f\u0631\u0652\u0628\u064e\u0649 \u0648\u064e\u064a\u064e\u0646\u0652\u0647\u064e\u0649 \u0639\u064e\u0646\u0650 \u0627\u0644\u0652\u0641\u064e\u062d\u0652\u0634\u064e\u0627\u0621\u0650 \u0648\u064e\u0627\u0644\u0652\u0645\u064f\u0646\u0643\u064e\u0631\u0650 \u0648\u064e\u0627\u0644\u0652\u0628\u064e\u063a\u0652\u064a",
+          translation: "Indeed, Allah orders justice and good conduct and giving to relatives, and forbids immorality and bad conduct and oppression. He admonishes you that perhaps you will be reminded.",
+          reference: "Surah al-Nahl, 16:90"
+        },
+        explanation: [
+          "Arabia before Islam was not without moral instincts. The Arabs valued courage, generosity, and honour. They had customs and obligations. But they also lived in a world without a binding framework of divine law -- a world where tribal loyalty overrode universal justice, where the strong took what they could, and where the sanctity of agreed-upon truces could be torn apart by a single provocation. The Harb al-Fijar -- the Sacrilegious Wars -- was what Arabia looked like when its best instincts failed and its worst ones took over. The young Muhammad was present at the edge of these wars. What he witnessed there would shape the man who, a few years later, would help found the Hilf al-Fudayl."
+        ],
+        sections: [
+          {
+            heading: "The Wars of Sacrilege",
+            text: [
+              "The Harb al-Fijar -- the Fijar meaning sacrilegious or impious -- was a series of tribal wars fought between Quraysh and their allies of Kinanah on one side, and the tribes of Hawazin and Thaqif on the other. What made them sacrilegious was that they were fought during the sacred months -- the months of Dhul Qadah, Dhul Hijjah, and Muharram -- in which all Arabia had agreed, for generations, that fighting was forbidden. The sanctity of these months allowed trade, pilgrimage, and the movement of people across tribal territories in safety. To violate them was to tear apart the one framework that gave pre-Islamic Arabia its minimum of order.",
+              "The wars broke out when a man named Urwah al-Rahhal, who was under the protection of Harb ibn Umayyah, was killed by a man of Hawazin. The violation of a guarantee of protection was the spark. The fire that followed burned for years -- on and off, with periods of truce, through at least four phases. The Arab historians noted that Quraysh and Kinanah ultimately prevailed -- though victory in such a war was measured in grief on all sides."
+            ]
+          },
+          {
+            heading: "The Young Muhammad at the Edge",
+            text: [
+              "The books of Sirah are careful about this point: the young Muhammad was present at the Harb al-Fijar in a supporting role. He was approximately fifteen to seventeen years old during these events. His uncles were fighting, and he accompanied them -- passing arrows to them during the engagements, protecting the rear of the position. He did not fight in the direct sense; he was at the margins, in a supporting capacity, because his family was involved.",
+              "The Prophet later reflected on his presence at these events with a detachment that speaks volumes: I was present at the Fijar wars, handing arrows to my uncles. There is no pride in the memory. There is the plain acknowledgement of a fact. He was there. His family was there. He did what was expected of a young man in his position. But the wars themselves -- the violence, the tribalism, the violation of sacred months for the sake of revenge and honour -- left a mark. The young man who had watched from the edge of armed conflict between tribes in a world without justice was, a few years later, one of the founding members of a pact to defend the oppressed. The connection is not coincidental."
+            ]
+          }
+        ],
+        reflection: "The Harb al-Fijar was a world where tribal loyalty trumped universal justice. The Prophet was present at the edges of this world, and he remembered it without pride. Justice -- real justice, applied regardless of who was on which side -- was not the norm of his world. It had to be built. The Hilf al-Fudayl was one of the first attempts to build it. Where in your world -- your family, your community, your professional life -- does tribal or group loyalty prevent the honest application of justice? What would it take to stand for what is right even when it costs your group something?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Man from Yemen -- A Stranger Cried for Help",
+        heading: "Virtue: Nasihah -- Sincere Concern for the Rights of Others",
+        subLabel: "The Pact That Would Not Be Exchanged for Red Camels",
+        hadith: {
+          type: "ayah",
+          arabic: "\u064a\u064e\u0627 \u0623\u064e\u064a\u064f\u0651\u0647\u064e\u0627 \u0627\u0644\u064e\u0651\u0630\u0650\u064a\u0646\u064e \u0622\u0645\u064e\u0646\u064f\u0648\u0627 \u0643\u064f\u0648\u0646\u064f\u0648\u0627 \u0642\u064e\u0648\u064e\u0651\u0627\u0645\u0650\u064a\u0646\u064e \u0628\u0650\u0627\u0644\u0652\u0642\u0650\u0633\u0652\u0637\u0650 \u0634\u064f\u0647\u064e\u062f\u064e\u0627\u0621\u064e \u0644\u0650\u0644\u0644\u064e\u0651\u0647\u0650 \u0648\u064e\u0644\u064e\u0648\u0652 \u0639\u064e\u0644\u064e\u0649 \u0623\u064e\u0646\u0641\u064f\u0633\u0650\u0643\u064f\u0645\u0652",
+          translation: "O you who believe! Be persistently standing firm in justice, witnesses for Allah, even if it be against yourselves.",
+          reference: "Surah al-Nisa', 4:135"
+        },
+        explanation: [
+          "The Hilf al-Fudayl -- the Pact of the Virtuous -- was born from a specific event: a stranger was wronged in Makkah, and the city's sense of honour was shamed into responding. What is remarkable about this pact is not only what the Prophet later said about it -- that he would not exchange it for the finest red camels -- but that he said this in Islam, after revelation, after prophethood, after Allah had given him a complete code of law and justice. The pre-Islamic pact to defend strangers, formed among men who did not yet know the Quran, was something he was proud of as a Muslim. It tells us something essential about justice: when it is acted upon, it is honoured."
+        ],
+        sections: [
+          {
+            heading: "The Stranger at the Ka'bah",
+            text: [
+              "A merchant arrived in Makkah from Yemen -- some accounts say he was from Zabid -- carrying goods to trade at the city's markets. He sold his goods to al-As ibn Wa'il al-Sahmi, a notable of the Quraysh. Al-As received the goods and then refused to pay. The merchant had no tribe in Makkah to stand behind him, no family to call upon, no mechanism to enforce his claim. He was a stranger in a city that ran on tribal guarantees -- and he had none.",
+              "He did what a man with no power does when he has been wronged in a place that has some sense of honour: he called out publicly. He climbed to a vantage point near the Ka'bah -- the sacred house that all of Arabia revered -- and he cried out, asking for help, declaring that he had been cheated, that a man of Quraysh had taken his goods without payment. He was a guest who had been robbed by his host."
+            ]
+          },
+          {
+            heading: "The Gathering and the Pact",
+            text: [
+              "The appeal worked -- not because the institutions of Makkah demanded it, but because the best men in Makkah were shamed by it. The noble clans of Quraysh gathered at the house of Abdullah ibn Judan al-Taymi -- a wealthy and respected elder known for his generosity. Those who came included men of Banu Hashim, Banu Muttalib, Banu Asad ibn Abd al-Uzza, Banu Zuhra ibn Kilab, and Banu Taym ibn Murra. The young Muhammad was among them.",
+              "They made a covenant -- solemn and binding -- that they would stand together against any oppressor, whoever he was, on behalf of any wronged person, whether he was from Makkah or from outside it. They would ensure that the rights of the wronged were returned, regardless of the tribe of the oppressor. The covenant was then put into immediate practice: they went to al-As ibn Wa'il and compelled him to pay the Yemeni merchant what he was owed. The pact had barely been spoken and it had already delivered justice.",
+              "The Prophet later said: I was present in the house of Abdullah ibn Judan when a pact was concluded which I would not exchange for red camels -- the finest wealth of Arabia. And if I were called to it in Islam, I would respond. (Referenced in Sirat Ibn Hisham; the substance is reported in Bayhaqi and others.) This is one of the most striking statements in the entire Sirah: a prophet of Allah, having received the complete Divine Law, saying he would still honour a pre-Islamic pact to defend the oppressed."
+            ]
+          }
+        ],
+        reflection: "The Yemeni merchant had no tribe, no connections, and no leverage. His only move was to appeal to the conscience of a city. And it worked -- because enough men in that city were unwilling to let the injustice stand. Nasihah -- sincere concern for the rights of others -- does not require a relationship with the wronged person. The members of the Hilf al-Fudayl had never met the merchant from Yemen. They acted because injustice anywhere was, to them, a wound that demanded closing. Who in your circle, your neighbourhood, or your community is the Yemeni merchant -- the one with no leverage, whose claim is just, but who has no one to stand behind them? What would it mean to be one of the men who gathers at the house of Ibn Judan?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "Al-Amin -- A Name Before a Mission",
+        heading: "Virtue: Amanah -- Trustworthiness as the Foundation of Everything",
+        subLabel: "The Name His Enemies Could Not Take Back",
+        hadith: {
+          type: "ayah",
+          arabic: "\u0625\u0650\u0646\u064e\u0651 \u0627\u0644\u0644\u064e\u0651\u0647\u064e \u064a\u064e\u0623\u0652\u0645\u064f\u0631\u064f\u0643\u064f\u0645\u0652 \u0623\u064e\u0646 \u062a\u064f\u0624\u064e\u062f\u064e\u0651\u0648\u0627 \u0627\u0644\u0652\u0623\u064e\u0645\u064e\u0627\u0646\u064e\u0627\u062a\u0650 \u0625\u0650\u0644\u064e\u0649 \u0623\u064e\u0647\u0652\u0644\u0650\u0647\u064e\u0627",
+          translation: "Indeed, Allah commands you to render trusts to whom they are due.",
+          reference: "Surah al-Nisa', 4:58"
+        },
+        explanation: [
+          "The title came from the city itself. Al-Amin -- the Trustworthy -- was not a name the Prophet took for himself. It was given to him by the people of Makkah, including those who would later become his fiercest opponents, based on what they had observed across years of daily dealings. A name given collectively, by a community, against their own interests, is one of the most powerful forms of testimony. The people of Makkah called him al-Amin before they knew what he would one day claim. And after he claimed it -- after they rejected him and called him a liar -- they kept calling their sons to him with their property, because they could not call his character into question and be taken seriously."
+        ],
+        sections: [
+          {
+            heading: "The Name the People Gave Him",
+            text: [
+              "Across the years of his youth and early manhood, the people of Makkah watched Muhammad ibn Abdillah with the close attention that a merchant city gives to those it does business with. They watched how he handled goods in his uncle's trade. They watched how he fulfilled promises. They watched what he said and whether his word could be relied upon. They watched how he dealt with those weaker than him -- widows, orphans, travellers, the poor. They watched, over many years, whether the behaviour was consistent when the circumstances changed.",
+              "What they found was that it never changed. The same man who was trustworthy in a small transaction was trustworthy in a large one. The same man who was gentle with the powerless was gentle even when he held the power. There were no exceptions they could point to. There were no stories of a broken promise or a dishonest deal. And so, at a point that the Sirah does not mark with a precise date -- because it was not an event but a gradual recognition -- the city began to call him al-Amin. The Trustworthy."
+            ]
+          },
+          {
+            heading: "The Contradiction They Could Not Escape",
+            text: [
+              "The most remarkable aspect of the title al-Amin is what happened to it after the first revelation. When the Prophet began calling his people to Islam and they rejected him, the accusation they threw at him was that he was a liar -- a sorcerer, a poet, a man who had invented this religion and falsely attributed it to Allah. They called him kadhdhab -- a liar, a fabricator. And yet, with extraordinary consistency, these same people continued to leave their valuables with him for safekeeping. They continued to bring him their disputes to settle. They continued to trust him with what mattered most to them.",
+              "This contradiction did not escape the Prophet. When he made the famous call from the hill of Safa -- asking his people whether they would believe him if he told them there was an army coming over the hill -- Abu Lahab refused and insulted him. But Abu Lahab did not take his property back from Muhammad. The polemic of rejection and the practice of trust ran side by side. And when the Prophet finally made hijra to Madinah, he did not leave immediately. He instructed Ali ibn Abi Talib to stay behind -- specifically to return the trusts that the people of Makkah had deposited with him, including the trusts of those who were even then persecuting the Muslims. He left as he had lived: not owing anyone what was theirs.",
+              "The title al-Amin is not a romantic detail from the Sirah. It is a piece of evidence. The people who rejected his prophethood could not reject his character -- and their own continued practice of trusting him with their property is a testimony preserved in history, written by his opponents, against their own case."
+            ]
+          }
+        ],
+        reflection: "Al-Amin means that your word, your handling of others' property, your fulfilment of obligations -- all of it -- is reliable enough that people trust you without needing to check. It is a title given by others, not claimed for oneself. The Prophet received it from his community through years of consistent behaviour in ordinary circumstances. What would the people who interact with you regularly -- neighbours, colleagues, students, family members -- say about your amanah? Would they use a word like al-Amin without being prompted? Honest self-assessment here is not self-criticism -- it is the beginning of building the kind of character that gives communities a foundation."
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "The Prophet was present at the Harb al-Fijar in a supporting role -- at the edges, handing arrows to his uncles. He later remembered this without pride. How do you understand the fact that Allah allowed the future Prophet to be present at an unjust war, even marginally, before his mission began? What might Allah have wanted him to understand from that proximity to conflict?",
+          "The Hilf al-Fudayl was founded in response to a stranger's cry for help. No one in that room had a relationship with the Yemeni merchant. They acted because the principle demanded it. The Prophet later said -- after receiving the complete Divine Law -- that he would not exchange his membership in that pact for the finest wealth in Arabia. What does this tell us about the relationship between the natural human sense of justice and the justice commanded by Allah? Are they the same thing, or does one complete the other?",
+          "Al-Amin was a title given to the Prophet by the same city that later called him a liar. They rejected his claim to prophethood but kept trusting him with their property. What does this contradiction tell us about human nature -- the ability to hold two opposing positions at once? And what does it tell us about the power of consistent character: that it survives even the attempts of people to deny it?",
+          "The Prophet left Makkah for Madinah -- after years of persecution -- and still instructed Ali to return all the trusts deposited with him, including the trusts of those who had persecuted the Muslims. What does this tell us about the nature of amanah: that it is not conditional on how the other person behaves toward you? Where in your life do you find it hardest to uphold your obligations toward people who have wronged you -- and what does the Prophet's example say about that?"
+        ],
+        actionPoint: "This week, identify one trust -- a responsibility, a promise, an obligation -- that you have been carrying imperfectly: something that belongs to someone else that you have not yet fully returned or fulfilled. It could be a commitment you made and delayed, a duty to your students or children you have been giving partial attention, or a financial or material obligation that is overdue. Take one concrete step this week to close that gap. The Prophet earned the title al-Amin not through a single grand gesture but through the accumulated weight of small, consistent choices. Begin with one."
+      },
+      {
+        kind: "closing",
         paragraphs: [
-          "You have walked with Rasulullah from before his birth. You began in the time of Ibrahim alayhi us-salam and Hajar — in the barren valley that would become Makkah. You witnessed the Year of the Elephant. You followed the young Muhammad through the years of Banu Sa'd, through the opening of the chest, through the grief of losing his mother, into the hands of Abd al-Muttalib — and then Abu Talib — and then north, on the road to Sham, where a monk named Bahira looked at a twelve-year-old boy and recognised what the world would not know for another three decades.",
-          "Father before birth. Mother at six. Grandfather at eight. Every loss was arranged by Allah. Every guardian was sent. And through it all, the child chosen to carry the final message to humanity was never, for a single moment, left alone. Even on the road to Sham, a cloud followed him. Even in a foreign land, a tree bent its shade toward him. Even before he knew his own mission, Allāh's plan for him was already visible to those with eyes to see.",
+          "He went to Sham as a boy under a cloud that followed only him, and he came home as a boy who had been recognised by a stranger who spent his life looking. In the years that followed, quietly and without drama, the boy became a man. Makkah watched. Makkah traded with him. Makkah trusted him. And Makkah gave him a name: al-Amin. The Trustworthy.",
+          "The Hilf al-Fudayl is one of the least-discussed events in the Sirah -- and one of the most important. A stranger cried for help in the holiest city in Arabia and the best men in that city responded. The young Muhammad was one of them. He later said, as a prophet of Allah with the complete Quran in his hands, that he would not exchange his membership in that pact for the finest wealth in Arabia. Think about what that means: the pact he formed before revelation was something he honoured after revelation. The justice it demanded was the same justice Allah commanded. It was not replaced -- it was completed.",
+          "Al-Amin is a title that cost his city nothing to give and cost them everything to deny. When they needed to call him a liar, the name was still there. When they needed to trust someone with their valuables, the name was still there. You cannot give a man a title like al-Amin and then successfully accuse him of fabricating a message from Allah. The title was their own testimony, and they could not take it back.",
+          "Before prophethood came a mission. Before the mission came a character. Before the character came years of choices -- ordinary, unwitnessed, unremarkable choices made in the streets and markets and households of a city that was not yet ready for what it was raising in its midst. The man who received Iqra in the cave of Hira was the same man who had always been there. The revelation came to a vessel that had been prepared across four decades of consistent, unbroken, undeviating trustworthiness.",
+          "May Allah make us people of amanah. May He give us the consistency that builds trust before it is needed, the courage to stand for the wronged even when they are strangers, and the humility to receive a name -- the name of those who can be relied upon -- not through our own declaration, but through the quiet testimony of every person who has ever dealt with us."
+        ],
+        duaArabic: "\u0627\u0644\u0644\u064e\u0651\u0647\u064f\u0645\u064e\u0651 \u0635\u064e\u0644\u0650\u0651 \u0639\u064e\u0644\u064e\u0649 \u0645\u064f\u062d\u064e\u0645\u064e\u0651\u062f\u064d \u0648\u064e\u0639\u064e\u0644\u064e\u0649 \u0622\u0644\u0650 \u0645\u064f\u062d\u064e\u0645\u064e\u0651\u062f\u064d \u0643\u064e\u0645\u064e\u0627 \u0635\u064e\u0644\u064e\u0651\u064a\u062a\u064e \u0639\u064e\u0644\u064e\u0649 \u0625\u0650\u0628\u0652\u0631\u064e\u0627\u0647\u0650\u064a\u0645\u064e \u0648\u064e\u0639\u064e\u0644\u064e\u0649 \u0622\u0644\u0650 \u0625\u0650\u0628\u0652\u0631\u064e\u0627\u0647\u0650\u064a\u0645\u064e \u0625\u0650\u0646\u064e\u0651\u0643\u064e \u062d\u064e\u0645\u0650\u064a\u062f\u064c \u0645\u064e\u062c\u0650\u064a\u062f\u064c",
+        duaTranslation: "O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim. Indeed You are Praiseworthy and Glorious. Amin.",
+        nextLessonPreview: "Al-Amin was now a young man in his twenties -- trusted by his city, shaped by experience, and known for his character across the trading routes of Arabia. A widow of extraordinary standing would soon take notice. Khadijah bint Khuwaylid, the most respected businesswoman in Makkah, would send him on a trading journey to Sham with her goods -- and what she observed in that journey would lead to the greatest marriage in Islamic history.",
+        discoveryNote: "The Hilf al-Fudayl is referenced in Sirat Ibn Hisham and discussed by scholars as an example of pre-Islamic good that Islam confirmed rather than replaced. The Profiles tab has more on Khadijah, who appears in the next lesson. The Timeline tab places al-Amin and the Hilf in the broader chronology of the pre-prophetic years.",
+      },
+      {
+        kind: "completion",
+        title: "Volume I -- Complete",
+        paragraphs: [
+          "You have walked with Rasulullah from before his birth. You began in the time of Ibrahim alayhi us-salam and Hajar -- in the barren valley that would become Makkah. You witnessed the Year of the Elephant. You followed the young Muhammad through the years of Banu Sad, through the opening of the chest, through the grief of losing his mother, into the hands of Abd al-Muttalib -- and then Abu Talib -- and then north, on the road to Sham, where a monk named Bahira looked at a twelve-year-old boy and recognised what the world would not know for another three decades. You watched him return to Makkah and grow into the young man his city would name al-Amin -- and you were there when he stood with the best men of Quraysh and made a covenant to defend a stranger from Yemen that he said, as a prophet, he would never exchange for the finest camels in Arabia.",
+          "Father before birth. Mother at six. Grandfather at eight. Every loss was arranged by Allah. Every guardian was sent. And through it all, the child chosen to carry the final message to humanity was never, for a single moment, left alone. Even on the road to Sham, a cloud followed him. Even in a foreign land, a tree bent its shade toward him. Even before he knew his own mission, the city around him was already giving him a name that told the world what was coming.",
           "May Allah make this knowledge a light in your home, a legacy for your children, and a means of drawing closer to the Prophet we love.",
         ],
-        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaArabic: "\u0627\u0644\u0644\u064e\u0651\u0647\u064f\u0645\u064e\u0651 \u0635\u064e\u0644\u0650\u0651 \u0639\u064e\u0644\u064e\u0649 \u0645\u064f\u062d\u064e\u0645\u064e\u0651\u062f\u064d \u0648\u064e\u0639\u064e\u0644\u064e\u0649 \u0622\u0644\u0650 \u0645\u064f\u062d\u064e\u0645\u064e\u0651\u062f\u064d \u0643\u064e\u0645\u064e\u0627 \u0635\u064e\u0644\u064e\u0651\u064a\u062a\u064e \u0639\u064e\u0644\u064e\u0649 \u0625\u0650\u0628\u0652\u0631\u064e\u0627\u0647\u0650\u064a\u0645\u064e \u0648\u064e\u0639\u064e\u0644\u064e\u0649 \u0622\u0644\u0650 \u0625\u0650\u0628\u0652\u0631\u064e\u0627\u0647\u0650\u064a\u0645\u064e \u0625\u0650\u0646\u064e\u0651\u0643\u064e \u062d\u064e\u0645\u0650\u064a\u062f\u064c \u0645\u064e\u062c\u0650\u064a\u062f\u064c",
         duaTranslation: "O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim. Indeed You are Praiseworthy and Glorious. Amin.",
-        nextLessonPreview: "The young Muhammad returned to Makkah from Sham and grew into early manhood — known by all as al-Amin, the Trustworthy. Before prophethood, he would participate in one of the noblest events of his pre-prophetic life: the Hilf al-Fudayl, a covenant to defend the oppressed, which he would honour for the rest of his life. That covenant — and the character it reveals — is the subject of our next lesson.",
+        nextLessonPreview: "Al-Amin was now a young man in his twenties -- trusted by his city, shaped by the road to Sham and the pact at Ibn Judan's house. A woman of extraordinary standing would soon take notice. Khadijah bint Khuwaylid, the most respected businesswoman in Makkah, would send him on a trading journey and then propose the most blessed marriage in Islamic history.",
       },
 
     ]

@@ -122,6 +122,7 @@ export const SIRAH_CHAPTERS: ChapterEntry[] = [
     title: "Ḥilf al-Fuḍūl — The Pact of the Virtuous",
     description: "Before prophethood, the young Muḥammad ﷺ participated in a noble pact to defend the oppressed. He said later: I would not exchange it for the finest camels.",
     minutes: 8,
+    pageIndex: 57,
   },
 
   // ── Marriage, Character & Trust (c. 595–610 CE) ─────────────────────────────
