@@ -1111,8 +1111,8 @@ export function getBookProgress(bookId: string): number {
   if (book?.lessonKey) {
     const saved = getSavedReaderPage(book.lessonKey);
     if (saved === null) return 0;
-    // sirah_journey: 65 pages total (indices 0-64) as of Lesson 9
-    return Math.min(100, Math.round((saved / 64) * 100));
+    // sirah_journey: 72 pages total (indices 0-71) as of Lesson 10
+    return Math.min(100, Math.round((saved / 71) * 100));
   }
   // Legacy fallback for books without reader content
   const currentPage = Number(localStorage.getItem(`our_legacy_book_${bookId}_page`) ?? "0");

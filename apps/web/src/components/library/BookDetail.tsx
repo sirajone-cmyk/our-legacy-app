@@ -131,6 +131,7 @@ export const SIRAH_CHAPTERS: ChapterEntry[] = [
     title: "Marriage to Khadījah ؓ",
     description: "The noblest of all marriages — how the greatest woman in the world recognised the greatest man, and what their union built for the coming revelation.",
     minutes: 12,
+    pageIndex: 65,
   },
   {
     number: 12,

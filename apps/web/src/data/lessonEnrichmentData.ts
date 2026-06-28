@@ -3933,6 +3933,320 @@ const lesson9: LessonEnrichment = {
   },
 };
 
+
+// -- Lesson 10 -- Khadijah: The First Believer -----------------------------------
+
+const lesson10: LessonEnrichment = {
+  bookId: "sirah_journey",
+  partNumber: 10,
+  lessonTitle: "Khadijah -- A Home Prepared by Allah",
+
+  // -- Meta ------------------------------------------------------------------
+
+  estimatedReadingTime: {
+    readingMinutes: 40,
+    studyMinutes: 20,
+  },
+
+  recommendedUse: ["individual", "family", "classroom", "madrasa"],
+
+  // -- Opening ---------------------------------------------------------------
+
+  whyThisMattersToday:
+    "In an age that has reduced marriage to a transaction and loyalty to a feeling, this lesson presents a different model: a marriage built on character-based observation, mutual knowledge, and a loyalty that outlasted death. Khadijah bint Khuwaylid was not simply the Prophet's wife -- she was the person who, more than anyone else in history, knew him well enough to support him before understanding was complete. Every family that studies this lesson receives a model of what it means to know another person so well that you can hold them steadily even when they are carrying something they cannot yet name.",
+
+  memoryGem:
+    "She believed in me when people disbelieved me. She assisted me with her wealth when people deprived me. And Allah blessed me with children through her. -- The Prophet about Khadijah bint Khuwaylid, Sahih al-Bukhari, Hadith 3816",
+
+  oneMinuteSummary:
+    "At twenty-five years old, Muhammad was hired by the wealthy merchant Khadijah bint Khuwaylid to lead her trade caravan to Syria. She sent her trusted employee Maysarah to accompany the journey and report back. What Maysarah witnessed -- the Prophet's scrupulous honesty in trade, his dignified character, and signs of divine protection -- moved Khadijah to take an extraordinary step: she sent a proposal through an intermediary named Nafisah bint Munyah. The Prophet consulted his uncles, and the nikah was performed. She was approximately forty years old; he was twenty-five. They were married for twenty-five years, and the Prophet never took another wife while she lived. He continued to grieve her and honour her memory for the rest of his life, as preserved in Sahih al-Bukhari (3816). In Sahih Muslim (2430), he named her among the four greatest women who ever lived. In the years following the marriage, the Prophet began spending long periods in spiritual retreat in the cave of Hira above Makkah -- seeking something that the idols of Makkah could not provide. It was Khadijah who prepared his provisions and held the home while he sought. She supported his retreats without demanding explanation, trusting what she had observed of his character across fifteen years of shared life. This lesson ends at the threshold of revelation -- with a home held steady by a woman of extraordinary loyalty, and a world that did not yet know what was forming in the cave above it.",
+
+  // -- Content ---------------------------------------------------------------
+
+  keyFacts: [
+    {
+      topic: "Age of the Prophet at marriage",
+      information:
+        "Twenty-five years old, according to the classical Sirah -- Sirat Ibn Hisham drawing on Ibn Ishaq. This is the widely accepted position across classical scholarship.",
+    },
+    {
+      topic: "Age of Khadijah at marriage",
+      information:
+        "The most widely transmitted classical position, found in Ibn Hisham, is forty years old. Al-Tabari and some other narrations suggest a younger age. The classical position of forty is followed by the majority of scholars. Whatever her age, the historical significance of the marriage is undisputed.",
+    },
+    {
+      topic: "Duration of the marriage",
+      information:
+        "Twenty-five years -- from the Prophet's age of 25 until Khadijah's death approximately three years before the Hijrah (the Year of Sorrow). The Prophet did not marry again while she lived.",
+    },
+    {
+      topic: "Who proposed to whom",
+      information:
+        "Khadijah initiated the proposal through her friend Nafisah bint Munyah, who approached the Prophet on Khadijah's behalf. This is preserved in Sirat Ibn Hisham and is widely accepted across Sirah literature.",
+    },
+    {
+      topic: "The mahr (marriage gift)",
+      information:
+        "Sirah sources record the mahr as twenty young camels, though the exact amount carries some variation across narrations. This is Sirah-level information (Ibn Hisham tier), not from Sahih Bukhari or Muslim.",
+    },
+    {
+      topic: "Khadijah as the first Muslim",
+      information:
+        "Classical scholars are in agreement that Khadijah bint Khuwaylid was the first person to accept Islam -- before Abu Bakr, before Ali, before any man. Her belief is recorded in Sahih al-Bukhari (Hadith 3) through the account of the first revelation.",
+    },
+  ],
+
+  whatWeLearn: [
+    {
+      event: "The Prophet's honesty in the trade journey to Syria",
+      lesson:
+        "Sidq -- truthfulness -- in our dealings is not merely a virtue for when we are watched. The Prophet had no authority looking over his shoulder on the road to Syria. He was honest because that was who he was. Character is what we do in the unsupervised spaces of our lives.",
+    },
+    {
+      event: "Khadijah proposing to the Prophet",
+      lesson:
+        "Hikmah -- wisdom -- is the ability to see past convention, status, and appearances to what actually matters. Khadijah had every social reason to choose differently. She chose based on character. This is the Islamic model of discernment: evidence-based, not convention-based.",
+    },
+    {
+      event: "Twenty-five years of one marriage",
+      lesson:
+        "Wafa -- loyalty -- is not a declaration but a practice. The Prophet did not merely love Khadijah; he honoured her memory actively for the rest of his life. Islam's model of marriage is not transactional -- it is a covenant that shapes the people inside it.",
+    },
+    {
+      event: "Khadijah's response to the first revelation",
+      lesson:
+        "Thabat -- steadfastness -- in the face of what is unprecedented is possible when it is grounded in knowledge. Khadijah did not panic because she knew him. Twenty-five years of observation gave her the certainty to be the anchor at the most consequential moment in human history.",
+    },
+    {
+      event: "Khadijah being the first Muslim",
+      lesson:
+        "Being first requires both knowledge and courage. Khadijah's knowledge of the Prophet gave her certainty; her courage let her act on it before anyone else. The lesson for families: the people in our homes should know each other well enough to believe in each other before the world does.",
+    },
+  ],
+
+  whyDidAllahAllowThis: {
+    question:
+      "Why did Allah arrange for the Prophet's first anchor in prophethood to be his wife -- a woman -- rather than a scholar, a community leader, or a powerful figure?",
+    reflection:
+      "Because what the Prophet needed in that moment was not religious authority or political power -- it was someone who knew him. Khadijah's certainty came from twenty-five years of close observation of his character in the private spaces of daily life. Allah arranged that the first witness to prophethood would be the person best positioned to be a witness: the person who had lived beside him. This is a profound statement about the Islamic understanding of the home. The home is not peripheral to the work of Allah -- it is where the most essential preparations take place. Khadijah could only respond as she did because she had spent twenty-five years paying attention.",
+    quranicConnection: {
+      arabic:
+        "وَوَجَدَكَ عَائِلًا فَأَغْنَى",
+      translation:
+        "And He found you in need and made you self-sufficient.",
+      reference: "Surah al-Duha, 93:8",
+    },
+  },
+
+  familyDiscussion: [
+    {
+      question:
+        "Khadijah chose the Prophet based on what Maysarah reported of his character on the road -- his honesty in trade, his conduct in an unsupervised situation. Think of the people you trust most in your life. What did you observe about their character before you came to trust them? Was it one moment or many small moments?",
+      hint:
+        "Guide the conversation toward the idea that trust is built through accumulated, ordinary observation -- not grand gestures. Ask: 'What is the smallest thing you noticed that made you think: this is a trustworthy person?'",
+    },
+    {
+      question:
+        "The Prophet and Khadijah were married for twenty-five years -- and he never took another wife while she lived. After her death, he continued to mention her, honour her friends, and grieve for her. What does this tell us about the Islamic ideal of loyalty in marriage? And what does it challenge us to think about in our own relationships?",
+      hint:
+        "This is a reflective question for adults and older teenagers. Let it sit. It is not asking for judgement -- it is asking people to measure themselves against a model. With younger children, simplify: 'Why do you think the Prophet kept remembering and missing Khadijah even after she passed away?'",
+    },
+    {
+      question:
+        "For years, the Prophet spent long periods of retreat in the cave of Hira, seeking something he could not name. He did not explain this to the people of Makkah. He did not need to explain it to Khadijah -- she prepared his provisions and held the home while he was away. What does it take to support someone in a purpose that is not yet clear, even to them? What would need to be true about a relationship for that kind of trust to exist?",
+      hint:
+        "This question goes to the heart of what Islamic marriage is at its best: not a contract of mutual explanation, but a covenant of mutual trust. The question for families is: do we know each other well enough to hold each other even when we do not fully understand what we are holding? Encourage honest reflection without guilt -- the goal is aspiration.",
+    },
+    {
+      question:
+        "After Khadijah's death, the Prophet continued to mention her, to slaughter sheep and send portions to her friends, to grieve for her in ways that those around him could see. A'ishah narrated -- in Sahih al-Bukhari 3816 -- that she felt jealousy toward a woman she had never met, because of how often the Prophet remembered her. What does this active, lifelong loyalty to the memory of someone tell us about the weight of genuine love in Islam? And what does it challenge us to consider about how we treat the people who have supported us?",
+      hint:
+        "Islam's understanding of loyalty does not end when circumstances change or when a person is gone. The Prophet's active remembrance of Khadijah -- his sending of sheep, his mentioning of her, his grief -- was not sentiment. It was wafa in practice. Ask families: how do we honour those who have given us something that cannot be repaid?",
+    },
+  ],
+
+  familyApplication:
+    "This week, each member of the family writes down -- privately -- three things they know about another family member's character from observation, not assumption. Then, at a chosen moment, share one of those observations with that person. Not as flattery, but as witness: 'I have noticed that you are the kind of person who...' Khadijah's steadfast support of the Prophet's spiritual seeking was possible because she had been paying attention for fifteen years. The kind of knowledge that allows us to hold another person in their most uncertain moments is built across ordinary days. Begin building it now.",
+
+  quickReview: [
+    {
+      question: "Who hired the Prophet to lead a trade caravan to Syria before their marriage?",
+      answer:
+        "Khadijah bint Khuwaylid -- the most successful businesswoman in Makkah, who sent the Prophet with her goods and also sent her employee Maysarah to accompany the journey.",
+    },
+    {
+      question: "Who proposed to the Prophet, and how?",
+      answer:
+        "Khadijah initiated the proposal through her friend Nafisah bint Munyah, who approached the Prophet on Khadijah's behalf. He consulted his uncles and accepted.",
+    },
+    {
+      question: "How long were the Prophet and Khadijah married?",
+      answer:
+        "Twenty-five years -- from the Prophet's age of 25 until Khadijah's death approximately three years before the Hijrah.",
+    },
+    {
+      question: "What did the Prophet say about Khadijah after her death? Where is this narration recorded?",
+      answer:
+        "He described her as the person who believed in him when others disbelieved, who supported him with her wealth when others withheld, and through whom Allah blessed him with children. This is preserved in Sahih al-Bukhari, Hadith 3816, narrated by A'ishah radhiyallahu anha.",
+    },
+    {
+      question: "What did Khadijah do while the Prophet was in the cave of Hira?",
+      answer:
+        "She prepared provisions -- food and water -- and held the home while the Prophet spent long periods in spiritual retreat. The classical Sirah records that she supported these retreats without complaint, trusting what she had observed of his character across their years together.",
+    },
+    {
+      question: "What hadith names Khadijah among the greatest women who ever lived, and what does it say?",
+      answer:
+        "Sahih Muslim, Hadith 2430. The Prophet named the four greatest women of the world: Maryam bint Imran, Khadijah bint Khuwaylid, Fatimah bint Muhammad, and Asiyah the wife of Firawn.",
+    },
+  ],
+
+  // -- Resources -------------------------------------------------------------
+
+  exploreFurther: [
+    {
+      title: "Sahih al-Bukhari, Hadith 3",
+      author: "Imam al-Bukhari",
+      type: "book",
+      note:
+        "The primary authenticated account of the first revelation -- narrated by A'ishah from the Prophet. Contains Khadijah's exact words and is Tier One evidence for her response and her status as the first Muslim.",
+    },
+    {
+      title: "Sahih Muslim, Hadith 2430",
+      author: "Imam Muslim",
+      type: "book",
+      note:
+        "The hadith naming the four greatest women of the world. A Tier One source. Essential for establishing Khadijah's rank in Islam.",
+    },
+    {
+      title: "Sirat Ibn Hisham",
+      author: "Ibn Hisham (drawing on Ibn Ishaq, d. 151 AH)",
+      type: "book",
+      note:
+        "The primary classical Sirah source for the trade journey, the proposal through Nafisah, the nikah ceremony, and the domestic details of the marriage. Read the relevant chapters on the Prophet's pre-prophetic adulthood.",
+    },
+    {
+      title: "Al-Rahiq al-Makhtum (The Sealed Nectar)",
+      author: "Safi al-Rahman al-Mubarakfuri",
+      type: "book",
+      note:
+        "The prize-winning modern Sirah. Covers the marriage and Khadijah's character clearly and accessibly, drawing on classical sources with references.",
+    },
+  ],
+
+  // -- Teacher and scholarly sections ----------------------------------------
+
+  teacherNotes: [
+    {
+      audience: "family",
+      heading: "Use the marriage as a model, not just a story",
+      body:
+        "When reading this with your family, resist the temptation to treat the marriage as simply a biographical detail. Use it as a mirror. Ask: what made their marriage work? The answer is knowledge -- they knew each other deeply enough to be each other's anchor. Let that question sit in your home: do we know each other well enough to carry each other through our hardest moments?",
+    },
+    {
+      audience: "classroom",
+      heading: "The proposal as a discussion on gender and agency",
+      body:
+        "Khadijah's proposal is a historically documented example of a woman exercising informed, dignified agency in the most important decision of her life. In an Islamic studies classroom, this can be used to directly address the claim that Islam diminishes women. Khadijah chose, initiated, and decided -- and she was honoured by the Prophet, by the Sahih hadith record, and by the scholarly tradition for fifteen centuries.",
+    },
+    {
+      audience: "madrasa",
+      heading: "Authenticity levels: what is established and what is Sirah narrative",
+      body:
+        "With older students, distinguish clearly. The first revelation account (Bukhari 3) is Tier One -- cite it precisely and teach students to recognise its authority. The details of the trade journey, the proposal through Nafisah, the nikah ceremony, and the mahr are from Sirat Ibn Hisham (Tier Two) -- widely accepted but not at the level of Sahih hadith. The cloud shading the Prophet on the journey is a Sirah narration -- narrated via Ibn Ishaq through Ibn Hisham. Khadijah's rank (Muslim 2430) is Tier One. Teaching this distinction builds rigour without creating doubt.",
+    },
+  ],
+
+  lessonReliabilitySummary: {
+    overallGrade: "Widely Accepted",
+    summary:
+      "The core events of this lesson are well-established across two tiers of evidence. The first revelation account and Khadijah's response are in Sahih al-Bukhari (Hadith 3) -- Tier One, the highest level of authentication. Her rank among the four greatest women is in Sahih Muslim (Hadith 2430) -- also Tier One. The Prophet's continued love and memory of Khadijah after her death is in Sahih al-Bukhari (Hadith 3816). The trade journey details, the proposal through Nafisah, and the nikah ceremony are in Sirat Ibn Hisham (drawing on Ibn Ishaq) -- Tier Two, widely accepted in classical scholarship. The cloud shading the Prophet during the journey is from the same Sirah tradition and is graded Widely Accepted. The exact age of Khadijah at marriage (classical position: 40) is a matter of Sirah scholarship with minor discussion; the majority view is followed here.",
+  },
+
+  authenticationNotes: [
+    {
+      claim: "Khadijah's words to the Prophet after the first revelation",
+      grade: "Established",
+      sources: [
+        "Sahih al-Bukhari, Hadith 3 (narrated by A'ishah radhiyallahu anha)",
+      ],
+      explanation:
+        "This is Tier One evidence -- mutawatir in meaning and preserved in the highest grade of authenticated narration. A'ishah narrated it from the Prophet directly. There is no credible scholarly dispute about the authenticity of this account.",
+    },
+    {
+      claim: "Khadijah as the first Muslim",
+      grade: "Established",
+      sources: [
+        "Sahih al-Bukhari, Hadith 3",
+        "Classical scholarly consensus across all major Sirah works",
+      ],
+      explanation:
+        "The account in Bukhari 3 establishes that Khadijah was the first to respond to the Prophet's account of the revelation with belief. Classical scholars are in agreement that she was the first Muslim. Some early discussion exists about whether Ali ibn Abi Talib or Abu Bakr was the first male Muslim -- but the primacy of Khadijah as the very first is not disputed.",
+    },
+    {
+      claim: "Khadijah among the four greatest women",
+      grade: "Established",
+      sources: [
+        "Sahih Muslim, Hadith 2430",
+      ],
+      explanation:
+        "Tier One evidence. Narrated by Ali ibn Abi Talib in Sahih Muslim. The hadith names the four greatest women: Maryam, Khadijah, Fatimah, and Asiyah. This is not disputed.",
+    },
+    {
+      claim: "The trade journey to Syria, the proposal through Nafisah, and the nikah",
+      grade: "Widely Accepted",
+      sources: [
+        "Sirat Ibn Hisham (drawing on Ibn Ishaq, d. 151 AH)",
+        "Al-Rahiq al-Makhtum -- Mubarakpuri",
+      ],
+      explanation:
+        "These events are recorded in the classical Sirah -- Ibn Hisham from Ibn Ishaq. They are widely accepted across classical scholarship with no significant dispute about the core narrative. The exact details (mahr amount, exact wording of the proposal conversation) carry the normal variation found in Sirah narrations.",
+    },
+  ],
+
+  // -- Timeline and connections -----------------------------------------------
+
+  lessonTimeline: [
+    {
+      year: "c. 595 CE",
+      label: "Trade journey to Syria -- Prophet (age ~25) leads Khadijah's caravan; Maysarah accompanies",
+    },
+    {
+      year: "c. 595 CE",
+      label: "Khadijah proposes through Nafisah bint Munyah -- nikah is performed",
+    },
+    {
+      year: "595-610 CE",
+      label: "Twenty-five years of marriage -- one home, one love, six children",
+    },
+    {
+      year: "610 CE",
+      label: "First revelation in the cave of Hira -- Prophet (age 40) returns trembling; Khadijah becomes the first Muslim",
+    },
+    {
+      year: "c. 619 CE",
+      label: "Khadijah passes away -- Year of Sorrow. The Prophet grieves deeply.",
+    },
+  ],
+
+  connections: {
+    timeline: ["c. 595 CE", "610 CE", "c. 619 CE"],
+    maps: ["makkah", "sham"],
+    characters: [
+      "Khadijah bint Khuwaylid",
+      "Waraqah ibn Nawfal",
+    ],
+    references: [
+      "Sahih al-Bukhari -- Hadith 3",
+      "Sahih Muslim -- Hadith 2430",
+      "Sahih al-Bukhari -- Hadith 3816",
+      "Sirat Ibn Hisham",
+      "Surah al-Rum -- 30:21",
+      "Surah al-Duha -- 93:8",
+    ],
+  },
+};
+
 // ── Enrichment map ─────────────────────────────────────────────────────────────
 
 export const lessonEnrichmentData: LessonEnrichmentMap = {
@@ -3945,6 +4259,7 @@ export const lessonEnrichmentData: LessonEnrichmentMap = {
   "sirah_journey:7": lesson7,
   "sirah_journey:8": lesson8,
   "sirah_journey:9": lesson9,
+  "sirah_journey:10": lesson10,
 };
 
 // ── Accessor ───────────────────────────────────────────────────────────────────

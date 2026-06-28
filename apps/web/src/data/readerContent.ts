@@ -2049,6 +2049,215 @@ export const readerLessons: ReaderLesson[] = [
         nextLessonPreview: "Al-Amin was now a young man in his twenties -- trusted by his city, shaped by the road to Sham and the pact at Ibn Judan's house. A woman of extraordinary standing would soon take notice. Khadijah bint Khuwaylid, the most respected businesswoman in Makkah, would send him on a trading journey and then propose the most blessed marriage in Islamic history.",
       },
 
+      {
+        kind: "part-divider",
+        title: "Khadijah -- A Home Prepared by Allah",
+        subtitle: "Part 10",
+        description: [
+          "He was twenty-five years old. She was the most respected woman in Makkah -- wealthy, widowed twice, and sought after by every man of standing in Quraysh.",
+          "She had refused them all. Then she hired a young man named Muhammad to carry her goods to Syria -- and saw something in him that no one else had seen clearly enough to act on.",
+          "This is the story of the marriage that built the foundation for everything that came after. Twenty-five years of one love. A home that would become the first shelter of Islam."
+        ]
+      },
+      {
+        kind: "segment",
+        segmentNumber: 1,
+        minutes: 10,
+        chapterTitle: "The Trade Journey -- When Character Became Currency",
+        heading: "Virtue: Sidq -- The Truthfulness That Cannot Be Hidden",
+        subLabel: "Virtue of Sidq",
+        hadith: {
+          type: "ayah",
+          arabic: "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ",
+          translation: "O you who have believed, fear Allah and be with those who are truthful.",
+          reference: "Surah al-Tawbah, 9:119"
+        },
+        explanation: [
+          "He was twenty-five years old and he had a reputation. Not the reputation of a nobleman or a chief's son -- though he was descended from the noblest of lineages. Not the reputation of a poet or a merchant of renown. He had the reputation of a man who could be trusted. In a trading city built on deals, debts, and the movement of goods across desert roads, that was not a small thing.",
+          "Khadijah bint Khuwaylid was the most successful businesswoman in Makkah. She was also a woman of discernment -- she had seen enough men come through her trading arrangements to know the difference between competence and character. When she heard of a young man called al-Amin -- the Trustworthy -- she made him an offer."
+        ],
+        sections: [
+          {
+            heading: "The Offer",
+            text: [
+              "According to the classical Sirah -- Sirat Ibn Hisham drawing on Ibn Ishaq -- Khadijah sent word to Muhammad asking him to take her goods to Syria on a trading journey. She offered him a wage better than what she offered anyone else. He accepted.",
+              "With him she sent Maysarah, one of her trusted employees, to accompany the caravan and observe. Maysarah was not sent to supervise -- he was there to represent Khadijah's interests and to report back on what he witnessed. What Maysarah saw on that journey, he carried all the way back to Makkah and placed at Khadijah's feet."
+            ]
+          },
+          {
+            heading: "What Maysarah Saw",
+            text: [
+              "The classical Sirah narrates that on the journey to Syria, Maysarah observed Muhammad in his dealings: fair in negotiation, scrupulously honest about the quality and quantity of what he sold, never deceiving, never short-measuring, never using the distance from oversight to take advantage. The goods returned more profit than Khadijah had expected.",
+              "Maysarah also reported seeing a cloud that provided shade specifically for Muhammad throughout the heat of the journey. This detail appears in the classical Sirah sources -- in Ibn Hisham from Ibn Ishaq. It is a widely accepted narration in Sirah literature, though it is not in Sahih al-Bukhari or Sahih Muslim. It is one of the signs scholars of Sirah cite as indicating Allah's protection and preparation of the Prophet before prophethood was formally revealed.",
+              "When the caravan returned to Makkah, Maysarah gave his account. Khadijah listened. And in the words of the Sirah, she was moved -- not only by the profit, but by the portrait of a man that Maysarah described."
+            ]
+          },
+          {
+            heading: "What Sidq Looks Like in Practice",
+            text: [
+              "The Prophet had no supervisor on the road to Syria except his own conscience and the watchful eyes of Maysarah. There was no Khadijah looking over his shoulder. There was no court of accountability. There was only the question that every honest person carries into every situation: what kind of person am I when no authority is watching?",
+              "The answer -- given consistently, across years, in the markets and caravans and contracts of Makkah -- was al-Amin. The Trustworthy. The Truthful. A title given not by his family or his friends, but by the commercial life of a city that had ample opportunity to discover otherwise.",
+              "Khadijah had been looking for someone like this. She found him. And in finding him, she did something that no woman in Arabia had done before."
+            ]
+          }
+        ],
+        reflection: "In your own work and dealings -- at your job, in your business, in your transactions with others -- does your character change based on whether someone is watching? The Prophet earned Khadijah's trust, and eventually changed the world, not through a single grand act but through the accumulated weight of consistent, unwitnessed honesty. This week: where is your Maysarah moment -- the test you face when you think no one is looking?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 2,
+        minutes: 10,
+        chapterTitle: "She Chose Him -- The Proposal That Changed History",
+        heading: "Virtue: Hikmah -- The Wisdom to See What Others Missed",
+        subLabel: "Virtue of Hikmah",
+        hadith: {
+          type: "ayah",
+          arabic: "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ",
+          translation: "And of His signs is that He created for you from yourselves mates that you may find tranquillity in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought.",
+          reference: "Surah al-Rum, 30:21"
+        },
+        explanation: [
+          "Khadijah had been married twice before. She had seen what most marriages in Makkah looked like -- arrangements between families, driven by wealth, tribal alliance, or status. She was one of the most eligible women in Arabia, and she had received proposals from men of wealth and standing. She had said no to all of them.",
+          "Now she had observed a twenty-five-year-old with no great wealth, no title beyond al-Amin, and no social leverage to offer. And she was the one who sent a proposal to him."
+        ],
+        sections: [
+          {
+            heading: "Nafisah, the Intermediary",
+            text: [
+              "The classical Sirah -- Sirat Ibn Hisham -- narrates that Khadijah confided in a friend named Nafisah bint Munyah and asked her to approach Muhammad on her behalf. Nafisah went to him and raised the subject: was there any reason he had not yet married? And if the right person were to be proposed, would he consider it?",
+              "The Prophet asked who she had in mind. Nafisah named Khadijah. He said he would speak to his family.",
+              "This is one of the most humanly remarkable moments in the entire Sirah. The most respected businesswoman in Makkah -- a woman who had turned down the nobility of Quraysh -- was asking to marry a young man who had worked for her on a trade journey. In the social structure of Arabia, she was his superior in terms of wealth and standing. She was fifteen years older. And she was the one proposing."
+            ]
+          },
+          {
+            heading: "The Nikah",
+            text: [
+              "The Prophet consulted his uncles. The marriage was arranged. According to the classical Sirah sources, his uncle Abu Talib gave the khutbah al-nikah at the ceremony. The mahr -- the marriage gift from the groom to the bride -- is recorded in Sirah sources as twenty young camels, though the exact amount carries some variation across narrations.",
+              "He was twenty-five years old. She was, according to the most widely transmitted classical position found in Ibn Hisham, forty years old. Some scholars of Sirah have discussed the possibility of a younger age for Khadijah based on narrations in al-Tabari and other sources. The classical position of forty is the more widely held view and the one accepted by the majority of scholars. Whatever her age, what is beyond dispute is what the marriage produced: the most stable and most transformative relationship in the life of the man who would become the Seal of the Prophets."
+            ]
+          },
+          {
+            heading: "What Hikmah Looks Like",
+            text: [
+              "Khadijah was not acting on feeling alone. She was a mature woman acting on what she had observed. She had watched this man handle her goods with integrity, heard Maysarah's account of his conduct on the road, and come to a considered conclusion: this is the person.",
+              "Hikmah -- wisdom -- is not intelligence alone. It is the ability to see past the obvious to what matters. The men who had proposed to Khadijah offered wealth, title, and lineage. Muhammad offered something that could not be purchased: a character proven in the unsupervised spaces of daily life. Khadijah saw it. She acted on it. And in doing so, she gave the Prophet the foundation he would need for everything that was coming."
+            ]
+          }
+        ],
+        reflection: "Khadijah's wisdom was not intuition alone -- it was based on evidence gathered through observation. She chose based on character, not on status. How often do we make our most important decisions based on what someone presents publicly versus what we observe of their character in ordinary, unguarded moments? What would it mean to apply Khadijah's standard of discernment to the decisions we face in our own lives?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 3,
+        minutes: 10,
+        chapterTitle: "The Marriage -- One Love for Twenty-Five Years",
+        heading: "Virtue: Wafa -- The Loyalty That Does Not Look for an Exit",
+        subLabel: "Virtue of Wafa",
+        hadith: {
+          type: "ayah",
+          arabic: "هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَهُنَّ",
+          translation: "They are a garment for you, and you are a garment for them.",
+          reference: "Surah al-Baqarah, 2:187"
+        },
+        explanation: [
+          "For twenty-five years -- from the age of twenty-five to the age of fifty -- the Prophet of Allah had one wife. One home. One love. In a society where multiple marriages were normal and expected for a man of growing influence, he did not take another wife while Khadijah lived. Not once.",
+          "That is not a small detail. It is one of the most powerful statements about the nature of their relationship that the entire Sirah contains."
+        ],
+        sections: [
+          {
+            heading: "What She Gave Him",
+            text: [
+              "Khadijah gave the Prophet something that every person who carries a great task needs: a home where the weight could be set down. A place where the public person could become the private person. A companion who believed in him -- not after proof, but before it.",
+              "She gave him children: according to the classical Sirah, all of his children were born of Khadijah, except Ibrahim who was born of Maria al-Qibtiyyah years after Khadijah's death. Qasim, Abdullah, Zaynab, Ruqayyah, Umm Kulthum, and Fatimah -- the last of whom the Prophet called Sayyidah Nisa al-Alamin: the leader of the women of all the worlds.",
+              "She gave him material security: her wealth and her household freed him from the anxieties of poverty. In the cave of Hira, where he spent long periods in spiritual retreat before the revelation came, it was Khadijah who sent provisions. He was able to contemplate, to withdraw, to prepare -- partly because the home he returned to was held together by a woman of extraordinary competence and care."
+            ]
+          },
+          {
+            heading: "What He Said About Her After She Was Gone",
+            text: [
+              "Khadijah passed away three years before the Hijrah -- in what historians call the Year of Sorrow, alongside the death of his uncle Abu Talib. The Prophet grieved deeply. And his love for her did not end with her death.",
+              "A'ishah radhiyallahu anha narrated -- in Sahih al-Bukhari (Hadith 3816) -- that the Prophet would frequently mention Khadijah, to the point where A'ishah felt a deep jealousy toward a woman she had never met. She expressed her surprise to the Prophet at how often he spoke of her. He responded by describing what Khadijah had been: she believed in him when others disbelieved, she supported him with her wealth when others withheld, and Allah had blessed him with children through her.",
+              "He would also -- according to narrations in Sahih al-Bukhari -- continue to slaughter sheep and send portions to the friends of Khadijah even years after her death, as a way of honouring those who had been dear to her. Loyalty to the living is a virtue. Loyalty to the memory of the deceased is something rarer -- and the Prophet exemplified it."
+            ]
+          },
+          {
+            heading: "The Best of the World's Women",
+            text: [
+              "In Sahih Muslim (Hadith 2430), the Prophet named the four greatest women who ever lived: Maryam bint Imran, Khadijah bint Khuwaylid, Fatimah bint Muhammad, and Asiyah the wife of Firawn. This is Tier One testimony -- a direct statement of the Prophet recorded in the highest grade of authenticated narration.",
+              "Two of the four gave everything in a moment of supreme difficulty. One is his own daughter. And one is his wife -- the woman who held him on the night the universe changed, and who had spent twenty-five years preparing herself, without knowing it, to be exactly who he needed in that moment."
+            ]
+          }
+        ],
+        reflection: "The Prophet's loyalty to Khadijah -- in life and after her death -- was not sentimental. It was active: he remembered her friends, honoured her memory, named her among the greatest human beings who ever lived. Wafa is not a feeling; it is a practice. How do we practise loyalty to those who have supported us -- especially when the relationship has changed, or when they are no longer present?"
+      },
+      {
+        kind: "segment",
+        segmentNumber: 4,
+        minutes: 10,
+        chapterTitle: "The Years Before the Dawn -- A Home That Held a Prophet",
+        heading: "Virtue: Thabat -- The Steadfastness That Supports Without Demanding to Understand",
+        subLabel: "Virtue of Thabat",
+        hadith: {
+          type: "ayah",
+          arabic: "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَى وَوَجَدَكَ ضَالًّا فَهَدَى وَوَجَدَكَ عَائِلًا فَأَغْنَى",
+          translation: "Did He not find you an orphan and gave shelter? And He found you wandering and guided you. And He found you in need and made you self-sufficient.",
+          reference: "Surah al-Duha, 93:6-8"
+        },
+        explanation: [
+          "Fifteen years into the marriage, Makkah saw what it had always seen: the same traders, the same idols, the same conversations in the market. But one household had become different from all the others -- not visibly, not loudly, but in the quality of what it held.",
+          "The Prophet of Allah had always been drawn to something beyond the ordinary world. He could not worship stone. He could not find peace in the transactions of the market the way other men did. And as the years passed, that inner seeking intensified into something he could only satisfy in one way: solitude."
+        ],
+        sections: [
+          {
+            heading: "The Cave of Hira",
+            text: [
+              "Above Makkah, on a mountain called al-Nur -- the Mountain of Light -- there was a small cave. It was not large: a man could sit in it, but barely stand. What it offered was silence, and elevation, and distance from everything below.",
+              "The Prophet began going there. Days at a time, retreating from the city, from the noise of commerce, from the routine of Makkah's social life. He would sit in the cave and contemplate -- the creation, the sky, the question that Makkah's idols had never been able to answer. When his provisions ran out, he would come back down to Khadijah. And then, when he was resupplied, he would return."
+            ]
+          },
+          {
+            heading: "What Khadijah Did",
+            text: [
+              "She prepared his provisions. Dates, water, simple food -- enough for the days ahead. She did this not once but many times, across months and perhaps years. She sent them up to a husband whose spiritual seeking she could not fully explain to the women of Makkah, whose retreats she could not describe in the ordinary language of a trading city.",
+              "She did not demand that he explain himself. She did not complain that he was absent. She did not press him with the question that must have occurred to her: what are you looking for? She trusted what she had observed of his character over fifteen years. A man of his quality did not retreat to a cave for nothing.",
+              "The classical Sirah does not give us Khadijah's inner thoughts during these years. But it gives us her actions -- and her actions say everything. She was not confused by his seeking. She was steady. She held the home while he held the solitude."
+            ]
+          },
+          {
+            heading: "The World Did Not Yet Know",
+            text: [
+              "Makkah did not know what was forming above it. The nobles of Quraysh were in the markets. The poets were composing. The pilgrims were coming and going. No one looked up at the Mountain of Light and thought: something is about to happen up there that will change every civilisation that comes after us.",
+              "Only one household was quietly, faithfully, without drama, preparing. Not because Khadijah knew what was coming. But because she had lived alongside this man for fifteen years and understood, without being able to name it, that he was not like other men -- and that what he sought in solitude deserved to be supported, not questioned.",
+              "Allah was preparing His Messenger. And He had placed him in a home that was ready."
+            ]
+          }
+        ],
+        reflection: "Khadijah supported the Prophet's spiritual retreats for years without knowing what they were preparation for. She gave provisions, gave space, and gave steadfast trust -- based entirely on what she knew of his character. Think of a person in your life whose purpose or seeking you do not fully understand. What would it mean to support them as Khadijah did: actively, quietly, and without demanding that they explain themselves before they are ready?"
+      },
+      {
+        kind: "reflection",
+        questions: [
+          "Khadijah proposed to the Prophet -- something almost unheard of in her society. She acted on her judgment and her observation, not on convention. Think of a moment in your own life where you knew something was right but did not act because it felt unconventional. What would Khadijah's example say to that moment?",
+          "The Prophet maintained his love and loyalty for Khadijah after her death -- mentioning her, honouring her friends, remembering her contribution -- for the rest of his life. What does this tell us about how Islam views the lasting obligations of love and loyalty? And what does it challenge us to consider in our own relationships?",
+          "Khadijah prepared provisions for a husband who was retreating to a cave -- for days at a time, across years -- without knowing what he was seeking, or what would come of it. She never demanded explanation. She trusted what she had observed of his character. When in your own life have you been asked to support someone in a purpose that was not yet fully clear -- either to them or to you? What does Khadijah's example say about how to give that kind of support?",
+          "The Prophet spent years in spiritual contemplation before the revelation came. Those years were not idle -- they were preparation. Think of periods in your own life that felt quiet, unresolved, or without direction. Looking back, were any of those periods preparation for something you could not yet see? What does this teach us about how to hold the seasons of waiting with dignity?"
+        ],
+        actionPoint: "This week, write down five things you genuinely know about your spouse, your parent, or your closest companion -- not things you assume, but things you have actually observed over time: how they handle difficulty, what they do when no one is watching, what they carry quietly. Then consider: if that person faced a great test today, would your knowledge of their character give you certainty -- as Khadijah's did -- or would you find yourself guessing? Use what you discover to invest more intentionally in knowing the people you love."
+      },
+      {
+        kind: "closing",
+        paragraphs: [
+          "She turned down every offer until she made one. The most respected businesswoman in Makkah looked past wealth, past title, past age, past convention -- and chose a twenty-five-year-old known only for the quality of his character. In doing so, she became the foundation of one of the most extraordinary lives in all of human history.",
+          "Twenty-five years of one marriage. One home. One love. The Prophet of Allah did not take another wife while Khadijah lived -- and when she died, the grief he carried was not the polite grief of obligation. It was the grief of a man who had lost the person who knew him best, believed in him first, and held him on the night the revelation came.",
+          "Khadijah radhiyallahu anha was not a supporting character in the Sirah. She was the foundation of it. She prepared provisions for a husband whose retreats she could not explain. She held a home that the world did not yet know was about to become the first shelter of Islam.",
+          "She would learn, in time, what she had been preparing for. And when that moment arrived -- in a cave above Makkah, on a night that changed everything -- she would be ready. Her twenty-five years of observation would give her a certainty that no one else could have offered him.",
+          "May Allah be pleased with her. May He grant every Muslim home a love built on knowledge, a loyalty that does not waver, and a companion who -- when the great moment arrives -- has already spent a lifetime learning how to hold it."
+        ],
+        duaArabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+        duaTranslation: "O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim. Indeed You are Praiseworthy and Glorious. Amin.",
+        nextLessonPreview: "For fifteen years, the Prophet had been drawn to the cave of Hira -- retreating from the noise of Makkah, from its idols and its transactions, into solitude and contemplation. He did not yet know what he was waiting for. One night in the year 610 CE, in that same cave, he found out. The next lesson begins there -- with a voice, an embrace, and five verses that changed the world forever.",
+        discoveryNote: "Khadijah bint Khuwaylid is one of the most significant personalities in Islamic history. Her full profile -- lineage, children, and her place among the greatest women -- is in the Profiles tab. The trade route to Syria that the Prophet travelled before this marriage is the same northern road explored in the Maps tab under Sham.",
+      },
     ]
   }
 ];
