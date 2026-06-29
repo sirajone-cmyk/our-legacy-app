@@ -3956,7 +3956,7 @@ const lesson10: LessonEnrichment = {
     "In an age that has reduced marriage to a transaction and loyalty to a feeling, this lesson presents a different model: a marriage built on character-based observation, mutual knowledge, and a loyalty that outlasted death. Khadijah bint Khuwaylid was not simply the Prophet's wife -- she was the person who, more than anyone else in history, knew him well enough to support him before understanding was complete. Every family that studies this lesson receives a model of what it means to know another person so well that you can hold them steadily even when they are carrying something they cannot yet name.",
 
   memoryGem:
-    "She believed in me when people disbelieved me. She assisted me with her wealth when people deprived me. And Allah blessed me with children through her. -- The Prophet about Khadijah bint Khuwaylid, Sahih al-Bukhari, Hadith 3816",
+    "She believed in me when people disbelieved me. She assisted me with her wealth when people deprived me. And Allah blessed me with children through her. -- The Prophet ﷺ about Khadijah bint Khuwaylid ؓ, Musnad Ahmad",
 
   oneMinuteSummary:
     "At twenty-five years old, Muhammad was hired by the wealthy merchant Khadijah bint Khuwaylid to lead her trade caravan to Syria. She sent her trusted employee Maysarah to accompany the journey and report back. What Maysarah witnessed -- the Prophet's scrupulous honesty in trade, his dignified character, and signs of divine protection -- moved Khadijah to take an extraordinary step: she sent a proposal through an intermediary named Nafisah bint Munyah. The Prophet consulted his uncles, and the nikah was performed. She was approximately forty years old; he was twenty-five. They were married for twenty-five years, and the Prophet never took another wife while she lived. He continued to grieve her and honour her memory for the rest of his life, as preserved in Sahih al-Bukhari (3816). In Sahih Muslim (2430), he named her among the four greatest women who ever lived. In the years following the marriage, the Prophet began spending long periods in spiritual retreat in the cave of Hira above Makkah -- seeking something that the idols of Makkah could not provide. It was Khadijah who prepared his provisions and held the home while he sought. She supported his retreats without demanding explanation, trusting what she had observed of his character across fifteen years of shared life. This lesson ends at the threshold of revelation -- with a home held steady by a woman of extraordinary loyalty, and a world that did not yet know what was forming in the cave above it.",
@@ -4087,7 +4087,7 @@ const lesson10: LessonEnrichment = {
     {
       question: "What did the Prophet say about Khadijah after her death? Where is this narration recorded?",
       answer:
-        "He described her as the person who believed in him when others disbelieved, who supported him with her wealth when others withheld, and through whom Allah blessed him with children. This is preserved in Sahih al-Bukhari, Hadith 3816, narrated by A'ishah radhiyallahu anha.",
+        "He described her as the person who believed in him when others disbelieved, who supported him with her wealth when others withheld, and through whom Allah blessed him with children. This narration is recorded in Musnad Ahmad. Sahih al-Bukhari records the Prophet's continued reverence for Khadijah and A'ishah's narration of his grief, but the specific wording of this tribute is from Musnad Ahmad.",
     },
     {
       question: "What did Khadijah do while the Prophet was in the cave of Hira?",
@@ -4239,7 +4239,8 @@ const lesson10: LessonEnrichment = {
     references: [
       "Sahih al-Bukhari -- Hadith 3",
       "Sahih Muslim -- Hadith 2430",
-      "Sahih al-Bukhari -- Hadith 3816",
+      "Musnad Ahmad -- Prophet's tribute to Khadijah",
+      "Sahih al-Bukhari -- Hadith 3817-3820 (Khadijah's virtues)",
       "Sirat Ibn Hisham",
       "Surah al-Rum -- 30:21",
       "Surah al-Duha -- 93:8",
